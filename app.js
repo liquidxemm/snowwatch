@@ -1,9 +1,9 @@
-import { fetchWeather, fetchHistory, analyse, step, describe, seasonOf, snowBetween, snowEventStart, hourIndex, CODE_TEXT } from "./snow.js";
-import { hasArchive, isPanorama, findFrame, latestUrl } from "./archive.js";
-import { H, $, esc, f1, f0, fmtWhen, fmtTime, fmtDay, isDay, lastDaylight, touch, fmtSpan, store, dayKey } from "./util.js";
-import { renderPlanner, renderModels } from "./plan.js";
-import { renderMap, initMapControls, refreshMapCams } from "./map.js";
-import { renderSeason, renderEvent, renderYears } from "./season.js";
+import { fetchWeather, fetchHistory, analyse, step, describe, seasonOf, snowBetween, snowEventStart, hourIndex, CODE_TEXT } from "./snow.js?v=mvhzitr4";
+import { hasArchive, isPanorama, findFrame, latestUrl } from "./archive.js?v=mvhzitr4";
+import { H, $, esc, f1, f0, fmtWhen, fmtTime, fmtDay, isDay, lastDaylight, touch, fmtSpan, store, dayKey } from "./util.js?v=mvhzitr4";
+import { renderPlanner, renderModels } from "./plan.js?v=mvhzitr4";
+import { renderMap, initMapControls, refreshMapCams } from "./map.js?v=mvhzitr4";
+import { renderSeason, renderEvent, renderYears } from "./season.js?v=mvhzitr4";
 
 const VIS_URL = "https://raw.githubusercontent.com/liquidxemm/snowwatch/data/vis.json";
 const VIS_LABEL = { clear: "klar", drops: "Tropfen / unscharf", fog: "Nebel / Schneetreiben", dark: "dunkel" };
@@ -568,6 +568,7 @@ setInterval(loadVis, 15 * 60e3);
 const [cat, wl] = await Promise.all([fetch("cams.json").then(r => r.json()), fetch("watchlist.json", { cache: "no-store" }).then(r => r.json())]);
 catalog = cat.cams; repoWatch = wl;
 [...new Set(catalog.map(c => c.country))].sort().forEach(cc => $("country").insertAdjacentHTML("beforeend", `<option value="${cc}">${cc.toUpperCase()}</option>`));
+window.__swStarted = true;
 route();
 refresh();
 setInterval(refresh, WEATHER_EVERY);

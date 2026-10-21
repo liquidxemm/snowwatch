@@ -431,6 +431,16 @@ h2 .mute, h2 .seg { font-weight: 400; }
   </section>
 </div>
 
-<script type="module" src="app.js"></script>
+<div id="bootfail" hidden style="padding:40px 0;max-width:60ch">
+  <p style="font-size:22px;font-weight:500;margin:0 0 8px">Snowwatch konnte nicht starten.</p>
+  <p class="note" style="margin:0 0 14px">Meist liegt das an alten Dateien im Browser-Cache nach einem Update.</p>
+  <button onclick="location.replace(location.pathname + '?r=' + Date.now() + location.hash)" style="border-bottom:1px solid currentColor">Neu laden</button>
+</div>
+<script>
+  // Safety net: if the app module fails (e.g. stale cached files), offer a clean reload instead of an empty page.
+  window.addEventListener("error", e => { if (/\.js/.test(e.filename || "") || e.message) window.__swFail = e.message; }, true);
+  setTimeout(() => { if (!window.__swStarted) document.getElementById("bootfail").hidden = false; }, 12000);
+</script>
+<script type="module" src="app.js?v=mvhzitr4"></script>
 </body>
 </html>
