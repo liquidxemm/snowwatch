@@ -40,5 +40,34 @@ const extras = JSON.parse(await readFile(new URL("extras.json", root), "utf8"));
 const cams = [...extras, ...fw.filter(c => !extras.some(e => e.id === c.id))]
   .sort((a, b) => b.elev - a.elev);
 
+// Avalanche warning region of each cam (EAWS micro-regions), used to look up the bulletin.
+const REGION_FILES = ["CH", "AT-07", "AT-08", "AT-05", "AT-02", "AT-06", "AT-04", "AT-03", "IT-32-BZ", "IT-32-TN", "DE-BY", "IT-25", "IT-23", "SI", "FR"];
+const inRing = (x, y, ring) => {
+  let inside = false;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    const [xi, yi] = ring[i], [xj, yj] = ring[j];
+    if ((yi > y) !== (yj > y) && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) inside = !inside;
+  }
+  return inside;
+};
+const inPolygon = (x, y, poly) => inRing(x, y, poly[0]) && !poly.slice(1).some(h => inRing(x, y, h));
+const regions = [];
+for (const f of REGION_FILES) {
+  try {
+    const r = await fetch(`https://regions.avalanches.org/micro-regions/${f}_micro-regions.geojson.json`);
+    if (!r.ok) continue;
+    for (const feat of (await r.json()).features || []) {
+      const g = feat.geometry, id = feat.properties?.id;
+      if (!g || !id || feat.properties?.end_date) continue;
+      regions.push({ id, polys: g.type === "Polygon" ? [g.coordinates] : g.coordinates });
+    }
+  } catch (e) { console.warn("regions", f, e.message); }
+}
+for (const c of cams) {
+  const hit = regions.find(r => r.polys.some(p => inPolygon(c.lon, c.lat, p)));
+  if (hit) c.region = hit.id;
+}
+console.log(`regions: ${regions.length} loaded, ${cams.filter(c => c.region).length} cams assigned`);
+
 await writeFile(new URL("cams.json", root), JSON.stringify({ updated: new Date().toISOString(), cams }, null, 1) + "\n");
 console.log(`cams.json: ${cams.length} cams (${fw.length} from foto-webcam.eu, ${extras.length} extras)`);

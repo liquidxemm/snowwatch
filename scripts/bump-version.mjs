@@ -5,7 +5,7 @@ import { readFile, writeFile } from "node:fs/promises";
 
 const root = new URL("../", import.meta.url);
 const version = Date.now().toString(36);
-const files = ["index.html", "app.js", "util.js", "snow.js", "archive.js", "plan.js", "map.js", "season.js"];
+const files = ["index.html", "app.js", "util.js", "snow.js", "archive.js", "plan.js", "map.js", "season.js", "measure.js"];
 
 for (const f of files) {
   const url = new URL(f, root);
