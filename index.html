@@ -54,12 +54,12 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 
 /* summary */
 .hero { padding: 44px 0 40px; border-bottom: 1px solid var(--rule); row-gap: 24px; }
-.big { grid-column: 1 / span 7; font-weight: 500; font-size: clamp(88px, 17vw, 232px); line-height: .8; letter-spacing: -.055em; margin: 0; }
-.big small { font-size: .3em; letter-spacing: -.03em; color: var(--mute); margin-left: .08em; }
+.big { grid-column: 1 / span 7; font-weight: 500; font-size: clamp(88px, 17vw, 232px); line-height: .8; letter-spacing: -.035em; margin: 0; }
+.big small { font-size: .3em; letter-spacing: -.01em; color: var(--mute); margin-left: .08em; }
 .facts { grid-column: 8 / span 5; align-self: end; display: grid; grid-template-columns: 1fr 1fr; gap: 22px var(--gutter); margin: 0; }
 .facts div { border-top: 1px solid var(--ink); padding-top: 8px; }
 .facts dt { font-size: 12px; color: var(--mute); }
-.facts dd { margin: 4px 0 0; font-size: 26px; font-weight: 500; letter-spacing: -.02em; line-height: 1.05; }
+.facts dd { margin: 4px 0 0; font-size: 26px; font-weight: 500; letter-spacing: -.005em; line-height: 1.05; }
 .facts dd button, .facts dd span { display: block; margin-top: 3px; font-size: 13px; font-weight: 400; color: var(--mute); letter-spacing: 0; text-align: left; }
 .facts dd button:hover { color: var(--accent); }
 .lede { grid-column: 1 / -1; font-size: 13px; color: var(--mute); margin: 0; }
@@ -125,7 +125,7 @@ h2 .mute, h2 .seg { font-weight: 400; }
 
 /* cam view */
 .camhead { padding: 28px 0 18px; row-gap: 14px; align-items: end; }
-.camhead h1 { grid-column: 1 / span 8; margin: 0; font-weight: 500; font-size: clamp(40px, 7vw, 96px); line-height: .9; letter-spacing: -.045em; }
+.camhead h1 { grid-column: 1 / span 8; margin: 0; font-weight: 500; font-size: clamp(40px, 7vw, 96px); line-height: .9; letter-spacing: -.015em; }
 .camhead .meta { grid-column: 9 / span 4; font-size: 13px; color: var(--mute); text-align: right; display: grid; gap: 4px; }
 .camhead .meta a { text-decoration: none; } .camhead .meta a:hover, .camhead .meta button:hover { color: var(--ink); }
 .modebar { display: flex; justify-content: space-between; align-items: baseline; gap: 12px 24px; flex-wrap: wrap; border-top: 1px solid var(--ink); padding: 9px 0 12px; font-size: 13px; }
@@ -183,7 +183,7 @@ h2 .mute, h2 .seg { font-weight: 400; }
 .figs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px var(--gutter); margin: 28px 0 0; }
 .figs div { border-top: 1px solid var(--ink); padding-top: 8px; min-width: 0; }
 .figs dt { font-size: 12px; color: var(--mute); }
-.figs dd { margin: 4px 0 0; font-size: clamp(26px, 3.4vw, 44px); font-weight: 500; letter-spacing: -.03em; line-height: 1; font-variant-numeric: tabular-nums; }
+.figs dd { margin: 4px 0 0; font-size: clamp(26px, 3.4vw, 44px); font-weight: 500; letter-spacing: -.01em; line-height: 1; font-variant-numeric: tabular-nums; }
 .figs dd span { display: block; font-size: 13px; color: var(--mute); font-weight: 400; letter-spacing: 0; margin-top: 6px; }
 .figs .hot dd { color: var(--accent); }
 
@@ -361,6 +361,12 @@ function bars(a, max) {
 function renderHero(list) {
   const as = list.map(c => [c, analyses[c.id]]).filter(([, a]) => a);
   const snowing = as.filter(([, a]) => a.snowingNow);
+  if (!as.length) {
+    $("big").innerHTML = `–<small>/${list.length}</small>`;
+    ["fLine", "fPast", "fNext", "fFrz"].forEach(id => $(id).textContent = "–");
+    $("lede").textContent = "Wetterdaten werden geladen.";
+    return;
+  }
   $("big").innerHTML = `${snowing.length}<small>/${list.length}</small>`;
   const camBtn = c => `<button data-open="${esc(c.id)}">${esc(c.name)}</button>`;
   const low = snowing.slice().sort((x, y) => x[0].elev - y[0].elev)[0];
