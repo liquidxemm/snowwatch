@@ -1,0 +1,28 @@
+name: Update cam catalog
+
+on:
+  schedule:
+    - cron: "17 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/update-cams.mjs
+      - run: |
+          git add cams.json
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name "snowwatch-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update cam catalog"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push

@@ -1,0 +1,38 @@
+name: Snow check
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: snowcheck
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check watched cams for snow
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          SOON_CM: ${{ vars.SOON_CM }}
+          DASHBOARD_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+        run: node scripts/check.mjs
+      - name: Save state when something changed
+        run: |
+          git add data
+          if git diff --cached --quiet; then echo "No change"; exit 0; fi
+          git config user.name "snowwatch-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Snow state update"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push
