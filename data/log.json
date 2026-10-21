@@ -79,5 +79,86 @@
   "msg": "It's snowing at 3466 m, -4.1 °C. 12.4 cm forecast for the next 24 h.",
   "past24": 6.4,
   "temp": -4.1
+ },
+ {
+  "t": 1792592666293,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "first",
+  "msg": "It's snowing at 2350 m, -0.9 °C. 5.2 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -0.9
+ },
+ {
+  "t": 1792592666293,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "soon",
+  "msg": "0.6 cm forecast within 3 h at 1970 m (1.5 °C now).",
+  "past24": 0,
+  "temp": 1.5
+ },
+ {
+  "t": 1792592666293,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "stop",
+  "msg": "1.8 cm in the last 24 h.",
+  "past24": 1.8,
+  "temp": -1.2
+ },
+ {
+  "t": 1792592666293,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "first",
+  "msg": "It's snowing at 3123 m, -1.1 °C. 3.9 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -1.1
+ },
+ {
+  "t": 1792592666293,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -1.1
+ },
+ {
+  "t": 1792592666293,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "first",
+  "msg": "It's snowing at 3106 m, -1.0 °C. 3.9 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -1
+ },
+ {
+  "t": 1792592666293,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "first",
+  "msg": "It's snowing at 2962 m, -1.5 °C. 0.6 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -1.5
+ },
+ {
+  "t": 1792592666293,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -1.2
+ },
+ {
+  "t": 1792592666293,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -2
  }
 ]
