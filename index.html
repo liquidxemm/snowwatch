@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snowwatch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: control strip on top, then a wrapping grid of cam cards (image + weather readout) */
+:root {
+  --bg: #eef2f5; --panel: #ffffff; --fg: #17222c; --muted: #5d6c78; --line: #d3dbe2;
+  --ice: #2f6f9f; --snow: #1d84d6; --warn: #b76e00; --ok: #3a7d5c;
+  --display: "Archivo Narrow", "Arial Narrow", system-ui, sans-serif;
+  --body: "IBM Plex Sans", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0e151b; --panel: #16212a; --fg: #e3eaf0; --muted: #8a9aa7; --line: #263541;
+          --ice: #8cc4ec; --snow: #5fb6ff; --warn: #f0a83c; --ok: #6cc196; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 14px/1.45 var(--body);
+       padding: 20px max(16px, env(safe-area-inset-left)) 40px max(16px, env(safe-area-inset-right)); }
+header { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px 24px; margin-bottom: 16px; }
+h1 { font: 700 34px/1 var(--display); letter-spacing: .01em; margin: 0; }
+h1 small { display: block; font: 400 13px var(--body); color: var(--muted); margin-top: 6px; letter-spacing: 0; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+button { font: 500 13px var(--body); color: var(--fg); background: var(--panel); border: 1px solid var(--line);
+         border-radius: 6px; padding: 7px 12px; cursor: pointer; }
+button:hover { border-color: var(--ice); }
+button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--snow); outline-offset: 2px; }
+button.primary { background: var(--snow); border-color: var(--snow); color: #fff; }
+.status { font: 12px var(--mono); color: var(--muted); }
+#banner { display: none; margin-bottom: 16px; padding: 12px 14px; border-radius: 8px; background: var(--snow); color: #fff; font-weight: 500; }
+#banner.on { display: block; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 16px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; min-width: 0; }
+.card.snowing { border-color: var(--snow); box-shadow: 0 0 0 2px var(--snow); }
+.shot { position: relative; aspect-ratio: 16/9; background: var(--line); display: block; max-width: 100%; }
+.shot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.shot .noimg { position: absolute; inset: 0; display: grid; place-items: center; color: var(--muted); font-size: 13px; text-align: center; padding: 12px; }
+.pill { position: absolute; top: 10px; left: 10px; font: 700 12px var(--display); letter-spacing: .06em; text-transform: uppercase;
+        padding: 4px 9px; border-radius: 99px; background: rgba(0,0,0,.6); color: #fff; }
+.pill.snow { background: var(--snow); }
+.pill.soon { background: var(--warn); }
+.body { padding: 12px 14px 14px; display: grid; gap: 10px; }
+.title { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.title h2 { font: 700 19px/1.1 var(--display); margin: 0; }
+.title a { color: var(--ice); font-size: 12px; white-space: nowrap; }
+.elev { font: 12px var(--mono); color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+.stat { font-variant-numeric: tabular-nums; }
+.stat b { display: block; font: 500 16px var(--mono); }
+.stat span { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+.spark { width: 100%; height: 44px; display: block; }
+.sparklabel { display: flex; justify-content: space-between; font: 11px var(--mono); color: var(--muted); }
+.log { font: 12px var(--mono); color: var(--muted); max-height: 4.5em; overflow: auto; }
+dialog { background: var(--panel); color: var(--fg); border: 1px solid var(--line); border-radius: 10px; width: min(720px, 94vw); }
+dialog::backdrop { background: rgba(0,0,0,.45); }
+textarea, input[type=text] { width: 100%; font: 12px var(--mono); background: var(--bg); color: var(--fg); border: 1px solid var(--line); border-radius: 6px; padding: 8px; }
+textarea { height: 340px; }
+label { display: grid; gap: 4px; font-size: 13px; }
+.row { display: flex; gap: 8px; justify-content: flex-end; flex-wrap: wrap; margin-top: 12px; }
+.hint { font-size: 12px; color: var(--muted); }
+@media (prefers-reduced-motion: no-preference) { .card.snowing .pill.snow { animation: pulse 1.6s ease-in-out infinite; } }
+@keyframes pulse { 50% { opacity: .55; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Snowwatch<small>Alpine cams in one place · alerts when it starts snowing · weather: Open-Meteo</small></h1>
+  <div class="controls">
+    <span class="status" id="status">loading…</span>
+    <button id="btnRefresh">Refresh now</button>
+    <button id="btnNotify">Enable alerts</button>
+    <button id="btnTest">Test alert</button>
+    <button id="btnSettings">Cams &amp; settings</button>
+  </div>
+</header>
+<div id="banner"></div>
+<main class="grid" id="grid"></main>
+
+<dialog id="dlg">
+  <form method="dialog" id="settingsForm">
+    <h2 style="font:700 22px var(--display);margin:0 0 10px">Cams &amp; settings</h2>
+    <label>Phone push (optional): ntfy.sh topic name
+      <input type="text" id="ntfy" placeholder="e.g. snowwatch-a7f3k9 (install the ntfy app and subscribe to the same name)">
+    </label>
+    <p class="hint">Pick an odd, hard-to-guess topic name. Anyone who knows it can read the pushes.</p>
+    <label>Alert when forecast snow in the next 3 h reaches (cm)
+      <input type="text" id="soonCm" value="0.5">
+    </label>
+    <label style="margin-top:10px">Cams (JSON). <code>img</code> is a direct snapshot URL (optional), <code>page</code> is the live page, <code>elev</code> is the cam altitude in m.
+      <textarea id="camsJson" spellcheck="false"></textarea>
+    </label>
+    <div class="row">
+      <button type="button" id="btnReset">Restore default cams</button>
+      <button value="cancel">Cancel</button>
+      <button class="primary" id="btnSave" value="save">Save</button>
+    </div>
+  </form>
+</dialog>
+
+<script>
+// --- Default cams. foto-webcam.eu serves direct snapshots at /webcam/<name>/current/1200.jpg ---
+const FW = n => `https://www.foto-webcam.eu/webcam/${n}/current/1200.jpg`;
+const FWP = n => `https://www.foto-webcam.eu/webcam/${n}/`;
+const DEFAULT_CAMS = [
+  { name: "Zugspitze",            lat: 47.421, lon: 10.985, elev: 2962, img: FW("zugspitze"),  page: FWP("zugspitze") },
+  { name: "Sonnblick",            lat: 47.054, lon: 12.958, elev: 3106, img: FW("sonnblick"),  page: FWP("sonnblick") },
+  { name: "Hintertux Glacier",    lat: 47.074, lon: 11.666, elev: 3250, img: "",               page: "https://www.hintertuxergletscher.at/en/webcams" },
+  { name: "Stubai Glacier",       lat: 46.986, lon: 11.118, elev: 3210, img: "",               page: "https://www.stubaier-gletscher.com/en/webcams/" },
+  { name: "Pitztal Glacier",      lat: 46.926, lon: 10.880, elev: 3440, img: "",               page: "https://www.pitztaler-gletscher.at/en/webcams" },
+  { name: "Kitzsteinhorn",        lat: 47.188, lon: 12.687, elev: 3029, img: "",               page: "https://www.kitzsteinhorn.at/en/webcams" },
+  { name: "Grossglockner / Pasterze", lat: 47.081, lon: 12.746, elev: 2369, img: "",           page: "https://www.grossglockner.at/gg/en/webcams" },
+  { name: "Jungfraujoch",         lat: 46.547, lon: 7.985,  elev: 3466, img: "",               page: "https://www.jungfrau.ch/en-gb/live/webcams/" },
+  { name: "Aiguille du Midi",     lat: 45.879, lon: 6.887,  elev: 3842, img: "",               page: "https://www.chamonix.com/webcams" },
+];
+
+const SNOW_CODES = new Set([71, 73, 75, 77, 85, 86]);
+const CODE_TEXT = { 0:"clear",1:"mostly clear",2:"partly cloudy",3:"overcast",45:"fog",48:"rime fog",51:"drizzle",53:"drizzle",55:"drizzle",
+  56:"freezing drizzle",57:"freezing drizzle",61:"rain",63:"rain",65:"heavy rain",66:"freezing rain",67:"freezing rain",
+  71:"light snow",73:"snow",75:"heavy snow",77:"snow grains",80:"showers",81:"showers",82:"heavy showers",85:"snow showers",86:"heavy snow showers",
+  95:"thunderstorm",96:"thunderstorm",99:"thunderstorm" };
+const WEATHER_EVERY = 10 * 60 * 1000, IMAGE_EVERY = 5 * 60 * 1000;
+
+// --- storage (per-browser; wrapped because it can be unavailable) ---
+const store = {
+  get(k, d) { try { const v = localStorage.getItem("snowwatch:" + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem("snowwatch:" + k, JSON.stringify(v)); } catch {} },
+};
+let cams = store.get("cams", DEFAULT_CAMS);
+let state = store.get("state", {});   // name -> "snow" | "soon" | "dry"
+let log = store.get("log", {});       // name -> [{t, msg}]
+
+const $ = id => document.getElementById(id);
+const fmt = (v, d = 1) => v == null || Number.isNaN(v) ? "–" : v.toFixed(d);
+const hhmm = t => new Date(t).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+
+// --- weather: one batched Open-Meteo call for all cams, downscaled to each cam's altitude ---
+async function fetchWeather() {
+  const q = new URLSearchParams({
+    latitude: cams.map(c => c.lat).join(","),
+    longitude: cams.map(c => c.lon).join(","),
+    elevation: cams.map(c => c.elev).join(","),
+    current: "temperature_2m,weather_code,snowfall,precipitation",
+    hourly: "snowfall,freezing_level_height,temperature_2m",
+    past_hours: 24, forecast_hours: 24, timezone: "auto",
+  });
+  const r = await fetch("https://api.open-meteo.com/v1/forecast?" + q);
+  if (!r.ok) throw new Error("Open-Meteo answered " + r.status);
+  const j = await r.json();
+  return Array.isArray(j) ? j : [j];
+}
+
+function analyse(w) {
+  const h = w.hourly, now = Date.now();
+  const times = h.time.map(t => new Date(t).getTime());
+  let past24 = 0, next3 = 0, next24 = 0, idxNow = 0;
+  times.forEach((t, i) => {
+    const s = h.snowfall[i] || 0;
+    if (t <= now) { past24 += s; idxNow = i; }
+    else { next24 += s; if (t - now <= 3 * 3600e3) next3 += s; }
+  });
+  const c = w.current;
+  const snowingNow = (c.snowfall || 0) > 0 || SNOW_CODES.has(c.weather_code);
+  return { c, past24, next3, next24, fl: h.freezing_level_height[idxNow], series: h.snowfall, times, idxNow, snowingNow };
+}
+
+// --- rendering ---
+function spark(a) {
+  const W = 300, H = 44, n = a.series.length, max = Math.max(0.5, ...a.series.map(v => v || 0));
+  const bw = W / n;
+  let bars = "";
+  a.series.forEach((v, i) => {
+    const bh = ((v || 0) / max) * (H - 4);
+    if (bh > 0) bars += `<rect x="${(i * bw).toFixed(1)}" y="${(H - bh).toFixed(1)}" width="${(bw - 1).toFixed(1)}" height="${bh.toFixed(1)}" fill="${i <= a.idxNow ? "var(--snow)" : "var(--ice)"}" opacity="${i <= a.idxNow ? 1 : .45}"/>`;
+  });
+  const nx = ((a.idxNow + 1) * bw).toFixed(1);
+  return `<svg class="spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-label="Hourly snowfall, past 24 h and next 24 h">
+    <line x1="0" y1="${H - .5}" x2="${W}" y2="${H - .5}" stroke="var(--line)"/>
+    ${bars}<line x1="${nx}" y1="0" x2="${nx}" y2="${H}" stroke="var(--muted)" stroke-dasharray="2 2"/></svg>`;
+}
+
+function cardHTML(cam, a, i) {
+  const st = a ? (a.snowingNow ? "snow" : a.next3 >= soonCm() ? "soon" : "dry") : "dry";
+  const pill = !a ? "–" : st === "snow" ? "Snowing" : st === "soon" ? "Snow within 3 h" : (CODE_TEXT[a.c.weather_code] || "–");
+  const img = cam.img
+    ? `<img src="${cam.img}${cam.img.includes("?") ? "&" : "?"}t=${Math.floor(Date.now() / IMAGE_EVERY)}" alt="Latest snapshot from ${cam.name}" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'noimg',textContent:'Snapshot not loading. Open the live page or fix the image URL in settings.'}))">`
+    : `<div class="noimg">No direct snapshot URL set.<br>Open the live page →</div>`;
+  const entries = (log[cam.name] || []).slice(-6).reverse().map(e => `<div>${new Date(e.t).toLocaleString([], { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" })} · ${e.msg}</div>`).join("");
+  return `<article class="card ${st === "snow" ? "snowing" : ""}" data-i="${i}">
+    <a class="shot" href="${cam.page}" target="_blank" rel="noopener">${img}<span class="pill ${st === "snow" ? "snow" : st === "soon" ? "soon" : ""}">${pill}</span></a>
+    <div class="body">
+      <div class="title"><h2>${cam.name}</h2><a href="${cam.page}" target="_blank" rel="noopener">Live page ↗</a></div>
+      <div class="elev">${cam.elev} m · ${cam.lat.toFixed(2)}°N ${cam.lon.toFixed(2)}°E${a && a.fl != null ? ` · 0 °C line ${Math.round(a.fl)} m` : ""}</div>
+      ${a ? `<div class="stats">
+        <div class="stat"><b>${fmt(a.c.temperature_2m)}°</b><span>temp</span></div>
+        <div class="stat"><b>${fmt(a.c.snowfall)}</b><span>cm now</span></div>
+        <div class="stat"><b>${fmt(a.past24)}</b><span>cm 24 h</span></div>
+        <div class="stat"><b>${fmt(a.next24)}</b><span>cm next 24 h</span></div>
+      </div>
+      ${spark(a)}
+      <div class="sparklabel"><span>−24 h</span><span>now</span><span>+24 h</span></div>` : `<div class="hint">No weather data yet.</div>`}
+      ${entries ? `<div class="log">${entries}</div>` : ""}
+    </div></article>`;
+}
+
+// --- alerts ---
+const soonCm = () => parseFloat(store.get("soonCm", 0.5)) || 0.5;
+let audioCtx;
+function chime() {
+  try {
+    audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
+    [880, 1175, 1568].forEach((f, k) => {
+      const o = audioCtx.createOscillator(), g = audioCtx.createGain(), t = audioCtx.currentTime + k * 0.18;
+      o.frequency.value = f; o.type = "sine";
+      g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(0.25, t + 0.02); g.gain.exponentialRampToValueAtTime(0.0001, t + 0.6);
+      o.connect(g).connect(audioCtx.destination); o.start(t); o.stop(t + 0.65);
+    });
+  } catch {}
+}
+function alertUser(title, body) {
+  chime();
+  $("banner").textContent = `${title} · ${body}`; $("banner").classList.add("on");
+  try { if ("Notification" in window && Notification.permission === "granted") new Notification(title, { body }); } catch {}
+  const topic = store.get("ntfy", "");
+  if (topic) fetch("https://ntfy.sh/" + encodeURIComponent(topic), { method: "POST", body, headers: { Title: title, Tags: "snowflake" } }).catch(() => {});
+  let flip = 0; clearInterval(alertUser.tk);
+  alertUser.tk = setInterval(() => { document.title = (flip++ % 2) ? "❄ " + title : "Snowwatch"; if (flip > 20) { clearInterval(alertUser.tk); document.title = "Snowwatch"; } }, 1000);
+}
+function addLog(name, msg) { (log[name] = log[name] || []).push({ t: Date.now(), msg }); log[name] = log[name].slice(-50); store.set("log", log); }
+
+// --- main loop ---
+let last = [];
+async function refresh() {
+  $("status").textContent = "updating…";
+  try {
+    const ws = await fetchWeather();
+    last = ws.map(analyse);
+    last.forEach((a, i) => {
+      const cam = cams[i], prev = state[cam.name] || "dry";
+      const now = a.snowingNow ? "snow" : a.next3 >= soonCm() ? "soon" : "dry";
+      if (now === "snow" && prev !== "snow") {
+        const msg = `Snow started: ${fmt(a.c.snowfall)} cm/h, ${fmt(a.c.temperature_2m)} °C`;
+        addLog(cam.name, msg); alertUser(`❄ ${cam.name}`, msg);
+      } else if (now === "soon" && prev === "dry") {
+        const msg = `${fmt(a.next3)} cm forecast within 3 h`;
+        addLog(cam.name, msg); alertUser(`${cam.name}: snow coming`, msg);
+      } else if (now === "dry" && prev === "snow") {
+        addLog(cam.name, `Snow stopped (${fmt(a.past24)} cm in 24 h)`);
+      }
+      state[cam.name] = now;
+    });
+    store.set("state", state);
+    const n = last.filter(a => a.snowingNow).length;
+    $("status").textContent = `${n ? n + " snowing · " : ""}updated ${hhmm(Date.now())} · next in 10 min`;
+  } catch (e) {
+    $("status").textContent = "weather fetch failed: " + e.message;
+  }
+  render();
+}
+function render() { $("grid").innerHTML = cams.map((c, i) => cardHTML(c, last[i], i)).join(""); }
+
+// --- controls ---
+$("btnRefresh").onclick = refresh;
+$("btnTest").onclick = () => alertUser("❄ Test alert", "This is what a snow alert looks and sounds like.");
+$("btnNotify").onclick = async () => {
+  chime(); // also unlocks audio for later alerts
+  if (!("Notification" in window)) { $("btnNotify").textContent = "Sound alerts on"; return; }
+  try {
+    const p = await Notification.requestPermission();
+    $("btnNotify").textContent = p === "granted" ? "Alerts on" : "Sound only (notifications blocked)";
+  } catch { $("btnNotify").textContent = "Sound alerts on"; }
+};
+$("btnSettings").onclick = () => {
+  $("camsJson").value = JSON.stringify(cams, null, 2);
+  $("ntfy").value = store.get("ntfy", "");
+  $("soonCm").value = soonCm();
+  $("dlg").showModal();
+};
+$("btnReset").onclick = () => { $("camsJson").value = JSON.stringify(DEFAULT_CAMS, null, 2); };
+$("settingsForm").addEventListener("submit", e => {
+  if (e.submitter && e.submitter.value !== "save") return;
+  try {
+    const parsed = JSON.parse($("camsJson").value);
+    if (!Array.isArray(parsed) || !parsed.every(c => c.name && typeof c.lat === "number" && typeof c.lon === "number" && typeof c.elev === "number"))
+      throw new Error("Each cam needs name, lat, lon and elev (numbers).");
+    cams = parsed; store.set("cams", cams);
+    store.set("ntfy", $("ntfy").value.trim());
+    store.set("soonCm", parseFloat($("soonCm").value) || 0.5);
+    refresh();
+  } catch (err) { e.preventDefault(); $("camsJson").setCustomValidity(""); $("status").textContent = "Settings not saved: " + err.message; }
+});
+
+if ("Notification" in window && Notification.permission === "granted") $("btnNotify").textContent = "Alerts on";
+render();
+refresh();
+setInterval(refresh, WEATHER_EVERY);
+setInterval(render, IMAGE_EVERY);
+</script>
+</body>
+</html>
