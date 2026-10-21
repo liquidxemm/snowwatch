@@ -4,6 +4,11 @@ Alpine webcams in one place, with a ping to your phone when it starts snowing at
 
 - **Dashboard** (GitHub Pages): live snapshots, current temperature, snowfall now / last 24 h / next 24 h, the 0 °C line, and an hourly snowfall chart per cam. Cams where it's snowing jump to the top.
 - **Cam view**: click any cam for a large view with a time-lapse over 24 h / 48 h / 7 days (night frames skipped), aligned with hourly snowfall and temperature, and a before/after slider. "Before the snowfall" is detected from the weather data; the view shows new snow in between, modelled snow depth before → after and temperature. Works for all foto-webcam.eu cams (archive back several years) and the Saas-Fee roundshot panoramas.
+- **Planner**: 7-day outlook for all watched cams: new snow per day as the median of six models (MeteoSwiss ICON-CH1/CH2, DWD ICON-D2/EU, ECMWF, Open-Meteo), the spread between them, sunshine, and powder days (first sunny day after 15 cm+).
+- **Model comparison**: every cam view lists each model's daily forecast side by side.
+- **Map**: radar (RainViewer, last 2 h + nowcast) and forecast snowfall for 24/48/72 h across the Alps, with all cams.
+- **Season**: snow events with before/after of every affected cam and new-snow totals; first snow per cam for the last six seasons (ERA5 reanalysis); same day across years for any cam.
+- **Visibility**: a GitHub Action scores every cam image above 2000 m every 30 minutes (clear / drops / fog / dark) and learns which cams stay clear while it snows. Scores live on the `data` branch.
 - **Wall**: switch all images to 24 h or 7 days ago in one click.
 - **All cams**: 367 cams to pick from, searchable and filterable by country and altitude: every live cam on [foto-webcam.eu](https://www.foto-webcam.eu) plus hand-picked ones (Saas-Fee, Hintertux, Stubai, Pitztal, Kitzsteinhorn, Jungfraujoch, Aiguille du Midi).
 - **Phone alerts**: a GitHub Action checks the cams in `watchlist.json` every 15 minutes and pushes through [ntfy](https://ntfy.sh) when snow starts (marked as *first snow of the season* the first time), when ≥ 0.5 cm is forecast within 3 h, and logs when it stops.
