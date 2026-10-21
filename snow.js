@@ -49,6 +49,51 @@ export async function fetchWeather(cams, fetchImpl = fetch) {
   return out;
 }
 
+// Hourly history + forecast for one cam: snowfall (cm), temperature, modelled snow depth (cm), weather code.
+export async function fetchHistory(cam, pastDays = 7, fetchImpl = fetch) {
+  const q = new URLSearchParams({
+    latitude: cam.lat, longitude: cam.lon, elevation: cam.elev,
+    hourly: "snowfall,temperature_2m,snow_depth,weather_code,freezing_level_height",
+    past_days: String(pastDays), forecast_days: "2", timezone: "GMT",
+  });
+  const j = await withRetry(async () => {
+    const r = await fetchImpl("https://api.open-meteo.com/v1/forecast?" + q);
+    if (!r.ok) throw new Error(`Open-Meteo answered ${r.status}`);
+    return r.json();
+  });
+  const h = j.hourly;
+  return {
+    t: h.time.map(s => Date.parse(s + "Z")),
+    snow: h.snowfall.map(v => v || 0),
+    temp: h.temperature_2m,
+    depth: h.snow_depth.map(v => (v == null ? null : v * 100)),
+    code: h.weather_code,
+    frz: h.freezing_level_height,
+  };
+}
+
+// Index of the hour that contains time t.
+export const hourIndex = (h, t) => { let i = 0; while (i + 1 < h.t.length && h.t[i + 1] <= t) i++; return i; };
+
+// Snow that fell between t1 and t2 (cm).
+export function snowBetween(h, t1, t2) {
+  const [a, b] = t1 < t2 ? [t1, t2] : [t2, t1];
+  let s = 0;
+  h.t.forEach((t, i) => { if (t > a && t <= b) s += h.snow[i]; });
+  return s;
+}
+
+// Start of the most recent snowfall: walk back from t through hours with snow, allowing gaps up to 3 dry hours.
+export function snowEventStart(h, t = Date.now(), minCm = 0.1) {
+  let i = hourIndex(h, t), last = -1, gap = 0;
+  for (; i >= 0; i--) {
+    if (h.snow[i] >= minCm) { last = i; gap = 0; }
+    else if (last >= 0 && ++gap > 3) break;
+    else if (last < 0 && h.t[hourIndex(h, t)] - h.t[i] > 72 * 3600e3) break;
+  }
+  return last >= 0 ? h.t[last] - 3600e3 : null; // the hour before the first snowy hour
+}
+
 // Turn one Open-Meteo result into the numbers the UI and alerts need.
 export function analyse(w, now = Date.now()) {
   const h = w.hourly;

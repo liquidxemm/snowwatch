@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21T08:52:16.079Z",
+ "updated": "2026-10-21T09:43:45.490Z",
  "cams": [
   {
    "id": "aiguille-du-midi",
@@ -11,7 +11,8 @@
    "elev": 3842,
    "img": "",
    "page": "https://www.chamonix.com/webcams",
-   "source": "chamonix.com"
+   "source": "chamonix.com",
+   "interval": 600
   },
   {
    "id": "jungfraujoch",
@@ -23,7 +24,8 @@
    "elev": 3466,
    "img": "",
    "page": "https://www.jungfrau.ch/en-gb/live/webcams/",
-   "source": "jungfrau.ch"
+   "source": "jungfrau.ch",
+   "interval": 600
   },
   {
    "id": "saasfee-mittelallalin",
@@ -35,7 +37,8 @@
    "elev": 3456,
    "img": "",
    "page": "https://www.saas-fee.ch/en/webcams",
-   "source": "saas-fee.ch"
+   "source": "saas-fee.ch",
+   "interval": 600
   },
   {
    "id": "adlersruhe",
@@ -45,6 +48,7 @@
    "lat": 47.07,
    "lon": 12.7016,
    "elev": 3454,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/adlersruhe/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/adlersruhe/",
    "source": "foto-webcam.eu"
@@ -59,7 +63,8 @@
    "elev": 3440,
    "img": "",
    "page": "https://www.pitztaler-gletscher.at/webcam",
-   "source": "pitztaler-gletscher.at"
+   "source": "pitztaler-gletscher.at",
+   "interval": 600
   },
   {
    "id": "langenferner",
@@ -69,6 +74,7 @@
    "lat": 46.4853,
    "lon": 10.6212,
    "elev": 3300,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/langenferner/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/langenferner/",
    "source": "foto-webcam.eu"
@@ -83,7 +89,8 @@
    "elev": 3250,
    "img": "",
    "page": "https://hintertux.panomax.com/gefrorene-wand",
-   "source": "panomax"
+   "source": "panomax",
+   "interval": 600
   },
   {
    "id": "hintereisferner1",
@@ -93,6 +100,7 @@
    "lat": 46.7959,
    "lon": 10.7828,
    "elev": 3245,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/hintereisferner1/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hintereisferner1/",
    "source": "foto-webcam.eu"
@@ -105,6 +113,7 @@
    "lat": 46.7959,
    "lon": 10.7828,
    "elev": 3245,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/hintereisferner2/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hintereisferner2/",
    "source": "foto-webcam.eu"
@@ -117,6 +126,7 @@
    "lat": 46.7796,
    "lon": 10.8409,
    "elev": 3216,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/tisenjoch/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/tisenjoch/",
    "source": "foto-webcam.eu"
@@ -131,7 +141,8 @@
    "elev": 3210,
    "img": "",
    "page": "https://www.stubaier-gletscher.com/stubai-live/webcams/",
-   "source": "stubaier-gletscher.com"
+   "source": "stubaier-gletscher.com",
+   "interval": 600
   },
   {
    "id": "saasgrund-hohsaas",
@@ -143,7 +154,8 @@
    "elev": 3200,
    "img": "https://backend.roundshot.com/cams/d2402734f8fbf99baf36289060772b44/medium",
    "page": "https://hohsaas.roundshot.com/3200",
-   "source": "roundshot"
+   "source": "roundshot",
+   "interval": 600
   },
   {
    "id": "becherhaus",
@@ -153,6 +165,7 @@
    "lat": 46.9608,
    "lon": 11.1923,
    "elev": 3195,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/becherhaus/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/becherhaus/",
    "source": "foto-webcam.eu"
@@ -165,6 +178,7 @@
    "lat": 46.9608,
    "lon": 11.1923,
    "elev": 3195,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/ridnaun/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/ridnaun/",
    "source": "foto-webcam.eu"
@@ -177,6 +191,7 @@
    "lat": 47.0398,
    "lon": 13.0207,
    "elev": 3123,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/gletscher-schareck/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/gletscher-schareck/",
    "source": "foto-webcam.eu"
@@ -189,6 +204,7 @@
    "lat": 47.054,
    "lon": 12.9575,
    "elev": 3106,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/sonnblick/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/sonnblick/",
    "source": "foto-webcam.eu"
@@ -203,7 +219,8 @@
    "elev": 3029,
    "img": "",
    "page": "https://www.kitzsteinhorn.at/de/winter/informationen/wetter-webcams",
-   "source": "kitzsteinhorn.at"
+   "source": "kitzsteinhorn.at",
+   "interval": 600
   },
   {
    "id": "oberwalderhuette",
@@ -213,20 +230,9 @@
    "lat": 47.1062,
    "lon": 12.7151,
    "elev": 2973,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/oberwalderhuette/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/oberwalderhuette/",
-   "source": "foto-webcam.eu"
-  },
-  {
-   "id": "kleinfleisskees",
-   "name": "Kleinfleißkees",
-   "title": "Kleinfleißkees - Blick nach Nordosten zum Hohen Sonnblick",
-   "country": "at",
-   "lat": 47.0463,
-   "lon": 12.9431,
-   "elev": 2970,
-   "img": "https://www.foto-webcam.eu/webcam/kleinfleisskees/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/kleinfleisskees/",
    "source": "foto-webcam.eu"
   },
   {
@@ -237,8 +243,22 @@
    "lat": 47.4208,
    "lon": 10.9847,
    "elev": 2970,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/zugspitze-sued/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/zugspitze-sued/",
+   "source": "foto-webcam.eu"
+  },
+  {
+   "id": "kleinfleisskees",
+   "name": "Kleinfleißkees",
+   "title": "Kleinfleißkees - Blick nach Nordosten zum Hohen Sonnblick",
+   "country": "at",
+   "lat": 47.0463,
+   "lon": 12.9431,
+   "elev": 2970,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/kleinfleisskees/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/kleinfleisskees/",
    "source": "foto-webcam.eu"
   },
   {
@@ -249,20 +269,9 @@
    "lat": 47.4214,
    "lon": 10.9844,
    "elev": 2970,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/bzb-gipfel/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/bzb-gipfel/",
-   "source": "foto-webcam.eu"
-  },
-  {
-   "id": "zugspitze",
-   "name": "Zugspitze Gipfel",
-   "title": "Wetterwarte Zugspitze - Blick über den Gipfel nach Osten",
-   "country": "de",
-   "lat": 47.4208,
-   "lon": 10.9847,
-   "elev": 2962,
-   "img": "https://www.foto-webcam.eu/webcam/zugspitze/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/zugspitze/",
    "source": "foto-webcam.eu"
   },
   {
@@ -273,8 +282,22 @@
    "lat": 47.4215,
    "lon": 10.9856,
    "elev": 2962,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/zugspitze-ost/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/zugspitze-ost/",
+   "source": "foto-webcam.eu"
+  },
+  {
+   "id": "zugspitze",
+   "name": "Zugspitze Gipfel",
+   "title": "Wetterwarte Zugspitze - Blick über den Gipfel nach Osten",
+   "country": "de",
+   "lat": 47.4208,
+   "lon": 10.9847,
+   "elev": 2962,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/zugspitze/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/zugspitze/",
    "source": "foto-webcam.eu"
   },
   {
@@ -285,6 +308,7 @@
    "lat": 47.4215,
    "lon": 10.9855,
    "elev": 2962,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/zugspitze-nord/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/zugspitze-nord/",
    "source": "foto-webcam.eu"
@@ -297,6 +321,7 @@
    "lat": 46.4885,
    "lon": 10.8018,
    "elev": 2955,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/weissbrunnferner/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/weissbrunnferner/",
    "source": "foto-webcam.eu"
@@ -309,6 +334,7 @@
    "lat": 47.4201,
    "lon": 13.0621,
    "elev": 2941,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/hochkoenig/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hochkoenig/",
    "source": "foto-webcam.eu"
@@ -321,6 +347,7 @@
    "lat": 46.927,
    "lon": 12.1355,
    "elev": 2933,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/rieserferner/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/rieserferner/",
    "source": "foto-webcam.eu"
@@ -333,20 +360,9 @@
    "lat": 47.0517,
    "lon": 12.9644,
    "elev": 2932,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/goldbergkees/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/goldbergkees/",
-   "source": "foto-webcam.eu"
-  },
-  {
-   "id": "bockkogel",
-   "name": "Bockkogel",
-   "title": "Bockkogel - Blick zum Schrankogel",
-   "country": "at",
-   "lat": 47.0253,
-   "lon": 11.0953,
-   "elev": 2920,
-   "img": "https://www.foto-webcam.eu/webcam/bockkogel/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/bockkogel/",
    "source": "foto-webcam.eu"
   },
   {
@@ -357,8 +373,22 @@
    "lat": 46.8507,
    "lon": 10.1679,
    "elev": 2920,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/jamtalferner/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/jamtalferner/",
+   "source": "foto-webcam.eu"
+  },
+  {
+   "id": "bockkogel",
+   "name": "Bockkogel",
+   "title": "Bockkogel - Blick zum Schrankogel",
+   "country": "at",
+   "lat": 47.0253,
+   "lon": 11.0953,
+   "elev": 2920,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/bockkogel/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/bockkogel/",
    "source": "foto-webcam.eu"
   },
   {
@@ -369,6 +399,7 @@
    "lat": 46.5003,
    "lon": 8.0534,
    "elev": 2850,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/konkordiahuette/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/konkordiahuette/",
    "source": "foto-webcam.eu"
@@ -381,6 +412,7 @@
    "lat": 47.0319,
    "lon": 12.9832,
    "elev": 2821,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/gletscher-alteck/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/gletscher-alteck/",
    "source": "foto-webcam.eu"
@@ -393,6 +425,7 @@
    "lat": 47.1628,
    "lon": 12.7389,
    "elev": 2802,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/schwaigerhaus/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/schwaigerhaus/",
    "source": "foto-webcam.eu"
@@ -405,6 +438,7 @@
    "lat": 47.031,
    "lon": 13.0106,
    "elev": 2800,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/gletscher-sued/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/gletscher-sued/",
    "source": "foto-webcam.eu"
@@ -417,6 +451,7 @@
    "lat": 47.0319,
    "lon": 13.0104,
    "elev": 2795,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/gletscher-nord/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/gletscher-nord/",
    "source": "foto-webcam.eu"
@@ -429,6 +464,7 @@
    "lat": 47.027,
    "lon": 13.1906,
    "elev": 2795,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/ankogel-sued/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/ankogel-sued/",
    "source": "foto-webcam.eu"
@@ -441,6 +477,7 @@
    "lat": 47.0387,
    "lon": 12.9679,
    "elev": 2765,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/goldbergkees2/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/goldbergkees2/",
    "source": "foto-webcam.eu"
@@ -453,6 +490,7 @@
    "lat": 46.6148,
    "lon": 10.4921,
    "elev": 2763,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/chavalatsch/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/chavalatsch/",
    "source": "foto-webcam.eu"
@@ -465,6 +503,7 @@
    "lat": 46.9352,
    "lon": 10.9095,
    "elev": 2759,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/braunschweigerhuette/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/braunschweigerhuette/",
    "source": "foto-webcam.eu"
@@ -477,6 +516,7 @@
    "lat": 47.0782,
    "lon": 12.7564,
    "elev": 2755,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/freiwandeck/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/freiwandeck/",
    "source": "foto-webcam.eu"
@@ -489,6 +529,7 @@
    "lat": 46.929,
    "lon": 12.7897,
    "elev": 2717,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/feldkopf/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/feldkopf/",
    "source": "foto-webcam.eu"
@@ -501,6 +542,7 @@
    "lat": 46.929,
    "lon": 12.7897,
    "elev": 2717,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/feldkopf-west/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/feldkopf-west/",
    "source": "foto-webcam.eu"
@@ -513,6 +555,7 @@
    "lat": 46.866,
    "lon": 10.1694,
    "elev": 2680,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/russkopf/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/russkopf/",
    "source": "foto-webcam.eu"
@@ -525,6 +568,7 @@
    "lat": 47.0378,
    "lon": 11.0625,
    "elev": 2680,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/sulzkogel/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/sulzkogel/",
    "source": "foto-webcam.eu"
@@ -537,6 +581,7 @@
    "lat": 47.1367,
    "lon": 12.9406,
    "elev": 2680,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/rauris/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/rauris/",
    "source": "foto-webcam.eu"
@@ -549,6 +594,7 @@
    "lat": 47.4798,
    "lon": 13.6298,
    "elev": 2677,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/gjaidstein/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/gjaidstein/",
    "source": "foto-webcam.eu"
@@ -561,6 +607,7 @@
    "lat": 47.0217,
    "lon": 11.0734,
    "elev": 2640,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/wannenkogel/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/wannenkogel/",
    "source": "foto-webcam.eu"
@@ -573,6 +620,7 @@
    "lat": 47.0425,
    "lon": 13.2153,
    "elev": 2636,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/ankogel-nord/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/ankogel-nord/",
    "source": "foto-webcam.eu"
@@ -585,6 +633,7 @@
    "lat": 46.8279,
    "lon": 12.3121,
    "elev": 2614,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/kreuzspitze/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/kreuzspitze/",
    "source": "foto-webcam.eu"
@@ -597,6 +646,7 @@
    "lat": 47.4135,
    "lon": 10.9797,
    "elev": 2576,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/sonnalpin/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/sonnalpin/",
    "source": "foto-webcam.eu"
@@ -609,6 +659,7 @@
    "lat": 47.1225,
    "lon": 12.2998,
    "elev": 2558,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/kuersingerhuette/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/kuersingerhuette/",
    "source": "foto-webcam.eu"
@@ -621,6 +672,7 @@
    "lat": 47.1225,
    "lon": 12.2998,
    "elev": 2558,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/grossvenediger/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/grossvenediger/",
    "source": "foto-webcam.eu"
@@ -633,6 +685,7 @@
    "lat": 47.4864,
    "lon": 12.9715,
    "elev": 2520,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/funtenseetauern/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/funtenseetauern/",
    "source": "foto-webcam.eu"
@@ -645,6 +698,7 @@
    "lat": 47.0276,
    "lon": 13.0891,
    "elev": 2446,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/hagener-huette/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hagener-huette/",
    "source": "foto-webcam.eu"
@@ -657,6 +711,7 @@
    "lat": 46.9958,
    "lon": 11.2634,
    "elev": 2440,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/bremerhuette/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/bremerhuette/",
    "source": "foto-webcam.eu"
@@ -669,6 +724,7 @@
    "lat": 47.1819,
    "lon": 12.7006,
    "elev": 2434,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/wasserfallboden/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/wasserfallboden/",
    "source": "foto-webcam.eu"
@@ -681,6 +737,7 @@
    "lat": 47.1843,
    "lon": 11.7752,
    "elev": 2420,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/tuxertal/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/tuxertal/",
    "source": "foto-webcam.eu"
@@ -695,7 +752,8 @@
    "elev": 2400,
    "img": "https://backend.roundshot.com/cams/be120396b19abfb5c4bf6fde48413934/medium",
    "page": "https://hohsaas.roundshot.com/kreuzboden",
-   "source": "roundshot"
+   "source": "roundshot",
+   "interval": 600
   },
   {
    "id": "gletscher-schwarzkopf",
@@ -705,6 +763,7 @@
    "lat": 46.9999,
    "lon": 13.023,
    "elev": 2384,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/gletscher-schwarzkopf/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/gletscher-schwarzkopf/",
    "source": "foto-webcam.eu"
@@ -717,6 +776,7 @@
    "lat": 47.4125,
    "lon": 11.1288,
    "elev": 2366,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/meilerhuette/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/meilerhuette/",
    "source": "foto-webcam.eu"
@@ -729,6 +789,7 @@
    "lat": 47.4123,
    "lon": 11.1274,
    "elev": 2366,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/meilerhuette-haus/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/meilerhuette-haus/",
    "source": "foto-webcam.eu"
@@ -741,20 +802,9 @@
    "lat": 47.2015,
    "lon": 10.1669,
    "elev": 2350,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/ruefikopf/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/ruefikopf/",
-   "source": "foto-webcam.eu"
-  },
-  {
-   "id": "polinik",
-   "name": "Polinik",
-   "title": "Mauthen / Polinik - Blick nach Westen",
-   "country": "at",
-   "lat": 46.6282,
-   "lon": 12.9824,
-   "elev": 2332,
-   "img": "https://www.foto-webcam.eu/webcam/polinik/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/polinik/",
    "source": "foto-webcam.eu"
   },
   {
@@ -765,6 +815,7 @@
    "lat": 46.9613,
    "lon": 9.8915,
    "elev": 2320,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/gargellen-sued/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/gargellen-sued/",
    "source": "foto-webcam.eu"
@@ -777,6 +828,7 @@
    "lat": 46.9613,
    "lon": 9.8915,
    "elev": 2320,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/gargellen-west/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/gargellen-west/",
    "source": "foto-webcam.eu"
@@ -789,6 +841,7 @@
    "lat": 46.6255,
    "lon": 8.097,
    "elev": 2317,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/glecksteinhuette/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/glecksteinhuette/",
    "source": "foto-webcam.eu"
@@ -801,6 +854,7 @@
    "lat": 47.1352,
    "lon": 12.6275,
    "elev": 2315,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/rudolfshuette/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/rudolfshuette/",
    "source": "foto-webcam.eu"
@@ -813,6 +867,7 @@
    "lat": 47.0729,
    "lon": 12.8396,
    "elev": 2304,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/wallackhaus/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/wallackhaus/",
    "source": "foto-webcam.eu"
@@ -825,6 +880,7 @@
    "lat": 47.0692,
    "lon": 12.8389,
    "elev": 2304,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/wallackhaus-nord/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/wallackhaus-nord/",
    "source": "foto-webcam.eu"
@@ -837,6 +893,7 @@
    "lat": 46.7405,
    "lon": 11.9592,
    "elev": 2275,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/kronplatz/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/kronplatz/",
    "source": "foto-webcam.eu"
@@ -849,6 +906,7 @@
    "lat": 46.6155,
    "lon": 11.4604,
    "elev": 2260,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/rittnerhorn/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/rittnerhorn/",
    "source": "foto-webcam.eu"
@@ -861,6 +919,7 @@
    "lat": 47.5007,
    "lon": 13.6244,
    "elev": 2250,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/simonyhuette/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/simonyhuette/",
    "source": "foto-webcam.eu"
@@ -873,6 +932,7 @@
    "lat": 46.9797,
    "lon": 9.4367,
    "elev": 2230,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/pizol/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/pizol/",
    "source": "foto-webcam.eu"
@@ -885,6 +945,7 @@
    "lat": 47.4217,
    "lon": 10.3425,
    "elev": 2224,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/nebelhorn/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/nebelhorn/",
    "source": "foto-webcam.eu"
@@ -897,6 +958,7 @@
    "lat": 47.0708,
    "lon": 13.1154,
    "elev": 2220,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/thomaseck/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/thomaseck/",
    "source": "foto-webcam.eu"
@@ -911,7 +973,8 @@
    "elev": 2200,
    "img": "https://backend.roundshot.com/cams/39c743a50b516a933cfac27342804011/medium",
    "page": "https://saastal.roundshot.com/mattmark",
-   "source": "roundshot"
+   "source": "roundshot",
+   "interval": 600
   },
   {
    "id": "obertauern2",
@@ -921,6 +984,7 @@
    "lat": 47.2707,
    "lon": 13.5468,
    "elev": 2200,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/obertauern2/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/obertauern2/",
    "source": "foto-webcam.eu"
@@ -933,6 +997,7 @@
    "lat": 46.6035,
    "lon": 13.6703,
    "elev": 2166,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/dobratsch/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/dobratsch/",
    "source": "foto-webcam.eu"
@@ -945,6 +1010,7 @@
    "lat": 46.8543,
    "lon": 13.8234,
    "elev": 2145,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/falkert-nord/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/falkert-nord/",
    "source": "foto-webcam.eu"
@@ -957,20 +1023,9 @@
    "lat": 46.962,
    "lon": 12.9823,
    "elev": 2116,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/burgstalleralm/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/burgstalleralm/",
-   "source": "foto-webcam.eu"
-  },
-  {
-   "id": "auernig",
-   "name": "Auernig",
-   "title": "Mallnitz / Auernig - Blick nach Nordwesten",
-   "country": "at",
-   "lat": 46.9942,
-   "lon": 13.1902,
-   "elev": 2100,
-   "img": "https://www.foto-webcam.eu/webcam/auernig/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/auernig/",
    "source": "foto-webcam.eu"
   },
   {
@@ -981,8 +1036,22 @@
    "lat": 47.0866,
    "lon": 13.1459,
    "elev": 2100,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/feuersang/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/feuersang/",
+   "source": "foto-webcam.eu"
+  },
+  {
+   "id": "auernig",
+   "name": "Auernig",
+   "title": "Mallnitz / Auernig - Blick nach Nordwesten",
+   "country": "at",
+   "lat": 46.9942,
+   "lon": 13.1902,
+   "elev": 2100,
+   "interval": 1800,
+   "img": "https://www.foto-webcam.eu/webcam/auernig/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/auernig/",
    "source": "foto-webcam.eu"
   },
   {
@@ -993,6 +1062,7 @@
    "lat": 47.1344,
    "lon": 10.2241,
    "elev": 2090,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/st-anton/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/st-anton/",
    "source": "foto-webcam.eu"
@@ -1005,6 +1075,7 @@
    "lat": 46.569,
    "lon": 10.5116,
    "elev": 2090,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/trafoi/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/trafoi/",
    "source": "foto-webcam.eu"
@@ -1017,6 +1088,7 @@
    "lat": 47.1589,
    "lon": 9.3379,
    "elev": 2076,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/wildhaus/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/wildhaus/",
    "source": "foto-webcam.eu"
@@ -1029,20 +1101,9 @@
    "lat": 47.025,
    "lon": 11.8137,
    "elev": 2073,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/berlinerhuette/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/berlinerhuette/",
-   "source": "foto-webcam.eu"
-  },
-  {
-   "id": "ederplan",
-   "name": "Ederplan",
-   "title": "Rangersdorf / Ederplan - Blick nach Nordosten",
-   "country": "at",
-   "lat": 46.8249,
-   "lon": 12.8978,
-   "elev": 2055,
-   "img": "https://www.foto-webcam.eu/webcam/ederplan/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/ederplan/",
    "source": "foto-webcam.eu"
   },
   {
@@ -1053,8 +1114,22 @@
    "lat": 46.5119,
    "lon": 11.6887,
    "elev": 2055,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/zallinger/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/zallinger/",
+   "source": "foto-webcam.eu"
+  },
+  {
+   "id": "ederplan",
+   "name": "Ederplan",
+   "title": "Rangersdorf / Ederplan - Blick nach Nordosten",
+   "country": "at",
+   "lat": 46.8249,
+   "lon": 12.8978,
+   "elev": 2055,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/ederplan/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/ederplan/",
    "source": "foto-webcam.eu"
   },
   {
@@ -1065,6 +1140,7 @@
    "lat": 47.1091,
    "lon": 11.8257,
    "elev": 2050,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/tristner/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/tristner/",
    "source": "foto-webcam.eu"
@@ -1077,6 +1153,7 @@
    "lat": 47.1662,
    "lon": 12.7115,
    "elev": 2036,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/mooserboden/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/mooserboden/",
    "source": "foto-webcam.eu"
@@ -1089,6 +1166,7 @@
    "lat": 46.7834,
    "lon": 13.8268,
    "elev": 2030,
+   "interval": 300,
    "img": "https://www.foto-webcam.eu/webcam/countrytrail/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/countrytrail/",
    "source": "foto-webcam.eu"
@@ -1101,6 +1179,7 @@
    "lat": 46.9588,
    "lon": 9.9011,
    "elev": 2027,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/gargellen/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/gargellen/",
    "source": "foto-webcam.eu"
@@ -1113,6 +1192,7 @@
    "lat": 46.8678,
    "lon": 13.8328,
    "elev": 2000,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/falkert/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/falkert/",
    "source": "foto-webcam.eu"
@@ -1125,6 +1205,7 @@
    "lat": 47.0949,
    "lon": 10.2251,
    "elev": 1985,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/ewa/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/ewa/",
    "source": "foto-webcam.eu"
@@ -1137,6 +1218,7 @@
    "lat": 47.2198,
    "lon": 10.1718,
    "elev": 1970,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/lech/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/lech/",
    "source": "foto-webcam.eu"
@@ -1149,6 +1231,7 @@
    "lat": 47.3481,
    "lon": 10.2162,
    "elev": 1967,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/fellhorn/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/fellhorn/",
    "source": "foto-webcam.eu"
@@ -1161,6 +1244,7 @@
    "lat": 47.3056,
    "lon": 11.3779,
    "elev": 1945,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/innsbruck/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/innsbruck/",
    "source": "foto-webcam.eu"
@@ -1173,20 +1257,9 @@
    "lat": 46.9098,
    "lon": 12.4792,
    "elev": 1924,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/hopfgarten/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hopfgarten/",
-   "source": "foto-webcam.eu"
-  },
-  {
-   "id": "lucknerhaus",
-   "name": "Lucknerhaus",
-   "title": "Lucknerhaus - Blick zum Großglockner",
-   "country": "at",
-   "lat": 47.021,
-   "lon": 12.688,
-   "elev": 1920,
-   "img": "https://www.foto-webcam.eu/webcam/lucknerhaus/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/lucknerhaus/",
    "source": "foto-webcam.eu"
   },
   {
@@ -1197,8 +1270,22 @@
    "lat": 47.0218,
    "lon": 12.6896,
    "elev": 1920,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/glocknerwinkel/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/glocknerwinkel/",
+   "source": "foto-webcam.eu"
+  },
+  {
+   "id": "lucknerhaus",
+   "name": "Lucknerhaus",
+   "title": "Lucknerhaus - Blick zum Großglockner",
+   "country": "at",
+   "lat": 47.021,
+   "lon": 12.688,
+   "elev": 1920,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/lucknerhaus/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/lucknerhaus/",
    "source": "foto-webcam.eu"
   },
   {
@@ -1209,6 +1296,7 @@
    "lat": 46.9467,
    "lon": 13.7487,
    "elev": 1920,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/zechneralm/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/zechneralm/",
    "source": "foto-webcam.eu"
@@ -1221,6 +1309,7 @@
    "lat": 47.13,
    "lon": 11.7959,
    "elev": 1911,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/gamshuette/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/gamshuette/",
    "source": "foto-webcam.eu"
@@ -1233,6 +1322,7 @@
    "lat": 46.7861,
    "lon": 13.8181,
    "elev": 1910,
+   "interval": 300,
    "img": "https://www.foto-webcam.eu/webcam/kaiserburg/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/kaiserburg/",
    "source": "foto-webcam.eu"
@@ -1245,6 +1335,7 @@
    "lat": 46.8568,
    "lon": 13.7503,
    "elev": 1908,
+   "interval": 300,
    "img": "https://www.foto-webcam.eu/webcam/brunnach/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/brunnach/",
    "source": "foto-webcam.eu"
@@ -1257,20 +1348,9 @@
    "lat": 47.4025,
    "lon": 12.7023,
    "elev": 1900,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/asitz/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/asitz/",
-   "source": "foto-webcam.eu"
-  },
-  {
-   "id": "turrach-ost",
-   "name": "Turrach Ost",
-   "title": "Turracher Höhe / Hirschkogel - Blick nach Osten",
-   "country": "at",
-   "lat": 46.9211,
-   "lon": 13.8605,
-   "elev": 1900,
-   "img": "https://www.foto-webcam.eu/webcam/turrach-ost/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/turrach-ost/",
    "source": "foto-webcam.eu"
   },
   {
@@ -1281,6 +1361,7 @@
    "lat": 46.8399,
    "lon": 10.6415,
    "elev": 1900,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/graun/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/graun/",
    "source": "foto-webcam.eu"
@@ -1293,8 +1374,22 @@
    "lat": 47.3078,
    "lon": 9.8799,
    "elev": 1900,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/hasenbuehel/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hasenbuehel/",
+   "source": "foto-webcam.eu"
+  },
+  {
+   "id": "turrach-ost",
+   "name": "Turrach Ost",
+   "title": "Turracher Höhe / Hirschkogel - Blick nach Osten",
+   "country": "at",
+   "lat": 46.9211,
+   "lon": 13.8605,
+   "elev": 1900,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/turrach-ost/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/turrach-ost/",
    "source": "foto-webcam.eu"
   },
   {
@@ -1305,6 +1400,7 @@
    "lat": 47.6931,
    "lon": 12.9805,
    "elev": 1894,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/stoehrhaus/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/stoehrhaus/",
    "source": "foto-webcam.eu"
@@ -1317,6 +1413,7 @@
    "lat": 46.8613,
    "lon": 13.8297,
    "elev": 1880,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/heidi-hotel/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/heidi-hotel/",
    "source": "foto-webcam.eu"
@@ -1329,6 +1426,7 @@
    "lat": 46.8295,
    "lon": 13.745,
    "elev": 1870,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/wiesernock/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/wiesernock/",
    "source": "foto-webcam.eu"
@@ -1341,6 +1439,7 @@
    "lat": 46.8281,
    "lon": 13.7424,
    "elev": 1870,
+   "interval": 300,
    "img": "https://www.foto-webcam.eu/webcam/nockalm-berg/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/nockalm-berg/",
    "source": "foto-webcam.eu"
@@ -1353,6 +1452,7 @@
    "lat": 46.4932,
    "lon": 11.2106,
    "elev": 1866,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/gantkofel/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/gantkofel/",
    "source": "foto-webcam.eu"
@@ -1365,6 +1465,7 @@
    "lat": 46.9216,
    "lon": 13.8897,
    "elev": 1855,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/turrach-west/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/turrach-west/",
    "source": "foto-webcam.eu"
@@ -1377,6 +1478,7 @@
    "lat": 46.8616,
    "lon": 13.8378,
    "elev": 1850,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/heidi-chalets/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/heidi-chalets/",
    "source": "foto-webcam.eu"
@@ -1389,6 +1491,7 @@
    "lat": 47.0405,
    "lon": 11.7025,
    "elev": 1840,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/schlegeis/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/schlegeis/",
    "source": "foto-webcam.eu"
@@ -1401,6 +1504,7 @@
    "lat": 47.5041,
    "lon": 11.4925,
    "elev": 1825,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/toelzer-huette/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/toelzer-huette/",
    "source": "foto-webcam.eu"
@@ -1413,6 +1517,7 @@
    "lat": 47.2643,
    "lon": 13.5639,
    "elev": 1812,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/obertauern1/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/obertauern1/",
    "source": "foto-webcam.eu"
@@ -1425,6 +1530,7 @@
    "lat": 47.264,
    "lon": 13.5654,
    "elev": 1812,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/obertauern3/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/obertauern3/",
    "source": "foto-webcam.eu"
@@ -1437,6 +1543,7 @@
    "lat": 47.3822,
    "lon": 12.7648,
    "elev": 1805,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/sausteige/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/sausteige/",
    "source": "foto-webcam.eu"
@@ -1451,7 +1558,8 @@
    "elev": 1800,
    "img": "https://backend.roundshot.com/cams/d267b4611b88e185c2030fa43f47a030/medium",
    "page": "https://saastal.roundshot.com/dorf",
-   "source": "roundshot"
+   "source": "roundshot",
+   "interval": 600
   },
   {
    "id": "jenner-sued",
@@ -1461,6 +1569,7 @@
    "lat": 47.5756,
    "lon": 13.0247,
    "elev": 1800,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/jenner-sued/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/jenner-sued/",
    "source": "foto-webcam.eu"
@@ -1473,6 +1582,7 @@
    "lat": 47.5756,
    "lon": 13.0247,
    "elev": 1800,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/jenner-ost/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/jenner-ost/",
    "source": "foto-webcam.eu"
@@ -1485,6 +1595,7 @@
    "lat": 47.2839,
    "lon": 9.4857,
    "elev": 1795,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/hoherkasten/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hoherkasten/",
    "source": "foto-webcam.eu"
@@ -1497,6 +1608,7 @@
    "lat": 47.5083,
    "lon": 11.1432,
    "elev": 1780,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/wank/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/wank/",
    "source": "foto-webcam.eu"
@@ -1509,6 +1621,7 @@
    "lat": 47.2588,
    "lon": 13.5634,
    "elev": 1780,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/hundsfeldsee/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hundsfeldsee/",
    "source": "foto-webcam.eu"
@@ -1521,6 +1634,7 @@
    "lat": 46.8497,
    "lon": 13.7494,
    "elev": 1780,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/spitzeck/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/spitzeck/",
    "source": "foto-webcam.eu"
@@ -1533,20 +1647,9 @@
    "lat": 47.2561,
    "lon": 10.1159,
    "elev": 1772,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/koerbersee/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/koerbersee/",
-   "source": "foto-webcam.eu"
-  },
-  {
-   "id": "lienz",
-   "name": "Lienz Zettersfeld",
-   "title": "Lienz / Zettersfeld - Blick in die Lienzer Dolomiten",
-   "country": "at",
-   "lat": 46.8603,
-   "lon": 12.804,
-   "elev": 1750,
-   "img": "https://www.foto-webcam.eu/webcam/lienz/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/lienz/",
    "source": "foto-webcam.eu"
   },
   {
@@ -1557,6 +1660,7 @@
    "lat": 47.755,
    "lon": 12.8498,
    "elev": 1750,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/hochstaufen/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hochstaufen/",
    "source": "foto-webcam.eu"
@@ -1569,6 +1673,7 @@
    "lat": 47.3089,
    "lon": 13.2328,
    "elev": 1750,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/gernkogel/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/gernkogel/",
    "source": "foto-webcam.eu"
@@ -1581,6 +1686,7 @@
    "lat": 47.755,
    "lon": 12.8498,
    "elev": 1750,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/salzburg/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/salzburg/",
    "source": "foto-webcam.eu"
@@ -1593,8 +1699,22 @@
    "lat": 46.8603,
    "lon": 12.804,
    "elev": 1750,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/faschingalm/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/faschingalm/",
+   "source": "foto-webcam.eu"
+  },
+  {
+   "id": "lienz",
+   "name": "Lienz Zettersfeld",
+   "title": "Lienz / Zettersfeld - Blick in die Lienzer Dolomiten",
+   "country": "at",
+   "lat": 46.8603,
+   "lon": 12.804,
+   "elev": 1750,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/lienz/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/lienz/",
    "source": "foto-webcam.eu"
   },
   {
@@ -1605,6 +1725,7 @@
    "lat": 47.709,
    "lon": 14.9126,
    "elev": 1730,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/hochkar/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hochkar/",
    "source": "foto-webcam.eu"
@@ -1617,6 +1738,7 @@
    "lat": 47.5597,
    "lon": 10.779,
    "elev": 1730,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/tegelberg/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/tegelberg/",
    "source": "foto-webcam.eu"
@@ -1629,6 +1751,7 @@
    "lat": 47.7018,
    "lon": 12.0118,
    "elev": 1724,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/wendelstein-west/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/wendelstein-west/",
    "source": "foto-webcam.eu"
@@ -1641,6 +1764,7 @@
    "lat": 47.7018,
    "lon": 12.012,
    "elev": 1724,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/wendelstein-ost/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/wendelstein-ost/",
    "source": "foto-webcam.eu"
@@ -1653,6 +1777,7 @@
    "lat": 46.7011,
    "lon": 10.5068,
    "elev": 1720,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/mals/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/mals/",
    "source": "foto-webcam.eu"
@@ -1665,6 +1790,7 @@
    "lat": 47.1495,
    "lon": 10.166,
    "elev": 1710,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/stuben/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/stuben/",
    "source": "foto-webcam.eu"
@@ -1677,6 +1803,7 @@
    "lat": 47.7627,
    "lon": 12.5607,
    "elev": 1674,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/hochfelln/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hochfelln/",
    "source": "foto-webcam.eu"
@@ -1689,6 +1816,7 @@
    "lat": 47.7626,
    "lon": 12.5607,
    "elev": 1674,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/hochfelln-alpen/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hochfelln-alpen/",
    "source": "foto-webcam.eu"
@@ -1701,20 +1829,9 @@
    "lat": 47.5746,
    "lon": 13.0424,
    "elev": 1668,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/stahlhaus/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/stahlhaus/",
-   "source": "foto-webcam.eu"
-  },
-  {
-   "id": "traunstein",
-   "name": "Traunstein West",
-   "title": "Gmundner Hütte am Traunstein - Oberösterreich - Blick nach Westen",
-   "country": "at",
-   "lat": 47.873,
-   "lon": 13.8336,
-   "elev": 1666,
-   "img": "https://www.foto-webcam.eu/webcam/traunstein/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/traunstein/",
    "source": "foto-webcam.eu"
   },
   {
@@ -1725,8 +1842,22 @@
    "lat": 47.8729,
    "lon": 13.8337,
    "elev": 1666,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/traunstein-sued/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/traunstein-sued/",
+   "source": "foto-webcam.eu"
+  },
+  {
+   "id": "traunstein",
+   "name": "Traunstein West",
+   "title": "Gmundner Hütte am Traunstein - Oberösterreich - Blick nach Westen",
+   "country": "at",
+   "lat": 47.873,
+   "lon": 13.8336,
+   "elev": 1666,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/traunstein/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/traunstein/",
    "source": "foto-webcam.eu"
   },
   {
@@ -1737,6 +1868,7 @@
    "lat": 47.4259,
    "lon": 12.3709,
    "elev": 1665,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/starthaus-hahnenkamm/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/starthaus-hahnenkamm/",
    "source": "foto-webcam.eu"
@@ -1749,6 +1881,7 @@
    "lat": 47.6326,
    "lon": 11.6781,
    "elev": 1650,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/buchstein/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/buchstein/",
    "source": "foto-webcam.eu"
@@ -1761,6 +1894,7 @@
    "lat": 47.7327,
    "lon": 12.6828,
    "elev": 1650,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/rauschberg/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/rauschberg/",
    "source": "foto-webcam.eu"
@@ -1773,6 +1907,7 @@
    "lat": 47.4953,
    "lon": 12.9372,
    "elev": 1638,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/funtensee/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/funtensee/",
    "source": "foto-webcam.eu"
@@ -1785,6 +1920,7 @@
    "lat": 46.7488,
    "lon": 12.2174,
    "elev": 1630,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/toblach/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/toblach/",
    "source": "foto-webcam.eu"
@@ -1797,6 +1933,7 @@
    "lat": 47.4523,
    "lon": 11.0744,
    "elev": 1630,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/kreuzeck/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/kreuzeck/",
    "source": "foto-webcam.eu"
@@ -1809,6 +1946,7 @@
    "lat": 47.264,
    "lon": 9.8277,
    "elev": 1630,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/furkajoch/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/furkajoch/",
    "source": "foto-webcam.eu"
@@ -1821,6 +1959,7 @@
    "lat": 47.607,
    "lon": 11.3165,
    "elev": 1627,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/kochelsee/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/kochelsee/",
    "source": "foto-webcam.eu"
@@ -1833,6 +1972,7 @@
    "lat": 46.7897,
    "lon": 12.7835,
    "elev": 1620,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/dolomitenhuette/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/dolomitenhuette/",
    "source": "foto-webcam.eu"
@@ -1845,6 +1985,7 @@
    "lat": 47.0695,
    "lon": 12.9846,
    "elev": 1618,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/sonnblickbasis/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/sonnblickbasis/",
    "source": "foto-webcam.eu"
@@ -1857,6 +1998,7 @@
    "lat": 47.6066,
    "lon": 11.3161,
    "elev": 1600,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/herzogstand/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/herzogstand/",
    "source": "foto-webcam.eu"
@@ -1869,6 +2011,7 @@
    "lat": 46.9485,
    "lon": 12.0613,
    "elev": 1600,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/rein/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/rein/",
    "source": "foto-webcam.eu"
@@ -1881,6 +2024,7 @@
    "lat": 47.4032,
    "lon": 9.9388,
    "elev": 1586,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/andelsbuch/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/andelsbuch/",
    "source": "foto-webcam.eu"
@@ -1893,6 +2037,7 @@
    "lat": 47.6606,
    "lon": 11.7912,
    "elev": 1580,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/wallberg/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/wallberg/",
    "source": "foto-webcam.eu"
@@ -1905,6 +2050,7 @@
    "lat": 47.8288,
    "lon": 13.6054,
    "elev": 1572,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/hochleckenhaus/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hochleckenhaus/",
    "source": "foto-webcam.eu"
@@ -1917,6 +2063,7 @@
    "lat": 47.7472,
    "lon": 12.249,
    "elev": 1569,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/hochries/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hochries/",
    "source": "foto-webcam.eu"
@@ -1929,6 +2076,7 @@
    "lat": 47.7467,
    "lon": 12.2492,
    "elev": 1569,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/hochries-sued/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hochries-sued/",
    "source": "foto-webcam.eu"
@@ -1941,6 +2089,7 @@
    "lat": 47.7472,
    "lon": 12.249,
    "elev": 1569,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/hochries-nord/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hochries-nord/",
    "source": "foto-webcam.eu"
@@ -1953,6 +2102,7 @@
    "lat": 47.5729,
    "lon": 12.1122,
    "elev": 1565,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/pendling-ost/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/pendling-ost/",
    "source": "foto-webcam.eu"
@@ -1965,6 +2115,7 @@
    "lat": 47.5729,
    "lon": 12.112,
    "elev": 1565,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/pendling-west/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/pendling-west/",
    "source": "foto-webcam.eu"
@@ -1977,6 +2128,7 @@
    "lat": 47.5944,
    "lon": 13.7011,
    "elev": 1564,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/sarstein/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/sarstein/",
    "source": "foto-webcam.eu"
@@ -1989,6 +2141,7 @@
    "lat": 47.2172,
    "lon": 10.1448,
    "elev": 1556,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/oberlech/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/oberlech/",
    "source": "foto-webcam.eu"
@@ -2001,6 +2154,7 @@
    "lat": 47.484,
    "lon": 13.2905,
    "elev": 1531,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/hackelhuette/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hackelhuette/",
    "source": "foto-webcam.eu"
@@ -2013,6 +2167,7 @@
    "lat": 47.748,
    "lon": 12.2503,
    "elev": 1530,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/hochries-ost/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hochries-ost/",
    "source": "foto-webcam.eu"
@@ -2025,6 +2180,7 @@
    "lat": 46.5815,
    "lon": 11.919,
    "elev": 1530,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/st-kassian/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/st-kassian/",
    "source": "foto-webcam.eu"
@@ -2037,6 +2193,7 @@
    "lat": 47.3786,
    "lon": 11.1451,
    "elev": 1523,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/leutasch/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/leutasch/",
    "source": "foto-webcam.eu"
@@ -2049,6 +2206,7 @@
    "lat": 47.7548,
    "lon": 12.3567,
    "elev": 1520,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/kampenwand/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/kampenwand/",
    "source": "foto-webcam.eu"
@@ -2061,6 +2219,7 @@
    "lat": 47.667,
    "lon": 12.6132,
    "elev": 1520,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/heutal/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/heutal/",
    "source": "foto-webcam.eu"
@@ -2073,6 +2232,7 @@
    "lat": 47.3291,
    "lon": 11.161,
    "elev": 1510,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/seefeld/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/seefeld/",
    "source": "foto-webcam.eu"
@@ -2085,6 +2245,7 @@
    "lat": 46.9833,
    "lon": 12.6269,
    "elev": 1500,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/kals-nord/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/kals-nord/",
    "source": "foto-webcam.eu"
@@ -2097,6 +2258,7 @@
    "lat": 47.1694,
    "lon": 13.6933,
    "elev": 1500,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/fanningberg/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/fanningberg/",
    "source": "foto-webcam.eu"
@@ -2109,6 +2271,7 @@
    "lat": 46.9172,
    "lon": 12.3226,
    "elev": 1500,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/stjakob/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/stjakob/",
    "source": "foto-webcam.eu"
@@ -2121,6 +2284,7 @@
    "lat": 46.9277,
    "lon": 12.4357,
    "elev": 1495,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/stveit/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/stveit/",
    "source": "foto-webcam.eu"
@@ -2133,6 +2297,7 @@
    "lat": 47.088,
    "lon": 11.4205,
    "elev": 1485,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/trins/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/trins/",
    "source": "foto-webcam.eu"
@@ -2145,6 +2310,7 @@
    "lat": 46.5598,
    "lon": 11.716,
    "elev": 1480,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/st-christina/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/st-christina/",
    "source": "foto-webcam.eu"
@@ -2157,6 +2323,7 @@
    "lat": 47.4807,
    "lon": 13.2925,
    "elev": 1460,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/hackelhuette-nord/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hackelhuette-nord/",
    "source": "foto-webcam.eu"
@@ -2169,6 +2336,7 @@
    "lat": 47.0103,
    "lon": 12.5181,
    "elev": 1451,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/strumerhof/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/strumerhof/",
    "source": "foto-webcam.eu"
@@ -2181,20 +2349,9 @@
    "lat": 47.2092,
    "lon": 10.1407,
    "elev": 1444,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/annamarialech/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/annamarialech/",
-   "source": "foto-webcam.eu"
-  },
-  {
-   "id": "hieflau",
-   "name": "Hieflau",
-   "title": "Hieflau / Tamischbachturm - Blick nach Westen",
-   "country": "at",
-   "lat": 47.6174,
-   "lon": 14.717,
-   "elev": 1440,
-   "img": "https://www.foto-webcam.eu/webcam/hieflau/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/hieflau/",
    "source": "foto-webcam.eu"
   },
   {
@@ -2205,8 +2362,22 @@
    "lat": 47.2058,
    "lon": 10.138,
    "elev": 1440,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/schmelzhof/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/schmelzhof/",
+   "source": "foto-webcam.eu"
+  },
+  {
+   "id": "hieflau",
+   "name": "Hieflau",
+   "title": "Hieflau / Tamischbachturm - Blick nach Westen",
+   "country": "at",
+   "lat": 47.6174,
+   "lon": 14.717,
+   "elev": 1440,
+   "interval": 1800,
+   "img": "https://www.foto-webcam.eu/webcam/hieflau/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/hieflau/",
    "source": "foto-webcam.eu"
   },
   {
@@ -2217,6 +2388,7 @@
    "lat": 47.2092,
    "lon": 10.1407,
    "elev": 1430,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/haldenhof/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/haldenhof/",
    "source": "foto-webcam.eu"
@@ -2229,6 +2401,7 @@
    "lat": 47.0083,
    "lon": 12.4708,
    "elev": 1430,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/virgen-west/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/virgen-west/",
    "source": "foto-webcam.eu"
@@ -2241,6 +2414,7 @@
    "lat": 46.5638,
    "lon": 11.4137,
    "elev": 1420,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/ritten/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/ritten/",
    "source": "foto-webcam.eu"
@@ -2253,6 +2427,7 @@
    "lat": 46.8157,
    "lon": 11.6637,
    "elev": 1410,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/meransen/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/meransen/",
    "source": "foto-webcam.eu"
@@ -2265,20 +2440,9 @@
    "lat": 46.6414,
    "lon": 12.2314,
    "elev": 1405,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/dreizinnenblick/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/dreizinnenblick/",
-   "source": "foto-webcam.eu"
-  },
-  {
-   "id": "lorenzalm",
-   "name": "Mörtschach",
-   "title": "Mörtschach im Mölltal / Lorenzalm - Blick nach Norden",
-   "country": "at",
-   "lat": 46.8965,
-   "lon": 12.9157,
-   "elev": 1400,
-   "img": "https://www.foto-webcam.eu/webcam/lorenzalm/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/lorenzalm/",
    "source": "foto-webcam.eu"
   },
   {
@@ -2289,32 +2453,9 @@
    "lat": 47.0075,
    "lon": 12.6475,
    "elev": 1400,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/kals/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/kals/",
-   "source": "foto-webcam.eu"
-  },
-  {
-   "id": "schulterkogel",
-   "name": "Schulterkogel",
-   "title": "Prebl / Schulterkogelhütte - Blick nach Südosten",
-   "country": "at",
-   "lat": 46.9313,
-   "lon": 14.7626,
-   "elev": 1400,
-   "img": "https://www.foto-webcam.eu/webcam/schulterkogel/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/schulterkogel/",
-   "source": "foto-webcam.eu"
-  },
-  {
-   "id": "damuels",
-   "name": "Damüls",
-   "title": "Damüls / Hotel Alpenblume - Blick nach Süden / Faschina",
-   "country": "at",
-   "lat": 47.2854,
-   "lon": 9.8905,
-   "elev": 1400,
-   "img": "https://www.foto-webcam.eu/webcam/damuels/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/damuels/",
    "source": "foto-webcam.eu"
   },
   {
@@ -2325,20 +2466,48 @@
    "lat": 47.1261,
    "lon": 11.6967,
    "elev": 1400,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/hotel-berghaus/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hotel-berghaus/",
    "source": "foto-webcam.eu"
   },
   {
-   "id": "olang",
-   "name": "Olang Geiselsberg",
-   "title": "Berghotel Zirm - Olang / Geiselsberg",
-   "country": "it",
-   "lat": 46.7464,
-   "lon": 12.0012,
+   "id": "damuels",
+   "name": "Damüls",
+   "title": "Damüls / Hotel Alpenblume - Blick nach Süden / Faschina",
+   "country": "at",
+   "lat": 47.2854,
+   "lon": 9.8905,
    "elev": 1400,
-   "img": "https://www.foto-webcam.eu/webcam/olang/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/olang/",
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/damuels/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/damuels/",
+   "source": "foto-webcam.eu"
+  },
+  {
+   "id": "schulterkogel",
+   "name": "Schulterkogel",
+   "title": "Prebl / Schulterkogelhütte - Blick nach Südosten",
+   "country": "at",
+   "lat": 46.9313,
+   "lon": 14.7626,
+   "elev": 1400,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/schulterkogel/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/schulterkogel/",
+   "source": "foto-webcam.eu"
+  },
+  {
+   "id": "lorenzalm",
+   "name": "Mörtschach",
+   "title": "Mörtschach im Mölltal / Lorenzalm - Blick nach Norden",
+   "country": "at",
+   "lat": 46.8965,
+   "lon": 12.9157,
+   "elev": 1400,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/lorenzalm/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/lorenzalm/",
    "source": "foto-webcam.eu"
   },
   {
@@ -2349,8 +2518,22 @@
    "lat": 46.9132,
    "lon": 12.5833,
    "elev": 1400,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/kalsertal/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/kalsertal/",
+   "source": "foto-webcam.eu"
+  },
+  {
+   "id": "olang",
+   "name": "Olang Geiselsberg",
+   "title": "Berghotel Zirm - Olang / Geiselsberg",
+   "country": "it",
+   "lat": 46.7464,
+   "lon": 12.0012,
+   "elev": 1400,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/olang/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/olang/",
    "source": "foto-webcam.eu"
   },
   {
@@ -2361,6 +2544,7 @@
    "lat": 47.4585,
    "lon": 10.1447,
    "elev": 1390,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/balderschwang-kreuzle/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/balderschwang-kreuzle/",
    "source": "foto-webcam.eu"
@@ -2373,6 +2557,7 @@
    "lat": 46.7652,
    "lon": 11.7185,
    "elev": 1375,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/luesen/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/luesen/",
    "source": "foto-webcam.eu"
@@ -2385,32 +2570,9 @@
    "lat": 46.8729,
    "lon": 12.8631,
    "elev": 1370,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/winklern/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/winklern/",
-   "source": "foto-webcam.eu"
-  },
-  {
-   "id": "hochmuth",
-   "name": "Meran Hochmuth",
-   "title": "Berggasthaus Hochmuth - Dorf Tirol / Meran - Blick nach Südosten",
-   "country": "it",
-   "lat": 46.702,
-   "lon": 11.1315,
-   "elev": 1360,
-   "img": "https://www.foto-webcam.eu/webcam/hochmuth/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/hochmuth/",
-   "source": "foto-webcam.eu"
-  },
-  {
-   "id": "eibsee-nord",
-   "name": "Eibsee Nord",
-   "title": "Seilbahn Zugspitze - Weltrekord-Stütze - Blick über den Eibsee nach Norden",
-   "country": "de",
-   "lat": 47.4464,
-   "lon": 10.9878,
-   "elev": 1360,
-   "img": "https://www.foto-webcam.eu/webcam/eibsee-nord/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/eibsee-nord/",
    "source": "foto-webcam.eu"
   },
   {
@@ -2421,20 +2583,35 @@
    "lat": 46.9906,
    "lon": 12.4477,
    "elev": 1360,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/virgen-nord/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/virgen-nord/",
    "source": "foto-webcam.eu"
   },
   {
-   "id": "sexten-west",
-   "name": "Sexten West",
-   "title": "Sexten / Berghotel - Blick nach Westen",
+   "id": "eibsee-nord",
+   "name": "Eibsee Nord",
+   "title": "Seilbahn Zugspitze - Weltrekord-Stütze - Blick über den Eibsee nach Norden",
+   "country": "de",
+   "lat": 47.4464,
+   "lon": 10.9878,
+   "elev": 1360,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/eibsee-nord/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/eibsee-nord/",
+   "source": "foto-webcam.eu"
+  },
+  {
+   "id": "hochmuth",
+   "name": "Meran Hochmuth",
+   "title": "Berggasthaus Hochmuth - Dorf Tirol / Meran - Blick nach Südosten",
    "country": "it",
-   "lat": 46.6916,
-   "lon": 12.3676,
-   "elev": 1352,
-   "img": "https://www.foto-webcam.eu/webcam/sexten-west/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/sexten-west/",
+   "lat": 46.702,
+   "lon": 11.1315,
+   "elev": 1360,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/hochmuth/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/hochmuth/",
    "source": "foto-webcam.eu"
   },
   {
@@ -2445,8 +2622,22 @@
    "lat": 46.6916,
    "lon": 12.3676,
    "elev": 1352,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/sexten-sued/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/sexten-sued/",
+   "source": "foto-webcam.eu"
+  },
+  {
+   "id": "sexten-west",
+   "name": "Sexten West",
+   "title": "Sexten / Berghotel - Blick nach Westen",
+   "country": "it",
+   "lat": 46.6916,
+   "lon": 12.3676,
+   "elev": 1352,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/sexten-west/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/sexten-west/",
    "source": "foto-webcam.eu"
   },
   {
@@ -2457,6 +2648,7 @@
    "lat": 47.6446,
    "lon": 12.0984,
    "elev": 1342,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/bruennsteinhaus/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/bruennsteinhaus/",
    "source": "foto-webcam.eu"
@@ -2469,6 +2661,7 @@
    "lat": 46.7669,
    "lon": 12.1027,
    "elev": 1320,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/taisten/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/taisten/",
    "source": "foto-webcam.eu"
@@ -2481,6 +2674,7 @@
    "lat": 47.2092,
    "lon": 9.591,
    "elev": 1313,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/vorderaelpele/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/vorderaelpele/",
    "source": "foto-webcam.eu"
@@ -2493,6 +2687,7 @@
    "lat": 47.187,
    "lon": 13.9514,
    "elev": 1300,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/krakau/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/krakau/",
    "source": "foto-webcam.eu"
@@ -2505,6 +2700,7 @@
    "lat": 47.5261,
    "lon": 12.4877,
    "elev": 1295,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/wilder-kaiser/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/wilder-kaiser/",
    "source": "foto-webcam.eu"
@@ -2517,6 +2713,7 @@
    "lat": 47.5261,
    "lon": 12.4877,
    "elev": 1295,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/st-johann-in-tirol-west/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/st-johann-in-tirol-west/",
    "source": "foto-webcam.eu"
@@ -2529,6 +2726,7 @@
    "lat": 46.4531,
    "lon": 11.4627,
    "elev": 1295,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/gummer/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/gummer/",
    "source": "foto-webcam.eu"
@@ -2541,6 +2739,7 @@
    "lat": 47.2568,
    "lon": 10.094,
    "elev": 1265,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/schroecken/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/schroecken/",
    "source": "foto-webcam.eu"
@@ -2553,6 +2752,7 @@
    "lat": 47.0147,
    "lon": 12.0197,
    "elev": 1260,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/st-jakob/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/st-jakob/",
    "source": "foto-webcam.eu"
@@ -2565,6 +2765,7 @@
    "lat": 46.9443,
    "lon": 13.1504,
    "elev": 1260,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/flattach-west/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/flattach-west/",
    "source": "foto-webcam.eu"
@@ -2577,6 +2778,7 @@
    "lat": 46.9364,
    "lon": 13.0771,
    "elev": 1250,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/flattach/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/flattach/",
    "source": "foto-webcam.eu"
@@ -2589,6 +2791,7 @@
    "lat": 46.7242,
    "lon": 12.2227,
    "elev": 1240,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/neu-toblach/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/neu-toblach/",
    "source": "foto-webcam.eu"
@@ -2601,6 +2804,7 @@
    "lat": 47.5458,
    "lon": 12.3956,
    "elev": 1220,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/st-johann-in-tirol/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/st-johann-in-tirol/",
    "source": "foto-webcam.eu"
@@ -2613,6 +2817,7 @@
    "lat": 46.9282,
    "lon": 12.9163,
    "elev": 1220,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/moertschach/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/moertschach/",
    "source": "foto-webcam.eu"
@@ -2625,6 +2830,7 @@
    "lat": 47.3512,
    "lon": 10.1482,
    "elev": 1212,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/kueren/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/kueren/",
    "source": "foto-webcam.eu"
@@ -2637,6 +2843,7 @@
    "lat": 47.3127,
    "lon": 11.1429,
    "elev": 1206,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/moesern/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/moesern/",
    "source": "foto-webcam.eu"
@@ -2649,6 +2856,7 @@
    "lat": 47.4273,
    "lon": 13.6449,
    "elev": 1200,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/hotel-lindenhof/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hotel-lindenhof/",
    "source": "foto-webcam.eu"
@@ -2661,6 +2869,7 @@
    "lat": 49.1267,
    "lon": 13.1344,
    "elev": 1150,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/berghaus-sonnenfels/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/berghaus-sonnenfels/",
    "source": "foto-webcam.eu"
@@ -2673,20 +2882,9 @@
    "lat": 47.4847,
    "lon": 10.3275,
    "elev": 1147,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/sonthofen/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/sonthofen/",
-   "source": "foto-webcam.eu"
-  },
-  {
-   "id": "staffn",
-   "name": "Staffn-Alm",
-   "title": "terra-hd.com: Staffn-Alm - Grassau / Marquartstein - Blick nach Osten",
-   "country": "de",
-   "lat": 47.7693,
-   "lon": 12.4145,
-   "elev": 1140,
-   "img": "https://www.foto-webcam.eu/webcam/staffn/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/staffn/",
    "source": "foto-webcam.eu"
   },
   {
@@ -2697,6 +2895,7 @@
    "lat": 47.2952,
    "lon": 12.4309,
    "elev": 1130,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/passthurn/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/passthurn/",
    "source": "foto-webcam.eu"
@@ -2709,6 +2908,7 @@
    "lat": 47.455,
    "lon": 10.9932,
    "elev": 1130,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/bzb-tal/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/bzb-tal/",
    "source": "foto-webcam.eu"
@@ -2721,6 +2921,7 @@
    "lat": 46.7797,
    "lon": 14.0056,
    "elev": 1125,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/gnesau/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/gnesau/",
    "source": "foto-webcam.eu"
@@ -2733,6 +2934,7 @@
    "lat": 46.8202,
    "lon": 11.8391,
    "elev": 1120,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/kiens/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/kiens/",
    "source": "foto-webcam.eu"
@@ -2745,20 +2947,9 @@
    "lat": 47.41,
    "lon": 10.8552,
    "elev": 1107,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/obergarten/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/obergarten/",
-   "source": "foto-webcam.eu"
-  },
-  {
-   "id": "steigerhof",
-   "name": "Matrei Hintereggkogel",
-   "title": "Matrei in Osttirol / Steigerhof - Blick nach Westen",
-   "country": "at",
-   "lat": 46.9946,
-   "lon": 12.5479,
-   "elev": 1100,
-   "img": "https://www.foto-webcam.eu/webcam/steigerhof/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/steigerhof/",
    "source": "foto-webcam.eu"
   },
   {
@@ -2769,8 +2960,22 @@
    "lat": 47.5,
    "lon": 10.5065,
    "elev": 1100,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/tannheimertal/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/tannheimertal/",
+   "source": "foto-webcam.eu"
+  },
+  {
+   "id": "steigerhof",
+   "name": "Matrei Hintereggkogel",
+   "title": "Matrei in Osttirol / Steigerhof - Blick nach Westen",
+   "country": "at",
+   "lat": 46.9946,
+   "lon": 12.5479,
+   "elev": 1100,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/steigerhof/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/steigerhof/",
    "source": "foto-webcam.eu"
   },
   {
@@ -2781,6 +2986,7 @@
    "lat": 47.7206,
    "lon": 12.4345,
    "elev": 1095,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/schleching/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/schleching/",
    "source": "foto-webcam.eu"
@@ -2793,6 +2999,7 @@
    "lat": 46.8134,
    "lon": 13.7992,
    "elev": 1084,
+   "interval": 300,
    "img": "https://www.foto-webcam.eu/webcam/kaiserburg-tal/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/kaiserburg-tal/",
    "source": "foto-webcam.eu"
@@ -2805,6 +3012,7 @@
    "lat": 47.7691,
    "lon": 12.5757,
    "elev": 1080,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/hochfelln-mittel/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hochfelln-mittel/",
    "source": "foto-webcam.eu"
@@ -2817,6 +3025,7 @@
    "lat": 47.7621,
    "lon": 12.48,
    "elev": 1075,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/marquartstein/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/marquartstein/",
    "source": "foto-webcam.eu"
@@ -2829,6 +3038,7 @@
    "lat": 46.8122,
    "lon": 13.7987,
    "elev": 1070,
+   "interval": 300,
    "img": "https://www.foto-webcam.eu/webcam/rollbob/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/rollbob/",
    "source": "foto-webcam.eu"
@@ -2841,6 +3051,7 @@
    "lat": 47.4391,
    "lon": 10.0118,
    "elev": 1070,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/sibratsgfaell/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/sibratsgfaell/",
    "source": "foto-webcam.eu"
@@ -2853,6 +3064,7 @@
    "lat": 47.7072,
    "lon": 10.1942,
    "elev": 1068,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/schwaerzenlifte/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/schwaerzenlifte/",
    "source": "foto-webcam.eu"
@@ -2865,6 +3077,7 @@
    "lat": 47.5899,
    "lon": 11.4521,
    "elev": 1060,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/jachenau/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/jachenau/",
    "source": "foto-webcam.eu"
@@ -2877,6 +3090,7 @@
    "lat": 47.6207,
    "lon": 12.9117,
    "elev": 1054,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/vorderloiplsau/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/vorderloiplsau/",
    "source": "foto-webcam.eu"
@@ -2889,6 +3103,7 @@
    "lat": 47.377,
    "lon": 10.2671,
    "elev": 1050,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/skiflugschanze/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/skiflugschanze/",
    "source": "foto-webcam.eu"
@@ -2901,6 +3116,7 @@
    "lat": 47.6999,
    "lon": 11.7101,
    "elev": 1025,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/sonnenbichl/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/sonnenbichl/",
    "source": "foto-webcam.eu"
@@ -2913,6 +3129,7 @@
    "lat": 46.8986,
    "lon": 11.9281,
    "elev": 1022,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/amonti/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/amonti/",
    "source": "foto-webcam.eu"
@@ -2925,6 +3142,7 @@
    "lat": 49.1296,
    "lon": 13.0522,
    "elev": 1019,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/schareben/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/schareben/",
    "source": "foto-webcam.eu"
@@ -2937,6 +3155,7 @@
    "lat": 46.9861,
    "lon": 12.5305,
    "elev": 1010,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/bethuberhof/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/bethuberhof/",
    "source": "foto-webcam.eu"
@@ -2949,6 +3168,7 @@
    "lat": 47.3348,
    "lon": 12.8227,
    "elev": 1000,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/zellamsee/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/zellamsee/",
    "source": "foto-webcam.eu"
@@ -2961,6 +3181,7 @@
    "lat": 54.4799,
    "lon": 9.0042,
    "elev": 1000,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/husum-dockkoog/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/husum-dockkoog/",
    "source": "foto-webcam.eu"
@@ -2973,6 +3194,7 @@
    "lat": 47.5035,
    "lon": 12.4361,
    "elev": 992,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/pointenhof/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/pointenhof/",
    "source": "foto-webcam.eu"
@@ -2985,6 +3207,7 @@
    "lat": 47.8008,
    "lon": 11.0146,
    "elev": 988,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/peissenberg/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/peissenberg/",
    "source": "foto-webcam.eu"
@@ -2997,20 +3220,9 @@
    "lat": 47.4582,
    "lon": 10.9894,
    "elev": 985,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/eibsee-hotel/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/eibsee-hotel/",
-   "source": "foto-webcam.eu"
-  },
-  {
-   "id": "oberpfalzturm1",
-   "name": "Oberpfalzturm 1",
-   "title": "Oberpfalzturm / Steinwald - Blick Richtung Marktredwitz",
-   "country": "de",
-   "lat": 49.91,
-   "lon": 12.0531,
-   "elev": 981,
-   "img": "https://www.foto-webcam.eu/webcam/oberpfalzturm1/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/oberpfalzturm1/",
    "source": "foto-webcam.eu"
   },
   {
@@ -3021,8 +3233,22 @@
    "lat": 49.91,
    "lon": 12.0531,
    "elev": 981,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/oberpfalzturm2/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/oberpfalzturm2/",
+   "source": "foto-webcam.eu"
+  },
+  {
+   "id": "oberpfalzturm1",
+   "name": "Oberpfalzturm 1",
+   "title": "Oberpfalzturm / Steinwald - Blick Richtung Marktredwitz",
+   "country": "de",
+   "lat": 49.91,
+   "lon": 12.0531,
+   "elev": 981,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/oberpfalzturm1/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/oberpfalzturm1/",
    "source": "foto-webcam.eu"
   },
   {
@@ -3033,6 +3259,7 @@
    "lat": 47.3881,
    "lon": 9.7505,
    "elev": 976,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/dornbirn/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/dornbirn/",
    "source": "foto-webcam.eu"
@@ -3045,6 +3272,7 @@
    "lat": 47.6588,
    "lon": 10.1962,
    "elev": 965,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/hanuselhof-west/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hanuselhof-west/",
    "source": "foto-webcam.eu"
@@ -3057,6 +3285,7 @@
    "lat": 47.6589,
    "lon": 10.1966,
    "elev": 965,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/hanuselhof/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hanuselhof/",
    "source": "foto-webcam.eu"
@@ -3069,6 +3298,7 @@
    "lat": 47.444,
    "lon": 10.2321,
    "elev": 960,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/obermaiselstein/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/obermaiselstein/",
    "source": "foto-webcam.eu"
@@ -3081,6 +3311,7 @@
    "lat": 47.6135,
    "lon": 13.0179,
    "elev": 950,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/windbeutelbaron/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/windbeutelbaron/",
    "source": "foto-webcam.eu"
@@ -3093,6 +3324,7 @@
    "lat": 47.5724,
    "lon": 10.0431,
    "elev": 950,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/oberstaufen/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/oberstaufen/",
    "source": "foto-webcam.eu"
@@ -3105,6 +3337,7 @@
    "lat": 48.4773,
    "lon": 8.2366,
    "elev": 950,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/buchkopfturm/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/buchkopfturm/",
    "source": "foto-webcam.eu"
@@ -3117,6 +3350,7 @@
    "lat": 46.924,
    "lon": 13.1403,
    "elev": 925,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/raggaschlucht2/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/raggaschlucht2/",
    "source": "foto-webcam.eu"
@@ -3129,6 +3363,7 @@
    "lat": 47.4329,
    "lon": 10.2631,
    "elev": 910,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/jaegersberg/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/jaegersberg/",
    "source": "foto-webcam.eu"
@@ -3141,6 +3376,7 @@
    "lat": 47.6839,
    "lon": 12.2477,
    "elev": 910,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/niederndorferberg/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/niederndorferberg/",
    "source": "foto-webcam.eu"
@@ -3153,6 +3389,7 @@
    "lat": 47.5239,
    "lon": 10.0338,
    "elev": 900,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/oberstaufen2/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/oberstaufen2/",
    "source": "foto-webcam.eu"
@@ -3165,6 +3402,7 @@
    "lat": 47.6187,
    "lon": 11.042,
    "elev": 885,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/unterammergau/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/unterammergau/",
    "source": "foto-webcam.eu"
@@ -3177,6 +3415,7 @@
    "lat": 46.8511,
    "lon": 12.9289,
    "elev": 880,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/rangersdorf/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/rangersdorf/",
    "source": "foto-webcam.eu"
@@ -3189,6 +3428,7 @@
    "lat": 50.2322,
    "lon": 8.4585,
    "elev": 878,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/feldberg-ts/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/feldberg-ts/",
    "source": "foto-webcam.eu"
@@ -3201,6 +3441,7 @@
    "lat": 51.2785,
    "lon": 8.5998,
    "elev": 875,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/ettelsberg/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/ettelsberg/",
    "source": "foto-webcam.eu"
@@ -3213,6 +3454,7 @@
    "lat": 48.9489,
    "lon": 12.8519,
    "elev": 870,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/grandsberg/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/grandsberg/",
    "source": "foto-webcam.eu"
@@ -3225,6 +3467,7 @@
    "lat": 47.9136,
    "lon": 13.5955,
    "elev": 865,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/attersee2/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/attersee2/",
    "source": "foto-webcam.eu"
@@ -3237,6 +3480,7 @@
    "lat": 49.0111,
    "lon": 12.7799,
    "elev": 850,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/waldwipfelweg/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/waldwipfelweg/",
    "source": "foto-webcam.eu"
@@ -3249,6 +3493,7 @@
    "lat": 48.06,
    "lon": 13.2414,
    "elev": 844,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/wp-munderfing/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/wp-munderfing/",
    "source": "foto-webcam.eu"
@@ -3261,6 +3506,7 @@
    "lat": 51.1794,
    "lon": 8.4889,
    "elev": 841,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/kahler-asten-sw/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/kahler-asten-sw/",
    "source": "foto-webcam.eu"
@@ -3273,6 +3519,7 @@
    "lat": 46.7964,
    "lon": 11.9413,
    "elev": 839,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/bruneck/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/bruneck/",
    "source": "foto-webcam.eu"
@@ -3285,6 +3532,7 @@
    "lat": 47.453,
    "lon": 14.6689,
    "elev": 824,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/wald-am-schoberpass/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/wald-am-schoberpass/",
    "source": "foto-webcam.eu"
@@ -3297,6 +3545,7 @@
    "lat": 47.3933,
    "lon": 10.2817,
    "elev": 815,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/scheibenhaus/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/scheibenhaus/",
    "source": "foto-webcam.eu"
@@ -3309,6 +3558,7 @@
    "lat": 47.4961,
    "lon": 14.0656,
    "elev": 805,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/grimming/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/grimming/",
    "source": "foto-webcam.eu"
@@ -3321,6 +3571,7 @@
    "lat": 47.8851,
    "lon": 14.157,
    "elev": 800,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/burg-altpernstein/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/burg-altpernstein/",
    "source": "foto-webcam.eu"
@@ -3333,6 +3584,7 @@
    "lat": 47.4873,
    "lon": 11.1284,
    "elev": 800,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/gsteig/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/gsteig/",
    "source": "foto-webcam.eu"
@@ -3345,6 +3597,7 @@
    "lat": 46.7308,
    "lon": 13.0884,
    "elev": 800,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/dellach/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/dellach/",
    "source": "foto-webcam.eu"
@@ -3357,6 +3610,7 @@
    "lat": 47.6084,
    "lon": 12.8529,
    "elev": 795,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/hintersee/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hintersee/",
    "source": "foto-webcam.eu"
@@ -3369,6 +3623,7 @@
    "lat": 47.4167,
    "lon": 12.8478,
    "elev": 790,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/saalfelden/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/saalfelden/",
    "source": "foto-webcam.eu"
@@ -3381,6 +3636,7 @@
    "lat": 46.6623,
    "lon": 11.1279,
    "elev": 780,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/meran/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/meran/",
    "source": "foto-webcam.eu"
@@ -3393,6 +3649,7 @@
    "lat": 47.6936,
    "lon": 12.2629,
    "elev": 780,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/sachrang/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/sachrang/",
    "source": "foto-webcam.eu"
@@ -3405,6 +3662,7 @@
    "lat": 47.7185,
    "lon": 11.7629,
    "elev": 780,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/tegernseewest/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/tegernseewest/",
    "source": "foto-webcam.eu"
@@ -3417,6 +3675,7 @@
    "lat": 47.3653,
    "lon": 12.8209,
    "elev": 776,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/schlosskammer/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/schlosskammer/",
    "source": "foto-webcam.eu"
@@ -3429,6 +3688,7 @@
    "lat": 51.1854,
    "lon": 8.4618,
    "elev": 776,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/altastenberg/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/altastenberg/",
    "source": "foto-webcam.eu"
@@ -3441,6 +3701,7 @@
    "lat": 51.1817,
    "lon": 8.5086,
    "elev": 776,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/winterberg-bobhaus/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/winterberg-bobhaus/",
    "source": "foto-webcam.eu"
@@ -3453,6 +3714,7 @@
    "lat": 47.0654,
    "lon": 9.9124,
    "elev": 775,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/tschagguns/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/tschagguns/",
    "source": "foto-webcam.eu"
@@ -3465,6 +3727,7 @@
    "lat": 47.6714,
    "lon": 14.9841,
    "elev": 770,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/wildalpen/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/wildalpen/",
    "source": "foto-webcam.eu"
@@ -3477,6 +3740,7 @@
    "lat": 47.3612,
    "lon": 12.8052,
    "elev": 760,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/maishofen/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/maishofen/",
    "source": "foto-webcam.eu"
@@ -3489,6 +3753,7 @@
    "lat": 50.8257,
    "lon": 14.7277,
    "elev": 750,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/hochwald/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hochwald/",
    "source": "foto-webcam.eu"
@@ -3501,6 +3766,7 @@
    "lat": 50.8257,
    "lon": 14.7277,
    "elev": 750,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/hochwald2/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hochwald2/",
    "source": "foto-webcam.eu"
@@ -3513,6 +3779,7 @@
    "lat": 47.7817,
    "lon": 12.2076,
    "elev": 740,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/samerberg/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/samerberg/",
    "source": "foto-webcam.eu"
@@ -3525,6 +3792,7 @@
    "lat": 47.0819,
    "lon": 9.9258,
    "elev": 735,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/schruns/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/schruns/",
    "source": "foto-webcam.eu"
@@ -3537,6 +3805,7 @@
    "lat": 47.6832,
    "lon": 10.0326,
    "elev": 730,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/max-wild-arena/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/max-wild-arena/",
    "source": "foto-webcam.eu"
@@ -3549,6 +3818,7 @@
    "lat": 50.8225,
    "lon": 14.7271,
    "elev": 730,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/hochwald3/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hochwald3/",
    "source": "foto-webcam.eu"
@@ -3561,6 +3831,7 @@
    "lat": 51.1555,
    "lon": 8.4603,
    "elev": 716,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/langewiese/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/langewiese/",
    "source": "foto-webcam.eu"
@@ -3573,6 +3844,7 @@
    "lat": 47.4896,
    "lon": 11.0805,
    "elev": 710,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/kandahar-lodge/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/kandahar-lodge/",
    "source": "foto-webcam.eu"
@@ -3585,6 +3857,7 @@
    "lat": 48.1744,
    "lon": 11.553,
    "elev": 680,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/tum-olympiapark/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/tum-olympiapark/",
    "source": "foto-webcam.eu"
@@ -3597,6 +3870,7 @@
    "lat": 47.6697,
    "lon": 11.1948,
    "elev": 670,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/murnau/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/murnau/",
    "source": "foto-webcam.eu"
@@ -3609,6 +3883,7 @@
    "lat": 47.8228,
    "lon": 12.341,
    "elev": 655,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/bernau2/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/bernau2/",
    "source": "foto-webcam.eu"
@@ -3621,6 +3896,7 @@
    "lat": 47.8403,
    "lon": 12.6276,
    "elev": 645,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/wimpasing/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/wimpasing/",
    "source": "foto-webcam.eu"
@@ -3633,6 +3909,7 @@
    "lat": 47.1668,
    "lon": 11.8605,
    "elev": 633,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/mayrhofen/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/mayrhofen/",
    "source": "foto-webcam.eu"
@@ -3645,6 +3922,7 @@
    "lat": 51.13,
    "lon": 8.3055,
    "elev": 630,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/schmallenberg/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/schmallenberg/",
    "source": "foto-webcam.eu"
@@ -3657,6 +3935,7 @@
    "lat": 48.9856,
    "lon": 13.2936,
    "elev": 625,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/frauenau/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/frauenau/",
    "source": "foto-webcam.eu"
@@ -3669,6 +3948,7 @@
    "lat": 47.5884,
    "lon": 12.6947,
    "elev": 623,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/lofer/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/lofer/",
    "source": "foto-webcam.eu"
@@ -3681,6 +3961,7 @@
    "lat": 46.4546,
    "lon": 11.2406,
    "elev": 620,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/eppan-berg/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/eppan-berg/",
    "source": "foto-webcam.eu"
@@ -3693,6 +3974,7 @@
    "lat": 47.7793,
    "lon": 12.3221,
    "elev": 620,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/aschau3/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/aschau3/",
    "source": "foto-webcam.eu"
@@ -3705,6 +3987,7 @@
    "lat": 47.2326,
    "lon": 9.5984,
    "elev": 614,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/feldkirch/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/feldkirch/",
    "source": "foto-webcam.eu"
@@ -3717,20 +4000,9 @@
    "lat": 47.2642,
    "lon": 11.3841,
    "elev": 610,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/innsbruck-uni-west/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/innsbruck-uni-west/",
-   "source": "foto-webcam.eu"
-  },
-  {
-   "id": "lmu-klinikum",
-   "name": "LMU-Klinikum Süd",
-   "title": "LMU-Klinikum München-Großhadern - Blick nach Süden",
-   "country": "de",
-   "lat": 48.1109,
-   "lon": 11.4682,
-   "elev": 608,
-   "img": "https://www.foto-webcam.eu/webcam/lmu-klinikum/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/lmu-klinikum/",
    "source": "foto-webcam.eu"
   },
   {
@@ -3741,20 +4013,22 @@
    "lat": 48.111,
    "lon": 11.4707,
    "elev": 608,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/muenchen/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/muenchen/",
    "source": "foto-webcam.eu"
   },
   {
-   "id": "deutschesmuseum2",
-   "name": "Deutsches Museum SW",
-   "title": "terra-hd.com: Deutsches Museum München SW",
+   "id": "lmu-klinikum",
+   "name": "LMU-Klinikum Süd",
+   "title": "LMU-Klinikum München-Großhadern - Blick nach Süden",
    "country": "de",
-   "lat": 48.1298,
-   "lon": 11.582,
-   "elev": 600,
-   "img": "https://www.foto-webcam.eu/webcam/deutschesmuseum2/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/deutschesmuseum2/",
+   "lat": 48.1109,
+   "lon": 11.4682,
+   "elev": 608,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/lmu-klinikum/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/lmu-klinikum/",
    "source": "foto-webcam.eu"
   },
   {
@@ -3765,8 +4039,22 @@
    "lat": 47.8016,
    "lon": 12.3757,
    "elev": 600,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/bernau1/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/bernau1/",
+   "source": "foto-webcam.eu"
+  },
+  {
+   "id": "deutschesmuseum2",
+   "name": "Deutsches Museum SW",
+   "title": "terra-hd.com: Deutsches Museum München SW",
+   "country": "de",
+   "lat": 48.1298,
+   "lon": 11.582,
+   "elev": 600,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/deutschesmuseum2/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/deutschesmuseum2/",
    "source": "foto-webcam.eu"
   },
   {
@@ -3777,6 +4065,7 @@
    "lat": 48.1298,
    "lon": 11.582,
    "elev": 600,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/deutschesmuseum/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/deutschesmuseum/",
    "source": "foto-webcam.eu"
@@ -3789,6 +4078,7 @@
    "lat": 47.8734,
    "lon": 12.6545,
    "elev": 598,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/stadt-traunstein/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/stadt-traunstein/",
    "source": "foto-webcam.eu"
@@ -3801,6 +4091,7 @@
    "lat": 47.2842,
    "lon": 11.8754,
    "elev": 590,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/das-kaltenbach/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/das-kaltenbach/",
    "source": "foto-webcam.eu"
@@ -3813,6 +4104,7 @@
    "lat": 50.9913,
    "lon": 8.2393,
    "elev": 583,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/erndtebrueck/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/erndtebrueck/",
    "source": "foto-webcam.eu"
@@ -3825,6 +4117,7 @@
    "lat": 47.26,
    "lon": 11.3842,
    "elev": 580,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/innsbruck-uni/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/innsbruck-uni/",
    "source": "foto-webcam.eu"
@@ -3837,6 +4130,7 @@
    "lat": 50.8943,
    "lon": 8.3983,
    "elev": 580,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/bad-laasphe/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/bad-laasphe/",
    "source": "foto-webcam.eu"
@@ -3849,6 +4143,7 @@
    "lat": 47.7912,
    "lon": 12.412,
    "elev": 575,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/rottau/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/rottau/",
    "source": "foto-webcam.eu"
@@ -3861,6 +4156,7 @@
    "lat": 47.157,
    "lon": 9.8181,
    "elev": 570,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/bludenz/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/bludenz/",
    "source": "foto-webcam.eu"
@@ -3873,6 +4169,7 @@
    "lat": 47.6361,
    "lon": 16.3616,
    "elev": 566,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/schwarzenbach/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/schwarzenbach/",
    "source": "foto-webcam.eu"
@@ -3885,6 +4182,7 @@
    "lat": 47.8946,
    "lon": 12.3004,
    "elev": 550,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/bad-endorf/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/bad-endorf/",
    "source": "foto-webcam.eu"
@@ -3897,6 +4195,7 @@
    "lat": 46.6439,
    "lon": 14.13,
    "elev": 540,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/poertschach-a-w/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/poertschach-a-w/",
    "source": "foto-webcam.eu"
@@ -3909,6 +4208,7 @@
    "lat": 48.0648,
    "lon": 11.1964,
    "elev": 540,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/woerthsee/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/woerthsee/",
    "source": "foto-webcam.eu"
@@ -3921,6 +4221,7 @@
    "lat": 47.8833,
    "lon": 12.4172,
    "elev": 535,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/gstadt/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/gstadt/",
    "source": "foto-webcam.eu"
@@ -3933,6 +4234,7 @@
    "lat": 48.1703,
    "lon": 11.247,
    "elev": 530,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/fuerstenfeld/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/fuerstenfeld/",
    "source": "foto-webcam.eu"
@@ -3945,6 +4247,7 @@
    "lat": 47.8119,
    "lon": 12.4988,
    "elev": 530,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/tiroler-achen/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/tiroler-achen/",
    "source": "foto-webcam.eu"
@@ -3957,6 +4260,7 @@
    "lat": 51.303,
    "lon": 8.3993,
    "elev": 526,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/ramsbeck/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/ramsbeck/",
    "source": "foto-webcam.eu"
@@ -3969,6 +4273,7 @@
    "lat": 46.6569,
    "lon": 11.0421,
    "elev": 525,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/naturns/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/naturns/",
    "source": "foto-webcam.eu"
@@ -3981,6 +4286,7 @@
    "lat": 47.9523,
    "lon": 12.4802,
    "elev": 525,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/pullach/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/pullach/",
    "source": "foto-webcam.eu"
@@ -3993,6 +4299,7 @@
    "lat": 50.8297,
    "lon": 14.7027,
    "elev": 525,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/krompach/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/krompach/",
    "source": "foto-webcam.eu"
@@ -4005,6 +4312,7 @@
    "lat": 47.8323,
    "lon": 12.3849,
    "elev": 521,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/bernau-felden/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/bernau-felden/",
    "source": "foto-webcam.eu"
@@ -4017,6 +4325,7 @@
    "lat": 46.4501,
    "lon": 11.2878,
    "elev": 510,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/eppan/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/eppan/",
    "source": "foto-webcam.eu"
@@ -4029,6 +4338,7 @@
    "lat": 47.5459,
    "lon": 13.1703,
    "elev": 500,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/passlueg/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/passlueg/",
    "source": "foto-webcam.eu"
@@ -4041,20 +4351,9 @@
    "lat": 48.2592,
    "lon": 11.4353,
    "elev": 495,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/dachau/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/dachau/",
-   "source": "foto-webcam.eu"
-  },
-  {
-   "id": "wormbach-west",
-   "name": "Wormbach West",
-   "title": "sauerland.camera: Wormbach West",
-   "country": "de",
-   "lat": 51.1664,
-   "lon": 8.2503,
-   "elev": 483,
-   "img": "https://www.foto-webcam.eu/webcam/wormbach-west/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/wormbach-west/",
    "source": "foto-webcam.eu"
   },
   {
@@ -4065,8 +4364,22 @@
    "lat": 51.1664,
    "lon": 8.2503,
    "elev": 483,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/wormbach-ost/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/wormbach-ost/",
+   "source": "foto-webcam.eu"
+  },
+  {
+   "id": "wormbach-west",
+   "name": "Wormbach West",
+   "title": "sauerland.camera: Wormbach West",
+   "country": "de",
+   "lat": 51.1664,
+   "lon": 8.2503,
+   "elev": 483,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/wormbach-west/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/wormbach-west/",
    "source": "foto-webcam.eu"
   },
   {
@@ -4077,6 +4390,7 @@
    "lat": 47.8603,
    "lon": 12.1318,
    "elev": 450,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/rosenheim/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/rosenheim/",
    "source": "foto-webcam.eu"
@@ -4089,6 +4403,7 @@
    "lat": 46.4752,
    "lon": 11.2522,
    "elev": 440,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/huebenburg/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/huebenburg/",
    "source": "foto-webcam.eu"
@@ -4101,6 +4416,7 @@
    "lat": 48.059,
    "lon": 12.2339,
    "elev": 440,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/wasserburg/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/wasserburg/",
    "source": "foto-webcam.eu"
@@ -4113,6 +4429,7 @@
    "lat": 46.9956,
    "lon": 8.5986,
    "elev": 438,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/brunnen/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/brunnen/",
    "source": "foto-webcam.eu"
@@ -4125,6 +4442,7 @@
    "lat": 47.3066,
    "lon": 9.618,
    "elev": 436,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/roethis-ost/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/roethis-ost/",
    "source": "foto-webcam.eu"
@@ -4137,6 +4455,7 @@
    "lat": 47.3066,
    "lon": 9.6182,
    "elev": 436,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/roethis-west/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/roethis-west/",
    "source": "foto-webcam.eu"
@@ -4149,6 +4468,7 @@
    "lat": 51.3644,
    "lon": 8.5218,
    "elev": 425,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/schinkenwirt/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/schinkenwirt/",
    "source": "foto-webcam.eu"
@@ -4161,6 +4481,7 @@
    "lat": 48.1591,
    "lon": 12.8214,
    "elev": 400,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/burghausen2/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/burghausen2/",
    "source": "foto-webcam.eu"
@@ -4173,6 +4494,7 @@
    "lat": 47.499,
    "lon": 9.6862,
    "elev": 396,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/yc-hard-ost/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/yc-hard-ost/",
    "source": "foto-webcam.eu"
@@ -4185,6 +4507,7 @@
    "lat": 47.499,
    "lon": 9.6862,
    "elev": 396,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/yc-hard-nord/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/yc-hard-nord/",
    "source": "foto-webcam.eu"
@@ -4197,6 +4520,7 @@
    "lat": 47.499,
    "lon": 9.6862,
    "elev": 396,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/yc-hard-sued/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/yc-hard-sued/",
    "source": "foto-webcam.eu"
@@ -4209,6 +4533,7 @@
    "lat": 51.3643,
    "lon": 8.7193,
    "elev": 381,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/diemelsee/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/diemelsee/",
    "source": "foto-webcam.eu"
@@ -4221,6 +4546,7 @@
    "lat": 47.0797,
    "lon": 15.4124,
    "elev": 370,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/helmut-list-halle/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/helmut-list-halle/",
    "source": "foto-webcam.eu"
@@ -4233,6 +4559,7 @@
    "lat": 49.9577,
    "lon": 7.1383,
    "elev": 340,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/starkenburg/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/starkenburg/",
    "source": "foto-webcam.eu"
@@ -4245,6 +4572,7 @@
    "lat": 48.3107,
    "lon": 16.3825,
    "elev": 305,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/bisamberg/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/bisamberg/",
    "source": "foto-webcam.eu"
@@ -4257,6 +4585,7 @@
    "lat": 48.2335,
    "lon": 16.4112,
    "elev": 250,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/wien/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/wien/",
    "source": "foto-webcam.eu"
@@ -4269,20 +4598,9 @@
    "lat": 46.3855,
    "lon": 11.2619,
    "elev": 220,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/kalterersee/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/kalterersee/",
-   "source": "foto-webcam.eu"
-  },
-  {
-   "id": "darmstadt-west",
-   "name": "Darmstadt West",
-   "title": "Darmstadt / Blick nach Westen",
-   "country": "de",
-   "lat": 49.8759,
-   "lon": 8.6626,
-   "elev": 165,
-   "img": "https://www.foto-webcam.eu/webcam/darmstadt-west/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/darmstadt-west/",
    "source": "foto-webcam.eu"
   },
   {
@@ -4293,8 +4611,22 @@
    "lat": 49.8759,
    "lon": 8.6627,
    "elev": 165,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/darmstadt-ost/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/darmstadt-ost/",
+   "source": "foto-webcam.eu"
+  },
+  {
+   "id": "darmstadt-west",
+   "name": "Darmstadt West",
+   "title": "Darmstadt / Blick nach Westen",
+   "country": "de",
+   "lat": 49.8759,
+   "lon": 8.6626,
+   "elev": 165,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/darmstadt-west/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/darmstadt-west/",
    "source": "foto-webcam.eu"
   },
   {
@@ -4305,6 +4637,7 @@
    "lat": 49.8726,
    "lon": 8.6523,
    "elev": 146,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/luisenplatz/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/luisenplatz/",
    "source": "foto-webcam.eu"
@@ -4317,6 +4650,7 @@
    "lat": 45.7449,
    "lon": 10.8004,
    "elev": 113,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/malcesine/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/malcesine/",
    "source": "foto-webcam.eu"
@@ -4329,6 +4663,7 @@
    "lat": 54.0953,
    "lon": 13.377,
    "elev": 80,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/greifswald/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/greifswald/",
    "source": "foto-webcam.eu"
@@ -4341,6 +4676,7 @@
    "lat": 45.543,
    "lon": 10.7257,
    "elev": 75,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/bardolino/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/bardolino/",
    "source": "foto-webcam.eu"
@@ -4353,6 +4689,7 @@
    "lat": 54.7813,
    "lon": 9.434,
    "elev": 66,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/flensburg/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/flensburg/",
    "source": "foto-webcam.eu"
@@ -4365,6 +4702,7 @@
    "lat": 50.7605,
    "lon": 7.0854,
    "elev": 65,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/wetteronline-bonn/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/wetteronline-bonn/",
    "source": "foto-webcam.eu"
@@ -4377,6 +4715,7 @@
    "lat": 54.4772,
    "lon": 9.0509,
    "elev": 30,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/husum-marktplatz/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/husum-marktplatz/",
    "source": "foto-webcam.eu"
@@ -4389,6 +4728,7 @@
    "lat": 53.7097,
    "lon": 7.1432,
    "elev": 15,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/norderney/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/norderney/",
    "source": "foto-webcam.eu"
@@ -4401,6 +4741,7 @@
    "lat": 54.4742,
    "lon": 9.046,
    "elev": 14,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/husum-hafenklappbruecke/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/husum-hafenklappbruecke/",
    "source": "foto-webcam.eu"

@@ -30,6 +30,7 @@ const fw = extractCamList(await res.text())
     lat: +c.latitude.toFixed(4),
     lon: +c.longitude.toFixed(4),
     elev: c.elevation,
+    interval: Math.max(300, +c.captureInterval || 600) <= 3600 ? Math.max(300, +c.captureInterval || 600) : 600,
     img: `https://www.foto-webcam.eu/webcam/${c.id}/current/816.jpg`,
     page: `https://www.foto-webcam.eu/webcam/${c.id}/`,
     source: "foto-webcam.eu",
