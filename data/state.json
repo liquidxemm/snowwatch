@@ -1,82 +1,82 @@
 {
  "saasfee-mittelallalin": {
-  "status": "dry",
-  "lastSnowAt": 1792591200000,
+  "status": "snow",
+  "lastSnowAt": 1792620000000,
   "soonAt": 0
  },
  "saasgrund-hohsaas": {
-  "status": "dry",
-  "lastSnowAt": 1792591200000,
+  "status": "snow",
+  "lastSnowAt": 1792620000000,
   "soonAt": 0
  },
  "saasfee-dorf": {
-  "status": "dry",
-  "lastSnowAt": 0,
+  "status": "snow",
+  "lastSnowAt": 1792620000000,
   "soonAt": 0
  },
  "ruefikopf": {
   "status": "snow",
-  "lastSnowAt": 1792605600000,
+  "lastSnowAt": 1792620000000,
   "soonAt": 0
  },
  "lech": {
   "status": "snow",
-  "lastSnowAt": 1792605600000,
+  "lastSnowAt": 1792620000000,
   "soonAt": 1792592666293
  },
  "hintertux-gefrorenewand": {
   "status": "snow",
-  "lastSnowAt": 1792605600000,
+  "lastSnowAt": 1792620000000,
   "soonAt": 0
  },
  "hintereisferner1": {
   "status": "snow",
-  "lastSnowAt": 1792605600000,
+  "lastSnowAt": 1792620000000,
   "soonAt": 0
  },
  "gletscher-schareck": {
   "status": "snow",
-  "lastSnowAt": 1792605600000,
+  "lastSnowAt": 1792620000000,
   "soonAt": 0
  },
  "adlersruhe": {
   "status": "snow",
-  "lastSnowAt": 1792605600000,
+  "lastSnowAt": 1792620000000,
   "soonAt": 0
  },
  "becherhaus": {
   "status": "snow",
-  "lastSnowAt": 1792605600000,
+  "lastSnowAt": 1792620000000,
   "soonAt": 0
  },
  "sonnblick": {
   "status": "snow",
-  "lastSnowAt": 1792605600000,
+  "lastSnowAt": 1792620000000,
   "soonAt": 0
  },
  "zugspitze": {
   "status": "snow",
-  "lastSnowAt": 1792605600000,
+  "lastSnowAt": 1792620000000,
   "soonAt": 0
  },
  "stubai-gletscher": {
   "status": "snow",
-  "lastSnowAt": 1792605600000,
+  "lastSnowAt": 1792620000000,
   "soonAt": 0
  },
  "pitztal-gletscher": {
   "status": "snow",
-  "lastSnowAt": 1792605600000,
+  "lastSnowAt": 1792620000000,
   "soonAt": 0
  },
  "kitzsteinhorn": {
   "status": "snow",
-  "lastSnowAt": 1792605600000,
+  "lastSnowAt": 1792620000000,
   "soonAt": 0
  },
  "jungfraujoch": {
   "status": "snow",
-  "lastSnowAt": 1792605600000,
+  "lastSnowAt": 1792620000000,
   "soonAt": 0
  }
 }
