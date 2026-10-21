@@ -18,8 +18,8 @@ export async function renderPlanner(ctx) {
   try { plans = await loadPlans(cams); }
   catch { $("plan").innerHTML = `<p class="note">Prognose gerade nicht verfügbar. Später nochmal versuchen.</p>`; return; }
   const rows = cams.map((c, i) => {
-    const p = plans[i], b = p.byModel.best_match;
-    const total = b.snow.reduce((s, v) => s + (v || 0), 0);
+    const p = plans[i];
+    const total = p.snow.reduce((s, v) => s + (v || 0), 0);
     const tMin = p.days.reduce((s, _, k) => s + (spread(p, "snow", k)?.min || 0), 0);
     const tMax = p.days.reduce((s, _, k) => s + (spread(p, "snow", k)?.max || 0), 0);
     return { c, p, total, tMin, tMax, powder: powderDays(p) };
@@ -32,7 +32,7 @@ export async function renderPlanner(ctx) {
   const pw = rows.flatMap(r => r.powder.map((on, k) => on ? { r, k } : null).filter(Boolean))
     .sort((x, y) => x.k - y.k || y.r.total - x.r.total)[0];
   const most = rows.slice().sort((a, b) => b.total - a.total)[0];
-  const sunByDay = days.map((_, k) => rows.reduce((s, r) => s + (r.p.byModel.best_match.sun[k] || 0), 0) / Math.max(1, rows.length));
+  const sunByDay = days.map((_, k) => rows.reduce((s, r) => s + (r.p.sun[k] || 0), 0) / Math.max(1, rows.length));
   const sunK = sunByDay.indexOf(Math.max(...sunByDay));
   const camBtn = c => `<button data-open="${esc(c.id)}">${esc(c.name)}</button>`;
   $("planFacts").innerHTML =
@@ -44,10 +44,9 @@ export async function renderPlanner(ctx) {
   $("plan").innerHTML = `<div class="scrollx"><table class="ptab">
     <thead><tr><th class="l">Cam</th>${days.map(d => `<th>${dayHead(d)}</th>`).join("")}<th>7 Tage</th></tr></thead>
     <tbody>${rows.map(({ c, p, total, tMin, tMax, powder }) => {
-      const b = p.byModel.best_match;
       return `<tr><th class="l"><button data-open="${esc(c.id)}"><span class="alt">${c.elev}</span> ${esc(c.name)}</button></th>
         ${days.map((_, k) => {
-          const s = b.snow[k] || 0, sp = spread(p, "snow", k), sun = b.sun[k] || 0;
+          const s = p.snow[k] || 0, sp = spread(p, "snow", k), sun = p.sun[k] || 0;
           return `<td class="${powder[k] ? "pow" : ""}" style="background:${s >= .5 ? tint(s) : "transparent"}">
             <b>${s >= .5 ? f0(s) : "·"}</b>${sp && sp.n > 1 && sp.max - sp.min >= 1 ? `<span class="rng">${f0(sp.min)}–${f0(sp.max)}</span>` : `<span class="rng">&nbsp;</span>`}
             <span class="sun" title="${f1(sun)} h Sonne"><i style="width:${Math.min(100, sun / 10 * 100)}%"></i></span>
@@ -72,10 +71,12 @@ export async function renderModels(cam) {
       <td class="tot"><b>${s.every(v => v != null) ? f0(tot) : `${f0(tot)}+`}</b></td></tr>`;
   };
   const b = p.byModel.best_match;
+  const med = p.snow.reduce((a, v) => a + (v || 0), 0);
   el.innerHTML = `<div class="scrollx"><table class="ptab models">
     <thead><tr><th class="l">Neuschnee cm</th>${p.days.map(d => `<th>${dayHead(d)}</th>`).join("")}<th>Summe</th></tr></thead>
-    <tbody>${MODELS.map(row).join("")}
-      <tr class="sub"><th class="l">Sonne h</th>${b.sun.map(v => `<td>${v == null ? "–" : f0(v)}</td>`).join("")}<td></td></tr>
+    <tbody><tr class="med"><th class="l"><b>Median</b><span class="rng">aller Modelle</span></th>${p.snow.map(v => `<td><b>${v >= .5 ? f0(v) : "·"}</b></td>`).join("")}<td class="tot"><b>${f0(med)}</b></td></tr>
+    ${MODELS.map(row).join("")}
+      <tr class="sub"><th class="l">Sonne h</th>${p.sun.map(v => `<td>${v == null ? "–" : f0(v)}</td>`).join("")}<td></td></tr>
       <tr class="sub"><th class="l">Böen km/h</th>${b.gust.map(v => `<td>${v == null ? "–" : f0(v)}</td>`).join("")}<td></td></tr>
       <tr class="sub"><th class="l">Temp. min / max</th>${b.tmin.map((v, k) => `<td>${f0(v)} / ${f0(b.tmax[k])}</td>`).join("")}<td></td></tr>
     </tbody></table></div>

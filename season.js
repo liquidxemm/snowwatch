@@ -1,5 +1,5 @@
 // Season: first snow per season, snow events from the log, and the same-day comparison across years.
-import { fetchArchiveDaily, fetchHistory, snowBetween } from "./snow.js";
+import { fetchArchiveDaily, fetchHistory, snowBetween, snowEventStart } from "./snow.js";
 import { hasArchive, findFrame } from "./archive.js";
 import { H, DAY, $, esc, f0, f1, fmtDM, fmtWhen, fmtDate, fmtSpan, dayKey, noonOf, lastDaylight, nextDaylight, cached } from "./util.js";
 
@@ -49,14 +49,21 @@ export async function renderEvent(ctx, key) {
   const ev = groupEvents(await loadLog()).find(e => e.key === key);
   if (!ev) { $("evHead").innerHTML = `<h1>Ereignis nicht gefunden</h1>`; $("evCams").innerHTML = ""; $("evFigs").innerHTML = ""; return; }
   const end = ev.ongoing ? Date.now() : ev.end;
+  const cams = ev.cams.map(iv => ({ iv, c: ctx.byId(iv.id) })).filter(x => x.c);
+  // The log only knows when the check first saw the snow; the weather data knows when it really started.
+  const pastDays = Math.min(92, Math.ceil((Date.now() - ev.start) / DAY) + 3);
+  await Promise.all(cams.map(async x => {
+    x.start = x.iv.start; x.sum = null;
+    try {
+      const h = await fetchHistory(x.c, pastDays);
+      const s0 = snowEventStart(h, x.iv.start + H);
+      if (s0 && s0 < x.iv.start) x.start = s0 + H;
+      x.sum = snowBetween(h, x.start - H, x.iv.end || Date.now());
+    } catch {}
+  }));
+  if (cams.length) ev.start = Math.min(...cams.map(x => x.start));
   $("evHead").innerHTML = `<h1>Schneefall ${fmtDM(ev.start)}${!ev.ongoing && dayKey(end) !== key ? `–${fmtDM(end)}` : ""}</h1>
     <div class="meta"><span>${fmtWhen(ev.start)} bis ${ev.ongoing ? "jetzt (läuft)" : fmtWhen(end)} · ${fmtSpan(end - ev.start)}</span></div>`;
-  const cams = ev.cams.map(iv => ({ iv, c: ctx.byId(iv.id) })).filter(x => x.c);
-  const pastDays = Math.min(92, Math.ceil((Date.now() - ev.start) / DAY) + 2);
-  const sums = await Promise.all(cams.map(async ({ c, iv }) => {
-    try { const h = await fetchHistory(c, pastDays); return snowBetween(h, iv.start - 3 * H, iv.end || Date.now()); } catch { return null; }
-  }));
-  cams.forEach((x, i) => { x.sum = sums[i]; });
   cams.sort((a, b) => (b.sum ?? -1) - (a.sum ?? -1));
   const top = cams.find(x => x.sum != null), low = cams.slice().sort((a, b) => a.c.elev - b.c.elev)[0];
   $("evFigs").innerHTML =
@@ -64,8 +71,8 @@ export async function renderEvent(ctx, key) {
     `<div class="hot"><dt>Am meisten Neuschnee</dt><dd>${top ? `${f1(top.sum)} cm<span>${esc(top.c.name)}</span>` : "–"}</dd></div>` +
     `<div><dt>Tiefste Cam mit Schnee</dt><dd>${low ? `${low.c.elev} m<span>${esc(low.c.name)}</span>` : "–"}</dd></div>` +
     `<div><dt>Dauer</dt><dd>${fmtSpan(end - ev.start)}<span>${ev.ongoing ? "läuft noch" : "abgeschlossen"}</span></dd></div>`;
-  $("evCams").innerHTML = cams.map(({ c, iv, sum }) => {
-    const before = lastDaylight(iv.start - H), after = iv.end ? nextDaylight(iv.end) : Date.now();
+  $("evCams").innerHTML = cams.map(({ c, iv, sum, start }) => {
+    const before = lastDaylight(start - H), after = iv.end ? nextDaylight(iv.end) : Date.now();
     return `<figure class="evcard" data-cmp="${esc(c.id)}" data-b="${before}" data-a="${after}">
       <div class="pair">${hasArchive(c) ? `<span class="ph"><img data-src-b alt="${esc(c.name)} vorher"><em>Vorher</em></span><span class="ph"><img data-src-a alt="${esc(c.name)} nachher"><em>Nachher</em></span>` : `<span class="ph none">Kein Bildarchiv</span>`}</div>
       <figcaption><span class="alt">${c.elev}</span><b>${esc(c.name)}</b><span class="n">${sum == null ? "–" : `+${f1(sum)} cm`}</span></figcaption></figure>`;
@@ -123,7 +130,7 @@ async function renderFirstSnow(ctx) {
         <td>${avg != null ? avgLabel(avg) : "–"}</td>
         <td class="${diff != null && diff < 0 ? "early" : ""}">${diff == null ? "–" : diff === 0 ? "wie üblich" : `${Math.abs(diff)} T ${diff < 0 ? "früher" : "später"}`}</td></tr>`;
     }).join("")}</tbody></table></div>
-    <p class="note">Erster Tag ab 1. September mit mindestens ${FIRST_CM} cm Neuschnee. Vorjahre aus der ERA5-Reanalyse, auf die Höhe der Cam umgerechnet; die aktuelle Saison aus dem Log. Klick auf ein Datum zeigt die Cam an diesem Tag in allen Jahren.</p>`;
+    <p class="note">Erster Tag ab 1. September mit mindestens ${FIRST_CM} cm Neuschnee. Aus der ERA5-Reanalyse, auf die Höhe der Cam umgerechnet (reicht bis vor 6 Tagen); was danach fällt, kommt aus dem Saison-Log. Auf Gletscherhöhe fällt der erste Schnee oft schon im September. Klick auf ein Datum zeigt die Cam an diesem Tag in allen Jahren.</p>`;
 }
 
 /* ---------- same day across years (cam view) ---------- */

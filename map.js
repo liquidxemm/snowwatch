@@ -21,8 +21,8 @@ export async function renderMap(ctx) {
   if (!map) {
     try { L = await loadLeaflet(); } catch { $("map").innerHTML = `<p class="note">Die Karte konnte nicht geladen werden.</p>`; return; }
     map = L.map("map", { zoomControl: true, attributionControl: true, minZoom: 5, maxZoom: 12 }).setView([46.75, 10.2], 7);
-    L.tileLayer(`https://{s}.basemaps.cartocdn.com/${dark() ? "dark_all" : "light_all"}/{z}/{x}/{y}{r}.png`, {
-      subdomains: "abcd", maxZoom: 19, attribution: '© <a href="https://www.openstreetmap.org/copyright">OSM</a> © <a href="https://carto.com/">CARTO</a>',
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19, className: "basemap", attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     }).addTo(map);
     layers.cams = L.layerGroup().addTo(map);
     layers.grid = L.layerGroup();

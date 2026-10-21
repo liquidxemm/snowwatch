@@ -211,6 +211,7 @@ h2 .mute, h2 .seg { font-weight: 400; }
 .ptab .mbar { display: block; height: 24px; width: 10px; margin: 4px auto 0; position: relative; }
 .ptab .mbar i { position: absolute; bottom: 0; left: 0; right: 0; background: var(--accent); }
 .ptab td.na { color: var(--rule); }
+.ptab tr.med td b, .ptab tr.med th b { color: var(--accent); }
 .ptab tr.sub td, .ptab tr.sub th { font-size: 12px; color: var(--mute); padding: 5px 6px; }
 .ptab tr.sub th.l { padding-left: 0; }
 .ptab.fs td { font-size: 14px; }
@@ -229,6 +230,8 @@ h2 .mute, h2 .seg { font-weight: 400; }
 .leaflet-tooltip { font-family: var(--grotesk); font-size: 12px; border-radius: 0; box-shadow: none; border: 1px solid var(--ink); }
 .leaflet-bar a { border-radius: 0 !important; }
 #mapLegend { margin-top: 8px; }
+.basemap { filter: grayscale(1) contrast(.9) brightness(1.05); }
+@media (prefers-color-scheme: dark) { .basemap { filter: grayscale(1) invert(1) contrast(.85) brightness(.9); } }
 
 /* season */
 .evrow { display: grid; grid-template-columns: 8em minmax(0, 1fr) minmax(0, 1.4fr); gap: var(--gutter); width: 100%; text-align: left; padding: 10px 0; border-bottom: 1px solid var(--rule); }
@@ -332,7 +335,7 @@ h2 .mute, h2 .seg { font-weight: 400; }
     <div class="hero grid12 slim">
       <p class="big sm">7 Tage</p>
       <dl class="facts" id="planFacts"></dl>
-      <p class="lede">Neuschnee pro Tag (kombinierte Prognose) mit der Spanne der Modelle darunter. Der Balken zeigt die Sonnenstunden. Pulver = Sonnentag nach mindestens 10 cm Neuschnee.</p>
+      <p class="lede">Neuschnee pro Tag als Median von sechs Wettermodellen (MeteoSchweiz, DWD, ECMWF), darunter die Spanne der Modelle. Der Balken zeigt die Sonnenstunden. Pulver = erster Sonnentag (6 h+) nach mindestens 15 cm Neuschnee in zwei Tagen.</p>
     </div>
     <h2>Neuschnee in cm <span class="seg"><label class="mute" for="planSort">Sortieren&ensp;</label><select id="planSort"><option value="snow">nach Neuschnee</option><option value="elev">nach Höhe</option></select></span></h2>
     <div id="plan"></div>

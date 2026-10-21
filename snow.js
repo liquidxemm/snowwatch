@@ -19,6 +19,29 @@ export const SOON_REPEAT_MS = 6 * 3600e3;
 
 const BATCH = 50;
 
+// Hourly values are the median of several models: a single source can drop out (e.g. return 0 cm while it snows).
+const HOURLY_MODELS = ["best_match", "meteoswiss_icon_ch2", "icon_d2", "icon_eu", "ecmwf_ifs025"];
+const med = v => { v = v.filter(x => x != null).sort((a, b) => a - b); return v.length ? (v.length % 2 ? v[(v.length - 1) / 2] : (v[v.length / 2 - 1] + v[v.length / 2]) / 2) : null; };
+function medianHourly(h, key) {
+  const series = HOURLY_MODELS.map(m => h[`${key}_${m}`]).filter(Boolean);
+  if (!series.length) return h[key] || [];
+  return h.time.map((_, i) => med(series.map(s => s[i])));
+}
+const pick = (o, key) => (o[key] !== undefined ? o[key] : o[`${key}_best_match`]);
+function normalise(w, keys) {
+  const hourly = { time: w.hourly.time };
+  for (const k of keys) hourly[k] = medianHourly(w.hourly, k);
+  let current = w.current;
+  if (current) {
+    current = {};
+    for (const k of Object.keys(w.current)) current[k.replace(/_best_match$/, "")] = w.current[k];
+    // the current block can also miss snowfall: fall back to the median of the current hour
+    const i = hourly.time.indexOf(w.current.time.slice(0, 13) + ":00");
+    if (hourly.snowfall && i >= 0 && (current.snowfall || 0) === 0 && hourly.snowfall[i] > 0) current.snowfall = hourly.snowfall[i] / 4;
+  }
+  return { ...w, hourly, current };
+}
+
 async function withRetry(fn, tries = 3) {
   for (let k = 1; ; k++) {
     try { return await fn(); }
@@ -37,6 +60,7 @@ export async function fetchWeather(cams, fetchImpl = fetch) {
       elevation: part.map(c => c.elev).join(","),
       current: "temperature_2m,weather_code,snowfall,precipitation",
       hourly: "snowfall,freezing_level_height",
+      models: HOURLY_MODELS.join(","),
       past_hours: "24", forecast_hours: "24", timezone: "GMT",
     });
     const j = await withRetry(async () => {
@@ -44,7 +68,7 @@ export async function fetchWeather(cams, fetchImpl = fetch) {
       if (!r.ok) throw new Error(`Open-Meteo answered ${r.status}`);
       return r.json();
     });
-    out.push(...(Array.isArray(j) ? j : [j]));
+    out.push(...(Array.isArray(j) ? j : [j]).map(w => normalise(w, ["snowfall", "freezing_level_height"])));
   }
   return out;
 }
@@ -54,6 +78,7 @@ export async function fetchHistory(cam, pastDays = 7, fetchImpl = fetch) {
   const q = new URLSearchParams({
     latitude: cam.lat, longitude: cam.lon, elevation: cam.elev,
     hourly: "snowfall,temperature_2m,snow_depth,weather_code,freezing_level_height",
+    models: HOURLY_MODELS.join(","),
     past_days: String(pastDays), forecast_days: "2", timezone: "GMT",
   });
   const j = await withRetry(async () => {
@@ -61,20 +86,20 @@ export async function fetchHistory(cam, pastDays = 7, fetchImpl = fetch) {
     if (!r.ok) throw new Error(`Open-Meteo answered ${r.status}`);
     return r.json();
   });
-  const h = j.hourly;
+  const h = normalise(j, ["snowfall", "temperature_2m", "snow_depth"]).hourly;
   return {
     t: h.time.map(s => Date.parse(s + "Z")),
     snow: h.snowfall.map(v => v || 0),
     temp: h.temperature_2m,
     depth: h.snow_depth.map(v => (v == null ? null : v * 100)),
-    code: h.weather_code,
-    frz: h.freezing_level_height,
+    code: pick(j.hourly, "weather_code") || [],
+    frz: pick(j.hourly, "freezing_level_height") || [],
   };
 }
 
 // Forecast models compared in the planner. Short-range models simply return null beyond their horizon.
 export const MODELS = [
-  { id: "best_match", name: "Kombiniert", note: "Open-Meteo, beste Auswahl je Ort" },
+  { id: "best_match", name: "Open-Meteo", note: "automatische Auswahl je Ort" },
   { id: "meteoswiss_icon_ch1", name: "ICON-CH1", note: "MeteoSchweiz, 1 km, 33 h" },
   { id: "meteoswiss_icon_ch2", name: "ICON-CH2", note: "MeteoSchweiz, 2 km, 5 Tage" },
   { id: "icon_d2", name: "ICON-D2", note: "DWD, 2,2 km, 48 h" },
@@ -106,7 +131,13 @@ export async function fetchPlan(cams, days = 7, fetchImpl = fetch) {
           gust: get("wind_gusts_10m_max"), tmax: get("temperature_2m_max"), tmin: get("temperature_2m_min"), code: get("weather_code"),
         };
       }
-      out.push({ days: d.time, byModel });
+      // Headline value: median of the individual models (more robust than a single pick)
+      const median = k => d.time.map((_, i) => {
+        const v = MODELS.filter(m => m.id !== "best_match").map(m => byModel[m.id][k][i]).filter(x => x != null).sort((a, b) => a - b);
+        if (!v.length) return byModel.best_match[k][i];
+        return v.length % 2 ? v[(v.length - 1) / 2] : (v[v.length / 2 - 1] + v[v.length / 2]) / 2;
+      });
+      out.push({ days: d.time, byModel, snow: median("snow"), sun: median("sun") });
     }
   }
   return out;
@@ -114,17 +145,18 @@ export async function fetchPlan(cams, days = 7, fetchImpl = fetch) {
 
 // Spread of a daily value across models that have data for that day.
 export function spread(plan, key, i) {
-  const vals = MODELS.map(m => plan.byModel[m.id][key][i]).filter(v => v != null);
+  const vals = MODELS.filter(m => m.id !== "best_match").map(m => plan.byModel[m.id][key][i]).filter(v => v != null);
   return vals.length ? { min: Math.min(...vals), max: Math.max(...vals), n: vals.length } : null;
 }
 
-// A powder day: sunny day after at least 10 cm of new snow in the previous two days, cold enough to keep it.
+// A powder day: the first sunny day (6 h+) after at least 15 cm of new snow in the two days before, cold enough to keep it.
 export function powderDays(plan) {
-  const b = plan.byModel.best_match;
-  return plan.days.map((_, i) => {
-    const fresh = (b.snow[i - 1] || 0) + (b.snow[i - 2] || 0) + (b.snow[i] || 0) * .3;
-    return fresh >= 10 && (b.sun[i] || 0) >= 5 && (b.tmax[i] ?? 9) < 3;
+  const b = plan.byModel.best_match, s = plan.snow, out = [];
+  plan.days.forEach((_, i) => {
+    const fresh = (s[i - 1] || 0) + (s[i - 2] || 0);
+    out[i] = fresh >= 15 && (s[i] || 0) < 3 && (plan.sun[i] || 0) >= 6 && (b.tmax[i] ?? 9) < 3 && !out[i - 1];
   });
+  return out;
 }
 
 // Daily snowfall history from the ERA5 reanalysis (for first-snow dates of past seasons).
@@ -138,6 +170,7 @@ export async function fetchArchiveDaily(cam, startDate, endDate, fetchImpl = fet
   return { days: j.daily.time, snow: j.daily.snowfall_sum.map(v => v || 0), tmax: j.daily.temperature_2m_max };
 }
 
+const GRID_MODELS = ["meteoswiss_icon_ch2", "icon_d2", "icon_eu", "ecmwf_ifs025"];
 // Snowfall sums over a lat/lon grid for the map (grid point's own terrain height).
 export async function fetchGrid(points, days = 3, fetchImpl = fetch) {
   const out = [];
@@ -145,14 +178,18 @@ export async function fetchGrid(points, days = 3, fetchImpl = fetch) {
     const part = points.slice(i, i + 100);
     const q = new URLSearchParams({
       latitude: part.map(p => p[0]).join(","), longitude: part.map(p => p[1]).join(","),
-      daily: "snowfall_sum", forecast_days: String(days), timezone: "Europe/Vienna",
+      daily: "snowfall_sum", models: GRID_MODELS.join(","), forecast_days: String(days), timezone: "Europe/Vienna",
     });
     const j = await withRetry(async () => {
       const r = await fetchImpl("https://api.open-meteo.com/v1/forecast?" + q);
       if (!r.ok) throw new Error(`Open-Meteo answered ${r.status}`);
       return r.json();
     });
-    for (const w of Array.isArray(j) ? j : [j]) out.push({ lat: w.latitude, lon: w.longitude, elev: w.elevation, snow: w.daily.snowfall_sum.map(v => v || 0), days: w.daily.time });
+    for (const w of Array.isArray(j) ? j : [j]) {
+      const series = GRID_MODELS.map(m => w.daily[`snowfall_sum_${m}`]).filter(Boolean);
+      const snow = w.daily.time.map((_, i) => med(series.map(x => x[i])) || 0);
+      out.push({ lat: w.latitude, lon: w.longitude, elev: w.elevation, snow, days: w.daily.time });
+    }
   }
   return out;
 }
