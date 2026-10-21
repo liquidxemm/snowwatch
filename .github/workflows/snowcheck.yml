@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: "*/15 * * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [watchlist.json, snow.js, scripts/check.mjs]
 
 permissions:
   contents: write

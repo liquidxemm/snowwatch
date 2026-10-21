@@ -3,123 +3,201 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)">
 <title>Snowwatch</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>❄</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%231238ff'/></svg>">
+<!-- Neue Haas Grotesk is used when installed (or add your Adobe Fonts kit here). Inter Tight is the free fallback. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap">
 <style>
-/* Layout: header + tabs, then either the watched-cam grid with a season log, or the full cam catalog */
+/* Swiss grid: 12 columns, hairline rules, one grotesk, one accent. Summary → board → images → log. */
 :root {
-  --bg: #eef2f5; --panel: #ffffff; --fg: #17222c; --muted: #5d6c78; --line: #d3dbe2;
-  --ice: #2f6f9f; --snow: #1d84d6; --warn: #b76e00;
-  --display: "Archivo Narrow", "Arial Narrow", system-ui, sans-serif;
-  --body: "IBM Plex Sans", system-ui, sans-serif;
-  --mono: "IBM Plex Mono", ui-monospace, monospace;
+  --paper: #ffffff; --ink: #0d0d0d; --mute: #7c7c7c; --rule: #e2e2e2; --faint: #f3f3f3;
+  --accent: #1238ff;
+  --grotesk: "Neue Haas Grotesk Display Pro", "Neue Haas Grotesk Text Pro", "neue-haas-grotesk-display", "NHaasGroteskDSPro-55Rg",
+             "Helvetica Neue", Helvetica, "Inter Tight", Arial, sans-serif;
+  --gutter: 20px;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
-  :root { --bg: #0e151b; --panel: #16212a; --fg: #e3eaf0; --muted: #8a9aa7; --line: #263541;
-          --ice: #8cc4ec; --snow: #4aa8f5; --warn: #f0a83c; color-scheme: dark; }
+  :root { --paper: #0b0b0c; --ink: #f1f1f1; --mute: #8b8b8b; --rule: #262628; --faint: #161618; --accent: #6b83ff; color-scheme: dark; }
 }
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--fg); font: 14px/1.45 var(--body);
-       padding: max(20px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) 40px max(16px, env(safe-area-inset-left)); }
-header { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px 24px; margin-bottom: 14px; }
-h1 { font: 700 34px/1 var(--display); letter-spacing: .01em; margin: 0; }
-h1 small { display: block; font: 400 13px var(--body); color: var(--muted); margin-top: 6px; letter-spacing: 0; }
-h2.section { font: 700 20px var(--display); margin: 28px 0 10px; }
-.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-button, .btn { font: 500 13px var(--body); color: var(--fg); background: var(--panel); border: 1px solid var(--line);
-         border-radius: 6px; padding: 7px 12px; cursor: pointer; text-decoration: none; }
-button:hover, .btn:hover { border-color: var(--ice); }
-button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible { outline: 2px solid var(--snow); outline-offset: 2px; }
-button.on { background: var(--snow); border-color: var(--snow); color: #fff; }
-.status { font: 12px var(--mono); color: var(--muted); }
-.tabs { display: flex; gap: 4px; margin-bottom: 14px; border-bottom: 1px solid var(--line); }
-.tabs button { border: 0; border-bottom: 2px solid transparent; border-radius: 0; background: none; padding: 8px 12px; font: 700 15px var(--display); color: var(--muted); }
-.tabs button[aria-selected="true"] { color: var(--fg); border-bottom-color: var(--snow); }
-#banner { margin-bottom: 14px; padding: 12px 14px; border-radius: 8px; background: var(--snow); color: #fff; font-weight: 500; }
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 16px; }
-.card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; min-width: 0; }
-.card.snowing { border-color: var(--snow); box-shadow: 0 0 0 2px var(--snow); }
-.shot { position: relative; aspect-ratio: 16/9; background: var(--line); display: block; max-width: 100%; }
-.shot.linkonly { aspect-ratio: auto; height: 64px; }
-.shot img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.noimg { position: absolute; inset: 0; display: grid; place-items: center; color: var(--muted); font-size: 13px; text-align: center; padding: 12px; }
-.pill { position: absolute; bottom: 10px; left: 10px; font: 700 12px var(--display); letter-spacing: .06em; text-transform: uppercase;
-        padding: 4px 9px; border-radius: 99px; background: rgba(0,0,0,.6); color: #fff; }
-.pill.snow { background: var(--snow); }
-.pill.soon { background: var(--warn); }
-.cbody { padding: 12px 14px 14px; display: grid; gap: 10px; }
-.title { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
-.title h3 { font: 700 19px/1.1 var(--display); margin: 0; }
-.title a { color: var(--ice); font-size: 12px; white-space: nowrap; }
-.meta { font: 12px var(--mono); color: var(--muted); }
-.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; font-variant-numeric: tabular-nums; }
-.stats b { display: block; font: 500 16px var(--mono); }
-.stats span { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
-.spark { width: 100%; height: 44px; display: block; }
-.sparklabel { display: flex; justify-content: space-between; font: 11px var(--mono); color: var(--muted); }
-.unwatch { background: none; border: 0; padding: 0; color: var(--muted); font-size: 12px; text-decoration: underline; justify-self: start; }
-.log { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 4px 14px; }
-.log div { display: grid; grid-template-columns: 9.5em 1fr; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
-.log div:last-child { border-bottom: 0; }
-.log time { font: 12px var(--mono); color: var(--muted); }
-.log .first { color: var(--snow); font-weight: 500; }
-.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
-.filters input, .filters select { font: 13px var(--body); color: var(--fg); background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 7px 10px; }
-.filters input[type=search] { flex: 1 1 220px; min-width: 0; }
-.catalog { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 10px; }
-.row { display: grid; grid-template-columns: 96px 1fr; gap: 10px; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 8px; min-width: 0; }
-.row .thumb { width: 96px; height: 60px; border-radius: 4px; background: var(--line); object-fit: cover; display: block; }
-.row .info { min-width: 0; display: grid; gap: 4px; align-content: start; }
-.row b { font: 700 15px/1.15 var(--display); overflow-wrap: anywhere; }
-.row button { justify-self: start; padding: 3px 9px; font-size: 12px; }
-.note { font-size: 12px; color: var(--muted); max-width: 70ch; }
-.note a { color: var(--ice); }
-@media (prefers-reduced-motion: no-preference) { .card.snowing .pill.snow { animation: pulse 1.6s ease-in-out infinite; } }
-@keyframes pulse { 50% { opacity: .55; } }
+[hidden] { display: none !important; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 15px/1.35 var(--grotesk);
+       -webkit-font-smoothing: antialiased;
+       padding: max(20px, env(safe-area-inset-top)) max(var(--gutter), env(safe-area-inset-right)) 64px max(var(--gutter), env(safe-area-inset-left)); }
+a { color: inherit; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.wrap { max-width: 1440px; margin: 0 auto; }
+.alt, .n, .big, .facts dd, time, #status { font-variant-numeric: tabular-nums; }
+.grid12 { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter); }
+
+/* top bar */
+.bar { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap;
+       border-bottom: 1px solid var(--ink); padding-bottom: 10px; font-size: 13px; }
+.bar b { font-weight: 600; letter-spacing: -.01em; font-size: 15px; }
+.bar nav { display: flex; gap: 20px; flex-wrap: wrap; }
+.bar nav button, .bar nav a { color: var(--mute); text-decoration: none; }
+.bar nav button:hover, .bar nav a:hover, .bar nav [aria-selected="true"] { color: var(--ink); }
+.bar nav button.on { color: var(--accent); }
+
+/* summary */
+.hero { padding: 44px 0 40px; border-bottom: 1px solid var(--rule); row-gap: 24px; }
+.big { grid-column: 1 / span 7; font-weight: 500; font-size: clamp(88px, 17vw, 232px); line-height: .8; letter-spacing: -.055em; margin: 0; }
+.big small { font-size: .3em; letter-spacing: -.03em; color: var(--mute); margin-left: .08em; }
+.facts { grid-column: 8 / span 5; align-self: end; display: grid; grid-template-columns: 1fr 1fr; gap: 22px var(--gutter); margin: 0; }
+.facts div { border-top: 1px solid var(--ink); padding-top: 8px; }
+.facts dt { font-size: 12px; color: var(--mute); }
+.facts dd { margin: 4px 0 0; font-size: 26px; font-weight: 500; letter-spacing: -.02em; line-height: 1.05; }
+.facts dd span { display: block; margin-top: 3px; font-size: 13px; font-weight: 400; color: var(--mute); letter-spacing: 0; }
+.lede { grid-column: 1 / -1; font-size: 13px; color: var(--mute); margin: 0; }
+
+/* status square */
+.sq { display: inline-block; width: .62em; height: .62em; background: var(--rule); vertical-align: .05em; }
+.sq.snow { background: var(--accent); }
+.sq.soon { background: none; box-shadow: inset 0 0 0 1.5px var(--accent); }
+
+/* board */
+h2 { font-size: 13px; font-weight: 600; margin: 48px 0 0; padding-bottom: 8px; border-bottom: 1px solid var(--ink);
+     display: flex; justify-content: space-between; gap: 12px; }
+h2 span { font-weight: 400; color: var(--mute); }
+.board { width: 100%; }
+.brow { display: grid; grid-template-columns: 4.2em minmax(0, 2.6fr) 1.3fr repeat(3, minmax(3.6em, .7fr)) minmax(0, 2.2fr);
+        column-gap: var(--gutter); align-items: center; padding: 9px 0; border-bottom: 1px solid var(--rule); }
+.brow.head { font-size: 12px; color: var(--mute); padding: 8px 0 7px; }
+.brow .alt { color: var(--mute); }
+.brow .name { font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: left; }
+.brow .name:hover { color: var(--accent); }
+.brow .st { font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.brow .n { text-align: right; }
+.brow .n.hot { color: var(--accent); font-weight: 500; }
+.bars { width: 100%; height: 22px; display: block; }
+.brow.head .tl { display: flex; justify-content: space-between; }
+
+/* images */
+.shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 36px var(--gutter); margin-top: 20px; }
+.shot { min-width: 0; }
+.shot .frame { display: block; width: 100%; aspect-ratio: 3 / 2; background: var(--faint); overflow: hidden; position: relative; cursor: zoom-in; }
+.shot .frame img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .6s ease; }
+.shot .frame:hover img { transform: scale(1.025); }
+.links { display: flex; flex-wrap: wrap; gap: 6px 22px; margin-top: 28px; padding-top: 10px; border-top: 1px solid var(--rule); font-size: 14px; }
+.links span { color: var(--mute); }
+.links a { text-decoration: none; }
+.links a:hover { color: var(--accent); }
+.shot .frame.none { cursor: pointer; display: grid; place-items: end start; padding: 12px; font-size: 13px; color: var(--mute); text-decoration: none;
+                    background: repeating-linear-gradient(90deg, var(--faint) 0 11px, var(--paper) 11px 12px); }
+.shot .cap { display: grid; grid-template-columns: auto 1fr auto; column-gap: 10px; align-items: baseline; padding-top: 9px; border-top: 1px solid var(--ink); margin-top: 10px; }
+.shot .cap .alt { color: var(--mute); font-size: 13px; }
+.shot .cap b { font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.shot .sub { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; color: var(--mute); padding-top: 3px; }
+.shot .sub a { text-decoration: none; }
+.shot .sub a:hover, .shot .sub button:hover { color: var(--ink); }
+
+/* log */
+.log > div { display: grid; grid-template-columns: 9em minmax(0, 1fr); column-gap: var(--gutter); padding: 9px 0; border-bottom: 1px solid var(--rule); font-size: 14px; }
+.log time { color: var(--mute); }
+.log .first b { color: var(--accent); }
+.note { font-size: 13px; color: var(--mute); max-width: 68ch; margin: 14px 0 0; }
+.note button, .note a { text-decoration: underline; text-underline-offset: 2px; }
+
+/* catalog */
+.filters { display: flex; flex-wrap: wrap; gap: 8px var(--gutter); margin-top: 20px; align-items: end; }
+.filters input, .filters select { font: inherit; color: var(--ink); background: none; border: 0; border-bottom: 1px solid var(--ink); border-radius: 0; padding: 6px 0; }
+.filters input { flex: 1 1 260px; min-width: 0; font-size: 22px; letter-spacing: -.01em; }
+.filters input::placeholder { color: var(--mute); }
+.crow { grid-template-columns: 4.2em 96px minmax(0, 1fr) 3em 7em; }
+.crow .thumb { width: 96px; height: 54px; object-fit: cover; display: block; background: var(--faint); }
+.crow .title { min-width: 0; }
+.crow .title span { display: block; font-size: 12px; color: var(--mute); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.crow .tog { text-align: right; font-size: 13px; color: var(--mute); }
+.crow .tog.on { color: var(--accent); }
+
+/* viewer */
+dialog { border: 0; padding: 0; background: var(--paper); color: var(--ink); width: min(1400px, 96vw); max-height: 94vh; }
+dialog::backdrop { background: color-mix(in srgb, var(--paper) 88%, transparent); backdrop-filter: blur(6px); }
+dialog img { display: block; width: 100%; max-height: 80vh; object-fit: contain; background: var(--faint); }
+dialog .cap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 20px; padding: 12px 16px 14px; font-size: 14px; border-top: 1px solid var(--ink); }
+dialog .cap span { color: var(--mute); }
+
+#banner { display: grid; grid-template-columns: auto 1fr auto; gap: 12px; align-items: baseline; padding: 12px 0; border-bottom: 1px solid var(--rule); font-size: 14px; }
+#banner b { font-weight: 500; }
+
+@media (max-width: 860px) {
+  .big { grid-column: 1 / -1; }
+  .facts { grid-column: 1 / -1; }
+  .brow { grid-template-columns: 3.4em minmax(0, 1fr) 3.4em 3.4em; }
+  .brow .st, .brow .c-now, .brow .c-tl, .brow.head .tl { display: none; }
+  .crow { grid-template-columns: 72px minmax(0, 1fr) auto; }
+  .crow .alt, .crow .cc { display: none; }
+  .crow .thumb { width: 72px; height: 48px; }
+}
+@media (prefers-reduced-motion: reduce) { .shot .frame img { transition: none; } }
 </style>
 </head>
 <body>
-<header>
-  <h1>Snowwatch<small id="sub">Alpine cams in one place · alerts when snow starts</small></h1>
-  <div class="controls">
-    <span class="status" id="status">loading…</span>
-    <button id="btnRefresh">Refresh</button>
-    <button id="btnNotify">Enable alerts on this device</button>
-  </div>
-</header>
-<div id="banner" hidden></div>
-<nav class="tabs" role="tablist">
-  <button role="tab" id="tabWatch" aria-selected="true">Watching</button>
-  <button role="tab" id="tabAll" aria-selected="false">All cams</button>
-</nav>
+<div class="wrap">
+  <header class="bar">
+    <b>Snowwatch</b>
+    <nav role="tablist">
+      <button role="tab" id="tabWatch" aria-selected="true">Watching</button>
+      <button role="tab" id="tabAll" aria-selected="false">All cams</button>
+      <button id="btnNotify">Sound alerts</button>
+      <button id="btnRefresh" title="Refresh now"><span id="status">Loading</span></button>
+    </nav>
+  </header>
+  <div id="banner" hidden></div>
 
-<section id="viewWatch">
-  <main class="grid" id="grid"></main>
-  <h2 class="section">Season log</h2>
-  <div class="log" id="log"></div>
-  <p class="note">The log and phone pushes come from the check that runs on GitHub every 15 minutes, for the cams in
-    <a id="wlLink" href="#">watchlist.json</a>. Cams you add or remove here only change this browser's view.
-    <button id="btnCopyWl" class="unwatch">Copy this view as watchlist.json</button></p>
-</section>
+  <section id="viewWatch">
+    <div class="hero grid12">
+      <p class="big" id="big">–<small>/–</small></p>
+      <dl class="facts">
+        <div><dt>Snowing down to</dt><dd id="fLine">–</dd></div>
+        <div><dt>Most fresh snow, 24 h</dt><dd id="fPast">–</dd></div>
+        <div><dt>Most forecast, next 24 h</dt><dd id="fNext">–</dd></div>
+        <div><dt>Avg. 0 °C line</dt><dd id="fFrz">–</dd></div>
+      </dl>
+      <p class="lede" id="lede">Watched cams snowing right now. Weather: Open-Meteo, downscaled to each cam's altitude.</p>
+    </div>
 
-<section id="viewAll" hidden>
-  <div class="filters">
-    <input type="search" id="q" placeholder="Search name, valley, glacier…" aria-label="Search cams">
-    <select id="country" aria-label="Country"><option value="">All countries</option></select>
-    <select id="minElev" aria-label="Minimum altitude">
-      <option value="0">Any altitude</option><option value="1500">≥ 1500 m</option><option value="2000">≥ 2000 m</option>
-      <option value="2500" selected>≥ 2500 m</option><option value="3000">≥ 3000 m</option>
-    </select>
-  </div>
-  <p class="note" id="catCount"></p>
-  <div class="catalog" id="catalog"></div>
-</section>
+    <h2>Board <span>sorted by altitude</span></h2>
+    <div class="board" id="board"></div>
+
+    <h2>Cams <span>tap an image to enlarge</span></h2>
+    <div class="shots" id="shots"></div>
+    <div class="links" id="links" hidden></div>
+
+    <h2>Season log <span id="season"></span></h2>
+    <div class="log" id="log"></div>
+    <p class="note">The log is written by the check that runs on GitHub every 15 minutes for the cams in
+      <a id="wlLink" href="#" target="_blank" rel="noopener">watchlist.json</a>. Cams you add or remove here change this browser's view only.
+      <button id="btnCopyWl">Copy this view as watchlist.json</button></p>
+  </section>
+
+  <section id="viewAll" hidden>
+    <div class="filters">
+      <input type="search" id="q" placeholder="Search cams" aria-label="Search cams">
+      <select id="country" aria-label="Country"><option value="">All countries</option></select>
+      <select id="minElev" aria-label="Minimum altitude">
+        <option value="0">Any altitude</option><option value="1500">From 1500 m</option><option value="2000">From 2000 m</option>
+        <option value="2500" selected>From 2500 m</option><option value="3000">From 3000 m</option>
+      </select>
+    </div>
+    <h2><span id="catCount" style="color:var(--ink);font-weight:600"></span><span>foto-webcam.eu and selected resorts</span></h2>
+    <div id="catalog"></div>
+  </section>
+</div>
+
+<dialog id="viewer">
+  <img id="vImg" alt="">
+  <div class="cap"><b id="vName"></b><span id="vMeta"></span><a id="vLink" target="_blank" rel="noopener">Open live page ↗</a></div>
+</dialog>
 
 <script type="module">
-import { fetchWeather, analyse, step, describe, CODE_TEXT } from "./snow.js";
+import { fetchWeather, analyse, step, describe, seasonOf, CODE_TEXT } from "./snow.js";
 
 const REPO = "liquidxemm/snowwatch";
 const WEATHER_EVERY = 10 * 60e3, IMAGE_EVERY = 5 * 60e3;
@@ -138,54 +216,78 @@ const watched = () => [...repoWatch.filter(id => !removed.has(id)), ...[...added
 const saveLocal = () => { store.set("added", [...added]); store.set("removed", [...removed]); };
 
 const thumbOf = c => c.img.includes("foto-webcam.eu") ? c.img.replace("/816.jpg", "/400.jpg") : c.img.replace(/\/medium$/, "/thumbnail");
+const largeOf = c => c.img.includes("foto-webcam.eu") ? c.img.replace("/816.jpg", "/1200.jpg") : c.img;
 const bust = url => url + (url.includes("?") ? "&" : "?") + "t=" + Math.floor(Date.now() / IMAGE_EVERY);
-const imgFail = "this.replaceWith(Object.assign(document.createElement('div'),{className:'noimg',textContent:'Snapshot not available right now. Open the live page.'}))";
 
-function statusOf(c) {
-  const a = analyses[c.id];
-  if (!a) return "none";
-  return a.snowingNow ? "snow" : a.next3 >= 0.5 ? "soon" : "dry";
-}
+const statusOf = c => { const a = analyses[c.id]; return !a ? "none" : a.snowingNow ? "snow" : a.next3 >= 0.5 ? "soon" : "dry"; };
+const stateText = c => { const s = statusOf(c), a = analyses[c.id]; return s === "snow" ? "Snowing" : s === "soon" ? "Snow within 3 h" : a ? (CODE_TEXT[a.code] || "–") : "–"; };
+const sq = c => `<i class="sq ${statusOf(c)}" aria-hidden="true"></i>`;
 
-function spark(a) {
-  const W = 300, H = 44, n = a.series.length, max = Math.max(0.5, ...a.series), bw = W / n;
-  let bars = "";
+// 48 hourly bars: past 24 h solid, next 24 h in outline weight, a hairline at "now"
+function bars(a, max) {
+  const W = 240, H = 22, n = a.series.length, bw = W / n;
+  let out = `<line x1="0" y1="${H - .5}" x2="${W}" y2="${H - .5}" stroke="var(--rule)"/>`;
   a.series.forEach((v, i) => {
-    const bh = (v / max) * (H - 4);
-    if (bh > 0) bars += `<rect x="${(i * bw).toFixed(1)}" y="${(H - bh).toFixed(1)}" width="${(bw - 1).toFixed(1)}" height="${bh.toFixed(1)}" fill="${i <= a.idxNow ? "var(--snow)" : "var(--ice)"}" opacity="${i <= a.idxNow ? 1 : .45}"/>`;
+    const h = Math.min(1, v / max) * (H - 2);
+    if (h > 0) out += `<rect x="${(i * bw).toFixed(1)}" y="${(H - h).toFixed(1)}" width="${(bw * .72).toFixed(1)}" height="${h.toFixed(1)}" fill="${i <= a.idxNow ? "var(--accent)" : "var(--mute)"}" opacity="${i <= a.idxNow ? 1 : .55}"/>`;
   });
   const nx = ((a.idxNow + 1) * bw).toFixed(1);
-  return `<svg class="spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="Hourly snowfall, past 24 h and next 24 h">
-    <line x1="0" y1="${H - .5}" x2="${W}" y2="${H - .5}" stroke="var(--line)"/>${bars}
-    <line x1="${nx}" y1="0" x2="${nx}" y2="${H}" stroke="var(--muted)" stroke-dasharray="2 2"/></svg>`;
+  return `<svg class="bars" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="Hourly snowfall, past and next 24 hours">${out}<line x1="${nx}" y1="0" x2="${nx}" y2="${H}" stroke="var(--ink)" stroke-width=".75"/></svg>`;
 }
 
-function card(c) {
-  const a = analyses[c.id], st = statusOf(c);
-  const pill = st === "snow" ? "Snowing" : st === "soon" ? "Snow within 3 h" : a ? (CODE_TEXT[a.code] || "–") : "…";
-  const img = c.img ? `<img src="${esc(bust(c.img))}" alt="Latest view from ${esc(c.name)}" loading="lazy" onerror="${imgFail}">`
-                    : `<div class="noimg" style="place-items:center end;padding-right:14px">360° viewer, open live page ↗</div>`;
-  return `<article class="card ${st === "snow" ? "snowing" : ""}">
-    <a class="shot${c.img ? "" : " linkonly"}" href="${esc(c.page)}" target="_blank" rel="noopener">${img}<span class="pill ${st}">${pill}</span></a>
-    <div class="cbody">
-      <div class="title"><h3>${esc(c.name)}</h3><a href="${esc(c.page)}" target="_blank" rel="noopener">Live ↗</a></div>
-      <div class="meta">${c.elev} m · ${c.country.toUpperCase()}${a && a.freezingLevel != null ? ` · 0 °C line ${Math.round(a.freezingLevel)} m` : ""}</div>
-      ${a ? `<div class="stats">
-        <div><b>${f1(a.temp)}°</b><span>temp</span></div>
-        <div><b>${f1(a.snowRate)}</b><span>cm now</span></div>
-        <div><b>${f1(a.past24)}</b><span>cm 24 h</span></div>
-        <div><b>${f1(a.next24)}</b><span>cm next 24 h</span></div></div>
-        ${spark(a)}<div class="sparklabel"><span>−24 h</span><span>now</span><span>+24 h</span></div>` : ""}
-      <button class="unwatch" data-unwatch="${esc(c.id)}">Stop watching</button>
-    </div></article>`;
+function renderHero(list) {
+  const as = list.map(c => [c, analyses[c.id]]).filter(([, a]) => a);
+  const snowing = as.filter(([, a]) => a.snowingNow);
+  $("big").innerHTML = `${snowing.length}<small>/${list.length}</small>`;
+  const low = snowing.sort((x, y) => x[0].elev - y[0].elev)[0];
+  $("fLine").innerHTML = low ? `${low[0].elev} m <span>${esc(low[0].name)}</span>` : `– <span>no snow falling</span>`;
+  const maxBy = k => as.slice().sort((x, y) => y[1][k] - x[1][k])[0];
+  const p = maxBy("past24"), n = maxBy("next24");
+  $("fPast").innerHTML = p ? `${f1(p[1].past24)} cm <span>${esc(p[0].name)}</span>` : "–";
+  $("fNext").innerHTML = n ? `${f1(n[1].next24)} cm <span>${esc(n[0].name)}</span>` : "–";
+  const fl = as.map(([, a]) => a.freezingLevel).filter(v => v != null);
+  $("fFrz").innerHTML = fl.length ? `${Math.round(fl.reduce((s, v) => s + v, 0) / fl.length / 10) * 10} m` : "–";
+  $("lede").textContent = snowing.length ? `Watched cams where snow is falling right now.` : `No snow falling at your watched cams right now.`;
+  document.title = snowing.length ? `${snowing.length}/${list.length} snowing · Snowwatch` : "Snowwatch";
+}
+
+function renderBoard(list) {
+  const rows = list.slice().sort((x, y) => y.elev - x.elev);
+  const max = Math.max(0.5, ...rows.map(c => analyses[c.id]).filter(Boolean).flatMap(a => a.series));
+  $("board").innerHTML = `<div class="brow head"><span>m</span><span>Cam</span><span class="st">Now</span><span class="n">°C</span><span class="n c-now">cm 24 h</span><span class="n">cm +24 h</span><span class="tl c-tl"><span>−24 h</span><span>now</span><span>+24 h</span></span></div>` +
+    rows.map(c => {
+      const a = analyses[c.id];
+      return `<div class="brow"><span class="alt">${c.elev}</span>
+        <button class="name" data-open="${esc(c.id)}">${sq(c)}&ensp;${esc(c.name)}</button>
+        <span class="st">${stateText(c)}</span>
+        <span class="n">${a ? f1(a.temp) : "–"}</span>
+        <span class="n c-now ${a && a.past24 >= 1 ? "hot" : ""}">${a ? f1(a.past24) : "–"}</span>
+        <span class="n ${a && a.next24 >= 5 ? "hot" : ""}">${a ? f1(a.next24) : "–"}</span>
+        <span class="c-tl">${a ? bars(a, max) : ""}</span></div>`;
+    }).join("");
+}
+
+function renderShots(list) {
+  const order = { snow: 0, soon: 1, dry: 2, none: 3 };
+  const rows = list.filter(c => c.img).sort((x, y) => order[statusOf(x)] - order[statusOf(y)] || y.elev - x.elev);
+  const viewers = list.filter(c => !c.img).sort((x, y) => y.elev - x.elev);
+  $("links").hidden = !viewers.length;
+  $("links").innerHTML = `<span>360° viewers on resort sites</span>` + viewers.map(c => `<a href="${esc(c.page)}" target="_blank" rel="noopener">${sq(c)}&ensp;${esc(c.name)} ↗</a>`).join("");
+  $("shots").innerHTML = rows.map(c => {
+    const a = analyses[c.id];
+    const frame = c.img
+      ? `<button class="frame" data-open="${esc(c.id)}" aria-label="Enlarge ${esc(c.name)}"><img src="${esc(bust(c.img))}" alt="Latest view from ${esc(c.name)}" loading="lazy" onerror="this.style.visibility='hidden'"></button>`
+      : `<a class="frame none" href="${esc(c.page)}" target="_blank" rel="noopener">360° viewer on the resort site ↗</a>`;
+    return `<figure class="shot" style="margin:0">${frame}
+      <figcaption><div class="cap"><span class="alt">${c.elev}</span><b>${esc(c.name)}</b>${sq(c)}</div>
+      <div class="sub"><span>${stateText(c)}${a ? ` · ${f1(a.temp)} °C · ${f1(a.past24)} cm 24 h` : ""}</span>
+        <span><a href="${esc(c.page)}" target="_blank" rel="noopener">Live ↗</a>&emsp;<button data-unwatch="${esc(c.id)}">Remove</button></span></div></figcaption></figure>`;
+  }).join("") || `<p class="note">You aren't watching any cams. Add some under All cams.</p>`;
 }
 
 function renderWatch() {
-  const order = { snow: 0, soon: 1, dry: 2, none: 3 };
-  const list = watched().sort((x, y) => order[statusOf(x)] - order[statusOf(y)] || !x.img - !y.img || y.elev - x.elev);
-  $("grid").innerHTML = list.length ? list.map(card).join("") : `<p class="note">You aren't watching any cams. Add some under All cams.</p>`;
-  const n = list.filter(c => statusOf(c) === "snow").length;
-  $("sub").textContent = n ? `Snowing now at ${n} of ${list.length} watched cams` : `${list.length} watched cams · no snow falling right now`;
+  const list = watched();
+  renderHero(list); renderBoard(list); renderShots(list);
 }
 
 function renderCatalog() {
@@ -193,66 +295,83 @@ function renderCatalog() {
   const ids = new Set(watched().map(c => c.id));
   const hits = catalog.filter(c => c.elev >= min && (!cc || c.country === cc) && (!q || (c.name + " " + c.title + " " + c.id).toLowerCase().includes(q)));
   $("catCount").textContent = `${hits.length} of ${catalog.length} cams`;
-  $("catalog").innerHTML = hits.slice(0, 200).map(c => `<div class="row">
-      <a href="${esc(c.page)}" target="_blank" rel="noopener">${c.img ? `<img class="thumb" src="${esc(thumbOf(c))}" alt="" loading="lazy">` : `<div class="thumb"></div>`}</a>
-      <div class="info"><b>${esc(c.name)}</b><span class="meta">${c.elev} m · ${c.country.toUpperCase()}</span>
-        <button data-toggle="${esc(c.id)}" class="${ids.has(c.id) ? "on" : ""}">${ids.has(c.id) ? "Watching" : "Watch"}</button></div></div>`).join("");
+  $("catalog").innerHTML = hits.slice(0, 250).map(c => `<div class="brow crow">
+      <span class="alt">${c.elev}</span>
+      <a href="${esc(c.page)}" target="_blank" rel="noopener">${c.img ? `<img class="thumb" src="${esc(thumbOf(c))}" alt="" loading="lazy">` : `<span class="thumb"></span>`}</a>
+      <span class="title"><b style="font-weight:500">${esc(c.name)}</b><span>${esc(c.title)}</span></span>
+      <span class="cc" style="color:var(--mute)">${c.country.toUpperCase()}</span>
+      <button class="tog ${ids.has(c.id) ? "on" : ""}" data-toggle="${esc(c.id)}">${ids.has(c.id) ? "■ Watching" : "□ Watch"}</button></div>`).join("");
 }
 
 async function renderLog() {
+  $("season").textContent = `season ${seasonOf(Date.now())}`;
+  const kind = { first: "First snow of the season.", start: "Snow started.", stop: "Snow stopped.", soon: "Snow coming." };
   try {
     const r = await fetch("data/log.json", { cache: "no-store" });
     const log = r.ok ? await r.json() : [];
-    $("log").innerHTML = log.length ? log.slice().reverse().slice(0, 60).map(e => `<div>
+    $("log").innerHTML = log.length ? log.slice().reverse().slice(0, 80).map(e => `<div class="${e.type}">
         <time>${new Date(e.t).toLocaleString([], { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" })}</time>
-        <span class="${e.type === "first" ? "first" : ""}"><b>${esc(e.name)}</b>: ${e.type === "first" ? "first snow of the season. " : e.type === "start" ? "snow started. " : e.type === "stop" ? "snow stopped. " : "snow coming. "}${esc(e.msg)}</span></div>`).join("")
-      : `<div><time>–</time><span>No snow events logged yet. The first one appears here as soon as the GitHub check sees snow.</span></div>`;
-  } catch { $("log").innerHTML = `<div><time>–</time><span>The log loads when this page is served from GitHub Pages.</span></div>`; }
+        <span><b style="font-weight:500">${esc(e.name)}</b> ${kind[e.type] || ""} ${esc(e.msg)}</span></div>`).join("")
+      : `<div><time>–</time><span>No events yet. They appear here once the GitHub check has run.</span></div>`;
+  } catch { $("log").innerHTML = `<div><time>–</time><span>The log loads when the page is served from GitHub Pages.</span></div>`; }
 }
 
-// --- alerts on this device ---
-let audioCtx;
+// viewer
+function openViewer(id) {
+  const c = byId(id); if (!c) return;
+  if (!c.img) { window.open(c.page, "_blank", "noopener"); return; }
+  const a = analyses[c.id];
+  $("vImg").src = bust(largeOf(c)); $("vImg").alt = `Latest view from ${c.name}`;
+  $("vName").textContent = c.name;
+  $("vMeta").textContent = `${c.elev} m · ${stateText(c)}${a ? ` · ${f1(a.temp)} °C · ${f1(a.past24)} cm last 24 h · ${f1(a.next24)} cm next 24 h` : ""}`;
+  $("vLink").href = c.page;
+  $("viewer").showModal();
+}
+$("viewer").addEventListener("click", e => { if (e.target.id === "viewer" || e.target.id === "vImg") $("viewer").close(); });
+
+// alerts on this device
+let audioCtx, soundOn = false;
 function chime() {
   try {
     audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
-    [880, 1175, 1568].forEach((f, k) => {
-      const o = audioCtx.createOscillator(), g = audioCtx.createGain(), t = audioCtx.currentTime + k * .18;
-      o.frequency.value = f; g.gain.setValueAtTime(.0001, t); g.gain.exponentialRampToValueAtTime(.25, t + .02); g.gain.exponentialRampToValueAtTime(.0001, t + .6);
-      o.connect(g).connect(audioCtx.destination); o.start(t); o.stop(t + .65);
+    [1318.5, 1760].forEach((f, k) => {
+      const o = audioCtx.createOscillator(), g = audioCtx.createGain(), t = audioCtx.currentTime + k * .16;
+      o.frequency.value = f; g.gain.setValueAtTime(.0001, t); g.gain.exponentialRampToValueAtTime(.2, t + .015); g.gain.exponentialRampToValueAtTime(.0001, t + .9);
+      o.connect(g).connect(audioCtx.destination); o.start(t); o.stop(t + 1);
     });
   } catch {}
 }
 function alertUser(title, body) {
-  chime();
-  $("banner").textContent = `${title} · ${body}`; $("banner").hidden = false;
+  if (soundOn) chime();
+  $("banner").innerHTML = `<i class="sq snow"></i><span><b>${esc(title.replace(/^❄\s*/, ""))}</b> ${esc(body)}</span><button onclick="this.parentNode.hidden=true" aria-label="Dismiss">×</button>`;
+  $("banner").hidden = false;
   try { if (Notification.permission === "granted") new Notification(title, { body }); } catch {}
 }
 
 async function refresh() {
-  $("status").textContent = "updating…";
+  $("status").textContent = "Updating";
   const cams = watched();
   try {
     const ws = await fetchWeather(cams);
     const now = Date.now();
     cams.forEach((c, i) => {
       const a = analyses[c.id] = analyse(ws[i], now);
-      const seen = c.id in local; // first time we see a cam: record its state without alerting
+      const seen = c.id in local; // first time a cam is seen: record its state without alerting
       const { state, events } = step(local[c.id], a, now);
       local[c.id] = state;
       if (seen) for (const ev of events) if (ev.type !== "stop") { const d = describe(ev, c, a); alertUser(d.title, d.body); }
     });
-    store.set("state", local);
-    store.set("analyses", analyses); store.set("analysedAt", now);
-    $("status").textContent = `updated ${new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}`;
+    store.set("state", local); store.set("analyses", analyses); store.set("analysedAt", now);
+    $("status").textContent = new Date(now).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
   } catch (e) {
     const at = store.get("analysedAt", 0);
-    $("status").textContent = (at ? `showing data from ${new Date(at).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}; ` : "") + "weather update failed, retrying in 10 min";
+    $("status").textContent = at ? `Offline · ${new Date(at).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}` : "Weather unavailable";
   }
   renderWatch();
   renderLog();
 }
 
-// --- wiring ---
+// wiring
 function showTab(all) {
   $("tabWatch").setAttribute("aria-selected", !all); $("tabAll").setAttribute("aria-selected", all);
   $("viewWatch").hidden = all; $("viewAll").hidden = !all;
@@ -261,18 +380,19 @@ function showTab(all) {
 $("tabWatch").onclick = () => showTab(false);
 $("tabAll").onclick = () => showTab(true);
 $("btnRefresh").onclick = refresh;
-$("btnNotify").onclick = async () => {
-  chime();
-  try { const p = await Notification.requestPermission(); $("btnNotify").textContent = p === "granted" ? "Alerts on" : "Sound alerts on"; }
-  catch { $("btnNotify").textContent = "Sound alerts on"; }
-  $("btnNotify").classList.add("on");
+$("btnNotify").onclick = () => {
+  soundOn = !soundOn; store.set("sound", soundOn);
+  $("btnNotify").classList.toggle("on", soundOn);
+  $("btnNotify").textContent = soundOn ? "Sound alerts on" : "Sound alerts";
+  if (soundOn) chime();
 };
 document.addEventListener("click", e => {
+  const o = e.target.closest("[data-open]");
+  if (o) return openViewer(o.dataset.open);
   const t = e.target.closest("[data-toggle],[data-unwatch]");
   if (!t) return;
   const id = t.dataset.toggle || t.dataset.unwatch;
-  const on = watched().some(c => c.id === id);
-  if (on) { added.delete(id); if (repoWatch.includes(id)) removed.add(id); }
+  if (watched().some(c => c.id === id)) { added.delete(id); if (repoWatch.includes(id)) removed.add(id); }
   else { removed.delete(id); if (!repoWatch.includes(id)) added.add(id); }
   saveLocal();
   if (t.dataset.toggle) renderCatalog(); else renderWatch();
@@ -285,7 +405,8 @@ $("btnCopyWl").onclick = async () => {
   catch { $("btnCopyWl").textContent = text; }
 };
 
-try { if (Notification.permission === "granted") { $("btnNotify").textContent = "Alerts on"; $("btnNotify").classList.add("on"); } } catch {}
+// sound needs a tap before browsers allow it, so it starts off on each visit
+store.set("sound", false);
 
 const [cat, wl] = await Promise.all([fetch("cams.json").then(r => r.json()), fetch("watchlist.json", { cache: "no-store" }).then(r => r.json())]);
 catalog = cat.cams; repoWatch = wl;
@@ -293,7 +414,7 @@ catalog = cat.cams; repoWatch = wl;
 renderWatch();
 refresh();
 setInterval(refresh, WEATHER_EVERY);
-setInterval(renderWatch, IMAGE_EVERY);
+setInterval(() => renderShots(watched()), IMAGE_EVERY);
 </script>
 </body>
 </html>
