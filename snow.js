@@ -72,6 +72,91 @@ export async function fetchHistory(cam, pastDays = 7, fetchImpl = fetch) {
   };
 }
 
+// Forecast models compared in the planner. Short-range models simply return null beyond their horizon.
+export const MODELS = [
+  { id: "best_match", name: "Kombiniert", note: "Open-Meteo, beste Auswahl je Ort" },
+  { id: "meteoswiss_icon_ch1", name: "ICON-CH1", note: "MeteoSchweiz, 1 km, 33 h" },
+  { id: "meteoswiss_icon_ch2", name: "ICON-CH2", note: "MeteoSchweiz, 2 km, 5 Tage" },
+  { id: "icon_d2", name: "ICON-D2", note: "DWD, 2,2 km, 48 h" },
+  { id: "icon_eu", name: "ICON-EU", note: "DWD, 7 km, 5 Tage" },
+  { id: "ecmwf_ifs025", name: "ECMWF", note: "EZMW, 25 km, 15 Tage" },
+];
+const PLAN_DAILY = ["snowfall_sum", "sunshine_duration", "wind_gusts_10m_max", "temperature_2m_max", "temperature_2m_min", "weather_code"];
+
+// 7-day daily forecast per cam and model: { days[], byModel: { model: { snow[], sun[], gust[], tmax[], tmin[], code[] } } }
+export async function fetchPlan(cams, days = 7, fetchImpl = fetch) {
+  const out = [];
+  for (let i = 0; i < cams.length; i += 20) {
+    const part = cams.slice(i, i + 20);
+    const q = new URLSearchParams({
+      latitude: part.map(c => c.lat).join(","), longitude: part.map(c => c.lon).join(","), elevation: part.map(c => c.elev).join(","),
+      daily: PLAN_DAILY.join(","), models: MODELS.map(m => m.id).join(","), forecast_days: String(days), timezone: "Europe/Vienna",
+    });
+    const j = await withRetry(async () => {
+      const r = await fetchImpl("https://api.open-meteo.com/v1/forecast?" + q);
+      if (!r.ok) throw new Error(`Open-Meteo answered ${r.status}`);
+      return r.json();
+    });
+    for (const w of Array.isArray(j) ? j : [j]) {
+      const d = w.daily, byModel = {};
+      for (const m of MODELS) {
+        const get = k => d[`${k}_${m.id}`] || (m.id === "best_match" ? d[k] : null) || d.time.map(() => null);
+        byModel[m.id] = {
+          snow: get("snowfall_sum"), sun: get("sunshine_duration").map(v => (v == null ? null : v / 3600)),
+          gust: get("wind_gusts_10m_max"), tmax: get("temperature_2m_max"), tmin: get("temperature_2m_min"), code: get("weather_code"),
+        };
+      }
+      out.push({ days: d.time, byModel });
+    }
+  }
+  return out;
+}
+
+// Spread of a daily value across models that have data for that day.
+export function spread(plan, key, i) {
+  const vals = MODELS.map(m => plan.byModel[m.id][key][i]).filter(v => v != null);
+  return vals.length ? { min: Math.min(...vals), max: Math.max(...vals), n: vals.length } : null;
+}
+
+// A powder day: sunny day after at least 10 cm of new snow in the previous two days, cold enough to keep it.
+export function powderDays(plan) {
+  const b = plan.byModel.best_match;
+  return plan.days.map((_, i) => {
+    const fresh = (b.snow[i - 1] || 0) + (b.snow[i - 2] || 0) + (b.snow[i] || 0) * .3;
+    return fresh >= 10 && (b.sun[i] || 0) >= 5 && (b.tmax[i] ?? 9) < 3;
+  });
+}
+
+// Daily snowfall history from the ERA5 reanalysis (for first-snow dates of past seasons).
+export async function fetchArchiveDaily(cam, startDate, endDate, fetchImpl = fetch) {
+  const q = new URLSearchParams({ latitude: cam.lat, longitude: cam.lon, elevation: cam.elev, start_date: startDate, end_date: endDate, daily: "snowfall_sum,temperature_2m_max", timezone: "Europe/Vienna" });
+  const j = await withRetry(async () => {
+    const r = await fetchImpl("https://archive-api.open-meteo.com/v1/archive?" + q);
+    if (!r.ok) throw new Error(`Open-Meteo archive answered ${r.status}`);
+    return r.json();
+  });
+  return { days: j.daily.time, snow: j.daily.snowfall_sum.map(v => v || 0), tmax: j.daily.temperature_2m_max };
+}
+
+// Snowfall sums over a lat/lon grid for the map (grid point's own terrain height).
+export async function fetchGrid(points, days = 3, fetchImpl = fetch) {
+  const out = [];
+  for (let i = 0; i < points.length; i += 100) {
+    const part = points.slice(i, i + 100);
+    const q = new URLSearchParams({
+      latitude: part.map(p => p[0]).join(","), longitude: part.map(p => p[1]).join(","),
+      daily: "snowfall_sum", forecast_days: String(days), timezone: "Europe/Vienna",
+    });
+    const j = await withRetry(async () => {
+      const r = await fetchImpl("https://api.open-meteo.com/v1/forecast?" + q);
+      if (!r.ok) throw new Error(`Open-Meteo answered ${r.status}`);
+      return r.json();
+    });
+    for (const w of Array.isArray(j) ? j : [j]) out.push({ lat: w.latitude, lon: w.longitude, elev: w.elevation, snow: w.daily.snowfall_sum.map(v => v || 0), days: w.daily.time });
+  }
+  return out;
+}
+
 // Index of the hour that contains time t.
 export const hourIndex = (h, t) => { let i = 0; while (i + 1 < h.t.length && h.t[i + 1] <= t) i++; return i; };
 
