@@ -1,1 +1,83 @@
-[]
+[
+ {
+  "t": 1792576349064,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "first",
+  "msg": "It's snowing at 3456 m, -3.2 °C. 6.0 cm forecast for the next 24 h.",
+  "past24": 7.2,
+  "temp": -3.2
+ },
+ {
+  "t": 1792576349064,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "first",
+  "msg": "It's snowing at 3200 m, -1.7 °C. 6.3 cm forecast for the next 24 h.",
+  "past24": 14.3,
+  "temp": -1.7
+ },
+ {
+  "t": 1792576349064,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "first",
+  "msg": "It's snowing at 3250 m, -1.6 °C. 8.6 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -1.6
+ },
+ {
+  "t": 1792576349064,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "first",
+  "msg": "It's snowing at 3245 m, -1.1 °C. 11.0 cm forecast for the next 24 h.",
+  "past24": 3.6,
+  "temp": -1.1
+ },
+ {
+  "t": 1792576349064,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "first",
+  "msg": "It's snowing at 3454 m, -2.2 °C. 16.1 cm forecast for the next 24 h.",
+  "past24": 0.8,
+  "temp": -2.2
+ },
+ {
+  "t": 1792576349064,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "first",
+  "msg": "It's snowing at 3195 m, -1.0 °C. 12.6 cm forecast for the next 24 h.",
+  "past24": 12.7,
+  "temp": -1
+ },
+ {
+  "t": 1792576349064,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "first",
+  "msg": "It's snowing at 3210 m, -1.1 °C. 12.2 cm forecast for the next 24 h.",
+  "past24": 11.5,
+  "temp": -1.1
+ },
+ {
+  "t": 1792576349064,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "first",
+  "msg": "It's snowing at 3440 m, -2.2 °C. 12.3 cm forecast for the next 24 h.",
+  "past24": 3,
+  "temp": -2.2
+ },
+ {
+  "t": 1792576349064,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "first",
+  "msg": "It's snowing at 3466 m, -4.1 °C. 12.4 cm forecast for the next 24 h.",
+  "past24": 6.4,
+  "temp": -4.1
+ }
+]
