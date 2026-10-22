@@ -259,5 +259,32 @@
   "msg": "It's snowing at 1800 m, -0.5 °C. 0.0 cm forecast for the next 24 h.",
   "past24": 0,
   "temp": -0.5
+ },
+ {
+  "t": 1792629643148,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "stop",
+  "msg": "12.5 cm in the last 24 h.",
+  "past24": 12.5,
+  "temp": -11.3
+ },
+ {
+  "t": 1792629643148,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "stop",
+  "msg": "14.5 cm in the last 24 h.",
+  "past24": 14.5,
+  "temp": -11.1
+ },
+ {
+  "t": 1792629643148,
+  "id": "saasfee-dorf",
+  "name": "Saas-Fee Village",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -1.3
  }
 ]
