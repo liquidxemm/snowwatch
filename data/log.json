@@ -286,5 +286,77 @@
   "msg": "0.0 cm in the last 24 h.",
   "past24": 0,
   "temp": -1.3
+ },
+ {
+  "t": 1792646575193,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "stop",
+  "msg": "5.1 cm in the last 24 h.",
+  "past24": 5.1,
+  "temp": -6.2
+ },
+ {
+  "t": 1792646575193,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "stop",
+  "msg": "5.0 cm in the last 24 h.",
+  "past24": 5,
+  "temp": -3.9
+ },
+ {
+  "t": 1792646575193,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "stop",
+  "msg": "4.9 cm in the last 24 h.",
+  "past24": 4.9,
+  "temp": -11.9
+ },
+ {
+  "t": 1792646575193,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "stop",
+  "msg": "7.3 cm in the last 24 h.",
+  "past24": 7.3,
+  "temp": -11.1
+ },
+ {
+  "t": 1792646575193,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "stop",
+  "msg": "0.6 cm in the last 24 h.",
+  "past24": 0.6,
+  "temp": -9.6
+ },
+ {
+  "t": 1792646575193,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "6.1 cm in the last 24 h.",
+  "past24": 6.1,
+  "temp": -11.2
+ },
+ {
+  "t": 1792646575193,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "stop",
+  "msg": "4.8 cm in the last 24 h.",
+  "past24": 4.8,
+  "temp": -13.2
+ },
+ {
+  "t": 1792646575193,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "stop",
+  "msg": "13.9 cm in the last 24 h.",
+  "past24": 13.9,
+  "temp": -12.9
  }
 ]
