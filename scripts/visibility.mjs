@@ -1,11 +1,13 @@
 // Visibility check: scores the current image of every high cam (clear / drops / fog / dark)
 // and learns which cams stay clear while it snows. Run by .github/workflows/visibility.yml.
-// Usage: node scripts/visibility.mjs <previous vis.json> <output vis.json>
+// Usage: node scripts/visibility.mjs <previous vis.json> <output vis.json> [<previous history> <output history>]
+// The history keeps 7 days of scores per cam so the dashboard can pick the last clear image before a snowfall.
 import { readFile, writeFile } from "node:fs/promises";
 import jpeg from "jpeg-js";
 import { fetchWeather, analyse } from "../snow.js";
 
-const [prevPath = "prev-vis.json", outPath = "vis.json"] = process.argv.slice(2);
+const [prevPath = "prev-vis.json", outPath = "vis.json", prevHistPath = "prev-vis-history.json", histPath = "vis-history.json"] = process.argv.slice(2);
+const CLS = { clear: 0, drops: 1, fog: 2, dark: 3 };
 const root = new URL("../", import.meta.url);
 const readJson = async (p, d) => { try { return JSON.parse(await readFile(p, "utf8")); } catch { return d; } };
 
@@ -91,6 +93,16 @@ await Promise.all(Array.from({ length: 6 }, async () => {
 }));
 
 await writeFile(outPath, JSON.stringify(out) + "\n");
+
+// history: per cam [minute timestamp, score, class code], last 7 days
+const hist = (await readJson(prevHistPath, { cams: {} })).cams;
+const cutoff = Math.round((now - 7 * 864e5) / 60000);
+for (const [id, s] of Object.entries(out.cams)) {
+  if (s.t !== now) continue;
+  hist[id] = [...(hist[id] || []).filter(e => e[0] >= cutoff), [Math.round(now / 60000), s.score, CLS[s.cls]]];
+}
+for (const id of Object.keys(hist)) { hist[id] = hist[id].filter(e => e[0] >= cutoff); if (!hist[id].length) delete hist[id]; }
+await writeFile(histPath, JSON.stringify({ updated: now, cams: hist }) + "\n");
 const counts = {};
 Object.values(out.cams).forEach(s => { if (s.t === now) counts[s.cls] = (counts[s.cls] || 0) + 1; });
 console.log(`scored ${cams.length} cams`, counts);

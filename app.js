@@ -1,10 +1,11 @@
-import { fetchWeather, fetchHistory, analyse, step, describe, seasonOf, snowBetween, snowEventStart, hourIndex, CODE_TEXT } from "./snow.js?v=mvhzwkkp";
-import { hasArchive, isPanorama, findFrame, latestUrl } from "./archive.js?v=mvhzwkkp";
-import { H, $, esc, f1, f0, fmtWhen, fmtTime, fmtDay, isDay, lastDaylight, touch, fmtSpan, store, dayKey } from "./util.js?v=mvhzwkkp";
-import { renderPlanner, renderModels } from "./plan.js?v=mvhzwkkp";
-import { renderMap, initMapControls, refreshMapCams } from "./map.js?v=mvhzwkkp";
-import { loadMeasurements, stationFor, bulletinFor, levelBadge, levelSplit, LEVEL_DE, EAWS_MAP } from "./measure.js?v=mvhzwkkp";
-import { renderSeason, renderEvent, renderYears } from "./season.js?v=mvhzwkkp";
+import { fetchWeather, fetchHistory, analyse, step, describe, seasonOf, snowBetween, snowEventStart, hourIndex, CODE_TEXT } from "./snow.js?v=mvja05y3";
+import { hasArchive, isPanorama, findFrame, latestUrl } from "./archive.js?v=mvja05y3";
+import { H, $, esc, f1, f0, fmtWhen, fmtTime, fmtDay, isDay, lastDaylight, touch, fmtSpan, store, dayKey } from "./util.js?v=mvja05y3";
+import { renderPlanner, renderModels } from "./plan.js?v=mvja05y3";
+import { renderMap, initMapControls, refreshMapCams } from "./map.js?v=mvja05y3";
+import { loadMeasurements, stationFor, bulletinFor, levelBadge, levelSplit, LEVEL_DE, EAWS_MAP } from "./measure.js?v=mvja05y3";
+import { findClear, lastSnowHour, clarityLabel } from "./clarity.js?v=mvja05y3";
+import { renderSeason, renderEvent, renderYears } from "./season.js?v=mvja05y3";
 
 const VIS_URL = "https://raw.githubusercontent.com/liquidxemm/snowwatch/data/vis.json";
 const VIS_LABEL = { clear: "klar", drops: "Tropfen / unscharf", fog: "Nebel / Schneetreiben", dark: "dunkel" };
@@ -191,11 +192,26 @@ async function openCam(id) {
   renderModels(c);
   cv.hist = await loadHistory(c);
   if (cv.cam !== c) return;
-  cv.after = Date.now();
+  cv.after = Date.now(); cv.beforeInfo = cv.afterInfo = cv.clearBefore = null;
   const ev = cv.hist && snowEventStart(cv.hist, Date.now());
   cv.before = ev ? lastDaylight(ev) : Date.now() - 24 * H; cv.beforeKey = ev ? "event" : "24";
-  if (cv.pending) { cv.before = cv.pending.before; cv.after = cv.pending.after; cv.beforeKey = ""; cv.pending = null; }
+  const pending = cv.pending;
+  if (pending) { cv.before = pending.before; cv.after = pending.after; cv.beforeKey = ""; cv.pending = null; }
   renderCam();
+  if (ev && !pending && hasArchive(c)) refineClear(c, ev);
+}
+
+// Replace "before"/"after" with the latest clear daylight images around the snowfall (fog shows nothing).
+async function refineClear(c, ev) {
+  const now = Date.now(), last = lastSnowHour(cv.hist, now);
+  const [b, a] = await Promise.all([
+    findClear(c, cv.hist, { from: ev - 5 * 24 * H, to: ev }),
+    findClear(c, cv.hist, { from: Math.max(last ?? 0, now - 36 * H), to: now }),
+  ]);
+  if (cv.cam !== c) return;
+  if (b) { cv.clearBefore = b; if (cv.beforeKey === "event") { cv.before = b.t; cv.beforeInfo = b; } }
+  if (a && a.score >= 60) { cv.afterInfo = a; if (now - a.t > 60 * 60e3) cv.after = a.t; }
+  if (cv.mode === "cmp") { cv.token++; renderPresets(); loadCompare(); }
 }
 
 const histCache = new Map();
@@ -299,7 +315,7 @@ async function play() {
 function presetList() {
   const now = Date.now(), list = [];
   const ev = cv.hist && snowEventStart(cv.hist, cv.after);
-  if (ev) list.push(["event", `Vor dem Schneefall · ${fmtWhen(lastDaylight(ev))}`, lastDaylight(ev)]);
+  if (ev) { const t = cv.clearBefore?.t ?? lastDaylight(ev); list.push(["event", `Vor dem Schneefall · ${cv.clearBefore?.score >= 60 ? "letztes klares Bild · " : ""}${fmtWhen(t)}`, t]); }
   list.push(["6", "−6 h", cv.after - 6 * H], ["24", "−24 h", cv.after - 24 * H], ["48", "−48 h", cv.after - 48 * H], ["168", "−7 Tage", cv.after - 168 * H], ["365", "vor 1 Jahr", cv.after - 365 * 24 * H]);
   return list;
 }
@@ -317,8 +333,9 @@ async function loadCompare() {
   if (token !== cv.token || cv.mode !== "cmp") return;
   await Promise.all([setImg($("bImg"), fb, "Kein Bild"), setImg($("aImg"), fa, "Kein Bild")]);
   $("stage").classList.remove("loading");
-  $("bStamp").textContent = "Vorher · " + (fb ? fmtWhen(fb.t) : "kein Bild");
-  $("aStamp").textContent = "Nachher · " + (fa ? (isNow ? "jetzt" : fmtWhen(fa.t)) : "kein Bild");
+  const lab = (info, t) => info && Math.abs(info.t - t) < 2 * H ? ` · ${clarityLabel(info)}` : "";
+  $("bStamp").textContent = "Vorher · " + (fb ? fmtWhen(fb.t) + lab(cv.beforeInfo, cv.before) : "kein Bild");
+  $("aStamp").textContent = "Nachher · " + (fa ? (isNow ? "jetzt" : fmtWhen(fa.t)) + lab(cv.afterInfo, cv.after) : "kein Bild");
   renderChart(); renderFigs();
 }
 

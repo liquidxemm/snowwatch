@@ -28,16 +28,17 @@ jobs:
       - name: Load previous scores
         run: |
           git fetch --depth 1 origin data && git show origin/data:vis.json > prev-vis.json || echo '{"cams":{}}' > prev-vis.json
+          git show origin/data:vis-history.json > prev-vis-history.json || echo '{"cams":{}}' > prev-vis-history.json
       - name: Score cam images
-        run: node scripts/visibility.mjs prev-vis.json vis.json
+        run: node scripts/visibility.mjs prev-vis.json vis.json prev-vis-history.json vis-history.json
       - name: Collect measured snow depth
         run: node scripts/stations.mjs stations.json
       # Scores live on their own branch (one commit, replaced each run) so main stays clean.
       - name: Publish to data branch
         run: |
-          mkdir out && cp vis.json stations.json out/ && cd out
+          mkdir out && cp vis.json vis-history.json stations.json out/ && cd out
           git init -q -b data
           git config user.name "snowwatch-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add vis.json stations.json && git commit -qm "Visibility scores and station data"
+          git add vis.json vis-history.json stations.json && git commit -qm "Visibility scores and station data"
           git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" data
