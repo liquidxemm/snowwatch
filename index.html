@@ -91,7 +91,7 @@ h2 .mute, h2 .seg { font-weight: 400; }
 .links button:hover { color: var(--accent); }
 
 /* board */
-.brow { display: grid; grid-template-columns: 4.2em minmax(0, 2.6fr) 1.3fr repeat(3, minmax(3.6em, .7fr)) minmax(0, 2.2fr);
+.brow { display: grid; grid-template-columns: 4.2em minmax(0, 2.6fr) 1.3fr repeat(4, minmax(3.6em, .7fr)) minmax(0, 2fr);
         column-gap: var(--gutter); align-items: center; padding: 9px 0; border-bottom: 1px solid var(--rule); }
 .brow.head { font-size: 12px; color: var(--mute); padding: 8px 0 7px; }
 .brow .alt { color: var(--mute); }
@@ -116,6 +116,16 @@ h2 .mute, h2 .seg { font-weight: 400; }
 .filters input { flex: 1 1 260px; min-width: 0; font-size: 22px; letter-spacing: -.01em; }
 .filters input::placeholder { color: var(--mute); }
 .crow { grid-template-columns: 4.2em 96px minmax(0, 1fr) 3em 7em; }
+.brow .n small { color: var(--mute); font-size: 12px; }
+.lw { display: inline-block; min-width: 1.35em; height: 1.35em; line-height: 1.35em; text-align: center; font-size: 11px; font-weight: 600; color: #111; vertical-align: .1em; margin-left: 4px; }
+.lw.l1 { background: #ccff66; } .lw.l2 { background: #ffff00; } .lw.l3 { background: #ff9900; } .lw.l4 { background: #ff0000; color: #fff; }
+.lw.l5 { background: repeating-conic-gradient(#ff0000 0 25%, #111 0 50%) 0 0 / 8px 8px; color: #fff; }
+.figs dd .lw { display: inline-block; margin-top: 0; color: #111; letter-spacing: 0; }
+.figs dd .lw.l4, .figs dd .lw.l5 { color: #fff; }
+.lw.big { font-size: .8em; min-width: 1.3em; height: 1.3em; line-height: 1.3em; margin: 0 6px 0 0; vertical-align: .08em; }
+.figs dd span a { text-decoration: underline; text-underline-offset: 2px; }
+.figs .wide2 { grid-column: span 3; }
+#figs2 { margin-top: 22px; }
 .crow .thumb { width: 96px; height: 54px; object-fit: cover; display: block; background: var(--faint); }
 .crow .title { min-width: 0; text-align: left; }
 .crow .title span { display: block; font-size: 12px; color: var(--mute); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -197,7 +207,7 @@ h2 .mute, h2 .seg { font-weight: 400; }
 .ptab thead th { font-size: 12px; color: var(--mute); padding-top: 10px; }
 .ptab thead th .wd { display: block; color: var(--ink); font-weight: 500; font-size: 13px; }
 .ptab thead th .dm { display: block; }
-.ptab th.l { text-align: left; padding-left: 0; white-space: nowrap; }
+.ptab th.l { text-align: left; padding-left: 0; white-space: nowrap; position: sticky; left: 0; background: var(--paper); z-index: 1; }
 .ptab th.l button:hover { color: var(--accent); }
 .ptab th.l .rng { display: block; }
 .ptab td b { display: block; font-size: 20px; font-weight: 500; letter-spacing: -.01em; line-height: 1.1; }
@@ -221,6 +231,15 @@ h2 .mute, h2 .seg { font-weight: 400; }
 .big.sm { font-size: clamp(56px, 9vw, 120px); }
 .seg select { font: inherit; color: var(--ink); background: none; border: 0; border-bottom: 1px solid var(--ink); }
 
+.rrow { display: grid; grid-template-columns: 2em 7.5em minmax(0, 1.4fr) minmax(0, 1fr) 2.5em minmax(0, 2.4fr); gap: var(--gutter); align-items: baseline; padding: 9px 0; border-bottom: 1px solid var(--rule); }
+.rrow .alt { color: var(--mute); }
+.rrow button { text-align: left; } .rrow button b { font-weight: 500; } .rrow button:hover b { color: var(--accent); }
+.rrow .rbar { height: 4px; background: var(--rule); position: relative; align-self: center; }
+.rrow .rbar i { position: absolute; inset: 0 auto 0 0; background: var(--accent); }
+.rrow .n { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.rrow .why { font-size: 13px; color: var(--mute); }
+.rrow:first-child .n, .rrow:first-child b { color: var(--accent); }
+
 /* map */
 .mapbar { margin-top: 18px; }
 .mapbar .ctrl { display: flex; gap: 12px; align-items: center; margin: 0; }
@@ -243,6 +262,7 @@ h2 .mute, h2 .seg { font-weight: 400; }
 .ph { position: relative; display: block; aspect-ratio: 3 / 2; background: var(--faint); overflow: hidden; }
 .ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .ph em { position: absolute; left: 0; bottom: 0; background: var(--paper); font-style: normal; font-size: 12px; padding: 2px 6px 1px 0; }
+.ph.wide { grid-column: 1 / -1; aspect-ratio: 3 / 1; }
 .ph.none, .ph .none { display: grid; place-items: center; color: var(--mute); font-size: 13px; }
 .evcard figcaption { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 10px; align-items: baseline; border-top: 1px solid var(--ink); margin-top: 10px; padding-top: 8px; }
 .evcard figcaption .alt { color: var(--mute); font-size: 13px; }
@@ -267,6 +287,12 @@ h2 .mute, h2 .seg { font-weight: 400; }
   .evrow .mute { display: none; }
   .robust > div { grid-template-columns: 3.4em minmax(0, 1fr) 5em; }
   .robust .bar { display: none; }
+  .ptab { min-width: 640px; }
+  .rrow { grid-template-columns: 1.5em 5.5em minmax(0, 1fr) 2.2em; row-gap: 2px; }
+  .rrow .rbar { display: none; }
+  .rrow .why { grid-column: 2 / -1; }
+  .ptab th.l { white-space: normal; max-width: 7.5em; font-size: 13px; padding-right: 8px; }
+  .ptab td b { font-size: 17px; }
   .big, .facts, .camhead h1, .camhead .meta { grid-column: 1 / -1; }
   .camhead .meta { text-align: left; }
   .brow { grid-template-columns: 3.4em minmax(0, 1fr) 3.4em 3.4em; }
@@ -276,6 +302,7 @@ h2 .mute, h2 .seg { font-weight: 400; }
   .crow .thumb { width: 72px; height: 48px; }
   .cmp .side { grid-column: 1 / -1; }
   .figs { grid-template-columns: 1fr 1fr; }
+  .figs .wide2 { grid-column: 1 / -1; }
 }
 @media (prefers-reduced-motion: reduce) { .tile .frame img { transition: none; } .loading::after { animation: none; } }
 </style>
@@ -337,6 +364,9 @@ h2 .mute, h2 .seg { font-weight: 400; }
       <dl class="facts" id="planFacts"></dl>
       <p class="lede">Neuschnee pro Tag als Median von sechs Wettermodellen (MeteoSchweiz, DWD, ECMWF), darunter die Spanne der Modelle. Der Balken zeigt die Sonnenstunden. Pulver = erster Sonnentag (6 h+) nach mindestens 15 cm Neuschnee in zwei Tagen.</p>
     </div>
+    <h2>Beste Skitage <span class="seg" id="rankWhen"><button aria-pressed="true" data-w="all">Nächste 7 Tage</button><button aria-pressed="false" data-w="we">Wochenende</button></span></h2>
+    <div id="rank"></div>
+    <p class="note">Punkte aus Neuschnee der zwei Tage davor (bis 55), Sonnenstunden (bis 30) und ruhigem Wind (bis 15). Abzug bei Sturmböen ab 75 km/h (Liftbetrieb unsicher), starkem Schneefall am Tag selbst und über 4 °C. Die Zahl neben der Cam ist die Lawinenwarnstufe.</p>
     <h2>Neuschnee in cm <span class="seg"><label class="mute" for="planSort">Sortieren&ensp;</label><select id="planSort"><option value="snow">nach Neuschnee</option><option value="elev">nach Höhe</option></select></span></h2>
     <div id="plan"></div>
   </section>
@@ -422,11 +452,22 @@ h2 .mute, h2 .seg { font-weight: 400; }
     </div>
 
     <dl class="figs" id="figs"></dl>
+    <dl class="figs" id="figs2"></dl>
     <h2>Prognose nach Modell <span class="mute">7 Tage</span></h2>
     <div id="models"></div>
   </section>
 </div>
 
-<script type="module" src="app.js"></script>
+<div id="bootfail" hidden style="padding:40px 0;max-width:60ch">
+  <p style="font-size:22px;font-weight:500;margin:0 0 8px">Snowwatch konnte nicht starten.</p>
+  <p class="note" style="margin:0 0 14px">Meist liegt das an alten Dateien im Browser-Cache nach einem Update.</p>
+  <button onclick="location.replace(location.pathname + '?r=' + Date.now() + location.hash)" style="border-bottom:1px solid currentColor">Neu laden</button>
+</div>
+<script>
+  // Safety net: if the app module fails (e.g. stale cached files), offer a clean reload instead of an empty page.
+  window.addEventListener("error", e => { if (/\.js/.test(e.filename || "") || e.message) window.__swFail = e.message; }, true);
+  setTimeout(() => { if (!window.__swStarted) document.getElementById("bootfail").hidden = false; }, 12000);
+</script>
+<script type="module" src="app.js?v=mvj9sduv"></script>
 </body>
 </html>

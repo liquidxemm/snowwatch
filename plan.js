@@ -1,6 +1,6 @@
 // Planner: 7-day outlook for watched cams, and the per-model comparison in the cam view.
-import { fetchPlan, spread, powderDays, MODELS } from "./snow.js";
-import { $, esc, f0, f1, fmtWd, fmtDM, cached } from "./util.js";
+import { fetchPlan, spread, powderDays, MODELS } from "./snow.js?v=mvj9sduv";
+import { $, esc, f0, f1, fmtWd, fmtDM, cached } from "./util.js?v=mvj9sduv";
 
 const PLAN_AGE = 30 * 60e3;
 const tint = cm => `color-mix(in srgb, var(--accent) ${Math.round(Math.min(1, cm / 30) * 55)}%, transparent)`;
@@ -9,6 +9,35 @@ const dayHead = d => { const t = Date.parse(d + "T12:00:00Z"); return `<span cla
 async function loadPlans(cams) {
   const key = "plan:" + cams.map(c => c.id).join(",");
   return cached(key, PLAN_AGE, () => fetchPlan(cams));
+}
+
+// Score a ski day 0–100: fresh snow from the days before (and the night), sunshine, calm wind, cold enough.
+// Heavy snowfall on the day itself costs points (no visibility).
+export function dayScore(r, k, ctx) {
+  const s = r.p.snow, b = r.p.byModel.best_match, a = ctx.analyses[r.c.id];
+  const before = k => (k >= 0 ? s[k] || 0 : k === -1 ? a?.past24 || 0 : 0);
+  const fresh = before(k - 1) + before(k - 2) + .3 * (s[k] || 0);
+  const sun = r.p.sun[k] || 0, gust = b.gust[k] ?? 50, tmax = b.tmax[k] ?? 0;
+  const parts = {
+    fresh, sun, gust, tmax,
+    pts: Math.min(fresh, 40) / 40 * 55 + Math.min(sun, 8) / 8 * 30 + (gust < 40 ? 15 : gust < 60 ? 8 : gust < 75 ? 0 : -25) - ((s[k] || 0) > 5 ? 15 : 0) - (tmax > 4 ? 10 : 0),
+  };
+  parts.score = Math.max(0, Math.min(100, Math.round(parts.pts)));
+  return parts;
+}
+
+let rankWhen = "all";
+function renderRanking(rows, days, ctx) {
+  const weekend = d => [0, 6].includes(new Date(d + "T12:00:00Z").getUTCDay());
+  const list = rows.flatMap(r => days.map((d, k) => ({ r, d, k, ...dayScore(r, k, ctx) })))
+    .filter(x => rankWhen === "all" || weekend(x.d)).sort((x, y) => y.score - x.score).slice(0, 8);
+  $("rank").innerHTML = list.length ? list.map((x, i) => {
+    const t = Date.parse(x.d + "T12:00:00Z");
+    return `<div class="rrow"><span class="alt">${i + 1}</span><span class="rd">${fmtWd(t)} ${fmtDM(t)}</span>
+      <button data-open="${esc(x.r.c.id)}"><b>${esc(x.r.c.name)}</b> ${ctx.levelBadge(ctx.bulletinFor(x.r.c))}</button>
+      <span class="rbar"><i style="width:${x.score}%"></i></span><span class="n">${x.score}</span>
+      <span class="why">${f0(x.fresh)} cm Neuschnee · ${f0(x.sun)} h Sonne · Böen ${f0(x.gust)} km/h · max ${f0(x.tmax)} °C</span></div>`;
+  }).join("") : `<p class="note">Keine Wochenendtage im Prognosezeitraum.</p>`;
 }
 
 export async function renderPlanner(ctx) {
@@ -27,6 +56,8 @@ export async function renderPlanner(ctx) {
   const sortBy = $("planSort").value;
   rows.sort((a, b) => sortBy === "elev" ? b.c.elev - a.c.elev : b.total - a.total);
   const days = rows[0]?.p.days || [];
+  renderRanking(rows, days, ctx);
+  $("rankWhen").onclick = e => { const b = e.target.closest("[data-w]"); if (!b) return; rankWhen = b.dataset.w; [...$("rankWhen").children].forEach(x => x.setAttribute("aria-pressed", x === b)); renderRanking(rows, days, ctx); };
 
   // summary
   const pw = rows.flatMap(r => r.powder.map((on, k) => on ? { r, k } : null).filter(Boolean))
@@ -44,7 +75,8 @@ export async function renderPlanner(ctx) {
   $("plan").innerHTML = `<div class="scrollx"><table class="ptab">
     <thead><tr><th class="l">Cam</th>${days.map(d => `<th>${dayHead(d)}</th>`).join("")}<th>7 Tage</th></tr></thead>
     <tbody>${rows.map(({ c, p, total, tMin, tMax, powder }) => {
-      return `<tr><th class="l"><button data-open="${esc(c.id)}"><span class="alt">${c.elev}</span> ${esc(c.name)}</button></th>
+      const st = ctx.stationFor(c);
+      return `<tr><th class="l"><button data-open="${esc(c.id)}"><span class="alt">${c.elev}</span> ${esc(c.name)} ${ctx.levelBadge(ctx.bulletinFor(c))}</button>${st ? `<span class="rng">gemessen ${f0(st.hs)} cm${st.d24 != null ? ` (${st.d24 >= 0 ? "+" : ""}${f0(st.d24)} in 24 h)` : ""}</span>` : ""}</th>
         ${days.map((_, k) => {
           const s = p.snow[k] || 0, sp = spread(p, "snow", k), sun = p.sun[k] || 0;
           return `<td class="${powder[k] ? "pow" : ""}" style="background:${s >= .5 ? tint(s) : "transparent"}">

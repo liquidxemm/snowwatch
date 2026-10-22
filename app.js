@@ -1,9 +1,11 @@
-import { fetchWeather, fetchHistory, analyse, step, describe, seasonOf, snowBetween, snowEventStart, hourIndex, CODE_TEXT } from "./snow.js";
-import { hasArchive, isPanorama, findFrame, latestUrl } from "./archive.js";
-import { H, $, esc, f1, f0, fmtWhen, fmtTime, fmtDay, isDay, lastDaylight, touch, fmtSpan, store, dayKey } from "./util.js";
-import { renderPlanner, renderModels } from "./plan.js";
-import { renderMap, initMapControls, refreshMapCams } from "./map.js";
-import { renderSeason, renderEvent, renderYears } from "./season.js";
+import { fetchWeather, fetchHistory, analyse, step, describe, seasonOf, snowBetween, snowEventStart, hourIndex, CODE_TEXT } from "./snow.js?v=mvj9sduv";
+import { hasArchive, isPanorama, findFrame, latestUrl } from "./archive.js?v=mvj9sduv";
+import { H, $, esc, f1, f0, fmtWhen, fmtTime, fmtDay, isDay, lastDaylight, touch, fmtSpan, store, dayKey } from "./util.js?v=mvj9sduv";
+import { renderPlanner, renderModels } from "./plan.js?v=mvj9sduv";
+import { renderMap, initMapControls, refreshMapCams } from "./map.js?v=mvj9sduv";
+import { loadMeasurements, stationFor, bulletinFor, levelBadge, levelSplit, LEVEL_DE, EAWS_MAP } from "./measure.js?v=mvj9sduv";
+import { findClear, lastSnowHour, clarityLabel } from "./clarity.js?v=mvj9sduv";
+import { renderSeason, renderEvent, renderYears } from "./season.js?v=mvj9sduv";
 
 const VIS_URL = "https://raw.githubusercontent.com/liquidxemm/snowwatch/data/vis.json";
 const VIS_LABEL = { clear: "klar", drops: "Tropfen / unscharf", fog: "Nebel / Schneetreiben", dark: "dunkel" };
@@ -24,6 +26,7 @@ const saveLocal = () => { store.set("added", [...added]); store.set("removed", [
 const ctx = {
   watched: () => watched(), catalog: () => catalog, byId: id => byId(id), get analyses() { return analyses; },
   statusOf: c => statusOf(c), stateText: c => stateText(c),
+  stationFor: c => stationFor(c), bulletinFor: c => bulletinFor(c), levelBadge,
 };
 function toggleWatch(id) {
   if (isWatched(id)) { added.delete(id); if (repoWatch.includes(id)) removed.add(id); }
@@ -111,15 +114,16 @@ function renderWall(list) {
 function renderBoard(list) {
   const rows = list.slice().sort((x, y) => y.elev - x.elev);
   const max = Math.max(0.5, ...rows.map(c => analyses[c.id]).filter(Boolean).flatMap(a => a.series));
-  $("board").innerHTML = `<div class="brow head"><span>m</span><span>Cam</span><span class="st">Jetzt</span><span class="n">°C</span><span class="n c-now">cm 24 h</span><span class="n">cm +24 h</span><span class="tl c-tl"><span>−24 h</span><span>jetzt</span><span>+24 h</span></span></div>` +
+  $("board").innerHTML = `<div class="brow head"><span>m</span><span>Cam</span><span class="st">Jetzt</span><span class="n">°C</span><span class="n c-now">cm 24 h</span><span class="n">cm +24 h</span><span class="n c-now" title="Gemessene Schneehöhe der nächsten Station, Änderung in 24 h">gemessen</span><span class="tl c-tl"><span>−24 h</span><span>jetzt</span><span>+24 h</span></span></div>` +
     rows.map(c => {
       const a = analyses[c.id];
       return `<div class="brow"><span class="alt">${c.elev}</span>
-        <button class="name" data-open="${esc(c.id)}">${sq(c)}&ensp;${esc(c.name)}</button>
+        <button class="name" data-open="${esc(c.id)}">${sq(c)}&ensp;${esc(c.name)} ${levelBadge(bulletinFor(c))}</button>
         <span class="st">${stateText(c)}</span>
         <span class="n">${a ? f1(a.temp) : "–"}</span>
         <span class="n c-now ${a && a.past24 >= 1 ? "hot" : ""}">${a ? f1(a.past24) : "–"}</span>
         <span class="n ${a && a.next24 >= 5 ? "hot" : ""}">${a ? f1(a.next24) : "–"}</span>
+        ${(s => `<span class="n c-now ${s && s.d24 >= 3 ? "hot" : ""}" title="${s ? esc(`${s.name}, ${s.elev} m, ${s.km.toFixed(1)} km`) : "keine nahe Station"}">${s ? `${f0(s.hs)}${s.d24 != null ? `<small> ${s.d24 >= 0 ? "+" : ""}${f0(s.d24)}</small>` : ""}` : "–"}</span>`)(stationFor(c))}
         <span class="c-tl">${a ? bars(a, max) : ""}</span></div>`;
     }).join("");
 }
@@ -188,11 +192,26 @@ async function openCam(id) {
   renderModels(c);
   cv.hist = await loadHistory(c);
   if (cv.cam !== c) return;
-  cv.after = Date.now();
+  cv.after = Date.now(); cv.beforeInfo = cv.afterInfo = cv.clearBefore = null;
   const ev = cv.hist && snowEventStart(cv.hist, Date.now());
   cv.before = ev ? lastDaylight(ev) : Date.now() - 24 * H; cv.beforeKey = ev ? "event" : "24";
-  if (cv.pending) { cv.before = cv.pending.before; cv.after = cv.pending.after; cv.beforeKey = ""; cv.pending = null; }
+  const pending = cv.pending;
+  if (pending) { cv.before = pending.before; cv.after = pending.after; cv.beforeKey = ""; cv.pending = null; }
   renderCam();
+  if (ev && !pending && hasArchive(c)) refineClear(c, ev);
+}
+
+// Replace "before"/"after" with the latest clear daylight images around the snowfall (fog shows nothing).
+async function refineClear(c, ev) {
+  const now = Date.now(), last = lastSnowHour(cv.hist, now);
+  const [b, a] = await Promise.all([
+    findClear(c, cv.hist, { from: ev - 5 * 24 * H, to: ev }),
+    findClear(c, cv.hist, { from: Math.max(last ?? 0, now - 36 * H), to: now }),
+  ]);
+  if (cv.cam !== c) return;
+  if (b) { cv.clearBefore = b; if (cv.beforeKey === "event") { cv.before = b.t; cv.beforeInfo = b; } }
+  if (a && a.score >= 60) { cv.afterInfo = a; if (now - a.t > 60 * 60e3) cv.after = a.t; }
+  if (cv.mode === "cmp") { renderPresets(); loadCompare(); }
 }
 
 const histCache = new Map();
@@ -296,7 +315,7 @@ async function play() {
 function presetList() {
   const now = Date.now(), list = [];
   const ev = cv.hist && snowEventStart(cv.hist, cv.after);
-  if (ev) list.push(["event", `Vor dem Schneefall · ${fmtWhen(lastDaylight(ev))}`, lastDaylight(ev)]);
+  if (ev) { const t = cv.clearBefore?.t ?? lastDaylight(ev); list.push(["event", `Vor dem Schneefall · ${cv.clearBefore?.score >= 60 ? "letztes klares Bild · " : ""}${fmtWhen(t)}`, t]); }
   list.push(["6", "−6 h", cv.after - 6 * H], ["24", "−24 h", cv.after - 24 * H], ["48", "−48 h", cv.after - 48 * H], ["168", "−7 Tage", cv.after - 168 * H], ["365", "vor 1 Jahr", cv.after - 365 * 24 * H]);
   return list;
 }
@@ -314,8 +333,9 @@ async function loadCompare() {
   if (token !== cv.token || cv.mode !== "cmp") return;
   await Promise.all([setImg($("bImg"), fb, "Kein Bild"), setImg($("aImg"), fa, "Kein Bild")]);
   $("stage").classList.remove("loading");
-  $("bStamp").textContent = "Vorher · " + (fb ? fmtWhen(fb.t) : "kein Bild");
-  $("aStamp").textContent = "Nachher · " + (fa ? (isNow ? "jetzt" : fmtWhen(fa.t)) : "kein Bild");
+  const lab = (info, t) => info && Math.abs(info.t - t) < 2 * H ? ` · ${clarityLabel(info)}` : "";
+  $("bStamp").textContent = "Vorher · " + (fb ? fmtWhen(fb.t) + lab(cv.beforeInfo, cv.before) : "kein Bild");
+  $("aStamp").textContent = "Nachher · " + (fa ? (isNow ? "jetzt" : fmtWhen(fa.t)) + lab(cv.afterInfo, cv.after) : "kein Bild");
   renderChart(); renderFigs();
 }
 
@@ -365,8 +385,19 @@ function updateCursor() {
 }
 
 function fig(label, value, sub, hot) { return `<div class="${hot ? "hot" : ""}"><dt>${label}</dt><dd>${value}${sub ? `<span>${sub}</span>` : ""}</dd></div>`; }
+function renderFigs2(c) {
+  const s = stationFor(c), b = bulletinFor(c);
+  const lw = !b ? `<div><dt>Lawinengefahr</dt><dd>–<span>Für diese Region gibt es keinen offen abrufbaren Bericht. <a href="${EAWS_MAP}" target="_blank" rel="noopener">EAWS-Karte ↗</a></span></dd></div>`
+    : !b.valid ? `<div><dt>Lawinengefahr · ${esc(b.region)}</dt><dd>–<span>Kein aktueller Bericht. Letzter gültig bis ${fmtWhen(b.until)}. <a href="${b.link}" target="_blank" rel="noopener">${esc(b.source)} ↗</a></span></dd></div>`
+    : `<div class="wide2"><dt>Lawinengefahr · ${esc(b.region)}</dt><dd>${levelBadge(b, true)} ${LEVEL_DE[b.level]}<span>${[levelSplit(b), b.problems.join(", ")].filter(Boolean).join(" · ")}${b.highlights ? `<br>${esc(b.highlights)}` : ""}<br>gültig bis ${fmtWhen(b.until)} · <a href="${b.link}" target="_blank" rel="noopener">${esc(b.source)} ↗</a></span></dd></div>`;
+  const hs = s ? `<div class="${s.d24 >= 3 ? "hot" : ""}"><dt>Schneehöhe gemessen</dt><dd>${f0(s.hs)} cm<span>${s.d24 != null ? `${s.d24 >= 0 ? "+" : ""}${f0(s.d24)} cm in 24 h${s.d72 != null ? ` · ${s.d72 >= 0 ? "+" : ""}${f0(s.d72)} cm in 72 h` : ""}<br>` : ""}Station ${esc(s.name)}, ${s.elev} m, ${s.km.toFixed(1)} km entfernt · ${esc(s.src)} · ${fmtTime(s.t)}</span></dd></div>`
+    : `<div><dt>Schneehöhe gemessen</dt><dd>–<span>Keine Messstation in der Nähe und auf ähnlicher Höhe.</span></dd></div>`;
+  $("figs2").innerHTML = hs + lw;
+}
+
 function renderFigs() {
   const c = cv.cam, h = cv.hist, a = analyses[c.id];
+  renderFigs2(c);
   if (cv.mode === "cmp") {
     const inRange = t => h && t >= h.t[0];
     const at = t => h ? hourIndex(h, t) : -1;
@@ -564,10 +595,14 @@ const savedTile = store.get("tile", "m");
 document.querySelector(`#wallSize [data-size="${savedTile}"]`)?.click();
 
 loadVis().then(() => { if (!$("viewWatch").hidden) renderWall(watched()); });
+const rerender = () => { if (!$("viewWatch").hidden) renderBoard(watched()); if (!$("viewCam").hidden && cv.cam) renderFigs2(cv.cam); if (!$("viewPlan").hidden) renderPlanner(ctx); };
+loadMeasurements().then(rerender);
+setInterval(() => loadMeasurements().then(rerender), 15 * 60e3);
 setInterval(loadVis, 15 * 60e3);
 const [cat, wl] = await Promise.all([fetch("cams.json").then(r => r.json()), fetch("watchlist.json", { cache: "no-store" }).then(r => r.json())]);
 catalog = cat.cams; repoWatch = wl;
 [...new Set(catalog.map(c => c.country))].sort().forEach(cc => $("country").insertAdjacentHTML("beforeend", `<option value="${cc}">${cc.toUpperCase()}</option>`));
+window.__swStarted = true;
 route();
 refresh();
 setInterval(refresh, WEATHER_EVERY);

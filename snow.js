@@ -77,7 +77,7 @@ export async function fetchWeather(cams, fetchImpl = fetch) {
 export async function fetchHistory(cam, pastDays = 7, fetchImpl = fetch) {
   const q = new URLSearchParams({
     latitude: cam.lat, longitude: cam.lon, elevation: cam.elev,
-    hourly: "snowfall,temperature_2m,snow_depth,weather_code,freezing_level_height",
+    hourly: "snowfall,temperature_2m,snow_depth,weather_code,freezing_level_height,relative_humidity_2m,precipitation,cloud_cover_low,visibility",
     models: HOURLY_MODELS.join(","),
     past_days: String(pastDays), forecast_days: "2", timezone: "GMT",
   });
@@ -86,7 +86,7 @@ export async function fetchHistory(cam, pastDays = 7, fetchImpl = fetch) {
     if (!r.ok) throw new Error(`Open-Meteo answered ${r.status}`);
     return r.json();
   });
-  const h = normalise(j, ["snowfall", "temperature_2m", "snow_depth"]).hourly;
+  const h = normalise(j, ["snowfall", "temperature_2m", "snow_depth", "relative_humidity_2m", "precipitation", "cloud_cover_low"]).hourly;
   return {
     t: h.time.map(s => Date.parse(s + "Z")),
     snow: h.snowfall.map(v => v || 0),
@@ -94,6 +94,8 @@ export async function fetchHistory(cam, pastDays = 7, fetchImpl = fetch) {
     depth: h.snow_depth.map(v => (v == null ? null : v * 100)),
     code: pick(j.hourly, "weather_code") || [],
     frz: pick(j.hourly, "freezing_level_height") || [],
+    rh: h.relative_humidity_2m, precip: h.precipitation, cloudLow: h.cloud_cover_low,
+    vis: pick(j.hourly, "visibility") || [],
   };
 }
 

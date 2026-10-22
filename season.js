@@ -1,7 +1,8 @@
 // Season: first snow per season, snow events from the log, and the same-day comparison across years.
-import { fetchArchiveDaily, fetchHistory, snowBetween, snowEventStart } from "./snow.js";
-import { hasArchive, findFrame } from "./archive.js";
-import { H, DAY, $, esc, f0, f1, fmtDM, fmtWhen, fmtDate, fmtSpan, dayKey, noonOf, lastDaylight, nextDaylight, cached } from "./util.js";
+import { fetchArchiveDaily, fetchHistory, snowBetween, snowEventStart } from "./snow.js?v=mvj9sduv";
+import { findClear, lastSnowHour } from "./clarity.js?v=mvj9sduv";
+import { hasArchive, findFrame, latestUrl } from "./archive.js?v=mvj9sduv";
+import { H, DAY, $, esc, f0, f1, fmtDM, fmtWhen, fmtDate, fmtSpan, dayKey, noonOf, lastDaylight, nextDaylight, cached } from "./util.js?v=mvj9sduv";
 
 const FIRST_CM = 2;         // a day with at least this much new snow counts as "first snow"
 const SEASONS_BACK = 5;
@@ -59,28 +60,41 @@ export async function renderEvent(ctx, key) {
       const s0 = snowEventStart(h, x.iv.start + H);
       if (s0 && s0 < x.iv.start) x.start = s0 + H;
       x.sum = snowBetween(h, x.start - H, x.iv.end || Date.now());
+      if (hasArchive(x.c)) {
+        // latest clear daylight image before the snow, and after it (fog shows nothing)
+        const end = x.iv.end || Date.now(), last = lastSnowHour(h, end) ?? end;
+        const [b, a] = await Promise.all([
+          findClear(x.c, h, { from: x.start - 5 * DAY, to: x.start - H }),
+          findClear(x.c, h, { from: last, to: Math.min(Date.now(), last + 48 * H) }),
+        ]);
+        if (b) x.before = b.t;
+        if (a && a.score >= 60) x.after = a.t;
+      }
     } catch {}
   }));
   if (cams.length) ev.start = Math.min(...cams.map(x => x.start));
   $("evHead").innerHTML = `<h1>Schneefall ${fmtDM(ev.start)}${!ev.ongoing && dayKey(end) !== key ? `–${fmtDM(end)}` : ""}</h1>
     <div class="meta"><span>${fmtWhen(ev.start)} bis ${ev.ongoing ? "jetzt (läuft)" : fmtWhen(end)} · ${fmtSpan(end - ev.start)}</span></div>`;
-  cams.sort((a, b) => (b.sum ?? -1) - (a.sum ?? -1));
+  cams.sort((a, b) => hasArchive(b.c) - hasArchive(a.c) || (b.sum ?? -1) - (a.sum ?? -1));
   const top = cams.find(x => x.sum != null), low = cams.slice().sort((a, b) => a.c.elev - b.c.elev)[0];
   $("evFigs").innerHTML =
     `<div><dt>Betroffene Cams</dt><dd>${cams.length}</dd></div>` +
     `<div class="hot"><dt>Am meisten Neuschnee</dt><dd>${top ? `${f1(top.sum)} cm<span>${esc(top.c.name)}</span>` : "–"}</dd></div>` +
     `<div><dt>Tiefste Cam mit Schnee</dt><dd>${low ? `${low.c.elev} m<span>${esc(low.c.name)}</span>` : "–"}</dd></div>` +
     `<div><dt>Dauer</dt><dd>${fmtSpan(end - ev.start)}<span>${ev.ongoing ? "läuft noch" : "abgeschlossen"}</span></dd></div>`;
-  $("evCams").innerHTML = cams.map(({ c, iv, sum, start }) => {
-    const before = lastDaylight(start - H), after = iv.end ? nextDaylight(iv.end) : Date.now();
+  $("evCams").innerHTML = cams.map(x => {
+    const { c, iv, sum, start } = x;
+    const before = x.before ?? lastDaylight(start - H), after = x.after ?? (iv.end ? nextDaylight(iv.end) : Date.now());
     return `<figure class="evcard" data-cmp="${esc(c.id)}" data-b="${before}" data-a="${after}">
-      <div class="pair">${hasArchive(c) ? `<span class="ph"><img data-src-b alt="${esc(c.name)} vorher"><em>Vorher</em></span><span class="ph"><img data-src-a alt="${esc(c.name)} nachher"><em>Nachher</em></span>` : `<span class="ph none">Kein Bildarchiv</span>`}</div>
+      <div class="pair">${hasArchive(c) ? `<span class="ph"><img data-src-b alt="${esc(c.name)} vorher" style="opacity:0" onload="this.style.opacity=1"><em>Vorher</em></span><span class="ph"><img data-src-a alt="${esc(c.name)} nachher" style="opacity:0" onload="this.style.opacity=1"><em>Nachher</em></span>` : `<span class="ph none wide">Kein Bildarchiv · ${esc(c.page.replace(/^https?:\/\/(www\.)?/, "").split("/")[0])}</span>`}</div>
       <figcaption><span class="alt">${c.elev}</span><b>${esc(c.name)}</b><span class="n">${sum == null ? "–" : `+${f1(sum)} cm`}</span></figcaption></figure>`;
   }).join("");
   // load images
   document.querySelectorAll("#evCams .evcard").forEach(async fig => {
     const c = ctx.byId(fig.dataset.cmp); if (!hasArchive(c)) return;
-    const [fb, fa] = await Promise.all([findFrame(c, +fig.dataset.b, "view"), findFrame(c, +fig.dataset.a, "view")]);
+    const live = Date.now() - +fig.dataset.a < 30 * 60e3;
+    const [fb, fa] = await Promise.all([findFrame(c, +fig.dataset.b, "view"),
+      live ? latestUrl(c, "view").then(url => url && { url }) : findFrame(c, +fig.dataset.a, "view")]);
     const ib = fig.querySelector("[data-src-b]"), ia = fig.querySelector("[data-src-a]");
     if (fb) ib.src = fb.url; if (fa) ia.src = fa.url;
   });
