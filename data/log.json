@@ -358,5 +358,50 @@
   "msg": "13.9 cm in the last 24 h.",
   "past24": 13.9,
   "temp": -12.9
+ },
+ {
+  "t": 1792657534621,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "stop",
+  "msg": "8.8 cm in the last 24 h.",
+  "past24": 8.8,
+  "temp": -10.8
+ },
+ {
+  "t": 1792657534621,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "stop",
+  "msg": "8.7 cm in the last 24 h.",
+  "past24": 8.7,
+  "temp": -10.6
+ },
+ {
+  "t": 1792657534621,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "stop",
+  "msg": "9.4 cm in the last 24 h.",
+  "past24": 9.4,
+  "temp": -12.9
+ },
+ {
+  "t": 1792657534621,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "stop",
+  "msg": "8.4 cm in the last 24 h.",
+  "past24": 8.4,
+  "temp": -10
+ },
+ {
+  "t": 1792657534621,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "stop",
+  "msg": "12.3 cm in the last 24 h.",
+  "past24": 12.3,
+  "temp": -9.9
  }
 ]
