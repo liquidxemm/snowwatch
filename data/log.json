@@ -529,5 +529,86 @@
   "msg": "1.8 cm in the last 24 h.",
   "past24": 1.8,
   "temp": -10.5
+ },
+ {
+  "t": 1792783945103,
+  "id": "saasfee-dorf",
+  "name": "Saas-Fee Village",
+  "type": "start",
+  "msg": "1800 m, 0.4 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": 0.4
+ },
+ {
+  "t": 1792783945103,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "start",
+  "msg": "3250 m, -7.4 °C. 1.8 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -7.4
+ },
+ {
+  "t": 1792783945103,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "start",
+  "msg": "3123 m, -6.8 °C. 6.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -6.8
+ },
+ {
+  "t": 1792783945103,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "start",
+  "msg": "3454 m, -8.6 °C. 3.4 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -8.6
+ },
+ {
+  "t": 1792783945103,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "start",
+  "msg": "3195 m, -7.2 °C. 0.8 cm forecast for the next 24 h.",
+  "past24": 1.2,
+  "temp": -7.2
+ },
+ {
+  "t": 1792783945103,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "start",
+  "msg": "3106 m, -6.7 °C. 5.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -6.7
+ },
+ {
+  "t": 1792783945103,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "start",
+  "msg": "2962 m, -5.8 °C. 0.8 cm forecast for the next 24 h.",
+  "past24": 0.2,
+  "temp": -5.8
+ },
+ {
+  "t": 1792783945103,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "start",
+  "msg": "3210 m, -7.3 °C. 0.9 cm forecast for the next 24 h.",
+  "past24": 0.8,
+  "temp": -7.3
+ },
+ {
+  "t": 1792783945103,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "start",
+  "msg": "3466 m, -11.3 °C. 4.1 cm forecast for the next 24 h.",
+  "past24": 2.7,
+  "temp": -11.3
  }
 ]
