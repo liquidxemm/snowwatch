@@ -493,5 +493,41 @@
   "msg": "3440 m, -7.0 °C. 2.1 cm forecast for the next 24 h.",
   "past24": 0,
   "temp": -7
+ },
+ {
+  "t": 1792769833665,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "stop",
+  "msg": "0.2 cm in the last 24 h.",
+  "past24": 0.2,
+  "temp": -6.7
+ },
+ {
+  "t": 1792769833665,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -3.9
+ },
+ {
+  "t": 1792769833665,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "0.2 cm in the last 24 h.",
+  "past24": 0.2,
+  "temp": -6.8
+ },
+ {
+  "t": 1792769833665,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "stop",
+  "msg": "1.8 cm in the last 24 h.",
+  "past24": 1.8,
+  "temp": -10.5
  }
 ]
