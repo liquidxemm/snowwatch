@@ -403,5 +403,32 @@
   "msg": "12.3 cm in the last 24 h.",
   "past24": 12.3,
   "temp": -9.9
+ },
+ {
+  "t": 1792734465894,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "start",
+  "msg": "3456 m, -6.8 °C. 0.2 cm forecast for the next 24 h.",
+  "past24": 0.4,
+  "temp": -6.8
+ },
+ {
+  "t": 1792734465894,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "start",
+  "msg": "3245 m, -8.8 °C. 1.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -8.8
+ },
+ {
+  "t": 1792734465894,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "start",
+  "msg": "3466 m, -6.9 °C. 3.2 cm forecast for the next 24 h.",
+  "past24": 0.2,
+  "temp": -6.9
  }
 ]

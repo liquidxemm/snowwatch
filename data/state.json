@@ -1,7 +1,7 @@
 {
  "saasfee-mittelallalin": {
-  "status": "dry",
-  "lastSnowAt": 1792620000000,
+  "status": "snow",
+  "lastSnowAt": 1792731600000,
   "soonAt": 0
  },
  "saasgrund-hohsaas": {
@@ -30,8 +30,8 @@
   "soonAt": 0
  },
  "hintereisferner1": {
-  "status": "dry",
-  "lastSnowAt": 1792627200000,
+  "status": "snow",
+  "lastSnowAt": 1792731600000,
   "soonAt": 0
  },
  "gletscher-schareck": {
@@ -75,8 +75,8 @@
   "soonAt": 0
  },
  "jungfraujoch": {
-  "status": "dry",
-  "lastSnowAt": 1792627200000,
+  "status": "snow",
+  "lastSnowAt": 1792731600000,
   "soonAt": 0
  }
 }
