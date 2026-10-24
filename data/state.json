@@ -25,7 +25,7 @@
   "soonAt": 1792592666293
  },
  "hintertux-gefrorenewand": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1792861200000,
   "soonAt": 0
  },
@@ -35,7 +35,7 @@
   "soonAt": 0
  },
  "gletscher-schareck": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1792861200000,
   "soonAt": 0
  },
@@ -70,13 +70,13 @@
   "soonAt": 0
  },
  "kitzsteinhorn": {
-  "status": "dry",
-  "lastSnowAt": 1792850400000,
+  "status": "snow",
+  "lastSnowAt": 1792868400000,
   "soonAt": 0
  },
  "jungfraujoch": {
   "status": "dry",
   "lastSnowAt": 1792850400000,
-  "soonAt": 0
+  "soonAt": 1792870733714
  }
 }
