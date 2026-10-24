@@ -718,5 +718,50 @@
   "msg": "0.5 cm in the last 24 h.",
   "past24": 0.5,
   "temp": -10.3
+ },
+ {
+  "t": 1792821025904,
+  "id": "saasfee-dorf",
+  "name": "Saas-Fee Village",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -2.5
+ },
+ {
+  "t": 1792821025904,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "start",
+  "msg": "3454 m, -11.6 °C. 2.2 cm forecast for the next 24 h.",
+  "past24": 1.4,
+  "temp": -11.6
+ },
+ {
+  "t": 1792821025904,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "start",
+  "msg": "3195 m, -11.7 °C. 0.7 cm forecast for the next 24 h.",
+  "past24": 2.2,
+  "temp": -11.7
+ },
+ {
+  "t": 1792821025904,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "start",
+  "msg": "3210 m, -11.8 °C. 0.9 cm forecast for the next 24 h.",
+  "past24": 1.7,
+  "temp": -11.8
+ },
+ {
+  "t": 1792821025904,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "start",
+  "msg": "3440 m, -13.9 °C. 1.2 cm forecast for the next 24 h.",
+  "past24": 2.2,
+  "temp": -13.9
  }
 ]
