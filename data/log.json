@@ -853,5 +853,95 @@
   "msg": "3210 m, -10.7 °C. 3.0 cm forecast for the next 24 h.",
   "past24": 1.7,
   "temp": -10.7
+ },
+ {
+  "t": 1792862752429,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "stop",
+  "msg": "3.2 cm in the last 24 h.",
+  "past24": 3.2,
+  "temp": -5.6
+ },
+ {
+  "t": 1792862752429,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "stop",
+  "msg": "2.9 cm in the last 24 h.",
+  "past24": 2.9,
+  "temp": -3
+ },
+ {
+  "t": 1792862752429,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "start",
+  "msg": "3123 m, -11.8 °C. 0.5 cm forecast for the next 24 h.",
+  "past24": 5.3,
+  "temp": -11.8
+ },
+ {
+  "t": 1792862752429,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "stop",
+  "msg": "4.8 cm in the last 24 h.",
+  "past24": 4.8,
+  "temp": -14.2
+ },
+ {
+  "t": 1792862752429,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "stop",
+  "msg": "5.7 cm in the last 24 h.",
+  "past24": 5.7,
+  "temp": -12.3
+ },
+ {
+  "t": 1792862752429,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "stop",
+  "msg": "1.2 cm in the last 24 h.",
+  "past24": 1.2,
+  "temp": -9.6
+ },
+ {
+  "t": 1792862752429,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "1.6 cm in the last 24 h.",
+  "past24": 1.6,
+  "temp": -12.3
+ },
+ {
+  "t": 1792862752429,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "stop",
+  "msg": "2.5 cm in the last 24 h.",
+  "past24": 2.5,
+  "temp": -14.1
+ },
+ {
+  "t": 1792862752429,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "stop",
+  "msg": "5.1 cm in the last 24 h.",
+  "past24": 5.1,
+  "temp": -11.2
+ },
+ {
+  "t": 1792862752429,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "stop",
+  "msg": "3.9 cm in the last 24 h.",
+  "past24": 3.9,
+  "temp": -11.4
  }
 ]
