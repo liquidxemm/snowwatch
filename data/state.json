@@ -1,12 +1,12 @@
 {
  "saasfee-mittelallalin": {
-  "status": "dry",
-  "lastSnowAt": 1792818000000,
+  "status": "snow",
+  "lastSnowAt": 1792875600000,
   "soonAt": 0
  },
  "saasgrund-hohsaas": {
-  "status": "dry",
-  "lastSnowAt": 1792818000000,
+  "status": "snow",
+  "lastSnowAt": 1792875600000,
   "soonAt": 0
  },
  "saasfee-dorf": {
@@ -70,13 +70,13 @@
   "soonAt": 0
  },
  "kitzsteinhorn": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1792868400000,
   "soonAt": 0
  },
  "jungfraujoch": {
-  "status": "dry",
-  "lastSnowAt": 1792850400000,
+  "status": "snow",
+  "lastSnowAt": 1792875600000,
   "soonAt": 1792870733714
  }
 }
