@@ -1312,5 +1312,95 @@
   "msg": "6.2 cm in the last 24 h.",
   "past24": 6.2,
   "temp": -9.5
+ },
+ {
+  "t": 1792965783628,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "start",
+  "msg": "1970 m, -1.7 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 2.1,
+  "temp": -1.7
+ },
+ {
+  "t": 1792965783628,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "stop",
+  "msg": "2.2 cm in the last 24 h.",
+  "past24": 2.2,
+  "temp": -9.6
+ },
+ {
+  "t": 1792965783628,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "stop",
+  "msg": "3.5 cm in the last 24 h.",
+  "past24": 3.5,
+  "temp": -10.1
+ },
+ {
+  "t": 1792965783628,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "stop",
+  "msg": "2.0 cm in the last 24 h.",
+  "past24": 2,
+  "temp": -8.8
+ },
+ {
+  "t": 1792965783628,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "stop",
+  "msg": "2.3 cm in the last 24 h.",
+  "past24": 2.3,
+  "temp": -11.4
+ },
+ {
+  "t": 1792965783628,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "stop",
+  "msg": "4.5 cm in the last 24 h.",
+  "past24": 4.5,
+  "temp": -10.1
+ },
+ {
+  "t": 1792965783628,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "stop",
+  "msg": "1.7 cm in the last 24 h.",
+  "past24": 1.7,
+  "temp": -8.2
+ },
+ {
+  "t": 1792965783628,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "start",
+  "msg": "2962 m, -8.4 °C. 0.2 cm forecast for the next 24 h.",
+  "past24": 1.2,
+  "temp": -8.4
+ },
+ {
+  "t": 1792965783628,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "4.2 cm in the last 24 h.",
+  "past24": 4.2,
+  "temp": -10.2
+ },
+ {
+  "t": 1792965783628,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "stop",
+  "msg": "3.9 cm in the last 24 h.",
+  "past24": 3.9,
+  "temp": -11.8
  }
 ]
