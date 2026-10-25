@@ -1096,5 +1096,50 @@
   "msg": "3440 m, -7.6 °C. 4.1 cm forecast for the next 24 h.",
   "past24": 1.5,
   "temp": -7.6
+ },
+ {
+  "t": 1792917660369,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "stop",
+  "msg": "5.1 cm in the last 24 h.",
+  "past24": 5.1,
+  "temp": 1.3
+ },
+ {
+  "t": 1792917660369,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "stop",
+  "msg": "3.6 cm in the last 24 h.",
+  "past24": 3.6,
+  "temp": 3.5
+ },
+ {
+  "t": 1792917660369,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "start",
+  "msg": "3123 m, -4.5 °C. 2.0 cm forecast for the next 24 h.",
+  "past24": 2.6,
+  "temp": -4.5
+ },
+ {
+  "t": 1792917660369,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "start",
+  "msg": "3106 m, -4.1 °C. 1.6 cm forecast for the next 24 h.",
+  "past24": 2.8,
+  "temp": -4.1
+ },
+ {
+  "t": 1792917660369,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "start",
+  "msg": "3029 m, -2.9 °C. 2.4 cm forecast for the next 24 h.",
+  "past24": 2.5,
+  "temp": -2.9
  }
 ]
