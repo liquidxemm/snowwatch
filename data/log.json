@@ -1186,5 +1186,50 @@
   "msg": "0.8 cm in the last 24 h.",
   "past24": 0.8,
   "temp": -0.6
+ },
+ {
+  "t": 1792948116369,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "start",
+  "msg": "3250 m, -4.2 °C. 1.4 cm forecast for the next 24 h.",
+  "past24": 1,
+  "temp": -4.2
+ },
+ {
+  "t": 1792948116369,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "soon",
+  "msg": "1.5 cm forecast within 3 h at 3123 m (-4.1 °C now).",
+  "past24": 0.3,
+  "temp": -4.1
+ },
+ {
+  "t": 1792948116369,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "soon",
+  "msg": "2.1 cm forecast within 3 h at 3454 m (-4.9 °C now).",
+  "past24": 0.4,
+  "temp": -4.9
+ },
+ {
+  "t": 1792948116369,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "soon",
+  "msg": "1.8 cm forecast within 3 h at 3106 m (-3.6 °C now).",
+  "past24": 0.1,
+  "temp": -3.6
+ },
+ {
+  "t": 1792948116369,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "soon",
+  "msg": "2.1 cm forecast within 3 h at 3029 m (-1.9 °C now).",
+  "past24": 0.5,
+  "temp": -1.9
  }
 ]
