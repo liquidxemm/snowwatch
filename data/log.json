@@ -1015,5 +1015,86 @@
   "msg": "3466 m, -9.1 °C. 8.4 cm forecast for the next 24 h.",
   "past24": 3.7,
   "temp": -9.1
+ },
+ {
+  "t": 1792898994719,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "start",
+  "msg": "2350 m, -1.9 °C. 2.9 cm forecast for the next 24 h.",
+  "past24": 2.7,
+  "temp": -1.9
+ },
+ {
+  "t": 1792898994719,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "start",
+  "msg": "1970 m, 0.0 °C. 1.2 cm forecast for the next 24 h.",
+  "past24": 2.4,
+  "temp": 0
+ },
+ {
+  "t": 1792898994719,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "start",
+  "msg": "3250 m, -7.3 °C. 3.2 cm forecast for the next 24 h.",
+  "past24": 0.8,
+  "temp": -7.3
+ },
+ {
+  "t": 1792898994719,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "start",
+  "msg": "3245 m, -7.9 °C. 3.6 cm forecast for the next 24 h.",
+  "past24": 1.2,
+  "temp": -7.9
+ },
+ {
+  "t": 1792898994719,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "start",
+  "msg": "3454 m, -9.4 °C. 3.0 cm forecast for the next 24 h.",
+  "past24": 4.1,
+  "temp": -9.4
+ },
+ {
+  "t": 1792898994719,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "start",
+  "msg": "3195 m, -6.4 °C. 4.8 cm forecast for the next 24 h.",
+  "past24": 0.6,
+  "temp": -6.4
+ },
+ {
+  "t": 1792898994719,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "start",
+  "msg": "2962 m, -5.6 °C. 1.5 cm forecast for the next 24 h.",
+  "past24": 0.8,
+  "temp": -5.6
+ },
+ {
+  "t": 1792898994719,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "start",
+  "msg": "3210 m, -6.5 °C. 4.7 cm forecast for the next 24 h.",
+  "past24": 0.8,
+  "temp": -6.5
+ },
+ {
+  "t": 1792898994719,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "start",
+  "msg": "3440 m, -7.6 °C. 4.1 cm forecast for the next 24 h.",
+  "past24": 1.5,
+  "temp": -7.6
  }
 ]
