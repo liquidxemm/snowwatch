@@ -15,12 +15,12 @@
   "soonAt": 0
  },
  "ruefikopf": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1792965600000,
   "soonAt": 0
  },
  "lech": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1792965600000,
   "soonAt": 1792592666293
  },
@@ -35,13 +35,13 @@
   "soonAt": 0
  },
  "gletscher-schareck": {
-  "status": "dry",
-  "lastSnowAt": 1792954800000,
+  "status": "snow",
+  "lastSnowAt": 1792972800000,
   "soonAt": 1792948116369
  },
  "adlersruhe": {
-  "status": "dry",
-  "lastSnowAt": 1792954800000,
+  "status": "snow",
+  "lastSnowAt": 1792972800000,
   "soonAt": 1792948116369
  },
  "becherhaus": {
@@ -50,12 +50,12 @@
   "soonAt": 0
  },
  "sonnblick": {
-  "status": "dry",
-  "lastSnowAt": 1792954800000,
+  "status": "snow",
+  "lastSnowAt": 1792972800000,
   "soonAt": 1792948116369
  },
  "zugspitze": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1792965600000,
   "soonAt": 0
  },
@@ -71,7 +71,7 @@
  },
  "kitzsteinhorn": {
   "status": "snow",
-  "lastSnowAt": 1792965600000,
+  "lastSnowAt": 1792972800000,
   "soonAt": 1792948116369
  },
  "jungfraujoch": {
