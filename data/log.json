@@ -1492,5 +1492,14 @@
   "msg": "1.9 cm in the last 24 h.",
   "past24": 1.9,
   "temp": -10.1
+ },
+ {
+  "t": 1793035312845,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "start",
+  "msg": "3466 m, -4.4 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0.6,
+  "temp": -4.4
  }
 ]
