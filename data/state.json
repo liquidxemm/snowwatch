@@ -35,12 +35,12 @@
   "soonAt": 0
  },
  "gletscher-schareck": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1792972800000,
   "soonAt": 1792948116369
  },
  "adlersruhe": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1792972800000,
   "soonAt": 1792948116369
  },
@@ -50,7 +50,7 @@
   "soonAt": 0
  },
  "sonnblick": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1792972800000,
   "soonAt": 1792948116369
  },
@@ -70,7 +70,7 @@
   "soonAt": 0
  },
  "kitzsteinhorn": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1792972800000,
   "soonAt": 1792948116369
  },
