@@ -30,8 +30,8 @@
   "soonAt": 0
  },
  "hintereisferner1": {
-  "status": "dry",
-  "lastSnowAt": 1792954800000,
+  "status": "snow",
+  "lastSnowAt": 1793048400000,
   "soonAt": 0
  },
  "gletscher-schareck": {
@@ -65,8 +65,8 @@
   "soonAt": 0
  },
  "pitztal-gletscher": {
-  "status": "dry",
-  "lastSnowAt": 1792954800000,
+  "status": "snow",
+  "lastSnowAt": 1793048400000,
   "soonAt": 0
  },
  "kitzsteinhorn": {
@@ -76,7 +76,7 @@
  },
  "jungfraujoch": {
   "status": "snow",
-  "lastSnowAt": 1793034000000,
+  "lastSnowAt": 1793048400000,
   "soonAt": 1792870733714
  }
 }

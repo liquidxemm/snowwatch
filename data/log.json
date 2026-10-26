@@ -1501,5 +1501,23 @@
   "msg": "3466 m, -4.4 °C. 0.0 cm forecast for the next 24 h.",
   "past24": 0.6,
   "temp": -4.4
+ },
+ {
+  "t": 1793051095818,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "start",
+  "msg": "3245 m, -4.1 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -4.1
+ },
+ {
+  "t": 1793051095818,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "start",
+  "msg": "3440 m, -4.5 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -4.5
  }
 ]
