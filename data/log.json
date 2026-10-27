@@ -1564,5 +1564,23 @@
   "msg": "3029 m, -3.6 °C. 0.0 cm forecast for the next 24 h.",
   "past24": 0,
   "temp": -3.6
+ },
+ {
+  "t": 1793100552501,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -2.5
+ },
+ {
+  "t": 1793100552501,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -1.2
  }
 ]
