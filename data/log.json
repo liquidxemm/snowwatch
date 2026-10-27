@@ -1537,5 +1537,32 @@
   "msg": "0.0 cm in the last 24 h.",
   "past24": 0,
   "temp": -0.8
+ },
+ {
+  "t": 1793080474322,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "start",
+  "msg": "3454 m, -5.0 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -5
+ },
+ {
+  "t": 1793080474322,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -2.3
+ },
+ {
+  "t": 1793080474322,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "start",
+  "msg": "3029 m, -3.6 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -3.6
  }
 ]

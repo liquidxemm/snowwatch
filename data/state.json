@@ -40,8 +40,8 @@
   "soonAt": 1792948116369
  },
  "adlersruhe": {
-  "status": "dry",
-  "lastSnowAt": 1792972800000,
+  "status": "snow",
+  "lastSnowAt": 1793077200000,
   "soonAt": 1792948116369
  },
  "becherhaus": {
@@ -65,13 +65,13 @@
   "soonAt": 0
  },
  "pitztal-gletscher": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1793059200000,
   "soonAt": 0
  },
  "kitzsteinhorn": {
-  "status": "dry",
-  "lastSnowAt": 1792972800000,
+  "status": "snow",
+  "lastSnowAt": 1793077200000,
   "soonAt": 1792948116369
  },
  "jungfraujoch": {
