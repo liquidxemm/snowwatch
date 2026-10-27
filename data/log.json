@@ -1519,5 +1519,23 @@
   "msg": "3440 m, -4.5 °C. 0.0 cm forecast for the next 24 h.",
   "past24": 0,
   "temp": -4.5
+ },
+ {
+  "t": 1793062388510,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -3.5
+ },
+ {
+  "t": 1793062388510,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -0.8
  }
 ]
