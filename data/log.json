@@ -1582,5 +1582,14 @@
   "msg": "0.0 cm in the last 24 h.",
   "past24": 0,
   "temp": -1.2
+ },
+ {
+  "t": 1793168269788,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "start",
+  "msg": "2962 m, -2.2 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -2.2
  }
 ]
