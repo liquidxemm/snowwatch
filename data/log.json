@@ -1591,5 +1591,68 @@
   "msg": "2962 m, -2.2 °C. 0.0 cm forecast for the next 24 h.",
   "past24": 0,
   "temp": -2.2
+ },
+ {
+  "t": 1793193595233,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "start",
+  "msg": "3250 m, -4.1 °C. 0.4 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -4.1
+ },
+ {
+  "t": 1793193595233,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "start",
+  "msg": "3454 m, -5.0 °C. 0.2 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -5
+ },
+ {
+  "t": 1793193595233,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "start",
+  "msg": "3195 m, -3.2 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -3.2
+ },
+ {
+  "t": 1793193595233,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -3.4
+ },
+ {
+  "t": 1793193595233,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "start",
+  "msg": "3210 m, -3.3 °C. 0.2 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -3.3
+ },
+ {
+  "t": 1793193595233,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "start",
+  "msg": "3440 m, -4.8 °C. 0.1 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -4.8
+ },
+ {
+  "t": 1793193595233,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "start",
+  "msg": "3029 m, -2.5 °C. 0.2 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -2.5
  }
 ]
