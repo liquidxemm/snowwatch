@@ -1699,5 +1699,68 @@
   "msg": "2962 m, -5.4 °C. 0.0 cm forecast for the next 24 h.",
   "past24": 0,
   "temp": -5.4
+ },
+ {
+  "t": 1793228375422,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -1.2
+ },
+ {
+  "t": 1793228375422,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "stop",
+  "msg": "0.6 cm in the last 24 h.",
+  "past24": 0.6,
+  "temp": -7
+ },
+ {
+  "t": 1793228375422,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "stop",
+  "msg": "0.4 cm in the last 24 h.",
+  "past24": 0.4,
+  "temp": -8.1
+ },
+ {
+  "t": 1793228375422,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -5.9
+ },
+ {
+  "t": 1793228375422,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -6.3
+ },
+ {
+  "t": 1793228375422,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "0.4 cm in the last 24 h.",
+  "past24": 0.4,
+  "temp": -5.9
+ },
+ {
+  "t": 1793228375422,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "stop",
+  "msg": "0.4 cm in the last 24 h.",
+  "past24": 0.4,
+  "temp": -7
  }
 ]
