@@ -1654,5 +1654,50 @@
   "msg": "3029 m, -2.5 °C. 0.2 cm forecast for the next 24 h.",
   "past24": 0,
   "temp": -2.5
+ },
+ {
+  "t": 1793213894000,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "start",
+  "msg": "2350 m, -0.8 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -0.8
+ },
+ {
+  "t": 1793213894000,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "start",
+  "msg": "3123 m, -5.4 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -5.4
+ },
+ {
+  "t": 1793213894000,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -4.6
+ },
+ {
+  "t": 1793213894000,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "start",
+  "msg": "3106 m, -5.1 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -5.1
+ },
+ {
+  "t": 1793213894000,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "start",
+  "msg": "2962 m, -5.4 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -5.4
  }
 ]

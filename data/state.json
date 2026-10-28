@@ -15,8 +15,8 @@
   "soonAt": 0
  },
  "ruefikopf": {
-  "status": "dry",
-  "lastSnowAt": 1792965600000,
+  "status": "snow",
+  "lastSnowAt": 1793210400000,
   "soonAt": 0
  },
  "lech": {
@@ -26,7 +26,7 @@
  },
  "hintertux-gefrorenewand": {
   "status": "snow",
-  "lastSnowAt": 1793192400000,
+  "lastSnowAt": 1793210400000,
   "soonAt": 0
  },
  "hintereisferner1": {
@@ -35,43 +35,43 @@
   "soonAt": 0
  },
  "gletscher-schareck": {
-  "status": "dry",
-  "lastSnowAt": 1792972800000,
+  "status": "snow",
+  "lastSnowAt": 1793210400000,
   "soonAt": 1792948116369
  },
  "adlersruhe": {
   "status": "snow",
-  "lastSnowAt": 1793192400000,
+  "lastSnowAt": 1793210400000,
   "soonAt": 1792948116369
  },
  "becherhaus": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1793192400000,
   "soonAt": 0
  },
  "sonnblick": {
-  "status": "dry",
-  "lastSnowAt": 1792972800000,
+  "status": "snow",
+  "lastSnowAt": 1793210400000,
   "soonAt": 1792948116369
  },
  "zugspitze": {
-  "status": "dry",
-  "lastSnowAt": 1793167200000,
+  "status": "snow",
+  "lastSnowAt": 1793210400000,
   "soonAt": 0
  },
  "stubai-gletscher": {
   "status": "snow",
-  "lastSnowAt": 1793192400000,
+  "lastSnowAt": 1793210400000,
   "soonAt": 0
  },
  "pitztal-gletscher": {
   "status": "snow",
-  "lastSnowAt": 1793192400000,
+  "lastSnowAt": 1793210400000,
   "soonAt": 0
  },
  "kitzsteinhorn": {
   "status": "snow",
-  "lastSnowAt": 1793192400000,
+  "lastSnowAt": 1793210400000,
   "soonAt": 1792948116369
  },
  "jungfraujoch": {
