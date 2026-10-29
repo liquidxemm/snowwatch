@@ -1762,5 +1762,14 @@
   "msg": "0.4 cm in the last 24 h.",
   "past24": 0.4,
   "temp": -7
+ },
+ {
+  "t": 1793240178707,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "start",
+  "msg": "3106 m, -6.9 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -6.9
  }
 ]

@@ -36,7 +36,7 @@
  },
  "gletscher-schareck": {
   "status": "snow",
-  "lastSnowAt": 1793224800000,
+  "lastSnowAt": 1793239200000,
   "soonAt": 1792948116369
  },
  "adlersruhe": {
@@ -50,8 +50,8 @@
   "soonAt": 0
  },
  "sonnblick": {
-  "status": "dry",
-  "lastSnowAt": 1793210400000,
+  "status": "snow",
+  "lastSnowAt": 1793239200000,
   "soonAt": 1792948116369
  },
  "zugspitze": {
@@ -71,7 +71,7 @@
  },
  "kitzsteinhorn": {
   "status": "snow",
-  "lastSnowAt": 1793224800000,
+  "lastSnowAt": 1793239200000,
   "soonAt": 1792948116369
  },
  "jungfraujoch": {
