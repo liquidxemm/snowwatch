@@ -35,8 +35,8 @@
   "soonAt": 0
  },
  "gletscher-schareck": {
-  "status": "dry",
-  "lastSnowAt": 1793239200000,
+  "status": "snow",
+  "lastSnowAt": 1793480400000,
   "soonAt": 1792948116369
  },
  "adlersruhe": {
@@ -50,8 +50,8 @@
   "soonAt": 0
  },
  "sonnblick": {
-  "status": "dry",
-  "lastSnowAt": 1793239200000,
+  "status": "snow",
+  "lastSnowAt": 1793480400000,
   "soonAt": 1792948116369
  },
  "zugspitze": {

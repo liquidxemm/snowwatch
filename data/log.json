@@ -1798,5 +1798,23 @@
   "msg": "0.4 cm in the last 24 h.",
   "past24": 0.4,
   "temp": -7.2
+ },
+ {
+  "t": 1793483555387,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "start",
+  "msg": "3123 m, -11.1 °C. 2.7 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -11.1
+ },
+ {
+  "t": 1793483555387,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "start",
+  "msg": "3106 m, -10.7 °C. 2.7 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -10.7
  }
 ]
