@@ -36,7 +36,7 @@
  },
  "gletscher-schareck": {
   "status": "snow",
-  "lastSnowAt": 1793556000000,
+  "lastSnowAt": 1793570400000,
   "soonAt": 1792948116369
  },
  "adlersruhe": {
@@ -45,13 +45,13 @@
   "soonAt": 1792948116369
  },
  "becherhaus": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1793556000000,
   "soonAt": 0
  },
  "sonnblick": {
-  "status": "dry",
-  "lastSnowAt": 1793538000000,
+  "status": "snow",
+  "lastSnowAt": 1793570400000,
   "soonAt": 1792948116369
  },
  "zugspitze": {
@@ -60,7 +60,7 @@
   "soonAt": 0
  },
  "stubai-gletscher": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1793556000000,
   "soonAt": 0
  },
@@ -71,7 +71,7 @@
  },
  "kitzsteinhorn": {
   "status": "snow",
-  "lastSnowAt": 1793556000000,
+  "lastSnowAt": 1793570400000,
   "soonAt": 1792948116369
  },
  "jungfraujoch": {

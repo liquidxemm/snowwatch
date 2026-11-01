@@ -1978,5 +1978,32 @@
   "msg": "1.0 cm in the last 24 h.",
   "past24": 1,
   "temp": -14.4
+ },
+ {
+  "t": 1793572448135,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "stop",
+  "msg": "0.8 cm in the last 24 h.",
+  "past24": 0.8,
+  "temp": -11.4
+ },
+ {
+  "t": 1793572448135,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "start",
+  "msg": "3106 m, -11.9 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 2.1,
+  "temp": -11.9
+ },
+ {
+  "t": 1793572448135,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "0.6 cm in the last 24 h.",
+  "past24": 0.6,
+  "temp": -11.5
  }
 ]
