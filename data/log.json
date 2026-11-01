@@ -1843,5 +1843,68 @@
   "msg": "3029 m, -11.6 °C. 2.4 cm forecast for the next 24 h.",
   "past24": 0.1,
   "temp": -11.6
+ },
+ {
+  "t": 1793515875709,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "start",
+  "msg": "2350 m, -6.7 °C. 0.3 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -6.7
+ },
+ {
+  "t": 1793515875709,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "start",
+  "msg": "3250 m, -14.0 °C. 1.1 cm forecast for the next 24 h.",
+  "past24": 1,
+  "temp": -14
+ },
+ {
+  "t": 1793515875709,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "start",
+  "msg": "3245 m, -13.6 °C. 0.1 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -13.6
+ },
+ {
+  "t": 1793515875709,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "start",
+  "msg": "3195 m, -13.6 °C. 0.7 cm forecast for the next 24 h.",
+  "past24": 0.2,
+  "temp": -13.6
+ },
+ {
+  "t": 1793515875709,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "start",
+  "msg": "2962 m, -11.4 °C. 1.1 cm forecast for the next 24 h.",
+  "past24": 0.8,
+  "temp": -11.4
+ },
+ {
+  "t": 1793515875709,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "start",
+  "msg": "3210 m, -13.7 °C. 0.6 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -13.7
+ },
+ {
+  "t": 1793515875709,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "start",
+  "msg": "3440 m, -15.0 °C. 0.5 cm forecast for the next 24 h.",
+  "past24": 0.2,
+  "temp": -15
  }
 ]
