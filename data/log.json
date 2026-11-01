@@ -1933,5 +1933,50 @@
   "msg": "0.0 cm in the last 24 h.",
   "past24": 0,
   "temp": -11.6
+ },
+ {
+  "t": 1793558926110,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "stop",
+  "msg": "2.5 cm in the last 24 h.",
+  "past24": 2.5,
+  "temp": -13.6
+ },
+ {
+  "t": 1793558926110,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "stop",
+  "msg": "1.5 cm in the last 24 h.",
+  "past24": 1.5,
+  "temp": -14.6
+ },
+ {
+  "t": 1793558926110,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "stop",
+  "msg": "2.1 cm in the last 24 h.",
+  "past24": 2.1,
+  "temp": -12.6
+ },
+ {
+  "t": 1793558926110,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "stop",
+  "msg": "1.5 cm in the last 24 h.",
+  "past24": 1.5,
+  "temp": -11.8
+ },
+ {
+  "t": 1793558926110,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "stop",
+  "msg": "1.0 cm in the last 24 h.",
+  "past24": 1,
+  "temp": -14.4
  }
 ]
