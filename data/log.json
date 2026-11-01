@@ -1816,5 +1816,32 @@
   "msg": "3106 m, -10.7 °C. 2.7 cm forecast for the next 24 h.",
   "past24": 0,
   "temp": -10.7
+ },
+ {
+  "t": 1793493505035,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "start",
+  "msg": "1970 m, -3.0 °C. 0.2 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -3
+ },
+ {
+  "t": 1793493505035,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "start",
+  "msg": "3454 m, -14.7 °C. 2.1 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -14.7
+ },
+ {
+  "t": 1793493505035,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "start",
+  "msg": "3029 m, -11.6 °C. 2.4 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -11.6
  }
 ]
