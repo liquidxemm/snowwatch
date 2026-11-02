@@ -2032,5 +2032,14 @@
   "msg": "2.2 cm in the last 24 h.",
   "past24": 2.2,
   "temp": -9.3
+ },
+ {
+  "t": 1793646261575,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "start",
+  "msg": "3029 m, -8.3 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -8.3
  }
 ]
