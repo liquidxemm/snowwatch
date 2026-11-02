@@ -2005,5 +2005,32 @@
   "msg": "0.6 cm in the last 24 h.",
   "past24": 0.6,
   "temp": -11.5
+ },
+ {
+  "t": 1793584152520,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "stop",
+  "msg": "1.5 cm in the last 24 h.",
+  "past24": 1.5,
+  "temp": -10.6
+ },
+ {
+  "t": 1793584152520,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "stop",
+  "msg": "2.0 cm in the last 24 h.",
+  "past24": 2,
+  "temp": -10.6
+ },
+ {
+  "t": 1793584152520,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "stop",
+  "msg": "2.2 cm in the last 24 h.",
+  "past24": 2.2,
+  "temp": -9.3
  }
 ]
