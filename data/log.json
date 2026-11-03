@@ -2059,5 +2059,14 @@
   "msg": "0.0 cm in the last 24 h.",
   "past24": 0,
   "temp": -8.2
+ },
+ {
+  "t": 1793694842246,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -7.9
  }
 ]
