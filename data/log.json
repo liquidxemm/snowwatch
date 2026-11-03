@@ -2041,5 +2041,23 @@
   "msg": "3029 m, -8.3 °C. 0.0 cm forecast for the next 24 h.",
   "past24": 0,
   "temp": -8.3
+ },
+ {
+  "t": 1793669658170,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "start",
+  "msg": "3123 m, -8.5 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -8.5
+ },
+ {
+  "t": 1793669658170,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -8.2
  }
 ]
