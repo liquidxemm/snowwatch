@@ -2086,5 +2086,32 @@
   "msg": "3106 m, -8.2 °C. 0.4 cm forecast for the next 24 h.",
   "past24": 0,
   "temp": -8.2
+ },
+ {
+  "t": 1793784997309,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "start",
+  "msg": "3454 m, -8.8 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -8.8
+ },
+ {
+  "t": 1793784997309,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "start",
+  "msg": "3195 m, -7.5 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0.2,
+  "temp": -7.5
+ },
+ {
+  "t": 1793784997309,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "start",
+  "msg": "3210 m, -7.6 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -7.6
  }
 ]
