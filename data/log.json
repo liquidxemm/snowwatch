@@ -2113,5 +2113,50 @@
   "msg": "3210 m, -7.6 °C. 0.0 cm forecast for the next 24 h.",
   "past24": 0.1,
   "temp": -7.6
+ },
+ {
+  "t": 1793813509473,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "stop",
+  "msg": "0.4 cm in the last 24 h.",
+  "past24": 0.4,
+  "temp": -7.7
+ },
+ {
+  "t": 1793813509473,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "stop",
+  "msg": "0.2 cm in the last 24 h.",
+  "past24": 0.2,
+  "temp": -9.5
+ },
+ {
+  "t": 1793813509473,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "stop",
+  "msg": "0.2 cm in the last 24 h.",
+  "past24": 0.2,
+  "temp": -7.3
+ },
+ {
+  "t": 1793813509473,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "stop",
+  "msg": "0.2 cm in the last 24 h.",
+  "past24": 0.2,
+  "temp": -7.4
+ },
+ {
+  "t": 1793813509473,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "0.1 cm in the last 24 h.",
+  "past24": 0.1,
+  "temp": -7.4
  }
 ]
