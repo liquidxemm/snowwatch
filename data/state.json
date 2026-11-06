@@ -5,8 +5,8 @@
   "soonAt": 0
  },
  "saasgrund-hohsaas": {
-  "status": "dry",
-  "lastSnowAt": 1793937600000,
+  "status": "snow",
+  "lastSnowAt": 1793991600000,
   "soonAt": 0
  },
  "saasfee-dorf": {
@@ -30,8 +30,8 @@
   "soonAt": 0
  },
  "hintereisferner1": {
-  "status": "dry",
-  "lastSnowAt": 1793512800000,
+  "status": "snow",
+  "lastSnowAt": 1793991600000,
   "soonAt": 0
  },
  "gletscher-schareck": {
@@ -45,8 +45,8 @@
   "soonAt": 1792948116369
  },
  "becherhaus": {
-  "status": "dry",
-  "lastSnowAt": 1793782800000,
+  "status": "snow",
+  "lastSnowAt": 1793991600000,
   "soonAt": 0
  },
  "sonnblick": {
@@ -60,13 +60,13 @@
   "soonAt": 0
  },
  "stubai-gletscher": {
-  "status": "dry",
-  "lastSnowAt": 1793782800000,
+  "status": "snow",
+  "lastSnowAt": 1793991600000,
   "soonAt": 0
  },
  "pitztal-gletscher": {
-  "status": "dry",
-  "lastSnowAt": 1793538000000,
+  "status": "snow",
+  "lastSnowAt": 1793991600000,
   "soonAt": 0
  },
  "kitzsteinhorn": {
@@ -76,7 +76,7 @@
  },
  "jungfraujoch": {
   "status": "snow",
-  "lastSnowAt": 1793966400000,
+  "lastSnowAt": 1793991600000,
   "soonAt": 1792870733714
  }
 }
