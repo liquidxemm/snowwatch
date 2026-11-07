@@ -2383,5 +2383,41 @@
   "msg": "1.8 cm in the last 24 h.",
   "past24": 1.8,
   "temp": -9.8
+ },
+ {
+  "t": 1794050055028,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "stop",
+  "msg": "0.1 cm in the last 24 h.",
+  "past24": 0.1,
+  "temp": -7.8
+ },
+ {
+  "t": 1794050055028,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "start",
+  "msg": "3195 m, -5.5 °C. 0.6 cm forecast for the next 24 h.",
+  "past24": 0.6,
+  "temp": -5.5
+ },
+ {
+  "t": 1794050055028,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "stop",
+  "msg": "0.1 cm in the last 24 h.",
+  "past24": 0.1,
+  "temp": -6.5
+ },
+ {
+  "t": 1794050055028,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "start",
+  "msg": "3210 m, -5.6 °C. 1.0 cm forecast for the next 24 h.",
+  "past24": 0.6,
+  "temp": -5.6
  }
 ]
