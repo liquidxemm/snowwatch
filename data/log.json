@@ -2329,5 +2329,59 @@
   "msg": "3029 m, -4.2 °C. 0.8 cm forecast for the next 24 h.",
   "past24": 0,
   "temp": -4.2
+ },
+ {
+  "t": 1794025072945,
+  "id": "saasfee-dorf",
+  "name": "Saas-Fee Village",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": 1.6
+ },
+ {
+  "t": 1794025072945,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "start",
+  "msg": "3123 m, -7.4 °C. 1.4 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -7.4
+ },
+ {
+  "t": 1794025072945,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "start",
+  "msg": "3454 m, -8.5 °C. 2.2 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -8.5
+ },
+ {
+  "t": 1794025072945,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "start",
+  "msg": "3106 m, -6.0 °C. 1.5 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -6
+ },
+ {
+  "t": 1794025072945,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -5.8
+ },
+ {
+  "t": 1794025072945,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "stop",
+  "msg": "1.8 cm in the last 24 h.",
+  "past24": 1.8,
+  "temp": -9.8
  }
 ]

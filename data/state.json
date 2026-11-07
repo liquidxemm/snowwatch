@@ -10,7 +10,7 @@
   "soonAt": 0
  },
  "saasfee-dorf": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1794006000000,
   "soonAt": 0
  },
@@ -26,7 +26,7 @@
  },
  "hintertux-gefrorenewand": {
   "status": "snow",
-  "lastSnowAt": 1794006000000,
+  "lastSnowAt": 1794024000000,
   "soonAt": 0
  },
  "hintereisferner1": {
@@ -35,13 +35,13 @@
   "soonAt": 0
  },
  "gletscher-schareck": {
-  "status": "dry",
-  "lastSnowAt": 1793782800000,
+  "status": "snow",
+  "lastSnowAt": 1794024000000,
   "soonAt": 1792948116369
  },
  "adlersruhe": {
-  "status": "dry",
-  "lastSnowAt": 1793782800000,
+  "status": "snow",
+  "lastSnowAt": 1794024000000,
   "soonAt": 1792948116369
  },
  "becherhaus": {
@@ -50,12 +50,12 @@
   "soonAt": 0
  },
  "sonnblick": {
-  "status": "dry",
-  "lastSnowAt": 1793782800000,
+  "status": "snow",
+  "lastSnowAt": 1794024000000,
   "soonAt": 1792948116369
  },
  "zugspitze": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1794006000000,
   "soonAt": 0
  },
@@ -71,11 +71,11 @@
  },
  "kitzsteinhorn": {
   "status": "snow",
-  "lastSnowAt": 1794006000000,
+  "lastSnowAt": 1794024000000,
   "soonAt": 1792948116369
  },
  "jungfraujoch": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1794006000000,
   "soonAt": 1792870733714
  }
