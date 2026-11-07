@@ -25,12 +25,12 @@
   "soonAt": 1792592666293
  },
  "hintertux-gefrorenewand": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1794067200000,
   "soonAt": 0
  },
  "hintereisferner1": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1794067200000,
   "soonAt": 0
  },
@@ -45,7 +45,7 @@
   "soonAt": 1792948116369
  },
  "becherhaus": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1794067200000,
   "soonAt": 0
  },
@@ -55,18 +55,18 @@
   "soonAt": 1792948116369
  },
  "zugspitze": {
-  "status": "dry",
-  "lastSnowAt": 1794006000000,
+  "status": "snow",
+  "lastSnowAt": 1794081600000,
   "soonAt": 0
  },
  "stubai-gletscher": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1794067200000,
   "soonAt": 0
  },
  "pitztal-gletscher": {
   "status": "snow",
-  "lastSnowAt": 1794067200000,
+  "lastSnowAt": 1794081600000,
   "soonAt": 0
  },
  "kitzsteinhorn": {

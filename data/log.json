@@ -2455,5 +2455,50 @@
   "msg": "0.8 cm in the last 24 h.",
   "past24": 0.8,
   "temp": -7.1
+ },
+ {
+  "t": 1794083903473,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "stop",
+  "msg": "1.5 cm in the last 24 h.",
+  "past24": 1.5,
+  "temp": -8.9
+ },
+ {
+  "t": 1794083903473,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "stop",
+  "msg": "0.7 cm in the last 24 h.",
+  "past24": 0.7,
+  "temp": -8
+ },
+ {
+  "t": 1794083903473,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "stop",
+  "msg": "0.7 cm in the last 24 h.",
+  "past24": 0.7,
+  "temp": -7.5
+ },
+ {
+  "t": 1794083903473,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "start",
+  "msg": "2962 m, -5.9 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -5.9
+ },
+ {
+  "t": 1794083903473,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "1.3 cm in the last 24 h.",
+  "past24": 1.3,
+  "temp": -7.6
  }
 ]
