@@ -56,7 +56,7 @@
  },
  "zugspitze": {
   "status": "snow",
-  "lastSnowAt": 1794081600000,
+  "lastSnowAt": 1794092400000,
   "soonAt": 0
  },
  "stubai-gletscher": {
@@ -65,7 +65,7 @@
   "soonAt": 0
  },
  "pitztal-gletscher": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1794081600000,
   "soonAt": 0
  },

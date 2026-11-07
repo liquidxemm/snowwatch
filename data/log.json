@@ -2500,5 +2500,14 @@
   "msg": "1.3 cm in the last 24 h.",
   "past24": 1.3,
   "temp": -7.6
+ },
+ {
+  "t": 1794095853833,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "stop",
+  "msg": "0.9 cm in the last 24 h.",
+  "past24": 0.9,
+  "temp": -9.5
  }
 ]
