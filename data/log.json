@@ -2509,5 +2509,14 @@
   "msg": "0.9 cm in the last 24 h.",
   "past24": 0.9,
   "temp": -9.5
+ },
+ {
+  "t": 1794113846340,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -6.4
  }
 ]
