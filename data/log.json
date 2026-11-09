@@ -2518,5 +2518,77 @@
   "msg": "0.0 cm in the last 24 h.",
   "past24": 0,
   "temp": -6.4
+ },
+ {
+  "t": 1794210975877,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "start",
+  "msg": "3456 m, -4.7 °C. 0.4 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -4.7
+ },
+ {
+  "t": 1794210975877,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "start",
+  "msg": "3200 m, -4.0 °C. 0.6 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -4
+ },
+ {
+  "t": 1794210975877,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "start",
+  "msg": "2350 m, -1.4 °C. 0.1 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -1.4
+ },
+ {
+  "t": 1794210975877,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "start",
+  "msg": "1970 m, 0.8 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": 0.8
+ },
+ {
+  "t": 1794210975877,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "start",
+  "msg": "3195 m, -7.1 °C. 2.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -7.1
+ },
+ {
+  "t": 1794210975877,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "start",
+  "msg": "2962 m, -6.1 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -6.1
+ },
+ {
+  "t": 1794210975877,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "start",
+  "msg": "3210 m, -7.2 °C. 1.4 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -7.2
+ },
+ {
+  "t": 1794210975877,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "start",
+  "msg": "3466 m, -5.7 °C. 2.2 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -5.7
  }
 ]
