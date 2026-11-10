@@ -1,11 +1,11 @@
 {
  "saasfee-mittelallalin": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1794297600000,
   "soonAt": 0
  },
  "saasgrund-hohsaas": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1794297600000,
   "soonAt": 0
  },
@@ -30,7 +30,7 @@
   "soonAt": 0
  },
  "hintereisferner1": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1794297600000,
   "soonAt": 0
  },
@@ -45,7 +45,7 @@
   "soonAt": 1792948116369
  },
  "becherhaus": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1794297600000,
   "soonAt": 0
  },
@@ -55,27 +55,27 @@
   "soonAt": 1792948116369
  },
  "zugspitze": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1794297600000,
   "soonAt": 0
  },
  "stubai-gletscher": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1794297600000,
   "soonAt": 0
  },
  "pitztal-gletscher": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1794297600000,
   "soonAt": 0
  },
  "kitzsteinhorn": {
-  "status": "dry",
-  "lastSnowAt": 1794272400000,
+  "status": "snow",
+  "lastSnowAt": 1794326400000,
   "soonAt": 1792948116369
  },
  "jungfraujoch": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1794297600000,
   "soonAt": 1792870733714
  }
