@@ -2815,5 +2815,14 @@
   "msg": "6.4 cm in the last 24 h.",
   "past24": 6.4,
   "temp": -3.5
+ },
+ {
+  "t": 1794347905815,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "stop",
+  "msg": "0.5 cm in the last 24 h.",
+  "past24": 0.5,
+  "temp": -2.7
  }
 ]
