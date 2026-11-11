@@ -2824,5 +2824,95 @@
   "msg": "0.5 cm in the last 24 h.",
   "past24": 0.5,
   "temp": -2.7
+ },
+ {
+  "t": 1794415839270,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "start",
+  "msg": "3456 m, -3.7 °C. 3.4 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -3.7
+ },
+ {
+  "t": 1794415839270,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "start",
+  "msg": "3200 m, -2.7 °C. 5.0 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -2.7
+ },
+ {
+  "t": 1794415839270,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "start",
+  "msg": "3250 m, -3.3 °C. 0.6 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -3.3
+ },
+ {
+  "t": 1794415839270,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "start",
+  "msg": "3245 m, -3.2 °C. 1.8 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -3.2
+ },
+ {
+  "t": 1794415839270,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "start",
+  "msg": "3454 m, -4.2 °C. 0.8 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -4.2
+ },
+ {
+  "t": 1794415839270,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "start",
+  "msg": "3195 m, -2.7 °C. 1.5 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -2.7
+ },
+ {
+  "t": 1794415839270,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "start",
+  "msg": "2962 m, -1.5 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -1.5
+ },
+ {
+  "t": 1794415839270,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "start",
+  "msg": "3210 m, -2.8 °C. 0.9 cm forecast for the next 24 h.",
+  "past24": 0.4,
+  "temp": -2.8
+ },
+ {
+  "t": 1794415839270,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "start",
+  "msg": "3440 m, -4.0 °C. 1.8 cm forecast for the next 24 h.",
+  "past24": 0.2,
+  "temp": -4
+ },
+ {
+  "t": 1794415839270,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "start",
+  "msg": "3466 m, -4.7 °C. 3.6 cm forecast for the next 24 h.",
+  "past24": 1.1,
+  "temp": -4.7
  }
 ]

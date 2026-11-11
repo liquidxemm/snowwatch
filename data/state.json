@@ -1,12 +1,12 @@
 {
  "saasfee-mittelallalin": {
-  "status": "dry",
-  "lastSnowAt": 1794297600000,
+  "status": "snow",
+  "lastSnowAt": 1794412800000,
   "soonAt": 0
  },
  "saasgrund-hohsaas": {
-  "status": "dry",
-  "lastSnowAt": 1794297600000,
+  "status": "snow",
+  "lastSnowAt": 1794412800000,
   "soonAt": 0
  },
  "saasfee-dorf": {
@@ -25,13 +25,13 @@
   "soonAt": 1792592666293
  },
  "hintertux-gefrorenewand": {
-  "status": "dry",
-  "lastSnowAt": 1794247200000,
+  "status": "snow",
+  "lastSnowAt": 1794412800000,
   "soonAt": 0
  },
  "hintereisferner1": {
-  "status": "dry",
-  "lastSnowAt": 1794297600000,
+  "status": "snow",
+  "lastSnowAt": 1794412800000,
   "soonAt": 0
  },
  "gletscher-schareck": {
@@ -40,13 +40,13 @@
   "soonAt": 1792948116369
  },
  "adlersruhe": {
-  "status": "dry",
-  "lastSnowAt": 1794272400000,
+  "status": "snow",
+  "lastSnowAt": 1794412800000,
   "soonAt": 1792948116369
  },
  "becherhaus": {
-  "status": "dry",
-  "lastSnowAt": 1794297600000,
+  "status": "snow",
+  "lastSnowAt": 1794412800000,
   "soonAt": 0
  },
  "sonnblick": {
@@ -55,18 +55,18 @@
   "soonAt": 1792948116369
  },
  "zugspitze": {
-  "status": "dry",
-  "lastSnowAt": 1794297600000,
+  "status": "snow",
+  "lastSnowAt": 1794412800000,
   "soonAt": 0
  },
  "stubai-gletscher": {
-  "status": "dry",
-  "lastSnowAt": 1794297600000,
+  "status": "snow",
+  "lastSnowAt": 1794412800000,
   "soonAt": 0
  },
  "pitztal-gletscher": {
-  "status": "dry",
-  "lastSnowAt": 1794297600000,
+  "status": "snow",
+  "lastSnowAt": 1794412800000,
   "soonAt": 0
  },
  "kitzsteinhorn": {
@@ -75,8 +75,8 @@
   "soonAt": 1792948116369
  },
  "jungfraujoch": {
-  "status": "dry",
-  "lastSnowAt": 1794297600000,
+  "status": "snow",
+  "lastSnowAt": 1794412800000,
   "soonAt": 1792870733714
  }
 }
