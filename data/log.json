@@ -2914,5 +2914,95 @@
   "msg": "3466 m, -4.7 °C. 3.6 cm forecast for the next 24 h.",
   "past24": 1.1,
   "temp": -4.7
+ },
+ {
+  "t": 1794438989173,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -3.3
+ },
+ {
+  "t": 1794438989173,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "stop",
+  "msg": "0.1 cm in the last 24 h.",
+  "past24": 0.1,
+  "temp": -2.6
+ },
+ {
+  "t": 1794438989173,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "stop",
+  "msg": "0.3 cm in the last 24 h.",
+  "past24": 0.3,
+  "temp": -3.6
+ },
+ {
+  "t": 1794438989173,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "stop",
+  "msg": "0.7 cm in the last 24 h.",
+  "past24": 0.7,
+  "temp": -3.8
+ },
+ {
+  "t": 1794438989173,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -5.1
+ },
+ {
+  "t": 1794438989173,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "stop",
+  "msg": "0.5 cm in the last 24 h.",
+  "past24": 0.5,
+  "temp": -3.2
+ },
+ {
+  "t": 1794438989173,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -1.9
+ },
+ {
+  "t": 1794438989173,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "0.8 cm in the last 24 h.",
+  "past24": 0.8,
+  "temp": -3.3
+ },
+ {
+  "t": 1794438989173,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "stop",
+  "msg": "0.9 cm in the last 24 h.",
+  "past24": 0.9,
+  "temp": -4.8
+ },
+ {
+  "t": 1794438989173,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "stop",
+  "msg": "1.6 cm in the last 24 h.",
+  "past24": 1.6,
+  "temp": -4.3
  }
 ]
