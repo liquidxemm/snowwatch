@@ -3121,5 +3121,14 @@
   "msg": "3466 m, -5.3 °C. 7.5 cm forecast for the next 24 h.",
   "past24": 3.3,
   "temp": -5.3
+ },
+ {
+  "t": 1794514604910,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "start",
+  "msg": "2350 m, -0.4 °C. 2.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -0.4
  }
 ]
