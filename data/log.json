@@ -3004,5 +3004,14 @@
   "msg": "1.6 cm in the last 24 h.",
   "past24": 1.6,
   "temp": -4.3
+ },
+ {
+  "t": 1794455965837,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "start",
+  "msg": "3456 m, -3.0 °C. 7.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -3
  }
 ]
