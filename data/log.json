@@ -3211,5 +3211,68 @@
   "msg": "9.2 cm in the last 24 h.",
   "past24": 9.2,
   "temp": -9.7
+ },
+ {
+  "t": 1794587954078,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "stop",
+  "msg": "8.2 cm in the last 24 h.",
+  "past24": 8.2,
+  "temp": -12.4
+ },
+ {
+  "t": 1794587954078,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "stop",
+  "msg": "10.4 cm in the last 24 h.",
+  "past24": 10.4,
+  "temp": -13.5
+ },
+ {
+  "t": 1794587954078,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "stop",
+  "msg": "9.7 cm in the last 24 h.",
+  "past24": 9.7,
+  "temp": -13.2
+ },
+ {
+  "t": 1794587954078,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "stop",
+  "msg": "10.2 cm in the last 24 h.",
+  "past24": 10.2,
+  "temp": -14.6
+ },
+ {
+  "t": 1794587954078,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "6.5 cm in the last 24 h.",
+  "past24": 6.5,
+  "temp": -10.4
+ },
+ {
+  "t": 1794587954078,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "stop",
+  "msg": "6.7 cm in the last 24 h.",
+  "past24": 6.7,
+  "temp": -12.2
+ },
+ {
+  "t": 1794587954078,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "stop",
+  "msg": "10.0 cm in the last 24 h.",
+  "past24": 10,
+  "temp": -13.2
  }
 ]
