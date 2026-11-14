@@ -1,9 +1,9 @@
 // Finds the latest clear daylight image in a time window, so before/after comparisons show the landscape, not fog.
 // Signals, best first: the visibility history scored by the GitHub check, pixel analysis in the browser
 // (only where the image host allows it, e.g. roundshot), and the weather at the cam as an estimate.
-import { hourIndex } from "./snow.js?v=mvja05y3";
-import { H, isDay } from "./util.js?v=mvja05y3";
-import { findFrame, isPanorama } from "./archive.js?v=mvja05y3";
+import { hourIndex } from "./snow.js?v=mwgucd94";
+import { H, isDay } from "./util.js?v=mwgucd94";
+import { findFrame, isPanorama } from "./archive.js?v=mwgucd94";
 
 const HIST_URL = "https://raw.githubusercontent.com/liquidxemm/snowwatch/data/vis-history.json";
 const CLEAR = 60;

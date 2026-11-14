@@ -1,11 +1,11 @@
-import { fetchWeather, fetchHistory, analyse, step, describe, seasonOf, snowBetween, snowEventStart, hourIndex, CODE_TEXT } from "./snow.js?v=mvja05y3";
-import { hasArchive, isPanorama, findFrame, latestUrl } from "./archive.js?v=mvja05y3";
-import { H, $, esc, f1, f0, fmtWhen, fmtTime, fmtDay, isDay, lastDaylight, touch, fmtSpan, store, dayKey } from "./util.js?v=mvja05y3";
-import { renderPlanner, renderModels } from "./plan.js?v=mvja05y3";
-import { renderMap, initMapControls, refreshMapCams } from "./map.js?v=mvja05y3";
-import { loadMeasurements, stationFor, bulletinFor, levelBadge, levelSplit, LEVEL_DE, EAWS_MAP } from "./measure.js?v=mvja05y3";
-import { findClear, lastSnowHour, clarityLabel } from "./clarity.js?v=mvja05y3";
-import { renderSeason, renderEvent, renderYears } from "./season.js?v=mvja05y3";
+import { fetchWeather, fetchHistory, analyse, step, describe, seasonOf, snowBetween, snowEventStart, hourIndex, CODE_TEXT } from "./snow.js?v=mwgucd94";
+import { hasArchive, isPanorama, findFrame, latestUrl } from "./archive.js?v=mwgucd94";
+import { H, $, esc, f1, f0, fmtWhen, fmtTime, fmtDay, isDay, lastDaylight, touch, fmtSpan, store, dayKey } from "./util.js?v=mwgucd94";
+import { renderPlanner, renderModels } from "./plan.js?v=mwgucd94";
+import { renderMap, initMapControls, refreshMapCams } from "./map.js?v=mwgucd94";
+import { loadMeasurements, stationFor, bulletinFor, levelBadge, levelSplit, LEVEL_DE, EAWS_MAP } from "./measure.js?v=mwgucd94";
+import { findClear, lastSnowHour, clarityLabel } from "./clarity.js?v=mwgucd94";
+import { renderSeason, renderEvent, renderYears } from "./season.js?v=mwgucd94";
 
 const VIS_URL = "https://raw.githubusercontent.com/liquidxemm/snowwatch/data/vis.json";
 const VIS_LABEL = { clear: "klar", drops: "Tropfen / unscharf", fog: "Nebel / Schneetreiben", dark: "dunkel" };
@@ -134,7 +134,7 @@ function renderCatalog() {
   const q = $("q").value.trim().toLowerCase(), cc = $("country").value, min = +$("minElev").value;
   const hits = catalog.filter(c => c.elev >= min && (!cc || c.country === cc) && (!q || (c.name + " " + c.title + " " + c.id).toLowerCase().includes(q)));
   $("catCount").textContent = `${hits.length} von ${catalog.length} Cams`;
-  const thumbOf = c => c.img.includes("foto-webcam.eu") ? c.img.replace("/816.jpg", "/400.jpg") : c.img.replace(/\/medium$/, "/thumbnail");
+  const thumbOf = c => c.img.includes("foto-webcam.eu") ? c.img.replace("/816.jpg", "/400.jpg") : c.source === "panomax" ? c.img.replace(/recent_\w+\.jpg$/, "recent_small.jpg") : c.img.replace(/\/medium$/, "/thumbnail");
   $("catalog").innerHTML = hits.slice(0, 250).map(c => `<div class="brow crow">
       <span class="alt">${c.elev}</span>
       <button data-open="${esc(c.id)}">${c.img ? `<img class="thumb" src="${esc(thumbOf(c))}" alt="" loading="lazy">` : `<span class="thumb"></span>`}</button>
@@ -180,6 +180,9 @@ function frameTimes(c, hours) {
 async function openCam(id) {
   const c = byId(id); if (!c) return;
   cv.cam = c; cv.hist = null; cv.playing = false; cv.token++;
+  // usable defaults right away; refined once the weather history arrives
+  cv.after = Date.now(); cv.before = lastDaylight(Date.now() - 24 * H); cv.beforeKey = "24";
+  if (cv.pending) { cv.before = cv.pending.before; cv.after = cv.pending.after; cv.beforeKey = ""; }
   showView("cam");
   window.scrollTo(0, 0);
   $("cName").textContent = c.name;
