@@ -78,5 +78,30 @@
   "status": "dry",
   "lastSnowAt": 1794531600000,
   "soonAt": 1792870733714
+ },
+ "cortina-pomedes": {
+  "status": "dry",
+  "lastSnowAt": 0,
+  "soonAt": 0
+ },
+ "cortina-5torri": {
+  "status": "dry",
+  "lastSnowAt": 0,
+  "soonAt": 0
+ },
+ "cortina-colgallina": {
+  "status": "dry",
+  "lastSnowAt": 0,
+  "soonAt": 0
+ },
+ "cortina-faloria": {
+  "status": "dry",
+  "lastSnowAt": 0,
+  "soonAt": 0
+ },
+ "cortina-ducadaosta": {
+  "status": "dry",
+  "lastSnowAt": 0,
+  "soonAt": 0
  }
 }
