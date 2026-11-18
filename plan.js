@@ -1,6 +1,6 @@
 // Planner: 7-day outlook for watched cams, and the per-model comparison in the cam view.
-import { fetchPlan, spread, powderDays, MODELS } from "./snow.js?v=mwgucd94";
-import { $, esc, f0, f1, fmtWd, fmtDM, cached } from "./util.js?v=mwgucd94";
+import { fetchPlan, spread, powderDays, MODELS } from "./snow.js?v=mwm17ato";
+import { $, esc, f0, f1, fmtWd, fmtDM, cached } from "./util.js?v=mwm17ato";
 
 const PLAN_AGE = 30 * 60e3;
 const tint = cm => `color-mix(in srgb, var(--accent) ${Math.round(Math.min(1, cm / 30) * 55)}%, transparent)`;
@@ -113,4 +113,53 @@ export async function renderModels(cam) {
       <tr class="sub"><th class="l">Temp. min / max</th>${b.tmin.map((v, k) => `<td>${f0(v)} / ${f0(b.tmax[k])}</td>`).join("")}<td></td></tr>
     </tbody></table></div>
     <p class="note">Hochauflösende Modelle rechnen nur 1–2 Tage voraus, danach bleibt das Feld leer. Je weiter die Modelle auseinanderliegen, desto unsicherer ist die Prognose.</p>`;
+}
+
+// Outlook on the overview: answers "how much snow will fall in the next days?" at a glance.
+let outlookDays = 3;
+export async function renderOutlook(ctx) {
+  const el = $("outlook"), cams = ctx.watched();
+  if (!cams.length) { el.innerHTML = ""; return; }
+  let plans;
+  try { plans = await loadPlans(cams); }
+  catch { $("outlookLead").textContent = "Die Prognose ist gerade nicht verfügbar. Sie lädt beim nächsten Aktualisieren neu."; el.innerHTML = ""; return; }
+  const n = Math.min(outlookDays, plans[0].days.length), days = plans[0].days.slice(0, n);
+  const rows = cams.map((c, i) => {
+    const p = plans[i], s = p.snow.slice(0, n).map(v => v || 0);
+    let lo = 0, hi = 0;
+    for (let k = 0; k < n; k++) { const sp = spread(p, "snow", k); lo += sp?.min ?? s[k]; hi += sp?.max ?? s[k]; }
+    return { c, s, sum: s.reduce((a, v) => a + v, 0), lo, hi };
+  }).sort((a, b) => b.sum - a.sum);
+
+  // lead sentence: where most, how many cams get a real dump, and which days carry it
+  const top = rows[0], over10 = rows.filter(r => r.sum >= 10).length;
+  const perDay = days.map((_, k) => rows.reduce((a, r) => a + r.s[k], 0));
+  const total = perDay.reduce((a, v) => a + v, 0);
+  const mainDays = days.map((d, k) => ({ d, v: perDay[k] })).filter(x => total > 0 && x.v >= total * .25);
+  const dayName = d => fmtWd(Date.parse(d + "T12:00:00Z"));
+  const span = n === 2 ? "heute und morgen" : `in den nächsten ${n} Tagen`;
+  const unsure = top && top.hi > 0 && (top.hi - top.lo) > Math.max(10, top.sum * .8);
+  $("outlookLead").innerHTML = !top || top.sum < 1
+    ? `${span[0].toUpperCase() + span.slice(1)} fällt an deinen Cams kaum Schnee (unter 1 cm).`
+    : `${span[0].toUpperCase() + span.slice(1)} fällt am meisten Schnee bei <button data-open="${esc(top.c.id)}">${esc(top.c.name)}</button>: <b>${f0(top.sum)} cm</b> (Modelle ${f0(top.lo)}–${f0(top.hi)} cm). `
+      + `${over10 ? `${over10} von ${rows.length} Cams bekommen mehr als 10 cm. ` : "Keine Cam bekommt mehr als 10 cm. "}`
+      + `${mainDays.length ? `Der meiste Schnee kommt ${mainDays.map(x => dayName(x.d)).join(mainDays.length === 2 ? " und " : ", ")}.` : ""}`
+      + `${unsure ? " Die Modelle sind sich noch uneinig, die Menge kann sich deutlich ändern." : ""}`;
+
+  const max = Math.max(5, ...rows.map(r => r.hi));
+  const x = v => (Math.min(v, max) / max * 100).toFixed(1);
+  el.innerHTML = `<div class="ohead"><span>Cam</span><span>Neuschnee, Median und Spanne der Modelle</span><span class="n">cm</span><span class="days">${days.map(d => `<i>${dayName(d)}</i>`).join("")}</span></div>`
+    + rows.map(r => `<div class="orow">
+      <button data-open="${esc(r.c.id)}"><span class="alt">${r.c.elev}</span> ${esc(r.c.name)} ${ctx.levelBadge(ctx.bulletinFor(r.c))}</button>
+      <span class="obar" title="Median ${f0(r.sum)} cm, Modelle ${f0(r.lo)}–${f0(r.hi)} cm">
+        <span class="rng" style="left:${x(r.lo)}%;width:${(x(r.hi) - x(r.lo)).toFixed(1)}%"></span><span class="med" style="width:${x(r.sum)}%"></span></span>
+      <span class="n"><b>${r.sum >= .5 ? f0(r.sum) : "0"}</b> <small>${f0(r.lo)}–${f0(r.hi)}</small></span>
+      <span class="days">${r.s.map((v, k) => `<i title="${dayName(days[k])}: ${f1(v)} cm" style="--h:${Math.min(1, v / 20)}">${v >= 1 ? f0(v) : ""}</i>`).join("")}</span></div>`).join("");
+}
+export function initOutlook(ctx) {
+  $("outlookDays").addEventListener("click", e => {
+    const b = e.target.closest("[data-d]"); if (!b) return;
+    outlookDays = +b.dataset.d; [...$("outlookDays").children].forEach(x => x.setAttribute("aria-pressed", x === b));
+    renderOutlook(ctx);
+  });
 }
