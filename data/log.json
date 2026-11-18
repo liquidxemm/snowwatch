@@ -3508,5 +3508,50 @@
   "msg": "3195 m, -6.3 °C. 2.0 cm forecast for the next 24 h.",
   "past24": 0.8,
   "temp": -6.3
+ },
+ {
+  "t": 1795001182989,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "start",
+  "msg": "1970 m, -0.6 °C. 5.8 cm forecast for the next 24 h.",
+  "past24": 3.9,
+  "temp": -0.6
+ },
+ {
+  "t": 1795001182989,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "start",
+  "msg": "3250 m, -7.7 °C. 2.4 cm forecast for the next 24 h.",
+  "past24": 0.7,
+  "temp": -7.7
+ },
+ {
+  "t": 1795001182989,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "start",
+  "msg": "3454 m, -8.5 °C. 2.0 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -8.5
+ },
+ {
+  "t": 1795001182989,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "start",
+  "msg": "3106 m, -5.3 °C. 1.8 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -5.3
+ },
+ {
+  "t": 1795001182989,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "start",
+  "msg": "3029 m, -6.0 °C. 3.4 cm forecast for the next 24 h.",
+  "past24": 0.2,
+  "temp": -6
  }
 ]
