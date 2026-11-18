@@ -3490,5 +3490,23 @@
   "msg": "3466 m, -3.6 °C. 14.6 cm forecast for the next 24 h.",
   "past24": 2.5,
   "temp": -3.6
+ },
+ {
+  "t": 1794970816036,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "start",
+  "msg": "3245 m, -7.1 °C. 1.7 cm forecast for the next 24 h.",
+  "past24": 2.5,
+  "temp": -7.1
+ },
+ {
+  "t": 1794970816036,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "start",
+  "msg": "3195 m, -6.3 °C. 2.0 cm forecast for the next 24 h.",
+  "past24": 0.8,
+  "temp": -6.3
  }
 ]

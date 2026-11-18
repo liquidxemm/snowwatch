@@ -1,12 +1,12 @@
 {
  "saasfee-mittelallalin": {
   "status": "snow",
-  "lastSnowAt": 1794884400000,
+  "lastSnowAt": 1794970800000,
   "soonAt": 0
  },
  "saasgrund-hohsaas": {
   "status": "snow",
-  "lastSnowAt": 1794884400000,
+  "lastSnowAt": 1794970800000,
   "soonAt": 0
  },
  "saasfee-dorf": {
@@ -16,7 +16,7 @@
  },
  "ruefikopf": {
   "status": "snow",
-  "lastSnowAt": 1794884400000,
+  "lastSnowAt": 1794970800000,
   "soonAt": 0
  },
  "lech": {
@@ -30,8 +30,8 @@
   "soonAt": 1794798575707
  },
  "hintereisferner1": {
-  "status": "dry",
-  "lastSnowAt": 1794798000000,
+  "status": "snow",
+  "lastSnowAt": 1794970800000,
   "soonAt": 0
  },
  "gletscher-schareck": {
@@ -45,8 +45,8 @@
   "soonAt": 1792948116369
  },
  "becherhaus": {
-  "status": "dry",
-  "lastSnowAt": 1794798000000,
+  "status": "snow",
+  "lastSnowAt": 1794970800000,
   "soonAt": 0
  },
  "sonnblick": {
@@ -56,17 +56,17 @@
  },
  "zugspitze": {
   "status": "snow",
-  "lastSnowAt": 1794884400000,
+  "lastSnowAt": 1794970800000,
   "soonAt": 0
  },
  "stubai-gletscher": {
   "status": "snow",
-  "lastSnowAt": 1794884400000,
+  "lastSnowAt": 1794970800000,
   "soonAt": 0
  },
  "pitztal-gletscher": {
   "status": "snow",
-  "lastSnowAt": 1794884400000,
+  "lastSnowAt": 1794970800000,
   "soonAt": 0
  },
  "kitzsteinhorn": {
@@ -76,7 +76,7 @@
  },
  "jungfraujoch": {
   "status": "snow",
-  "lastSnowAt": 1794884400000,
+  "lastSnowAt": 1794970800000,
   "soonAt": 1792870733714
  },
  "cortina-pomedes": {
