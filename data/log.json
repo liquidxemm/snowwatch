@@ -79,5 +79,3434 @@
   "msg": "It's snowing at 3466 m, -4.1 °C. 12.4 cm forecast for the next 24 h.",
   "past24": 6.4,
   "temp": -4.1
+ },
+ {
+  "t": 1792592666293,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "first",
+  "msg": "It's snowing at 2350 m, -0.9 °C. 5.2 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -0.9
+ },
+ {
+  "t": 1792592666293,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "soon",
+  "msg": "0.6 cm forecast within 3 h at 1970 m (1.5 °C now).",
+  "past24": 0,
+  "temp": 1.5
+ },
+ {
+  "t": 1792592666293,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "stop",
+  "msg": "1.8 cm in the last 24 h.",
+  "past24": 1.8,
+  "temp": -1.2
+ },
+ {
+  "t": 1792592666293,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "first",
+  "msg": "It's snowing at 3123 m, -1.1 °C. 3.9 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -1.1
+ },
+ {
+  "t": 1792592666293,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -1.1
+ },
+ {
+  "t": 1792592666293,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "first",
+  "msg": "It's snowing at 3106 m, -1.0 °C. 3.9 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -1
+ },
+ {
+  "t": 1792592666293,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "first",
+  "msg": "It's snowing at 2962 m, -1.5 °C. 0.6 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -1.5
+ },
+ {
+  "t": 1792592666293,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -1.2
+ },
+ {
+  "t": 1792592666293,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -2
+ },
+ {
+  "t": 1792608504527,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "stop",
+  "msg": "16.9 cm in the last 24 h.",
+  "past24": 16.9,
+  "temp": -8.7
+ },
+ {
+  "t": 1792608504527,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "stop",
+  "msg": "19.7 cm in the last 24 h.",
+  "past24": 19.7,
+  "temp": -7.6
+ },
+ {
+  "t": 1792608504527,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "first",
+  "msg": "It's snowing at 1970 m, -0.7 °C. 3.9 cm forecast for the next 24 h.",
+  "past24": 1.2,
+  "temp": -0.7
+ },
+ {
+  "t": 1792608504527,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "start",
+  "msg": "3245 m, -5.0 °C. 5.7 cm forecast for the next 24 h.",
+  "past24": 1.8,
+  "temp": -5
+ },
+ {
+  "t": 1792608504527,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "start",
+  "msg": "3195 m, -4.0 °C. 9.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -4
+ },
+ {
+  "t": 1792608504527,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "start",
+  "msg": "3210 m, -4.1 °C. 6.5 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -4.1
+ },
+ {
+  "t": 1792608504527,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "start",
+  "msg": "3440 m, -6.8 °C. 5.7 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -6.8
+ },
+ {
+  "t": 1792608504527,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "first",
+  "msg": "It's snowing at 3029 m, -3.3 °C. 4.0 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -3.3
+ },
+ {
+  "t": 1792620221872,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "start",
+  "msg": "3456 m, -10.8 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 15.1,
+  "temp": -10.8
+ },
+ {
+  "t": 1792620221872,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "start",
+  "msg": "3200 m, -9.8 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 18.3,
+  "temp": -9.8
+ },
+ {
+  "t": 1792620221872,
+  "id": "saasfee-dorf",
+  "name": "Saas-Fee Village",
+  "type": "first",
+  "msg": "It's snowing at 1800 m, -0.5 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -0.5
+ },
+ {
+  "t": 1792629643148,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "stop",
+  "msg": "12.5 cm in the last 24 h.",
+  "past24": 12.5,
+  "temp": -11.3
+ },
+ {
+  "t": 1792629643148,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "stop",
+  "msg": "14.5 cm in the last 24 h.",
+  "past24": 14.5,
+  "temp": -11.1
+ },
+ {
+  "t": 1792629643148,
+  "id": "saasfee-dorf",
+  "name": "Saas-Fee Village",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -1.3
+ },
+ {
+  "t": 1792646575193,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "stop",
+  "msg": "5.1 cm in the last 24 h.",
+  "past24": 5.1,
+  "temp": -6.2
+ },
+ {
+  "t": 1792646575193,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "stop",
+  "msg": "5.0 cm in the last 24 h.",
+  "past24": 5,
+  "temp": -3.9
+ },
+ {
+  "t": 1792646575193,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "stop",
+  "msg": "4.9 cm in the last 24 h.",
+  "past24": 4.9,
+  "temp": -11.9
+ },
+ {
+  "t": 1792646575193,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "stop",
+  "msg": "7.3 cm in the last 24 h.",
+  "past24": 7.3,
+  "temp": -11.1
+ },
+ {
+  "t": 1792646575193,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "stop",
+  "msg": "0.6 cm in the last 24 h.",
+  "past24": 0.6,
+  "temp": -9.6
+ },
+ {
+  "t": 1792646575193,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "6.1 cm in the last 24 h.",
+  "past24": 6.1,
+  "temp": -11.2
+ },
+ {
+  "t": 1792646575193,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "stop",
+  "msg": "4.8 cm in the last 24 h.",
+  "past24": 4.8,
+  "temp": -13.2
+ },
+ {
+  "t": 1792646575193,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "stop",
+  "msg": "13.9 cm in the last 24 h.",
+  "past24": 13.9,
+  "temp": -12.9
+ },
+ {
+  "t": 1792657534621,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "stop",
+  "msg": "8.8 cm in the last 24 h.",
+  "past24": 8.8,
+  "temp": -10.8
+ },
+ {
+  "t": 1792657534621,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "stop",
+  "msg": "8.7 cm in the last 24 h.",
+  "past24": 8.7,
+  "temp": -10.6
+ },
+ {
+  "t": 1792657534621,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "stop",
+  "msg": "9.4 cm in the last 24 h.",
+  "past24": 9.4,
+  "temp": -12.9
+ },
+ {
+  "t": 1792657534621,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "stop",
+  "msg": "8.4 cm in the last 24 h.",
+  "past24": 8.4,
+  "temp": -10
+ },
+ {
+  "t": 1792657534621,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "stop",
+  "msg": "12.3 cm in the last 24 h.",
+  "past24": 12.3,
+  "temp": -9.9
+ },
+ {
+  "t": 1792734465894,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "start",
+  "msg": "3456 m, -6.8 °C. 0.2 cm forecast for the next 24 h.",
+  "past24": 0.4,
+  "temp": -6.8
+ },
+ {
+  "t": 1792734465894,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "start",
+  "msg": "3245 m, -8.8 °C. 1.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -8.8
+ },
+ {
+  "t": 1792734465894,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "start",
+  "msg": "3466 m, -6.9 °C. 3.2 cm forecast for the next 24 h.",
+  "past24": 0.2,
+  "temp": -6.9
+ },
+ {
+  "t": 1792752873633,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "start",
+  "msg": "3200 m, -5.3 °C. 1.7 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -5.3
+ },
+ {
+  "t": 1792752873633,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "start",
+  "msg": "2350 m, -0.8 °C. 1.5 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -0.8
+ },
+ {
+  "t": 1792752873633,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "start",
+  "msg": "1970 m, 1.6 °C. 1.3 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": 1.6
+ },
+ {
+  "t": 1792752873633,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "start",
+  "msg": "3195 m, -5.3 °C. 1.8 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -5.3
+ },
+ {
+  "t": 1792752873633,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "start",
+  "msg": "2962 m, -4.4 °C. 0.6 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -4.4
+ },
+ {
+  "t": 1792752873633,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "start",
+  "msg": "3210 m, -5.4 °C. 2.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -5.4
+ },
+ {
+  "t": 1792752873633,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "start",
+  "msg": "3440 m, -7.0 °C. 2.1 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -7
+ },
+ {
+  "t": 1792769833665,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "stop",
+  "msg": "0.2 cm in the last 24 h.",
+  "past24": 0.2,
+  "temp": -6.7
+ },
+ {
+  "t": 1792769833665,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -3.9
+ },
+ {
+  "t": 1792769833665,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "0.2 cm in the last 24 h.",
+  "past24": 0.2,
+  "temp": -6.8
+ },
+ {
+  "t": 1792769833665,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "stop",
+  "msg": "1.8 cm in the last 24 h.",
+  "past24": 1.8,
+  "temp": -10.5
+ },
+ {
+  "t": 1792783945103,
+  "id": "saasfee-dorf",
+  "name": "Saas-Fee Village",
+  "type": "start",
+  "msg": "1800 m, 0.4 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": 0.4
+ },
+ {
+  "t": 1792783945103,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "start",
+  "msg": "3250 m, -7.4 °C. 1.8 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -7.4
+ },
+ {
+  "t": 1792783945103,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "start",
+  "msg": "3123 m, -6.8 °C. 6.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -6.8
+ },
+ {
+  "t": 1792783945103,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "start",
+  "msg": "3454 m, -8.6 °C. 3.4 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -8.6
+ },
+ {
+  "t": 1792783945103,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "start",
+  "msg": "3195 m, -7.2 °C. 0.8 cm forecast for the next 24 h.",
+  "past24": 1.2,
+  "temp": -7.2
+ },
+ {
+  "t": 1792783945103,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "start",
+  "msg": "3106 m, -6.7 °C. 5.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -6.7
+ },
+ {
+  "t": 1792783945103,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "start",
+  "msg": "2962 m, -5.8 °C. 0.8 cm forecast for the next 24 h.",
+  "past24": 0.2,
+  "temp": -5.8
+ },
+ {
+  "t": 1792783945103,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "start",
+  "msg": "3210 m, -7.3 °C. 0.9 cm forecast for the next 24 h.",
+  "past24": 0.8,
+  "temp": -7.3
+ },
+ {
+  "t": 1792783945103,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "start",
+  "msg": "3466 m, -11.3 °C. 4.1 cm forecast for the next 24 h.",
+  "past24": 2.7,
+  "temp": -11.3
+ },
+ {
+  "t": 1792795083330,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "stop",
+  "msg": "1.3 cm in the last 24 h.",
+  "past24": 1.3,
+  "temp": -11.8
+ },
+ {
+  "t": 1792795083330,
+  "id": "saasfee-dorf",
+  "name": "Saas-Fee Village",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": 0.1
+ },
+ {
+  "t": 1792795083330,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "stop",
+  "msg": "1.1 cm in the last 24 h.",
+  "past24": 1.1,
+  "temp": -9.4
+ },
+ {
+  "t": 1792795083330,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "stop",
+  "msg": "2.1 cm in the last 24 h.",
+  "past24": 2.1,
+  "temp": -8.5
+ },
+ {
+  "t": 1792795083330,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "stop",
+  "msg": "0.7 cm in the last 24 h.",
+  "past24": 0.7,
+  "temp": -7.7
+ },
+ {
+  "t": 1792795083330,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "1.2 cm in the last 24 h.",
+  "past24": 1.2,
+  "temp": -8.6
+ },
+ {
+  "t": 1792795083330,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "stop",
+  "msg": "1.5 cm in the last 24 h.",
+  "past24": 1.5,
+  "temp": -10.7
+ },
+ {
+  "t": 1792795083330,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "start",
+  "msg": "3029 m, -6.9 °C. 2.7 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -6.9
+ },
+ {
+  "t": 1792803942329,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "start",
+  "msg": "3456 m, -12.5 °C. 0.8 cm forecast for the next 24 h.",
+  "past24": 1.3,
+  "temp": -12.5
+ },
+ {
+  "t": 1792803942329,
+  "id": "saasfee-dorf",
+  "name": "Saas-Fee Village",
+  "type": "start",
+  "msg": "1800 m, -1.1 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -1.1
+ },
+ {
+  "t": 1792803942329,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "start",
+  "msg": "3245 m, -9.5 °C. 0.6 cm forecast for the next 24 h.",
+  "past24": 1.1,
+  "temp": -9.5
+ },
+ {
+  "t": 1792803942329,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "stop",
+  "msg": "0.5 cm in the last 24 h.",
+  "past24": 0.5,
+  "temp": -10.3
+ },
+ {
+  "t": 1792821025904,
+  "id": "saasfee-dorf",
+  "name": "Saas-Fee Village",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -2.5
+ },
+ {
+  "t": 1792821025904,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "start",
+  "msg": "3454 m, -11.6 °C. 2.2 cm forecast for the next 24 h.",
+  "past24": 1.4,
+  "temp": -11.6
+ },
+ {
+  "t": 1792821025904,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "start",
+  "msg": "3195 m, -11.7 °C. 0.7 cm forecast for the next 24 h.",
+  "past24": 2.2,
+  "temp": -11.7
+ },
+ {
+  "t": 1792821025904,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "start",
+  "msg": "3210 m, -11.8 °C. 0.9 cm forecast for the next 24 h.",
+  "past24": 1.7,
+  "temp": -11.8
+ },
+ {
+  "t": 1792821025904,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "start",
+  "msg": "3440 m, -13.9 °C. 1.2 cm forecast for the next 24 h.",
+  "past24": 2.2,
+  "temp": -13.9
+ },
+ {
+  "t": 1792836551064,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "stop",
+  "msg": "1.1 cm in the last 24 h.",
+  "past24": 1.1,
+  "temp": -11.2
+ },
+ {
+  "t": 1792836551064,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "stop",
+  "msg": "1.4 cm in the last 24 h.",
+  "past24": 1.4,
+  "temp": -10.8
+ },
+ {
+  "t": 1792836551064,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "stop",
+  "msg": "1.8 cm in the last 24 h.",
+  "past24": 1.8,
+  "temp": -10.9
+ },
+ {
+  "t": 1792836551064,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "stop",
+  "msg": "2.4 cm in the last 24 h.",
+  "past24": 2.4,
+  "temp": -10.4
+ },
+ {
+  "t": 1792836551064,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "1.8 cm in the last 24 h.",
+  "past24": 1.8,
+  "temp": -10.5
+ },
+ {
+  "t": 1792850430625,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "start",
+  "msg": "3250 m, -11.2 °C. 1.1 cm forecast for the next 24 h.",
+  "past24": 1.8,
+  "temp": -11.2
+ },
+ {
+  "t": 1792850430625,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "stop",
+  "msg": "1.5 cm in the last 24 h.",
+  "past24": 1.5,
+  "temp": -11.2
+ },
+ {
+  "t": 1792850430625,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "stop",
+  "msg": "5.2 cm in the last 24 h.",
+  "past24": 5.2,
+  "temp": -10.4
+ },
+ {
+  "t": 1792850430625,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "start",
+  "msg": "2962 m, -9.5 °C. 1.8 cm forecast for the next 24 h.",
+  "past24": 1.3,
+  "temp": -9.5
+ },
+ {
+  "t": 1792850430625,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "start",
+  "msg": "3210 m, -10.7 °C. 3.0 cm forecast for the next 24 h.",
+  "past24": 1.7,
+  "temp": -10.7
+ },
+ {
+  "t": 1792862752429,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "stop",
+  "msg": "3.2 cm in the last 24 h.",
+  "past24": 3.2,
+  "temp": -5.6
+ },
+ {
+  "t": 1792862752429,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "stop",
+  "msg": "2.9 cm in the last 24 h.",
+  "past24": 2.9,
+  "temp": -3
+ },
+ {
+  "t": 1792862752429,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "start",
+  "msg": "3123 m, -11.8 °C. 0.5 cm forecast for the next 24 h.",
+  "past24": 5.3,
+  "temp": -11.8
+ },
+ {
+  "t": 1792862752429,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "stop",
+  "msg": "4.8 cm in the last 24 h.",
+  "past24": 4.8,
+  "temp": -14.2
+ },
+ {
+  "t": 1792862752429,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "stop",
+  "msg": "5.7 cm in the last 24 h.",
+  "past24": 5.7,
+  "temp": -12.3
+ },
+ {
+  "t": 1792862752429,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "stop",
+  "msg": "1.2 cm in the last 24 h.",
+  "past24": 1.2,
+  "temp": -9.6
+ },
+ {
+  "t": 1792862752429,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "1.6 cm in the last 24 h.",
+  "past24": 1.6,
+  "temp": -12.3
+ },
+ {
+  "t": 1792862752429,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "stop",
+  "msg": "2.5 cm in the last 24 h.",
+  "past24": 2.5,
+  "temp": -14.1
+ },
+ {
+  "t": 1792862752429,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "stop",
+  "msg": "5.1 cm in the last 24 h.",
+  "past24": 5.1,
+  "temp": -11.2
+ },
+ {
+  "t": 1792862752429,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "stop",
+  "msg": "3.9 cm in the last 24 h.",
+  "past24": 3.9,
+  "temp": -11.4
+ },
+ {
+  "t": 1792870733714,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "stop",
+  "msg": "1.8 cm in the last 24 h.",
+  "past24": 1.8,
+  "temp": -12
+ },
+ {
+  "t": 1792870733714,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "stop",
+  "msg": "5.3 cm in the last 24 h.",
+  "past24": 5.3,
+  "temp": -12.1
+ },
+ {
+  "t": 1792870733714,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "start",
+  "msg": "3029 m, -11.1 °C. 1.3 cm forecast for the next 24 h.",
+  "past24": 5.1,
+  "temp": -11.1
+ },
+ {
+  "t": 1792870733714,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "soon",
+  "msg": "0.6 cm forecast within 3 h at 3466 m (-10.2 °C now).",
+  "past24": 3.8,
+  "temp": -10.2
+ },
+ {
+  "t": 1792878781141,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "start",
+  "msg": "3456 m, -7.5 °C. 3.8 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -7.5
+ },
+ {
+  "t": 1792878781141,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "start",
+  "msg": "3200 m, -7.5 °C. 2.0 cm forecast for the next 24 h.",
+  "past24": 0.2,
+  "temp": -7.5
+ },
+ {
+  "t": 1792878781141,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "stop",
+  "msg": "5.1 cm in the last 24 h.",
+  "past24": 5.1,
+  "temp": -11.4
+ },
+ {
+  "t": 1792878781141,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "start",
+  "msg": "3466 m, -9.1 °C. 8.4 cm forecast for the next 24 h.",
+  "past24": 3.7,
+  "temp": -9.1
+ },
+ {
+  "t": 1792898994719,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "start",
+  "msg": "2350 m, -1.9 °C. 2.9 cm forecast for the next 24 h.",
+  "past24": 2.7,
+  "temp": -1.9
+ },
+ {
+  "t": 1792898994719,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "start",
+  "msg": "1970 m, 0.0 °C. 1.2 cm forecast for the next 24 h.",
+  "past24": 2.4,
+  "temp": 0
+ },
+ {
+  "t": 1792898994719,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "start",
+  "msg": "3250 m, -7.3 °C. 3.2 cm forecast for the next 24 h.",
+  "past24": 0.8,
+  "temp": -7.3
+ },
+ {
+  "t": 1792898994719,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "start",
+  "msg": "3245 m, -7.9 °C. 3.6 cm forecast for the next 24 h.",
+  "past24": 1.2,
+  "temp": -7.9
+ },
+ {
+  "t": 1792898994719,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "start",
+  "msg": "3454 m, -9.4 °C. 3.0 cm forecast for the next 24 h.",
+  "past24": 4.1,
+  "temp": -9.4
+ },
+ {
+  "t": 1792898994719,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "start",
+  "msg": "3195 m, -6.4 °C. 4.8 cm forecast for the next 24 h.",
+  "past24": 0.6,
+  "temp": -6.4
+ },
+ {
+  "t": 1792898994719,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "start",
+  "msg": "2962 m, -5.6 °C. 1.5 cm forecast for the next 24 h.",
+  "past24": 0.8,
+  "temp": -5.6
+ },
+ {
+  "t": 1792898994719,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "start",
+  "msg": "3210 m, -6.5 °C. 4.7 cm forecast for the next 24 h.",
+  "past24": 0.8,
+  "temp": -6.5
+ },
+ {
+  "t": 1792898994719,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "start",
+  "msg": "3440 m, -7.6 °C. 4.1 cm forecast for the next 24 h.",
+  "past24": 1.5,
+  "temp": -7.6
+ },
+ {
+  "t": 1792917660369,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "stop",
+  "msg": "5.1 cm in the last 24 h.",
+  "past24": 5.1,
+  "temp": 1.3
+ },
+ {
+  "t": 1792917660369,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "stop",
+  "msg": "3.6 cm in the last 24 h.",
+  "past24": 3.6,
+  "temp": 3.5
+ },
+ {
+  "t": 1792917660369,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "start",
+  "msg": "3123 m, -4.5 °C. 2.0 cm forecast for the next 24 h.",
+  "past24": 2.6,
+  "temp": -4.5
+ },
+ {
+  "t": 1792917660369,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "start",
+  "msg": "3106 m, -4.1 °C. 1.6 cm forecast for the next 24 h.",
+  "past24": 2.8,
+  "temp": -4.1
+ },
+ {
+  "t": 1792917660369,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "start",
+  "msg": "3029 m, -2.9 °C. 2.4 cm forecast for the next 24 h.",
+  "past24": 2.5,
+  "temp": -2.9
+ },
+ {
+  "t": 1792934512637,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "stop",
+  "msg": "0.8 cm in the last 24 h.",
+  "past24": 0.8,
+  "temp": -3.1
+ },
+ {
+  "t": 1792934512637,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "stop",
+  "msg": "0.4 cm in the last 24 h.",
+  "past24": 0.4,
+  "temp": -3
+ },
+ {
+  "t": 1792934512637,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "stop",
+  "msg": "0.7 cm in the last 24 h.",
+  "past24": 0.7,
+  "temp": -4
+ },
+ {
+  "t": 1792934512637,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "stop",
+  "msg": "0.4 cm in the last 24 h.",
+  "past24": 0.4,
+  "temp": -3
+ },
+ {
+  "t": 1792934512637,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "stop",
+  "msg": "0.8 cm in the last 24 h.",
+  "past24": 0.8,
+  "temp": -0.6
+ },
+ {
+  "t": 1792948116369,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "start",
+  "msg": "3250 m, -4.2 °C. 1.4 cm forecast for the next 24 h.",
+  "past24": 1,
+  "temp": -4.2
+ },
+ {
+  "t": 1792948116369,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "soon",
+  "msg": "1.5 cm forecast within 3 h at 3123 m (-4.1 °C now).",
+  "past24": 0.3,
+  "temp": -4.1
+ },
+ {
+  "t": 1792948116369,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "soon",
+  "msg": "2.1 cm forecast within 3 h at 3454 m (-4.9 °C now).",
+  "past24": 0.4,
+  "temp": -4.9
+ },
+ {
+  "t": 1792948116369,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "soon",
+  "msg": "1.8 cm forecast within 3 h at 3106 m (-3.6 °C now).",
+  "past24": 0.1,
+  "temp": -3.6
+ },
+ {
+  "t": 1792948116369,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "soon",
+  "msg": "2.1 cm forecast within 3 h at 3029 m (-1.9 °C now).",
+  "past24": 0.5,
+  "temp": -1.9
+ },
+ {
+  "t": 1792956950261,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "stop",
+  "msg": "4.1 cm in the last 24 h.",
+  "past24": 4.1,
+  "temp": -7.2
+ },
+ {
+  "t": 1792956950261,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "stop",
+  "msg": "1.4 cm in the last 24 h.",
+  "past24": 1.4,
+  "temp": -6.1
+ },
+ {
+  "t": 1792956950261,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "start",
+  "msg": "2350 m, -3.3 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 3.1,
+  "temp": -3.3
+ },
+ {
+  "t": 1792956950261,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "start",
+  "msg": "3123 m, -5.8 °C. 2.4 cm forecast for the next 24 h.",
+  "past24": 0.6,
+  "temp": -5.8
+ },
+ {
+  "t": 1792956950261,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "start",
+  "msg": "3454 m, -7.7 °C. 1.3 cm forecast for the next 24 h.",
+  "past24": 1.5,
+  "temp": -7.7
+ },
+ {
+  "t": 1792956950261,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "start",
+  "msg": "3106 m, -5.5 °C. 2.0 cm forecast for the next 24 h.",
+  "past24": 0.9,
+  "temp": -5.5
+ },
+ {
+  "t": 1792956950261,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "stop",
+  "msg": "1.2 cm in the last 24 h.",
+  "past24": 1.2,
+  "temp": -7.6
+ },
+ {
+  "t": 1792956950261,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "start",
+  "msg": "3029 m, -6.0 °C. 1.5 cm forecast for the next 24 h.",
+  "past24": 1.6,
+  "temp": -6
+ },
+ {
+  "t": 1792956950261,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "stop",
+  "msg": "6.2 cm in the last 24 h.",
+  "past24": 6.2,
+  "temp": -9.5
+ },
+ {
+  "t": 1792965783628,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "start",
+  "msg": "1970 m, -1.7 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 2.1,
+  "temp": -1.7
+ },
+ {
+  "t": 1792965783628,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "stop",
+  "msg": "2.2 cm in the last 24 h.",
+  "past24": 2.2,
+  "temp": -9.6
+ },
+ {
+  "t": 1792965783628,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "stop",
+  "msg": "3.5 cm in the last 24 h.",
+  "past24": 3.5,
+  "temp": -10.1
+ },
+ {
+  "t": 1792965783628,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "stop",
+  "msg": "2.0 cm in the last 24 h.",
+  "past24": 2,
+  "temp": -8.8
+ },
+ {
+  "t": 1792965783628,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "stop",
+  "msg": "2.3 cm in the last 24 h.",
+  "past24": 2.3,
+  "temp": -11.4
+ },
+ {
+  "t": 1792965783628,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "stop",
+  "msg": "4.5 cm in the last 24 h.",
+  "past24": 4.5,
+  "temp": -10.1
+ },
+ {
+  "t": 1792965783628,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "stop",
+  "msg": "1.7 cm in the last 24 h.",
+  "past24": 1.7,
+  "temp": -8.2
+ },
+ {
+  "t": 1792965783628,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "start",
+  "msg": "2962 m, -8.4 °C. 0.2 cm forecast for the next 24 h.",
+  "past24": 1.2,
+  "temp": -8.4
+ },
+ {
+  "t": 1792965783628,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "4.2 cm in the last 24 h.",
+  "past24": 4.2,
+  "temp": -10.2
+ },
+ {
+  "t": 1792965783628,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "stop",
+  "msg": "3.9 cm in the last 24 h.",
+  "past24": 3.9,
+  "temp": -11.8
+ },
+ {
+  "t": 1792974065894,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "stop",
+  "msg": "3.1 cm in the last 24 h.",
+  "past24": 3.1,
+  "temp": -4.5
+ },
+ {
+  "t": 1792974065894,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "stop",
+  "msg": "2.1 cm in the last 24 h.",
+  "past24": 2.1,
+  "temp": -1.7
+ },
+ {
+  "t": 1792974065894,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "start",
+  "msg": "3123 m, -9.4 °C. 0.2 cm forecast for the next 24 h.",
+  "past24": 2.7,
+  "temp": -9.4
+ },
+ {
+  "t": 1792974065894,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "start",
+  "msg": "3454 m, -11.6 °C. 0.2 cm forecast for the next 24 h.",
+  "past24": 2.6,
+  "temp": -11.6
+ },
+ {
+  "t": 1792974065894,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "start",
+  "msg": "3106 m, -9.3 °C. 0.2 cm forecast for the next 24 h.",
+  "past24": 2.2,
+  "temp": -9.3
+ },
+ {
+  "t": 1792974065894,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "stop",
+  "msg": "1.3 cm in the last 24 h.",
+  "past24": 1.3,
+  "temp": -9.1
+ },
+ {
+  "t": 1792991199844,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "stop",
+  "msg": "2.6 cm in the last 24 h.",
+  "past24": 2.6,
+  "temp": -10.7
+ },
+ {
+  "t": 1792991199844,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "stop",
+  "msg": "1.7 cm in the last 24 h.",
+  "past24": 1.7,
+  "temp": -12.8
+ },
+ {
+  "t": 1792991199844,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "stop",
+  "msg": "2.0 cm in the last 24 h.",
+  "past24": 2,
+  "temp": -10
+ },
+ {
+  "t": 1792991199844,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "stop",
+  "msg": "1.9 cm in the last 24 h.",
+  "past24": 1.9,
+  "temp": -10.1
+ },
+ {
+  "t": 1793035312845,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "start",
+  "msg": "3466 m, -4.4 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0.6,
+  "temp": -4.4
+ },
+ {
+  "t": 1793051095818,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "start",
+  "msg": "3245 m, -4.1 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -4.1
+ },
+ {
+  "t": 1793051095818,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "start",
+  "msg": "3440 m, -4.5 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -4.5
+ },
+ {
+  "t": 1793062388510,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -3.5
+ },
+ {
+  "t": 1793062388510,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -0.8
+ },
+ {
+  "t": 1793080474322,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "start",
+  "msg": "3454 m, -5.0 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -5
+ },
+ {
+  "t": 1793080474322,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -2.3
+ },
+ {
+  "t": 1793080474322,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "start",
+  "msg": "3029 m, -3.6 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -3.6
+ },
+ {
+  "t": 1793100552501,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -2.5
+ },
+ {
+  "t": 1793100552501,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -1.2
+ },
+ {
+  "t": 1793168269788,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "start",
+  "msg": "2962 m, -2.2 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -2.2
+ },
+ {
+  "t": 1793193595233,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "start",
+  "msg": "3250 m, -4.1 °C. 0.4 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -4.1
+ },
+ {
+  "t": 1793193595233,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "start",
+  "msg": "3454 m, -5.0 °C. 0.2 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -5
+ },
+ {
+  "t": 1793193595233,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "start",
+  "msg": "3195 m, -3.2 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -3.2
+ },
+ {
+  "t": 1793193595233,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -3.4
+ },
+ {
+  "t": 1793193595233,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "start",
+  "msg": "3210 m, -3.3 °C. 0.2 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -3.3
+ },
+ {
+  "t": 1793193595233,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "start",
+  "msg": "3440 m, -4.8 °C. 0.1 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -4.8
+ },
+ {
+  "t": 1793193595233,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "start",
+  "msg": "3029 m, -2.5 °C. 0.2 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -2.5
+ },
+ {
+  "t": 1793213894000,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "start",
+  "msg": "2350 m, -0.8 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -0.8
+ },
+ {
+  "t": 1793213894000,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "start",
+  "msg": "3123 m, -5.4 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -5.4
+ },
+ {
+  "t": 1793213894000,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -4.6
+ },
+ {
+  "t": 1793213894000,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "start",
+  "msg": "3106 m, -5.1 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -5.1
+ },
+ {
+  "t": 1793213894000,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "start",
+  "msg": "2962 m, -5.4 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -5.4
+ },
+ {
+  "t": 1793228375422,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -1.2
+ },
+ {
+  "t": 1793228375422,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "stop",
+  "msg": "0.6 cm in the last 24 h.",
+  "past24": 0.6,
+  "temp": -7
+ },
+ {
+  "t": 1793228375422,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "stop",
+  "msg": "0.4 cm in the last 24 h.",
+  "past24": 0.4,
+  "temp": -8.1
+ },
+ {
+  "t": 1793228375422,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -5.9
+ },
+ {
+  "t": 1793228375422,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -6.3
+ },
+ {
+  "t": 1793228375422,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "0.4 cm in the last 24 h.",
+  "past24": 0.4,
+  "temp": -5.9
+ },
+ {
+  "t": 1793228375422,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "stop",
+  "msg": "0.4 cm in the last 24 h.",
+  "past24": 0.4,
+  "temp": -7
+ },
+ {
+  "t": 1793240178707,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "start",
+  "msg": "3106 m, -6.9 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -6.9
+ },
+ {
+  "t": 1793263449046,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -8
+ },
+ {
+  "t": 1793263449046,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -8.1
+ },
+ {
+  "t": 1793263449046,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "stop",
+  "msg": "0.4 cm in the last 24 h.",
+  "past24": 0.4,
+  "temp": -7.2
+ },
+ {
+  "t": 1793483555387,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "start",
+  "msg": "3123 m, -11.1 °C. 2.7 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -11.1
+ },
+ {
+  "t": 1793483555387,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "start",
+  "msg": "3106 m, -10.7 °C. 2.7 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -10.7
+ },
+ {
+  "t": 1793493505035,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "start",
+  "msg": "1970 m, -3.0 °C. 0.2 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -3
+ },
+ {
+  "t": 1793493505035,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "start",
+  "msg": "3454 m, -14.7 °C. 2.1 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -14.7
+ },
+ {
+  "t": 1793493505035,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "start",
+  "msg": "3029 m, -11.6 °C. 2.4 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -11.6
+ },
+ {
+  "t": 1793515875709,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "start",
+  "msg": "2350 m, -6.7 °C. 0.3 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -6.7
+ },
+ {
+  "t": 1793515875709,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "start",
+  "msg": "3250 m, -14.0 °C. 1.1 cm forecast for the next 24 h.",
+  "past24": 1,
+  "temp": -14
+ },
+ {
+  "t": 1793515875709,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "start",
+  "msg": "3245 m, -13.6 °C. 0.1 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -13.6
+ },
+ {
+  "t": 1793515875709,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "start",
+  "msg": "3195 m, -13.6 °C. 0.7 cm forecast for the next 24 h.",
+  "past24": 0.2,
+  "temp": -13.6
+ },
+ {
+  "t": 1793515875709,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "start",
+  "msg": "2962 m, -11.4 °C. 1.1 cm forecast for the next 24 h.",
+  "past24": 0.8,
+  "temp": -11.4
+ },
+ {
+  "t": 1793515875709,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "start",
+  "msg": "3210 m, -13.7 °C. 0.6 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -13.7
+ },
+ {
+  "t": 1793515875709,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "start",
+  "msg": "3440 m, -15.0 °C. 0.5 cm forecast for the next 24 h.",
+  "past24": 0.2,
+  "temp": -15
+ },
+ {
+  "t": 1793541536792,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "stop",
+  "msg": "0.3 cm in the last 24 h.",
+  "past24": 0.3,
+  "temp": -5.3
+ },
+ {
+  "t": 1793541536792,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "stop",
+  "msg": "0.4 cm in the last 24 h.",
+  "past24": 0.4,
+  "temp": -2.1
+ },
+ {
+  "t": 1793541536792,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -11.6
+ },
+ {
+  "t": 1793558926110,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "stop",
+  "msg": "2.5 cm in the last 24 h.",
+  "past24": 2.5,
+  "temp": -13.6
+ },
+ {
+  "t": 1793558926110,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "stop",
+  "msg": "1.5 cm in the last 24 h.",
+  "past24": 1.5,
+  "temp": -14.6
+ },
+ {
+  "t": 1793558926110,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "stop",
+  "msg": "2.1 cm in the last 24 h.",
+  "past24": 2.1,
+  "temp": -12.6
+ },
+ {
+  "t": 1793558926110,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "stop",
+  "msg": "1.5 cm in the last 24 h.",
+  "past24": 1.5,
+  "temp": -11.8
+ },
+ {
+  "t": 1793558926110,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "stop",
+  "msg": "1.0 cm in the last 24 h.",
+  "past24": 1,
+  "temp": -14.4
+ },
+ {
+  "t": 1793572448135,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "stop",
+  "msg": "0.8 cm in the last 24 h.",
+  "past24": 0.8,
+  "temp": -11.4
+ },
+ {
+  "t": 1793572448135,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "start",
+  "msg": "3106 m, -11.9 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 2.1,
+  "temp": -11.9
+ },
+ {
+  "t": 1793572448135,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "0.6 cm in the last 24 h.",
+  "past24": 0.6,
+  "temp": -11.5
+ },
+ {
+  "t": 1793584152520,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "stop",
+  "msg": "1.5 cm in the last 24 h.",
+  "past24": 1.5,
+  "temp": -10.6
+ },
+ {
+  "t": 1793584152520,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "stop",
+  "msg": "2.0 cm in the last 24 h.",
+  "past24": 2,
+  "temp": -10.6
+ },
+ {
+  "t": 1793584152520,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "stop",
+  "msg": "2.2 cm in the last 24 h.",
+  "past24": 2.2,
+  "temp": -9.3
+ },
+ {
+  "t": 1793646261575,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "start",
+  "msg": "3029 m, -8.3 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -8.3
+ },
+ {
+  "t": 1793669658170,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "start",
+  "msg": "3123 m, -8.5 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -8.5
+ },
+ {
+  "t": 1793669658170,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -8.2
+ },
+ {
+  "t": 1793694842246,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -7.9
+ },
+ {
+  "t": 1793743218569,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "start",
+  "msg": "3123 m, -8.6 °C. 0.4 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -8.6
+ },
+ {
+  "t": 1793758727752,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "start",
+  "msg": "3106 m, -8.2 °C. 0.4 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -8.2
+ },
+ {
+  "t": 1793784997309,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "start",
+  "msg": "3454 m, -8.8 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -8.8
+ },
+ {
+  "t": 1793784997309,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "start",
+  "msg": "3195 m, -7.5 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0.2,
+  "temp": -7.5
+ },
+ {
+  "t": 1793784997309,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "start",
+  "msg": "3210 m, -7.6 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -7.6
+ },
+ {
+  "t": 1793813509473,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "stop",
+  "msg": "0.4 cm in the last 24 h.",
+  "past24": 0.4,
+  "temp": -7.7
+ },
+ {
+  "t": 1793813509473,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "stop",
+  "msg": "0.2 cm in the last 24 h.",
+  "past24": 0.2,
+  "temp": -9.5
+ },
+ {
+  "t": 1793813509473,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "stop",
+  "msg": "0.2 cm in the last 24 h.",
+  "past24": 0.2,
+  "temp": -7.3
+ },
+ {
+  "t": 1793813509473,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "stop",
+  "msg": "0.2 cm in the last 24 h.",
+  "past24": 0.2,
+  "temp": -7.4
+ },
+ {
+  "t": 1793813509473,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "0.1 cm in the last 24 h.",
+  "past24": 0.1,
+  "temp": -7.4
+ },
+ {
+  "t": 1793903298037,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "start",
+  "msg": "3456 m, -4.7 °C. 4.8 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -4.7
+ },
+ {
+  "t": 1793903298037,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "start",
+  "msg": "3200 m, -2.3 °C. 5.3 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -2.3
+ },
+ {
+  "t": 1793922439116,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "start",
+  "msg": "3466 m, -7.1 °C. 3.1 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -7.1
+ },
+ {
+  "t": 1793968836439,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "stop",
+  "msg": "2.7 cm in the last 24 h.",
+  "past24": 2.7,
+  "temp": -6.1
+ },
+ {
+  "t": 1793968836439,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "stop",
+  "msg": "2.9 cm in the last 24 h.",
+  "past24": 2.9,
+  "temp": -4.8
+ },
+ {
+  "t": 1793994095301,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "start",
+  "msg": "3200 m, -5.8 °C. 0.2 cm forecast for the next 24 h.",
+  "past24": 3,
+  "temp": -5.8
+ },
+ {
+  "t": 1793994095301,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "start",
+  "msg": "3245 m, -7.1 °C. 0.6 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -7.1
+ },
+ {
+  "t": 1793994095301,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "start",
+  "msg": "3195 m, -6.0 °C. 0.8 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -6
+ },
+ {
+  "t": 1793994095301,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "start",
+  "msg": "3210 m, -6.1 °C. 0.8 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -6.1
+ },
+ {
+  "t": 1793994095301,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "start",
+  "msg": "3440 m, -7.2 °C. 1.3 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -7.2
+ },
+ {
+  "t": 1794008977792,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "stop",
+  "msg": "2.9 cm in the last 24 h.",
+  "past24": 2.9,
+  "temp": -6.6
+ },
+ {
+  "t": 1794008977792,
+  "id": "saasfee-dorf",
+  "name": "Saas-Fee Village",
+  "type": "start",
+  "msg": "1800 m, 1.1 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": 1.1
+ },
+ {
+  "t": 1794008977792,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "start",
+  "msg": "3250 m, -6.8 °C. 1.3 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -6.8
+ },
+ {
+  "t": 1794008977792,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -7.7
+ },
+ {
+  "t": 1794008977792,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "stop",
+  "msg": "0.1 cm in the last 24 h.",
+  "past24": 0.1,
+  "temp": -7
+ },
+ {
+  "t": 1794008977792,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "start",
+  "msg": "2962 m, -5.0 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -5
+ },
+ {
+  "t": 1794008977792,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "0.1 cm in the last 24 h.",
+  "past24": 0.1,
+  "temp": -7.1
+ },
+ {
+  "t": 1794008977792,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "stop",
+  "msg": "0.1 cm in the last 24 h.",
+  "past24": 0.1,
+  "temp": -7.8
+ },
+ {
+  "t": 1794008977792,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "start",
+  "msg": "3029 m, -4.2 °C. 0.8 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -4.2
+ },
+ {
+  "t": 1794025072945,
+  "id": "saasfee-dorf",
+  "name": "Saas-Fee Village",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": 1.6
+ },
+ {
+  "t": 1794025072945,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "start",
+  "msg": "3123 m, -7.4 °C. 1.4 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -7.4
+ },
+ {
+  "t": 1794025072945,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "start",
+  "msg": "3454 m, -8.5 °C. 2.2 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -8.5
+ },
+ {
+  "t": 1794025072945,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "start",
+  "msg": "3106 m, -6.0 °C. 1.5 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -6
+ },
+ {
+  "t": 1794025072945,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -5.8
+ },
+ {
+  "t": 1794025072945,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "stop",
+  "msg": "1.8 cm in the last 24 h.",
+  "past24": 1.8,
+  "temp": -9.8
+ },
+ {
+  "t": 1794050055028,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "stop",
+  "msg": "0.1 cm in the last 24 h.",
+  "past24": 0.1,
+  "temp": -7.8
+ },
+ {
+  "t": 1794050055028,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "start",
+  "msg": "3195 m, -5.5 °C. 0.6 cm forecast for the next 24 h.",
+  "past24": 0.6,
+  "temp": -5.5
+ },
+ {
+  "t": 1794050055028,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "stop",
+  "msg": "0.1 cm in the last 24 h.",
+  "past24": 0.1,
+  "temp": -6.5
+ },
+ {
+  "t": 1794050055028,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "start",
+  "msg": "3210 m, -5.6 °C. 1.0 cm forecast for the next 24 h.",
+  "past24": 0.6,
+  "temp": -5.6
+ },
+ {
+  "t": 1794070276727,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "start",
+  "msg": "3245 m, -6.8 °C. 0.1 cm forecast for the next 24 h.",
+  "past24": 0.4,
+  "temp": -6.8
+ },
+ {
+  "t": 1794070276727,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "stop",
+  "msg": "1.5 cm in the last 24 h.",
+  "past24": 1.5,
+  "temp": -10
+ },
+ {
+  "t": 1794070276727,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "start",
+  "msg": "3440 m, -8.1 °C. 0.3 cm forecast for the next 24 h.",
+  "past24": 1.1,
+  "temp": -8.1
+ },
+ {
+  "t": 1794070276727,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "stop",
+  "msg": "0.8 cm in the last 24 h.",
+  "past24": 0.8,
+  "temp": -7.1
+ },
+ {
+  "t": 1794083903473,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "stop",
+  "msg": "1.5 cm in the last 24 h.",
+  "past24": 1.5,
+  "temp": -8.9
+ },
+ {
+  "t": 1794083903473,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "stop",
+  "msg": "0.7 cm in the last 24 h.",
+  "past24": 0.7,
+  "temp": -8
+ },
+ {
+  "t": 1794083903473,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "stop",
+  "msg": "0.7 cm in the last 24 h.",
+  "past24": 0.7,
+  "temp": -7.5
+ },
+ {
+  "t": 1794083903473,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "start",
+  "msg": "2962 m, -5.9 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -5.9
+ },
+ {
+  "t": 1794083903473,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "1.3 cm in the last 24 h.",
+  "past24": 1.3,
+  "temp": -7.6
+ },
+ {
+  "t": 1794095853833,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "stop",
+  "msg": "0.9 cm in the last 24 h.",
+  "past24": 0.9,
+  "temp": -9.5
+ },
+ {
+  "t": 1794113846340,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -6.4
+ },
+ {
+  "t": 1794210975877,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "start",
+  "msg": "3456 m, -4.7 °C. 0.4 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -4.7
+ },
+ {
+  "t": 1794210975877,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "start",
+  "msg": "3200 m, -4.0 °C. 0.6 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -4
+ },
+ {
+  "t": 1794210975877,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "start",
+  "msg": "2350 m, -1.4 °C. 0.1 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -1.4
+ },
+ {
+  "t": 1794210975877,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "start",
+  "msg": "1970 m, 0.8 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": 0.8
+ },
+ {
+  "t": 1794210975877,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "start",
+  "msg": "3195 m, -7.1 °C. 2.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -7.1
+ },
+ {
+  "t": 1794210975877,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "start",
+  "msg": "2962 m, -6.1 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -6.1
+ },
+ {
+  "t": 1794210975877,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "start",
+  "msg": "3210 m, -7.2 °C. 1.4 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -7.2
+ },
+ {
+  "t": 1794210975877,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "start",
+  "msg": "3466 m, -5.7 °C. 2.2 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -5.7
+ },
+ {
+  "t": 1794248415668,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -1.2
+ },
+ {
+  "t": 1794248415668,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "stop",
+  "msg": "0.3 cm in the last 24 h.",
+  "past24": 0.3,
+  "temp": 0
+ },
+ {
+  "t": 1794248415668,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": 2.3
+ },
+ {
+  "t": 1794248415668,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "start",
+  "msg": "3250 m, -5.7 °C. 1.0 cm forecast for the next 24 h.",
+  "past24": 1.3,
+  "temp": -5.7
+ },
+ {
+  "t": 1794248415668,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "start",
+  "msg": "3245 m, -5.4 °C. 1.3 cm forecast for the next 24 h.",
+  "past24": 1.3,
+  "temp": -5.4
+ },
+ {
+  "t": 1794248415668,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "start",
+  "msg": "3123 m, -7.1 °C. 0.2 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -7.1
+ },
+ {
+  "t": 1794248415668,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "start",
+  "msg": "3454 m, -7.7 °C. 0.6 cm forecast for the next 24 h.",
+  "past24": 0.4,
+  "temp": -7.7
+ },
+ {
+  "t": 1794248415668,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "start",
+  "msg": "3106 m, -6.7 °C. 0.3 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -6.7
+ },
+ {
+  "t": 1794248415668,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "start",
+  "msg": "3440 m, -6.0 °C. 2.1 cm forecast for the next 24 h.",
+  "past24": 1.8,
+  "temp": -6
+ },
+ {
+  "t": 1794248415668,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "start",
+  "msg": "3029 m, -4.4 °C. 0.6 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -4.4
+ },
+ {
+  "t": 1794274920097,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "start",
+  "msg": "3200 m, -1.4 °C. 0.8 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -1.4
+ },
+ {
+  "t": 1794274920097,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "stop",
+  "msg": "1.7 cm in the last 24 h.",
+  "past24": 1.7,
+  "temp": -3.9
+ },
+ {
+  "t": 1794274920097,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "stop",
+  "msg": "0.2 cm in the last 24 h.",
+  "past24": 0.2,
+  "temp": -5.3
+ },
+ {
+  "t": 1794300614197,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "stop",
+  "msg": "1.1 cm in the last 24 h.",
+  "past24": 1.1,
+  "temp": -5
+ },
+ {
+  "t": 1794300614197,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "stop",
+  "msg": "0.6 cm in the last 24 h.",
+  "past24": 0.6,
+  "temp": -3.6
+ },
+ {
+  "t": 1794300614197,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "stop",
+  "msg": "0.6 cm in the last 24 h.",
+  "past24": 0.6,
+  "temp": -2.6
+ },
+ {
+  "t": 1794329072895,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "stop",
+  "msg": "1.7 cm in the last 24 h.",
+  "past24": 1.7,
+  "temp": -1.9
+ },
+ {
+  "t": 1794329072895,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "stop",
+  "msg": "0.9 cm in the last 24 h.",
+  "past24": 0.9,
+  "temp": -1.3
+ },
+ {
+  "t": 1794329072895,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "stop",
+  "msg": "1.7 cm in the last 24 h.",
+  "past24": 1.7,
+  "temp": -3.7
+ },
+ {
+  "t": 1794329072895,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "stop",
+  "msg": "3.2 cm in the last 24 h.",
+  "past24": 3.2,
+  "temp": -2.9
+ },
+ {
+  "t": 1794329072895,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "stop",
+  "msg": "0.3 cm in the last 24 h.",
+  "past24": 0.3,
+  "temp": -2
+ },
+ {
+  "t": 1794329072895,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "3.0 cm in the last 24 h.",
+  "past24": 3,
+  "temp": -3
+ },
+ {
+  "t": 1794329072895,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "stop",
+  "msg": "3.1 cm in the last 24 h.",
+  "past24": 3.1,
+  "temp": -4.6
+ },
+ {
+  "t": 1794329072895,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "start",
+  "msg": "3029 m, -2.9 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0.8,
+  "temp": -2.9
+ },
+ {
+  "t": 1794329072895,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "stop",
+  "msg": "6.4 cm in the last 24 h.",
+  "past24": 6.4,
+  "temp": -3.5
+ },
+ {
+  "t": 1794347905815,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "stop",
+  "msg": "0.5 cm in the last 24 h.",
+  "past24": 0.5,
+  "temp": -2.7
+ },
+ {
+  "t": 1794415839270,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "start",
+  "msg": "3456 m, -3.7 °C. 3.4 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -3.7
+ },
+ {
+  "t": 1794415839270,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "start",
+  "msg": "3200 m, -2.7 °C. 5.0 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -2.7
+ },
+ {
+  "t": 1794415839270,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "start",
+  "msg": "3250 m, -3.3 °C. 0.6 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -3.3
+ },
+ {
+  "t": 1794415839270,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "start",
+  "msg": "3245 m, -3.2 °C. 1.8 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -3.2
+ },
+ {
+  "t": 1794415839270,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "start",
+  "msg": "3454 m, -4.2 °C. 0.8 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -4.2
+ },
+ {
+  "t": 1794415839270,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "start",
+  "msg": "3195 m, -2.7 °C. 1.5 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -2.7
+ },
+ {
+  "t": 1794415839270,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "start",
+  "msg": "2962 m, -1.5 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -1.5
+ },
+ {
+  "t": 1794415839270,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "start",
+  "msg": "3210 m, -2.8 °C. 0.9 cm forecast for the next 24 h.",
+  "past24": 0.4,
+  "temp": -2.8
+ },
+ {
+  "t": 1794415839270,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "start",
+  "msg": "3440 m, -4.0 °C. 1.8 cm forecast for the next 24 h.",
+  "past24": 0.2,
+  "temp": -4
+ },
+ {
+  "t": 1794415839270,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "start",
+  "msg": "3466 m, -4.7 °C. 3.6 cm forecast for the next 24 h.",
+  "past24": 1.1,
+  "temp": -4.7
+ },
+ {
+  "t": 1794438989173,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -3.3
+ },
+ {
+  "t": 1794438989173,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "stop",
+  "msg": "0.1 cm in the last 24 h.",
+  "past24": 0.1,
+  "temp": -2.6
+ },
+ {
+  "t": 1794438989173,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "stop",
+  "msg": "0.3 cm in the last 24 h.",
+  "past24": 0.3,
+  "temp": -3.6
+ },
+ {
+  "t": 1794438989173,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "stop",
+  "msg": "0.7 cm in the last 24 h.",
+  "past24": 0.7,
+  "temp": -3.8
+ },
+ {
+  "t": 1794438989173,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -5.1
+ },
+ {
+  "t": 1794438989173,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "stop",
+  "msg": "0.5 cm in the last 24 h.",
+  "past24": 0.5,
+  "temp": -3.2
+ },
+ {
+  "t": 1794438989173,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "stop",
+  "msg": "0.0 cm in the last 24 h.",
+  "past24": 0,
+  "temp": -1.9
+ },
+ {
+  "t": 1794438989173,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "0.8 cm in the last 24 h.",
+  "past24": 0.8,
+  "temp": -3.3
+ },
+ {
+  "t": 1794438989173,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "stop",
+  "msg": "0.9 cm in the last 24 h.",
+  "past24": 0.9,
+  "temp": -4.8
+ },
+ {
+  "t": 1794438989173,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "stop",
+  "msg": "1.6 cm in the last 24 h.",
+  "past24": 1.6,
+  "temp": -4.3
+ },
+ {
+  "t": 1794455965837,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "start",
+  "msg": "3456 m, -3.0 °C. 7.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -3
+ },
+ {
+  "t": 1794486449114,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "start",
+  "msg": "3200 m, -2.5 °C. 5.0 cm forecast for the next 24 h.",
+  "past24": 2.4,
+  "temp": -2.5
+ },
+ {
+  "t": 1794486449114,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "start",
+  "msg": "3250 m, -3.6 °C. 9.4 cm forecast for the next 24 h.",
+  "past24": 0.6,
+  "temp": -3.6
+ },
+ {
+  "t": 1794486449114,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "start",
+  "msg": "3245 m, -3.9 °C. 6.2 cm forecast for the next 24 h.",
+  "past24": 1.8,
+  "temp": -3.9
+ },
+ {
+  "t": 1794486449114,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "start",
+  "msg": "3123 m, -3.7 °C. 9.9 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -3.7
+ },
+ {
+  "t": 1794486449114,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "start",
+  "msg": "3454 m, -5.0 °C. 10.2 cm forecast for the next 24 h.",
+  "past24": 0.3,
+  "temp": -5
+ },
+ {
+  "t": 1794486449114,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "start",
+  "msg": "3195 m, -3.1 °C. 6.7 cm forecast for the next 24 h.",
+  "past24": 1.7,
+  "temp": -3.1
+ },
+ {
+  "t": 1794486449114,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "start",
+  "msg": "3106 m, -3.5 °C. 10.1 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -3.5
+ },
+ {
+  "t": 1794486449114,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "start",
+  "msg": "2962 m, -1.5 °C. 2.3 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -1.5
+ },
+ {
+  "t": 1794486449114,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "start",
+  "msg": "3210 m, -3.2 °C. 8.2 cm forecast for the next 24 h.",
+  "past24": 1.4,
+  "temp": -3.2
+ },
+ {
+  "t": 1794486449114,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "start",
+  "msg": "3440 m, -3.8 °C. 8.4 cm forecast for the next 24 h.",
+  "past24": 1.7,
+  "temp": -3.8
+ },
+ {
+  "t": 1794486449114,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "start",
+  "msg": "3029 m, -1.3 °C. 9.5 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -1.3
+ },
+ {
+  "t": 1794486449114,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "start",
+  "msg": "3466 m, -5.3 °C. 7.5 cm forecast for the next 24 h.",
+  "past24": 3.3,
+  "temp": -5.3
+ },
+ {
+  "t": 1794514604910,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "start",
+  "msg": "2350 m, -0.4 °C. 2.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -0.4
+ },
+ {
+  "t": 1794532732772,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "start",
+  "msg": "1970 m, -1.3 °C. 2.0 cm forecast for the next 24 h.",
+  "past24": 0.3,
+  "temp": -1.3
+ },
+ {
+  "t": 1794558346551,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "stop",
+  "msg": "4.9 cm in the last 24 h.",
+  "past24": 4.9,
+  "temp": -7.4
+ },
+ {
+  "t": 1794558346551,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "stop",
+  "msg": "6.4 cm in the last 24 h.",
+  "past24": 6.4,
+  "temp": -6.8
+ },
+ {
+  "t": 1794558346551,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "stop",
+  "msg": "2.0 cm in the last 24 h.",
+  "past24": 2,
+  "temp": -6.9
+ },
+ {
+  "t": 1794558346551,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "stop",
+  "msg": "1.9 cm in the last 24 h.",
+  "past24": 1.9,
+  "temp": -4.2
+ },
+ {
+  "t": 1794558346551,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "stop",
+  "msg": "8.3 cm in the last 24 h.",
+  "past24": 8.3,
+  "temp": -9.8
+ },
+ {
+  "t": 1794558346551,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "stop",
+  "msg": "7.7 cm in the last 24 h.",
+  "past24": 7.7,
+  "temp": -9.9
+ },
+ {
+  "t": 1794558346551,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "stop",
+  "msg": "1.7 cm in the last 24 h.",
+  "past24": 1.7,
+  "temp": -11.9
+ },
+ {
+  "t": 1794558346551,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "stop",
+  "msg": "9.2 cm in the last 24 h.",
+  "past24": 9.2,
+  "temp": -9.7
+ },
+ {
+  "t": 1794587954078,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "stop",
+  "msg": "8.2 cm in the last 24 h.",
+  "past24": 8.2,
+  "temp": -12.4
+ },
+ {
+  "t": 1794587954078,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "stop",
+  "msg": "10.4 cm in the last 24 h.",
+  "past24": 10.4,
+  "temp": -13.5
+ },
+ {
+  "t": 1794587954078,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "stop",
+  "msg": "9.7 cm in the last 24 h.",
+  "past24": 9.7,
+  "temp": -13.2
+ },
+ {
+  "t": 1794587954078,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "stop",
+  "msg": "10.2 cm in the last 24 h.",
+  "past24": 10.2,
+  "temp": -14.6
+ },
+ {
+  "t": 1794587954078,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "6.5 cm in the last 24 h.",
+  "past24": 6.5,
+  "temp": -10.4
+ },
+ {
+  "t": 1794587954078,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "stop",
+  "msg": "6.7 cm in the last 24 h.",
+  "past24": 6.7,
+  "temp": -12.2
+ },
+ {
+  "t": 1794587954078,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "stop",
+  "msg": "10.0 cm in the last 24 h.",
+  "past24": 10,
+  "temp": -13.2
+ },
+ {
+  "t": 1794723889911,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "start",
+  "msg": "3466 m, -7.9 °C. 1.5 cm forecast for the next 24 h.",
+  "past24": 0.2,
+  "temp": -7.9
+ },
+ {
+  "t": 1794751882180,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "stop",
+  "msg": "0.6 cm in the last 24 h.",
+  "past24": 0.6,
+  "temp": -6.4
+ },
+ {
+  "t": 1794771990589,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "start",
+  "msg": "3466 m, -8.4 °C. 2.1 cm forecast for the next 24 h.",
+  "past24": 0.6,
+  "temp": -8.4
+ },
+ {
+  "t": 1794786138859,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "start",
+  "msg": "3456 m, -8.3 °C. 0.8 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -8.3
+ },
+ {
+  "t": 1794786138859,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "start",
+  "msg": "3200 m, -6.3 °C. 1.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -6.3
+ },
+ {
+  "t": 1794786138859,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "start",
+  "msg": "3245 m, -7.3 °C. 0.4 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -7.3
+ },
+ {
+  "t": 1794798575707,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "stop",
+  "msg": "0.3 cm in the last 24 h.",
+  "past24": 0.3,
+  "temp": -9.2
+ },
+ {
+  "t": 1794798575707,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "stop",
+  "msg": "0.1 cm in the last 24 h.",
+  "past24": 0.1,
+  "temp": -8.1
+ },
+ {
+  "t": 1794798575707,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "start",
+  "msg": "2350 m, -2.6 °C. 1.3 cm forecast for the next 24 h.",
+  "past24": 0.2,
+  "temp": -2.6
+ },
+ {
+  "t": 1794798575707,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "start",
+  "msg": "1970 m, -0.4 °C. 0.8 cm forecast for the next 24 h.",
+  "past24": 0.3,
+  "temp": -0.4
+ },
+ {
+  "t": 1794798575707,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "soon",
+  "msg": "0.6 cm forecast within 3 h at 3250 m (-7.3 °C now).",
+  "past24": 0.1,
+  "temp": -7.3
+ },
+ {
+  "t": 1794798575707,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "start",
+  "msg": "3195 m, -6.7 °C. 0.5 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -6.7
+ },
+ {
+  "t": 1794798575707,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "start",
+  "msg": "2962 m, -6.8 °C. 0.4 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -6.8
+ },
+ {
+  "t": 1794798575707,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "start",
+  "msg": "3210 m, -6.8 °C. 0.6 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -6.8
+ },
+ {
+  "t": 1794798575707,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "start",
+  "msg": "3440 m, -8.5 °C. 0.8 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -8.5
+ },
+ {
+  "t": 1794827477338,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "start",
+  "msg": "3456 m, -10.2 °C. 1.5 cm forecast for the next 24 h.",
+  "past24": 0.4,
+  "temp": -10.2
+ },
+ {
+  "t": 1794827477338,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "stop",
+  "msg": "0.3 cm in the last 24 h.",
+  "past24": 0.3,
+  "temp": -9.2
+ },
+ {
+  "t": 1794827477338,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "stop",
+  "msg": "0.3 cm in the last 24 h.",
+  "past24": 0.3,
+  "temp": -7.8
+ },
+ {
+  "t": 1794827477338,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "0.3 cm in the last 24 h.",
+  "past24": 0.3,
+  "temp": -7.9
+ },
+ {
+  "t": 1794827477338,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "stop",
+  "msg": "1.6 cm in the last 24 h.",
+  "past24": 1.6,
+  "temp": -11.8
+ },
+ {
+  "t": 1794887387656,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "start",
+  "msg": "3200 m, -2.6 °C. 18.2 cm forecast for the next 24 h.",
+  "past24": 1.7,
+  "temp": -2.6
+ },
+ {
+  "t": 1794887387656,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "stop",
+  "msg": "1.7 cm in the last 24 h.",
+  "past24": 1.7,
+  "temp": 1.7
+ },
+ {
+  "t": 1794887387656,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "start",
+  "msg": "3210 m, -5.3 °C. 2.8 cm forecast for the next 24 h.",
+  "past24": 0.6,
+  "temp": -5.3
+ },
+ {
+  "t": 1794887387656,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "start",
+  "msg": "3466 m, -3.6 °C. 14.6 cm forecast for the next 24 h.",
+  "past24": 2.5,
+  "temp": -3.6
+ },
+ {
+  "t": 1794970816036,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "start",
+  "msg": "3245 m, -7.1 °C. 1.7 cm forecast for the next 24 h.",
+  "past24": 2.5,
+  "temp": -7.1
+ },
+ {
+  "t": 1794970816036,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "start",
+  "msg": "3195 m, -6.3 °C. 2.0 cm forecast for the next 24 h.",
+  "past24": 0.8,
+  "temp": -6.3
  }
 ]

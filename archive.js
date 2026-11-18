@@ -9,12 +9,14 @@ function local(t) {
   return { Y: p.year, M: p.month, D: p.day, h: p.hour, m: p.minute };
 }
 
-export const hasArchive = c => c.source === "foto-webcam.eu" || c.source === "roundshot";
-export const isPanorama = c => c.source === "roundshot";
+export const hasArchive = c => c.source === "foto-webcam.eu" || c.source === "roundshot" || (c.source === "panomax" && !!c.pm);
+export const isPanorama = c => c.source === "roundshot" || c.source === "panomax";
 
 // Sizes: "thumb" (small), "view" (normal), "large"
 const FW_SIZE = { thumb: "sm", view: "la", large: "lm", huge: "hd" };
 const RS_SIZE = { thumb: "thumbnail", view: "quarter", large: "half", huge: "half" };
+// panomax: panodata.panomax.com redirects to the right storage server; images every 5 min, local time
+const PM_SIZE = { thumb: "small", view: "optimized", large: "reduced", huge: "reduced" };
 
 const rsBase = new Map(); // cam id -> Promise<{ base, latest }>
 export function roundshotInfo(c) {
@@ -31,6 +33,7 @@ export function roundshotInfo(c) {
 export async function frameUrl(c, t, size = "view") {
   const { Y, M, D, h, m } = local(t);
   if (c.source === "foto-webcam.eu") return `https://www.foto-webcam.eu/webcam/${c.id}/${Y}/${M}/${D}/${h}${m}_${FW_SIZE[size]}.jpg`;
+  if (c.source === "panomax" && c.pm) return `https://panodata.panomax.com/cams/${c.pm}/${Y}/${M}/${D}/${h}-${m}-00_${PM_SIZE[size]}.jpg`;
   if (c.source === "roundshot") {
     const { base } = await roundshotInfo(c);
     if (!base) return "";
@@ -76,6 +79,7 @@ export async function findFrame(c, t, size = "view") {
 // Newest image: foto-webcam serves it under /current/, roundshot lists it in structure.json.
 export async function latestUrl(c, size = "view") {
   if (c.source === "foto-webcam.eu") return `https://www.foto-webcam.eu/webcam/${c.id}/current/${{ thumb: "400", view: "816", large: "1200", huge: "1200" }[size]}.jpg`;
+  if (c.source === "panomax" && c.pm) return `https://live-image.panomax.com/cams/${c.pm}/recent_${PM_SIZE[size]}.jpg`;
   if (c.source === "roundshot") {
     const f = await findFrame(c, Date.now(), size);
     return f ? f.url : c.img;

@@ -41,7 +41,7 @@ const cams = [...extras, ...fw.filter(c => !extras.some(e => e.id === c.id))]
   .sort((a, b) => b.elev - a.elev);
 
 // Avalanche warning region of each cam (EAWS micro-regions), used to look up the bulletin.
-const REGION_FILES = ["CH", "AT-07", "AT-08", "AT-05", "AT-02", "AT-06", "AT-04", "AT-03", "IT-32-BZ", "IT-32-TN", "DE-BY", "IT-25", "IT-23", "SI", "FR"];
+const REGION_FILES = ["CH", "AT-07", "AT-08", "AT-05", "AT-02", "AT-06", "AT-04", "AT-03", "IT-32-BZ", "IT-32-TN", "IT-34", "DE-BY", "IT-25", "IT-23", "SI", "FR"];
 const inRing = (x, y, ring) => {
   let inside = false;
   for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
