@@ -1,11 +1,11 @@
-import { fetchWeather, fetchHistory, analyse, step, describe, seasonOf, snowBetween, snowEventStart, hourIndex, CODE_TEXT } from "./snow.js?v=mwgucd94";
-import { hasArchive, isPanorama, findFrame, latestUrl } from "./archive.js?v=mwgucd94";
-import { H, $, esc, f1, f0, fmtWhen, fmtTime, fmtDay, isDay, lastDaylight, touch, fmtSpan, store, dayKey } from "./util.js?v=mwgucd94";
-import { renderPlanner, renderModels } from "./plan.js?v=mwgucd94";
-import { renderMap, initMapControls, refreshMapCams } from "./map.js?v=mwgucd94";
-import { loadMeasurements, stationFor, bulletinFor, levelBadge, levelSplit, LEVEL_DE, EAWS_MAP } from "./measure.js?v=mwgucd94";
-import { findClear, lastSnowHour, clarityLabel } from "./clarity.js?v=mwgucd94";
-import { renderSeason, renderEvent, renderYears } from "./season.js?v=mwgucd94";
+import { fetchWeather, fetchHistory, analyse, step, describe, seasonOf, snowBetween, snowEventStart, hourIndex, CODE_TEXT } from "./snow.js?v=mwm1bn57";
+import { hasArchive, isPanorama, findFrame, latestUrl } from "./archive.js?v=mwm1bn57";
+import { H, $, esc, f1, f0, fmtWhen, fmtTime, fmtDay, isDay, lastDaylight, touch, fmtSpan, store, dayKey } from "./util.js?v=mwm1bn57";
+import { renderPlanner, renderModels, renderOutlook, initOutlook } from "./plan.js?v=mwm1bn57";
+import { renderMap, initMapControls, refreshMapCams } from "./map.js?v=mwm1bn57";
+import { loadMeasurements, stationFor, bulletinFor, levelBadge, levelSplit, LEVEL_DE, EAWS_MAP } from "./measure.js?v=mwm1bn57";
+import { findClear, lastSnowHour, clarityLabel } from "./clarity.js?v=mwm1bn57";
+import { renderSeason, renderEvent, renderYears } from "./season.js?v=mwm1bn57";
 
 const VIS_URL = "https://raw.githubusercontent.com/liquidxemm/snowwatch/data/vis.json";
 const VIS_LABEL = { clear: "klar", drops: "Tropfen / unscharf", fog: "Nebel / Schneetreiben", dark: "dunkel" };
@@ -128,7 +128,7 @@ function renderBoard(list) {
     }).join("");
 }
 
-function renderWatch() { const list = watched(); renderHero(list); renderWall(list); renderBoard(list); }
+function renderWatch() { const list = watched(); renderHero(list); renderOutlook(ctx); renderWall(list); renderBoard(list); }
 
 function renderCatalog() {
   const q = $("q").value.trim().toLowerCase(), cc = $("country").value, min = +$("minElev").value;
@@ -554,6 +554,7 @@ $("tabMap").onclick = () => { location.hash = "karte"; };
 $("tabSeason").onclick = () => { location.hash = "saison"; };
 $("planSort").addEventListener("change", () => renderPlanner(ctx));
 initMapControls();
+initOutlook(ctx);
 $("yrsDate").addEventListener("change", e => { if (e.target.value) { cv.yrsDate = e.target.value; renderYears(cv.cam, cv.yrsDate); } });
 $("yearChips").addEventListener("click", e => { const b = e.target.closest("[data-yday]"); if (b) { cv.yrsDate = b.dataset.yday; $("yrsDate").value = cv.yrsDate; renderYears(cv.cam, cv.yrsDate); } });
 $("btnRefresh").onclick = refresh;

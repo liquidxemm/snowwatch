@@ -151,6 +151,18 @@ export function spread(plan, key, i) {
   return vals.length ? { min: Math.min(...vals), max: Math.max(...vals), n: vals.length } : null;
 }
 
+// Each model's total over the first n days; where a short-range model stops, the median fills in.
+// Comparing whole-model totals gives an honest range (summing per-day minima and maxima would exaggerate it).
+export function modelTotals(plan, n) {
+  return MODELS.filter(m => m.id !== "best_match").map(m => {
+    const s = plan.byModel[m.id].snow;
+    if (!s.slice(0, n).some(v => v != null)) return null;
+    let t = 0;
+    for (let k = 0; k < n; k++) t += s[k] ?? plan.snow[k] ?? 0;
+    return t;
+  }).filter(v => v != null);
+}
+
 // A powder day: the first sunny day (6 h+) after at least 15 cm of new snow in the two days before, cold enough to keep it.
 export function powderDays(plan) {
   const b = plan.byModel.best_match, s = plan.snow, out = [];
