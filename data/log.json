@@ -3688,5 +3688,122 @@
   "msg": "It's snowing at 2090 m, -1.5 °C. 3.8 cm forecast for the next 24 h.",
   "past24": 1.9,
   "temp": -1.5
+ },
+ {
+  "t": 1795112811874,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "stop",
+  "msg": "5.3 cm in the last 24 h.",
+  "past24": 5.3,
+  "temp": -10.6
+ },
+ {
+  "t": 1795112811874,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "stop",
+  "msg": "7.1 cm in the last 24 h.",
+  "past24": 7.1,
+  "temp": -11
+ },
+ {
+  "t": 1795112811874,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "stop",
+  "msg": "6.7 cm in the last 24 h.",
+  "past24": 6.7,
+  "temp": -10.1
+ },
+ {
+  "t": 1795112811874,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "stop",
+  "msg": "4.8 cm in the last 24 h.",
+  "past24": 4.8,
+  "temp": -10.2
+ },
+ {
+  "t": 1795112811874,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "stop",
+  "msg": "6.3 cm in the last 24 h.",
+  "past24": 6.3,
+  "temp": -10
+ },
+ {
+  "t": 1795112811874,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "stop",
+  "msg": "5.9 cm in the last 24 h.",
+  "past24": 5.9,
+  "temp": -8.4
+ },
+ {
+  "t": 1795112811874,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "5.1 cm in the last 24 h.",
+  "past24": 5.1,
+  "temp": -10.3
+ },
+ {
+  "t": 1795112811874,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "stop",
+  "msg": "5.1 cm in the last 24 h.",
+  "past24": 5.1,
+  "temp": -9.2
+ },
+ {
+  "t": 1795112811874,
+  "id": "cortina-pomedes",
+  "name": "Cortina Pomedes",
+  "type": "stop",
+  "msg": "7.2 cm in the last 24 h.",
+  "past24": 7.2,
+  "temp": -2.6
+ },
+ {
+  "t": 1795112811874,
+  "id": "cortina-5torri",
+  "name": "Cortina 5 Torri",
+  "type": "stop",
+  "msg": "7.9 cm in the last 24 h.",
+  "past24": 7.9,
+  "temp": -2.5
+ },
+ {
+  "t": 1795112811874,
+  "id": "cortina-colgallina",
+  "name": "Cortina Col Gallina",
+  "type": "stop",
+  "msg": "7.1 cm in the last 24 h.",
+  "past24": 7.1,
+  "temp": -2.9
+ },
+ {
+  "t": 1795112811874,
+  "id": "cortina-faloria",
+  "name": "Cortina Faloria",
+  "type": "stop",
+  "msg": "7.1 cm in the last 24 h.",
+  "past24": 7.1,
+  "temp": -1.8
+ },
+ {
+  "t": 1795112811874,
+  "id": "cortina-ducadaosta",
+  "name": "Cortina Duca d'Aosta",
+  "type": "stop",
+  "msg": "7.5 cm in the last 24 h.",
+  "past24": 7.5,
+  "temp": -1.7
  }
 ]
