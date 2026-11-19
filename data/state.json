@@ -1,107 +1,107 @@
 {
  "saasfee-mittelallalin": {
-  "status": "dry",
-  "lastSnowAt": 1794999600000,
+  "status": "snow",
+  "lastSnowAt": 1795078800000,
   "soonAt": 0
  },
  "saasgrund-hohsaas": {
-  "status": "dry",
-  "lastSnowAt": 1794999600000,
+  "status": "snow",
+  "lastSnowAt": 1795078800000,
   "soonAt": 0
  },
  "saasfee-dorf": {
-  "status": "dry",
-  "lastSnowAt": 1794006000000,
+  "status": "snow",
+  "lastSnowAt": 1795078800000,
   "soonAt": 0
  },
  "ruefikopf": {
   "status": "snow",
-  "lastSnowAt": 1795028400000,
+  "lastSnowAt": 1795078800000,
   "soonAt": 0
  },
  "lech": {
   "status": "snow",
-  "lastSnowAt": 1795028400000,
+  "lastSnowAt": 1795078800000,
   "soonAt": 1792592666293
  },
  "hintertux-gefrorenewand": {
   "status": "snow",
-  "lastSnowAt": 1795028400000,
+  "lastSnowAt": 1795078800000,
   "soonAt": 1794798575707
  },
  "hintereisferner1": {
   "status": "snow",
-  "lastSnowAt": 1795028400000,
+  "lastSnowAt": 1795078800000,
   "soonAt": 0
  },
  "gletscher-schareck": {
-  "status": "dry",
-  "lastSnowAt": 1794556800000,
+  "status": "snow",
+  "lastSnowAt": 1795078800000,
   "soonAt": 1792948116369
  },
  "adlersruhe": {
   "status": "snow",
-  "lastSnowAt": 1795028400000,
+  "lastSnowAt": 1795078800000,
   "soonAt": 1792948116369
  },
  "becherhaus": {
   "status": "snow",
-  "lastSnowAt": 1795028400000,
+  "lastSnowAt": 1795078800000,
   "soonAt": 0
  },
  "sonnblick": {
-  "status": "dry",
-  "lastSnowAt": 1794999600000,
+  "status": "snow",
+  "lastSnowAt": 1795078800000,
   "soonAt": 1792948116369
  },
  "zugspitze": {
   "status": "snow",
-  "lastSnowAt": 1795028400000,
+  "lastSnowAt": 1795078800000,
   "soonAt": 0
  },
  "stubai-gletscher": {
   "status": "snow",
-  "lastSnowAt": 1795028400000,
+  "lastSnowAt": 1795078800000,
   "soonAt": 0
  },
  "pitztal-gletscher": {
   "status": "snow",
-  "lastSnowAt": 1795028400000,
+  "lastSnowAt": 1795078800000,
   "soonAt": 0
  },
  "kitzsteinhorn": {
   "status": "snow",
-  "lastSnowAt": 1795028400000,
+  "lastSnowAt": 1795078800000,
   "soonAt": 1792948116369
  },
  "jungfraujoch": {
-  "status": "dry",
-  "lastSnowAt": 1794999600000,
+  "status": "snow",
+  "lastSnowAt": 1795078800000,
   "soonAt": 1792870733714
  },
  "cortina-pomedes": {
-  "status": "dry",
-  "lastSnowAt": 0,
+  "status": "snow",
+  "lastSnowAt": 1795078800000,
   "soonAt": 0
  },
  "cortina-5torri": {
-  "status": "dry",
-  "lastSnowAt": 0,
+  "status": "snow",
+  "lastSnowAt": 1795078800000,
   "soonAt": 0
  },
  "cortina-colgallina": {
-  "status": "dry",
-  "lastSnowAt": 0,
+  "status": "snow",
+  "lastSnowAt": 1795078800000,
   "soonAt": 0
  },
  "cortina-faloria": {
-  "status": "dry",
-  "lastSnowAt": 0,
+  "status": "snow",
+  "lastSnowAt": 1795078800000,
   "soonAt": 0
  },
  "cortina-ducadaosta": {
-  "status": "dry",
-  "lastSnowAt": 0,
+  "status": "snow",
+  "lastSnowAt": 1795078800000,
   "soonAt": 0
  }
 }
