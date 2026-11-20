@@ -3805,5 +3805,50 @@
   "msg": "7.5 cm in the last 24 h.",
   "past24": 7.5,
   "temp": -1.7
+ },
+ {
+  "t": 1795135630711,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "start",
+  "msg": "3245 m, -10.2 °C. 1.8 cm forecast for the next 24 h.",
+  "past24": 7.2,
+  "temp": -10.2
+ },
+ {
+  "t": 1795135630711,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "stop",
+  "msg": "5.7 cm in the last 24 h.",
+  "past24": 5.7,
+  "temp": -10.9
+ },
+ {
+  "t": 1795135630711,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "start",
+  "msg": "3195 m, -9.7 °C. 1.5 cm forecast for the next 24 h.",
+  "past24": 4.5,
+  "temp": -9.7
+ },
+ {
+  "t": 1795135630711,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "start",
+  "msg": "2962 m, -8.1 °C. 7.1 cm forecast for the next 24 h.",
+  "past24": 2.7,
+  "temp": -8.1
+ },
+ {
+  "t": 1795135630711,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "start",
+  "msg": "3210 m, -9.8 °C. 2.4 cm forecast for the next 24 h.",
+  "past24": 4.8,
+  "temp": -9.8
  }
 ]
