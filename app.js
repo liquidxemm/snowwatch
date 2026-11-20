@@ -1,11 +1,12 @@
-import { fetchWeather, fetchHistory, analyse, step, describe, seasonOf, snowBetween, snowEventStart, hourIndex, CODE_TEXT } from "./snow.js?v=mwm1bn57";
-import { hasArchive, isPanorama, findFrame, latestUrl } from "./archive.js?v=mwm1bn57";
-import { H, $, esc, f1, f0, fmtWhen, fmtTime, fmtDay, isDay, lastDaylight, touch, fmtSpan, store, dayKey } from "./util.js?v=mwm1bn57";
-import { renderPlanner, renderModels, renderOutlook, initOutlook } from "./plan.js?v=mwm1bn57";
-import { renderMap, initMapControls, refreshMapCams } from "./map.js?v=mwm1bn57";
-import { loadMeasurements, stationFor, bulletinFor, levelBadge, levelSplit, LEVEL_DE, EAWS_MAP } from "./measure.js?v=mwm1bn57";
-import { findClear, lastSnowHour, clarityLabel } from "./clarity.js?v=mwm1bn57";
-import { renderSeason, renderEvent, renderYears } from "./season.js?v=mwm1bn57";
+import { fetchWeather, fetchHistory, analyse, step, describe, seasonOf, snowBetween, snowEventStart, hourIndex, CODE_TEXT } from "./snow.js?v=mwp0mulj";
+import { hasArchive, isPanorama, findFrame, latestUrl } from "./archive.js?v=mwp0mulj";
+import { H, $, esc, f1, f0, fmtWhen, fmtTime, fmtDay, isDay, lastDaylight, touch, fmtSpan, store, dayKey } from "./util.js?v=mwp0mulj";
+import { renderPlanner, renderModels, renderOutlook, initOutlook } from "./plan.js?v=mwp0mulj";
+import { renderMap, initMapControls, refreshMapCams } from "./map.js?v=mwp0mulj";
+import { loadMeasurements, stationFor, bulletinFor, levelBadge, levelSplit, LEVEL_DE, EAWS_MAP } from "./measure.js?v=mwp0mulj";
+import { findClear, lastSnowHour, clarityLabel } from "./clarity.js?v=mwp0mulj";
+import { renderWidgetPage, initWidgetPage } from "./widgetpage.js?v=mwp0mulj";
+import { renderSeason, renderEvent, renderYears } from "./season.js?v=mwp0mulj";
 
 const VIS_URL = "https://raw.githubusercontent.com/liquidxemm/snowwatch/data/vis.json";
 const VIS_LABEL = { clear: "klar", drops: "Tropfen / unscharf", fog: "Nebel / Schneetreiben", dark: "dunkel" };
@@ -528,8 +529,8 @@ async function refresh() {
 }
 
 /* ---------- navigation ---------- */
-const VIEWS = { watch: "viewWatch", all: "viewAll", cam: "viewCam", plan: "viewPlan", map: "viewMap", season: "viewSeason", event: "viewEvent" };
-const TABS = { watch: "tabWatch", all: "tabAll", plan: "tabPlan", map: "tabMap", season: "tabSeason", event: "tabSeason" };
+const VIEWS = { widget: "viewWidget", watch: "viewWatch", all: "viewAll", cam: "viewCam", plan: "viewPlan", map: "viewMap", season: "viewSeason", event: "viewEvent" };
+const TABS = { widget: "tabWidget", watch: "tabWatch", all: "tabAll", plan: "tabPlan", map: "tabMap", season: "tabSeason", event: "tabSeason" };
 function showView(v) {
   for (const [k, id] of Object.entries(VIEWS)) $(id).hidden = k !== v;
   for (const [k, id] of Object.entries(TABS)) if (k !== "event") $(id).setAttribute("aria-selected", TABS[v] === id);
@@ -538,6 +539,7 @@ function showView(v) {
 function route() {
   const id = decodeURIComponent(location.hash.slice(1));
   if (id === "alle") { showView("all"); renderCatalog(); }
+  else if (id === "widget") { showView("widget"); renderWidgetPage(); }
   else if (id === "planen") { showView("plan"); renderPlanner(ctx); }
   else if (id === "karte") { showView("map"); renderMap(ctx); }
   else if (id === "saison") { showView("season"); renderSeason(ctx); renderLog(); renderRobust(); }
@@ -550,6 +552,8 @@ $("tabWatch").onclick = () => { location.hash = ""; };
 $("home").onclick = () => { location.hash = ""; };
 $("tabAll").onclick = () => { location.hash = "alle"; };
 $("tabPlan").onclick = () => { location.hash = "planen"; };
+$("tabWidget").onclick = () => { location.hash = "widget"; };
+initWidgetPage();
 $("tabMap").onclick = () => { location.hash = "karte"; };
 $("tabSeason").onclick = () => { location.hash = "saison"; };
 $("planSort").addEventListener("change", () => renderPlanner(ctx));

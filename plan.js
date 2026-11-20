@@ -1,6 +1,6 @@
 // Planner: 7-day outlook for watched cams, and the per-model comparison in the cam view.
-import { fetchPlan, spread, powderDays, MODELS, modelTotals } from "./snow.js?v=mwm1bn57";
-import { $, esc, f0, f1, fmtWd, fmtDM, cached } from "./util.js?v=mwm1bn57";
+import { fetchPlan, spread, powderDays, MODELS, modelTotals } from "./snow.js?v=mwp0mulj";
+import { $, esc, f0, f1, fmtWd, fmtDM, cached } from "./util.js?v=mwp0mulj";
 
 const PLAN_AGE = 30 * 60e3;
 const tint = cm => `color-mix(in srgb, var(--accent) ${Math.round(Math.min(1, cm / 30) * 55)}%, transparent)`;
