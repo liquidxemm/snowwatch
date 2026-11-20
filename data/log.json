@@ -3850,5 +3850,23 @@
   "msg": "3210 m, -9.8 °C. 2.4 cm forecast for the next 24 h.",
   "past24": 4.8,
   "temp": -9.8
+ },
+ {
+  "t": 1795193575666,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "stop",
+  "msg": "1.3 cm in the last 24 h.",
+  "past24": 1.3,
+  "temp": -11
+ },
+ {
+  "t": 1795193575666,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "stop",
+  "msg": "3.1 cm in the last 24 h.",
+  "past24": 3.1,
+  "temp": -8.3
  }
 ]
