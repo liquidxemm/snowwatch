@@ -3895,5 +3895,41 @@
   "msg": "2962 m, -8.6 °C. 7.5 cm forecast for the next 24 h.",
   "past24": 3.5,
   "temp": -8.6
+ },
+ {
+  "t": 1795232642738,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "start",
+  "msg": "3123 m, -10.5 °C. 2.9 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -10.5
+ },
+ {
+  "t": 1795232642738,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "start",
+  "msg": "3454 m, -12.4 °C. 3.5 cm forecast for the next 24 h.",
+  "past24": 0.8,
+  "temp": -12.4
+ },
+ {
+  "t": 1795232642738,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "start",
+  "msg": "3106 m, -10.0 °C. 3.2 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -10
+ },
+ {
+  "t": 1795232642738,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "start",
+  "msg": "3029 m, -9.4 °C. 3.9 cm forecast for the next 24 h.",
+  "past24": 0.8,
+  "temp": -9.4
  }
 ]
