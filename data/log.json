@@ -4075,5 +4075,32 @@
   "msg": "13.7 cm in the last 24 h.",
   "past24": 13.7,
   "temp": -9.2
+ },
+ {
+  "t": 1795318206583,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "start",
+  "msg": "3456 m, -6.7 °C. 8.7 cm forecast for the next 24 h.",
+  "past24": 2.4,
+  "temp": -6.7
+ },
+ {
+  "t": 1795318206583,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "start",
+  "msg": "3200 m, -6.6 °C. 9.1 cm forecast for the next 24 h.",
+  "past24": 1.5,
+  "temp": -6.6
+ },
+ {
+  "t": 1795318206583,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "start",
+  "msg": "3466 m, -10.3 °C. 21.3 cm forecast for the next 24 h.",
+  "past24": 5.9,
+  "temp": -10.3
  }
 ]

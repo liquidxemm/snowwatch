@@ -1,12 +1,12 @@
 {
  "saasfee-mittelallalin": {
-  "status": "dry",
-  "lastSnowAt": 1795230000000,
+  "status": "snow",
+  "lastSnowAt": 1795316400000,
   "soonAt": 0
  },
  "saasgrund-hohsaas": {
-  "status": "dry",
-  "lastSnowAt": 1795230000000,
+  "status": "snow",
+  "lastSnowAt": 1795316400000,
   "soonAt": 0
  },
  "saasfee-dorf": {
@@ -75,8 +75,8 @@
   "soonAt": 1792948116369
  },
  "jungfraujoch": {
-  "status": "dry",
-  "lastSnowAt": 1795258800000,
+  "status": "snow",
+  "lastSnowAt": 1795316400000,
   "soonAt": 1792870733714
  },
  "cortina-pomedes": {
