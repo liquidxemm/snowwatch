@@ -4309,5 +4309,131 @@
   "msg": "2.8 cm in the last 24 h.",
   "past24": 2.8,
   "temp": -1.4
+ },
+ {
+  "t": 1795462143634,
+  "id": "saasfee-mittelallalin",
+  "name": "Saas-Fee Mittelallalin",
+  "type": "stop",
+  "msg": "3.2 cm in the last 24 h.",
+  "past24": 3.2,
+  "temp": -10.9
+ },
+ {
+  "t": 1795462143634,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "stop",
+  "msg": "3.1 cm in the last 24 h.",
+  "past24": 3.1,
+  "temp": -10.5
+ },
+ {
+  "t": 1795462143634,
+  "id": "saasfee-dorf",
+  "name": "Saas-Fee Village",
+  "type": "stop",
+  "msg": "0.6 cm in the last 24 h.",
+  "past24": 0.6,
+  "temp": -0.9
+ },
+ {
+  "t": 1795462143634,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "stop",
+  "msg": "5.3 cm in the last 24 h.",
+  "past24": 5.3,
+  "temp": -8
+ },
+ {
+  "t": 1795462143634,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "stop",
+  "msg": "5.0 cm in the last 24 h.",
+  "past24": 5,
+  "temp": -6.1
+ },
+ {
+  "t": 1795462143634,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "stop",
+  "msg": "2.0 cm in the last 24 h.",
+  "past24": 2,
+  "temp": -15.4
+ },
+ {
+  "t": 1795462143634,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "stop",
+  "msg": "1.6 cm in the last 24 h.",
+  "past24": 1.6,
+  "temp": -15.9
+ },
+ {
+  "t": 1795462143634,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "stop",
+  "msg": "0.9 cm in the last 24 h.",
+  "past24": 0.9,
+  "temp": -17.9
+ },
+ {
+  "t": 1795462143634,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "stop",
+  "msg": "1.7 cm in the last 24 h.",
+  "past24": 1.7,
+  "temp": -14.6
+ },
+ {
+  "t": 1795462143634,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "stop",
+  "msg": "1.1 cm in the last 24 h.",
+  "past24": 1.1,
+  "temp": -15.6
+ },
+ {
+  "t": 1795462143634,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "stop",
+  "msg": "2.0 cm in the last 24 h.",
+  "past24": 2,
+  "temp": -13.4
+ },
+ {
+  "t": 1795462143634,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "stop",
+  "msg": "2.2 cm in the last 24 h.",
+  "past24": 2.2,
+  "temp": -14.7
+ },
+ {
+  "t": 1795462143634,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "stop",
+  "msg": "2.8 cm in the last 24 h.",
+  "past24": 2.8,
+  "temp": -16.2
+ },
+ {
+  "t": 1795462143634,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "stop",
+  "msg": "1.8 cm in the last 24 h.",
+  "past24": 1.8,
+  "temp": -15.5
  }
 ]
