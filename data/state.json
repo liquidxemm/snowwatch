@@ -15,13 +15,13 @@
   "soonAt": 0
  },
  "ruefikopf": {
-  "status": "dry",
-  "lastSnowAt": 1795392000000,
+  "status": "snow",
+  "lastSnowAt": 1795492800000,
   "soonAt": 0
  },
  "lech": {
-  "status": "dry",
-  "lastSnowAt": 1795392000000,
+  "status": "snow",
+  "lastSnowAt": 1795492800000,
   "soonAt": 1792592666293
  },
  "hintertux-gefrorenewand": {
@@ -75,7 +75,7 @@
   "soonAt": 1792948116369
  },
  "jungfraujoch": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1795460400000,
   "soonAt": 1792870733714
  },

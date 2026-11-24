@@ -4435,5 +4435,32 @@
   "msg": "1.8 cm in the last 24 h.",
   "past24": 1.8,
   "temp": -15.5
+ },
+ {
+  "t": 1795494198008,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "start",
+  "msg": "2350 m, -7.6 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 1.8,
+  "temp": -7.6
+ },
+ {
+  "t": 1795494198008,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "start",
+  "msg": "1970 m, -5.9 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 1.8,
+  "temp": -5.9
+ },
+ {
+  "t": 1795494198008,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "stop",
+  "msg": "9.9 cm in the last 24 h.",
+  "past24": 9.9,
+  "temp": -11.5
  }
 ]
