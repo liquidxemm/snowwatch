@@ -4462,5 +4462,23 @@
   "msg": "9.9 cm in the last 24 h.",
   "past24": 9.9,
   "temp": -11.5
+ },
+ {
+  "t": 1795532694528,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "stop",
+  "msg": "0.1 cm in the last 24 h.",
+  "past24": 0.1,
+  "temp": -3.6
+ },
+ {
+  "t": 1795532694528,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "stop",
+  "msg": "0.1 cm in the last 24 h.",
+  "past24": 0.1,
+  "temp": -1.8
  }
 ]
