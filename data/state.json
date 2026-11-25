@@ -1,12 +1,12 @@
 {
  "saasfee-mittelallalin": {
-  "status": "dry",
-  "lastSnowAt": 1795392000000,
+  "status": "snow",
+  "lastSnowAt": 1795626000000,
   "soonAt": 0
  },
  "saasgrund-hohsaas": {
   "status": "snow",
-  "lastSnowAt": 1795586400000,
+  "lastSnowAt": 1795626000000,
   "soonAt": 0
  },
  "saasfee-dorf": {
@@ -16,17 +16,17 @@
  },
  "ruefikopf": {
   "status": "snow",
-  "lastSnowAt": 1795586400000,
+  "lastSnowAt": 1795626000000,
   "soonAt": 0
  },
  "lech": {
   "status": "snow",
-  "lastSnowAt": 1795586400000,
+  "lastSnowAt": 1795626000000,
   "soonAt": 1792592666293
  },
  "hintertux-gefrorenewand": {
   "status": "snow",
-  "lastSnowAt": 1795586400000,
+  "lastSnowAt": 1795626000000,
   "soonAt": 1794798575707
  },
  "hintereisferner1": {
@@ -35,37 +35,37 @@
   "soonAt": 0
  },
  "gletscher-schareck": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1795586400000,
   "soonAt": 1792948116369
  },
  "adlersruhe": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1795586400000,
   "soonAt": 1792948116369
  },
  "becherhaus": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1795586400000,
   "soonAt": 0
  },
  "sonnblick": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1795586400000,
   "soonAt": 1792948116369
  },
  "zugspitze": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1795586400000,
   "soonAt": 0
  },
  "stubai-gletscher": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1795586400000,
   "soonAt": 0
  },
  "pitztal-gletscher": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1795586400000,
   "soonAt": 0
  },
@@ -76,32 +76,32 @@
  },
  "jungfraujoch": {
   "status": "snow",
-  "lastSnowAt": 1795586400000,
+  "lastSnowAt": 1795626000000,
   "soonAt": 1792870733714
  },
  "cortina-pomedes": {
   "status": "snow",
-  "lastSnowAt": 1795586400000,
+  "lastSnowAt": 1795626000000,
   "soonAt": 0
  },
  "cortina-5torri": {
   "status": "snow",
-  "lastSnowAt": 1795586400000,
+  "lastSnowAt": 1795626000000,
   "soonAt": 0
  },
  "cortina-colgallina": {
   "status": "snow",
-  "lastSnowAt": 1795586400000,
+  "lastSnowAt": 1795626000000,
   "soonAt": 0
  },
  "cortina-faloria": {
   "status": "snow",
-  "lastSnowAt": 1795586400000,
+  "lastSnowAt": 1795626000000,
   "soonAt": 0
  },
  "cortina-ducadaosta": {
   "status": "snow",
-  "lastSnowAt": 1795586400000,
+  "lastSnowAt": 1795626000000,
   "soonAt": 0
  }
 }
