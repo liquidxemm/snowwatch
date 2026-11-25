@@ -1,140 +1,5 @@
 [
  {
-  "t": 1792576349064,
-  "id": "saasfee-mittelallalin",
-  "name": "Saas-Fee Mittelallalin",
-  "type": "first",
-  "msg": "It's snowing at 3456 m, -3.2 °C. 6.0 cm forecast for the next 24 h.",
-  "past24": 7.2,
-  "temp": -3.2
- },
- {
-  "t": 1792576349064,
-  "id": "saasgrund-hohsaas",
-  "name": "Hohsaas 3200",
-  "type": "first",
-  "msg": "It's snowing at 3200 m, -1.7 °C. 6.3 cm forecast for the next 24 h.",
-  "past24": 14.3,
-  "temp": -1.7
- },
- {
-  "t": 1792576349064,
-  "id": "hintertux-gefrorenewand",
-  "name": "Hintertux Glacier",
-  "type": "first",
-  "msg": "It's snowing at 3250 m, -1.6 °C. 8.6 cm forecast for the next 24 h.",
-  "past24": 0.1,
-  "temp": -1.6
- },
- {
-  "t": 1792576349064,
-  "id": "hintereisferner1",
-  "name": "Hintereisferner 1",
-  "type": "first",
-  "msg": "It's snowing at 3245 m, -1.1 °C. 11.0 cm forecast for the next 24 h.",
-  "past24": 3.6,
-  "temp": -1.1
- },
- {
-  "t": 1792576349064,
-  "id": "adlersruhe",
-  "name": "Adlersruhe",
-  "type": "first",
-  "msg": "It's snowing at 3454 m, -2.2 °C. 16.1 cm forecast for the next 24 h.",
-  "past24": 0.8,
-  "temp": -2.2
- },
- {
-  "t": 1792576349064,
-  "id": "becherhaus",
-  "name": "Becherhaus",
-  "type": "first",
-  "msg": "It's snowing at 3195 m, -1.0 °C. 12.6 cm forecast for the next 24 h.",
-  "past24": 12.7,
-  "temp": -1
- },
- {
-  "t": 1792576349064,
-  "id": "stubai-gletscher",
-  "name": "Stubai Glacier",
-  "type": "first",
-  "msg": "It's snowing at 3210 m, -1.1 °C. 12.2 cm forecast for the next 24 h.",
-  "past24": 11.5,
-  "temp": -1.1
- },
- {
-  "t": 1792576349064,
-  "id": "pitztal-gletscher",
-  "name": "Pitztal Glacier",
-  "type": "first",
-  "msg": "It's snowing at 3440 m, -2.2 °C. 12.3 cm forecast for the next 24 h.",
-  "past24": 3,
-  "temp": -2.2
- },
- {
-  "t": 1792576349064,
-  "id": "jungfraujoch",
-  "name": "Jungfraujoch",
-  "type": "first",
-  "msg": "It's snowing at 3466 m, -4.1 °C. 12.4 cm forecast for the next 24 h.",
-  "past24": 6.4,
-  "temp": -4.1
- },
- {
-  "t": 1792592666293,
-  "id": "ruefikopf",
-  "name": "Lech Rüfikopf",
-  "type": "first",
-  "msg": "It's snowing at 2350 m, -0.9 °C. 5.2 cm forecast for the next 24 h.",
-  "past24": 0,
-  "temp": -0.9
- },
- {
-  "t": 1792592666293,
-  "id": "lech",
-  "name": "Lech am Arlberg",
-  "type": "soon",
-  "msg": "0.6 cm forecast within 3 h at 1970 m (1.5 °C now).",
-  "past24": 0,
-  "temp": 1.5
- },
- {
-  "t": 1792592666293,
-  "id": "hintereisferner1",
-  "name": "Hintereisferner 1",
-  "type": "stop",
-  "msg": "1.8 cm in the last 24 h.",
-  "past24": 1.8,
-  "temp": -1.2
- },
- {
-  "t": 1792592666293,
-  "id": "gletscher-schareck",
-  "name": "Gletscher - Schareck",
-  "type": "first",
-  "msg": "It's snowing at 3123 m, -1.1 °C. 3.9 cm forecast for the next 24 h.",
-  "past24": 0,
-  "temp": -1.1
- },
- {
-  "t": 1792592666293,
-  "id": "becherhaus",
-  "name": "Becherhaus",
-  "type": "stop",
-  "msg": "0.0 cm in the last 24 h.",
-  "past24": 0,
-  "temp": -1.1
- },
- {
-  "t": 1792592666293,
-  "id": "sonnblick",
-  "name": "Sonnblick",
-  "type": "first",
-  "msg": "It's snowing at 3106 m, -1.0 °C. 3.9 cm forecast for the next 24 h.",
-  "past24": 0,
-  "temp": -1
- },
- {
   "t": 1792592666293,
   "id": "zugspitze",
   "name": "Zugspitze Gipfel",
@@ -4480,5 +4345,158 @@
   "msg": "0.1 cm in the last 24 h.",
   "past24": 0.1,
   "temp": -1.8
+ },
+ {
+  "t": 1795588810786,
+  "id": "saasgrund-hohsaas",
+  "name": "Hohsaas 3200",
+  "type": "start",
+  "msg": "3200 m, -8.3 °C. 3.2 cm forecast for the next 24 h.",
+  "past24": 2.2,
+  "temp": -8.3
+ },
+ {
+  "t": 1795588810786,
+  "id": "ruefikopf",
+  "name": "Lech Rüfikopf",
+  "type": "start",
+  "msg": "2350 m, -3.4 °C. 0.2 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -3.4
+ },
+ {
+  "t": 1795588810786,
+  "id": "lech",
+  "name": "Lech am Arlberg",
+  "type": "start",
+  "msg": "1970 m, -1.1 °C. 0.0 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -1.1
+ },
+ {
+  "t": 1795588810786,
+  "id": "hintertux-gefrorenewand",
+  "name": "Hintertux Glacier",
+  "type": "start",
+  "msg": "3250 m, -10.3 °C. 3.0 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -10.3
+ },
+ {
+  "t": 1795588810786,
+  "id": "gletscher-schareck",
+  "name": "Gletscher - Schareck",
+  "type": "start",
+  "msg": "3123 m, -10.6 °C. 4.8 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -10.6
+ },
+ {
+  "t": 1795588810786,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "start",
+  "msg": "3454 m, -11.3 °C. 4.1 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -11.3
+ },
+ {
+  "t": 1795588810786,
+  "id": "becherhaus",
+  "name": "Becherhaus",
+  "type": "start",
+  "msg": "3195 m, -9.3 °C. 4.3 cm forecast for the next 24 h.",
+  "past24": 0.3,
+  "temp": -9.3
+ },
+ {
+  "t": 1795588810786,
+  "id": "sonnblick",
+  "name": "Sonnblick",
+  "type": "start",
+  "msg": "3106 m, -10.3 °C. 4.8 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -10.3
+ },
+ {
+  "t": 1795588810786,
+  "id": "zugspitze",
+  "name": "Zugspitze Gipfel",
+  "type": "start",
+  "msg": "2962 m, -7.9 °C. 0.1 cm forecast for the next 24 h.",
+  "past24": 0,
+  "temp": -7.9
+ },
+ {
+  "t": 1795588810786,
+  "id": "stubai-gletscher",
+  "name": "Stubai Glacier",
+  "type": "start",
+  "msg": "3210 m, -9.4 °C. 3.8 cm forecast for the next 24 h.",
+  "past24": 0.1,
+  "temp": -9.4
+ },
+ {
+  "t": 1795588810786,
+  "id": "pitztal-gletscher",
+  "name": "Pitztal Glacier",
+  "type": "start",
+  "msg": "3440 m, -10.6 °C. 2.9 cm forecast for the next 24 h.",
+  "past24": 0.5,
+  "temp": -10.6
+ },
+ {
+  "t": 1795588810786,
+  "id": "jungfraujoch",
+  "name": "Jungfraujoch",
+  "type": "start",
+  "msg": "3466 m, -12.3 °C. 2.2 cm forecast for the next 24 h.",
+  "past24": 3,
+  "temp": -12.3
+ },
+ {
+  "t": 1795588810786,
+  "id": "cortina-pomedes",
+  "name": "Cortina Pomedes",
+  "type": "start",
+  "msg": "2300 m, -5.1 °C. 11.5 cm forecast for the next 24 h.",
+  "past24": 0.9,
+  "temp": -5.1
+ },
+ {
+  "t": 1795588810786,
+  "id": "cortina-5torri",
+  "name": "Cortina 5 Torri",
+  "type": "start",
+  "msg": "2256 m, -5.1 °C. 10.8 cm forecast for the next 24 h.",
+  "past24": 0.9,
+  "temp": -5.1
+ },
+ {
+  "t": 1795588810786,
+  "id": "cortina-colgallina",
+  "name": "Cortina Col Gallina",
+  "type": "start",
+  "msg": "2169 m, -5.3 °C. 11.1 cm forecast for the next 24 h.",
+  "past24": 0.8,
+  "temp": -5.3
+ },
+ {
+  "t": 1795588810786,
+  "id": "cortina-faloria",
+  "name": "Cortina Faloria",
+  "type": "start",
+  "msg": "2103 m, -3.7 °C. 13.2 cm forecast for the next 24 h.",
+  "past24": 0.7,
+  "temp": -3.7
+ },
+ {
+  "t": 1795588810786,
+  "id": "cortina-ducadaosta",
+  "name": "Cortina Duca d'Aosta",
+  "type": "start",
+  "msg": "2090 m, -4.5 °C. 10.9 cm forecast for the next 24 h.",
+  "past24": 0.8,
+  "temp": -4.5
  }
 ]
