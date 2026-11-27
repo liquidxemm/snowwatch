@@ -291,7 +291,8 @@ async function camWidget(data, cam) {
   fc.centerAlignContent();
   text(fc, `${cm(cam[key].med)} cm`, family === "small" ? 18 : 20, "bold", white);
   fc.addSpacer(5);
-  text(fc, family === "small" ? inSpan : `${inSpan} · Modelle ${cm(cam[key].lo)}–${cm(cam[key].hi)}`, 11, "regular", soft);
+  const range = cam[key].hi >= 1 && Math.round(cam[key].lo) !== Math.round(cam[key].hi) ? ` · Modelle ${cm(cam[key].lo)}–${cm(cam[key].hi)}` : "";
+  text(fc, family === "small" ? inSpan : `${inSpan}${range}`, 11, "regular", soft);
   if (family === "large") {
     w.addSpacer(8);
     const ds = w.addStack();

@@ -1,8 +1,8 @@
 // Season: first snow per season, snow events from the log, and the same-day comparison across years.
-import { fetchArchiveDaily, fetchHistory, snowBetween, snowEventStart } from "./snow.js?v=mwyqq5rj";
-import { findClear, lastSnowHour } from "./clarity.js?v=mwyqq5rj";
-import { hasArchive, findFrame, latestUrl } from "./archive.js?v=mwyqq5rj";
-import { H, DAY, $, esc, f0, f1, fmtDM, fmtWhen, fmtDate, fmtSpan, dayKey, noonOf, lastDaylight, nextDaylight, cached } from "./util.js?v=mwyqq5rj";
+import { fetchArchiveDaily, fetchHistory, snowBetween, snowEventStart } from "./snow.js?v=mwyre1z6";
+import { findClear, lastSnowHour } from "./clarity.js?v=mwyre1z6";
+import { hasArchive, findFrame, latestUrl } from "./archive.js?v=mwyre1z6";
+import { H, DAY, $, esc, f0, f1, fmtDM, fmtWhen, fmtDate, fmtSpan, dayKey, noonOf, lastDaylight, nextDaylight, cached } from "./util.js?v=mwyre1z6";
 
 const FIRST_CM = 2;         // a day with at least this much new snow counts as "first snow"
 const SEASONS_BACK = 5;

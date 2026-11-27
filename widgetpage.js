@@ -1,6 +1,6 @@
 // Widget page: setup steps for the Scriptable widget, a copy button for the script, and previews of every
 // widget at iOS sizes built from the same widget.json the phone loads (layout mirrors widgets/Snowwatch.js).
-import { $, esc } from "./util.js?v=mwyqq5rj";
+import { $, esc } from "./util.js?v=mwyre1z6";
 
 const DATA_URL = "https://raw.githubusercontent.com/liquidxemm/snowwatch/data/widget.json";
 const LEVEL_COLORS = { 1: "#ccff66", 2: "#ffff00", 3: "#ff9900", 4: "#ff0000", 5: "#ff0000" };
@@ -39,7 +39,7 @@ function camCard(size, c) {
     <div class="wtop">${c.status === "snow" ? `<span class="wsnow">SCHNEIT</span>` : ""}${lvl(c.level)}</div><span class="wfill"></span>
     <span class="wname">${esc(c.name)}</span>
     <span class="wsub">${c.elev} m · ${deg(c.temp)}${size !== "small" ? ` &ensp;24 h ${cm(c.past24)} cm${c.measured ? ` &ensp;gemessen ${cm(c.measured.hs)} cm` : ""}` : ""}</span>
-    <span class="wfc"><b>${cm(c[key].med)} cm</b> ${size === "small" ? inSpanOf(days) : `${inSpanOf(days)} · Modelle ${cm(c[key].lo)}–${cm(c[key].hi)}`}</span>
+    <span class="wfc"><b>${cm(c[key].med)} cm</b> ${size === "small" ? inSpanOf(days) : `${inSpanOf(days)}${c[key].hi >= 1 && Math.round(c[key].lo) !== Math.round(c[key].hi) ? ` · Modelle ${cm(c[key].lo)}–${cm(c[key].hi)}` : ""}`}</span>
     ${size === "large" ? `<div class="wdays">${c.days.map(d => `<span><small>${d.wd}</small>${d.snow >= 1 ? cm(d.snow) : "·"}</span>`).join("")}</div>` : ""}</div>`;
 }
 

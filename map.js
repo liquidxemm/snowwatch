@@ -1,6 +1,6 @@
 // Map view: cams, rain/snow radar (RainViewer) and forecast snowfall as a grid (Open-Meteo).
-import { fetchGrid } from "./snow.js?v=mwyqq5rj";
-import { $, esc, f0, fmtTime, fmtWd, fmtDM, cached } from "./util.js?v=mwyqq5rj";
+import { fetchGrid } from "./snow.js?v=mwyre1z6";
+import { $, esc, f0, fmtTime, fmtWd, fmtDM, cached } from "./util.js?v=mwyre1z6";
 
 const LEAFLET = "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/";
 let L, map, layers = {}, radar = { frames: [], idx: 0, timer: null }, mode = "radar", ctxRef;
