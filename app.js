@@ -1,12 +1,12 @@
-import { fetchWeather, fetchHistory, analyse, step, describe, seasonOf, snowBetween, snowEventStart, hourIndex, CODE_TEXT } from "./snow.js?v=mwp0mulj";
-import { hasArchive, isPanorama, findFrame, latestUrl } from "./archive.js?v=mwp0mulj";
-import { H, $, esc, f1, f0, fmtWhen, fmtTime, fmtDay, isDay, lastDaylight, touch, fmtSpan, store, dayKey } from "./util.js?v=mwp0mulj";
-import { renderPlanner, renderModels, renderOutlook, initOutlook } from "./plan.js?v=mwp0mulj";
-import { renderMap, initMapControls, refreshMapCams } from "./map.js?v=mwp0mulj";
-import { loadMeasurements, stationFor, bulletinFor, levelBadge, levelSplit, LEVEL_DE, EAWS_MAP } from "./measure.js?v=mwp0mulj";
-import { findClear, lastSnowHour, clarityLabel } from "./clarity.js?v=mwp0mulj";
-import { renderWidgetPage, initWidgetPage } from "./widgetpage.js?v=mwp0mulj";
-import { renderSeason, renderEvent, renderYears } from "./season.js?v=mwp0mulj";
+import { fetchWeather, fetchHistory, analyse, step, describe, seasonOf, snowBetween, snowEventStart, hourIndex, CODE_TEXT } from "./snow.js?v=mwyqq5rj";
+import { hasArchive, isPanorama, findFrame, latestUrl } from "./archive.js?v=mwyqq5rj";
+import { H, $, esc, f1, f0, fmtWhen, fmtTime, fmtDay, isDay, lastDaylight, touch, fmtSpan, store, dayKey } from "./util.js?v=mwyqq5rj";
+import { renderPlanner, renderModels, renderOutlook, initOutlook } from "./plan.js?v=mwyqq5rj";
+import { renderMap, initMapControls, refreshMapCams } from "./map.js?v=mwyqq5rj";
+import { loadMeasurements, stationFor, bulletinFor, levelBadge, levelSplit, LEVEL_DE, EAWS_MAP } from "./measure.js?v=mwyqq5rj";
+import { findClear, lastSnowHour, clarityLabel } from "./clarity.js?v=mwyqq5rj";
+import { renderWidgetPage, initWidgetPage } from "./widgetpage.js?v=mwyqq5rj";
+import { renderSeason, renderEvent, renderYears } from "./season.js?v=mwyqq5rj";
 
 const VIS_URL = "https://raw.githubusercontent.com/liquidxemm/snowwatch/data/vis.json";
 const VIS_LABEL = { clear: "klar", drops: "Tropfen / unscharf", fog: "Nebel / Schneetreiben", dark: "dunkel" };

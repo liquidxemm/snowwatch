@@ -1,6 +1,6 @@
 // Widget page: setup steps for the Scriptable widget, a copy button for the script, and previews of every
 // widget at iOS sizes built from the same widget.json the phone loads (layout mirrors widgets/Snowwatch.js).
-import { $, esc } from "./util.js?v=mwp0mulj";
+import { $, esc } from "./util.js?v=mwyqq5rj";
 
 const DATA_URL = "https://raw.githubusercontent.com/liquidxemm/snowwatch/data/widget.json";
 const LEVEL_COLORS = { 1: "#ccff66", 2: "#ffff00", 3: "#ff9900", 4: "#ff0000", 5: "#ff0000" };
@@ -8,7 +8,7 @@ const cm = v => `${Math.round(v)}`;
 const deg = v => `${Math.round(v)}°`.replace("-", "−");
 let data = null, days = 3, cam = "";
 
-const lvl = l => (l ? `<span class="wlv" style="background:${LEVEL_COLORS[l]};color:${l >= 4 ? "#fff" : "#111"}">${l}</span>` : "");
+const lvl = l => (l ? `<span class="wlv"><i style="color:${LEVEL_COLORS[l]}">●</i>${l}</span>` : "");
 const spanOf = d => (d === 2 ? "heute + morgen" : `${d} Tage`);
 const inSpanOf = d => (d === 2 ? "heute + morgen" : `in ${d} Tagen`);
 const snowingText = d => (d.snowing ? `Schneefall an ${d.snowing} von ${d.total} Cams` : "Gerade kein Schneefall");

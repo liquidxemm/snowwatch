@@ -44,12 +44,52 @@ async function loadData() {
     req.timeoutInterval = 15;
     const data = await req.loadJSON();
     if (!data || !data.cams) throw new Error("no data");
+    // GitHub runs the shared update irregularly; when it is old, fetch the forecast here
+    if (Date.now() - data.updated > 90 * 60000 || data.stale) { try { await refreshForecast(data); } catch (e) {} }
     fm.writeString(path, JSON.stringify(data));
     return data;
   } catch (e) {
     if (fm.fileExists(path)) return { ...JSON.parse(fm.readString(path)), offline: true };
     return null;
   }
+}
+
+// Median of several models per day, and each model's own total for the range (same method as the website).
+const MODELS = ["meteoswiss_icon_ch2", "icon_d2", "icon_eu", "ecmwf_ifs025"];
+const median = v => { v = v.filter(x => x != null).sort((a, b) => a - b); return v.length ? (v.length % 2 ? v[(v.length - 1) / 2] : (v[v.length / 2 - 1] + v[v.length / 2]) / 2) : null; };
+async function refreshForecast(data) {
+  const cams = data.cams.filter(c => c.lat != null);
+  if (!cams.length) return false;
+  const q = [
+    "latitude=" + cams.map(c => c.lat).join(","), "longitude=" + cams.map(c => c.lon).join(","), "elevation=" + cams.map(c => c.elev).join(","),
+    "daily=snowfall_sum", "models=" + MODELS.join(","), "forecast_days=7", "timezone=Europe%2FVienna",
+  ].join("&");
+  const req = new Request("https://api.open-meteo.com/v1/forecast?" + q);
+  req.timeoutInterval = 20;
+  let j = await req.loadJSON();
+  if (!Array.isArray(j)) j = [j];
+  if (j.length !== cams.length || !j[0].daily) return false;
+  cams.forEach((c, i) => {
+    const d = j[i].daily, series = MODELS.map(m => d["snowfall_sum_" + m]).filter(Boolean);
+    const med = d.time.map((_, k) => median(series.map(x => x[k])) || 0);
+    const win = n => {
+      const sum = med.slice(0, n).reduce((a, v) => a + v, 0);
+      const tots = series.filter(x => x.slice(0, n).some(v => v != null)).map(x => x.slice(0, n).reduce((a, v, k) => a + (v ?? med[k]), 0));
+      return { med: sum, lo: Math.min(sum, ...tots), hi: Math.max(sum, ...tots) };
+    };
+    c.d2 = win(2); c.d3 = win(3); c.d7 = win(7);
+    const wdOf = t => new Date(t + "T12:00:00Z").toLocaleDateString("de-AT", { weekday: "short", timeZone: "UTC" }).replace(".", "");
+    c.days = d.time.map((t, k) => ({ d: t, wd: wdOf(t), snow: med[k] }));
+  });
+  for (const k of ["d2", "d3", "d7"]) {
+    const label = { d2: "Heute + morgen", d3: "Nächste 3 Tage", d7: "Nächste 7 Tage" }[k];
+    const r = data.cams.slice().sort((a, b) => b[k].med - a[k].med), top = r[0];
+    data.lead[k] = !top || top[k].med < 1 ? `${label}: kaum Schnee an deinen Cams.`
+      : `${label}: am meisten bei ${top.name}, ${Math.round(top[k].med)} cm (${Math.round(top[k].lo)}–${Math.round(top[k].hi)}). ${r.filter(x => x[k].med >= 10).length} von ${r.length} Cams über 10 cm.`;
+  }
+  data.updated = Date.now();
+  data.stale = false;
+  return true;
 }
 
 async function loadImage(url) {
@@ -70,26 +110,44 @@ function barImage(med, lo, hi, max, w = 300, h = 18) {
   return ctx.getImage();
 }
 
-// crop an image to the widget's aspect ratio around its centre; cropTop cuts off a caption bar (share of height)
-function coverImage(img, aspect, cropTop = 0) {
-  if (!img) return null;
-  const s = img.size, y0 = s.height * cropTop, h = s.height - y0;
-  const cw = Math.min(s.width, h * aspect);
-  if (cropTop === 0 && cw >= s.width * 0.95) return img;
-  const ctx = new DrawContext();
-  ctx.size = new Size(cw, h);
-  ctx.drawImageAtPoint(img, new Point(-(s.width - cw) / 2, -y0));
-  return ctx.getImage();
+// Background image at the widget's own pixel size (widgets have very little memory, so never work at full
+// panorama size): crop to the widget's shape around the centre, cut off a caption bar at the top (cropTop,
+// share of height) and darken the lower part so the text stays readable. Returns null on any problem.
+const OUT = { small: [340, 340], medium: [720, 340], large: [720, 760] };
+function widgetImage(img, cropTop = 0) {
+  try {
+    if (!img) return null;
+    const [W, H] = OUT[family] || OUT.medium, A = W / H, s = img.size;
+    const usableH = s.height * (1 - cropTop);
+    const srcW = Math.min(s.width, usableH * A), srcH = srcW / A;
+    const x0 = (s.width - srcW) / 2, y0 = s.height - srcH;       // keep the bottom, drop the top
+    const k = W / srcW;
+    const ctx = new DrawContext();
+    ctx.respectScreenScale = false;
+    ctx.opaque = true;
+    ctx.size = new Size(W, H);
+    ctx.drawImageInRect(img, new Rect(-x0 * k, -y0 * k, s.width * k, s.height * k));
+    const bands = 24, from = H * 0.4;
+    for (let i = 0; i < bands; i++) {
+      ctx.setFillColor(new Color("#000000", (i + 1) / bands * 0.7));
+      ctx.fillRect(new Rect(0, from + (H - from) * i / bands, W, (H - from) / bands + 1));
+    }
+    return ctx.getImage();
+  } catch (e) { return null; }
 }
 
-function addLevel(stack, level, size = 10) {
+// Avalanche level: coloured dot + number in text colour, so it stays readable when iOS tints widgets (Clear mode).
+function addLevel(stack, level, size = 10, color = C.ink) {
   if (!level) return;
   const b = stack.addStack();
-  b.backgroundColor = new Color(LEVEL_COLORS[level]);
-  b.setPadding(1, 4, 1, 4);
+  b.centerAlignContent();
+  const d = b.addText("●");
+  d.font = font(size * 0.8);
+  d.textColor = new Color(LEVEL_COLORS[level]);
+  b.addSpacer(1);
   const t = b.addText(String(level));
   t.font = font(size, "bold");
-  t.textColor = new Color(level >= 4 ? "#ffffff" : "#111111");
+  t.textColor = color;
 }
 
 function text(stack, s, size, weight = "regular", color = C.ink) {
@@ -199,16 +257,10 @@ async function camWidget(data, cam) {
   const w = new ListWidget();
   w.url = cam.url;
   w.setPadding(12, 12, 12, 12);
-  const aspect = family === "small" ? 1 : family === "large" ? 1.05 : 2.1;
   // foto-webcam burns a caption bar into the top of every image
-  const img = coverImage(await loadImage(cam.img), aspect, cam.img.includes("foto-webcam.eu") ? 0.08 : 0);
-  if (img) {
-    w.backgroundImage = img;
-    const g = new LinearGradient();
-    g.colors = [new Color("#000000", 0), new Color("#000000", 0.15), new Color("#000000", 0.7)];
-    g.locations = [0, 0.45, 1];
-    w.backgroundGradient = g;
-  } else w.backgroundColor = new Color("#1b1b1d");
+  const img = cam.img ? widgetImage(await loadImage(cam.img), cam.img.includes("foto-webcam.eu") ? 0.08 : 0) : null;
+  if (img) w.backgroundImage = img;
+  else w.backgroundColor = new Color("#1b1b1d");
   const white = new Color("#ffffff"), soft = new Color("#ffffff", 0.8);
 
   const top = w.addStack();
@@ -220,7 +272,7 @@ async function camWidget(data, cam) {
     text(b, "SCHNEIT", 9, "bold", white);
     top.addSpacer(4);
   }
-  addLevel(top, cam.level, 9);
+  addLevel(top, cam.level, 10, new Color("#ffffff"));
   top.addSpacer();
   w.addSpacer();
 

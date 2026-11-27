@@ -41,7 +41,7 @@ const rows = cams.map((c, i) => {
     return { med: round(sum), lo: round(Math.min(sum, ...tots)), hi: round(Math.max(sum, ...tots)) };
   };
   return {
-    id: c.id, name: c.name, elev: c.elev,
+    id: c.id, name: c.name, elev: c.elev, lat: c.lat, lon: c.lon,
     status: a.snowingNow ? "snow" : a.next3 >= 0.5 ? "soon" : "dry",
     temp: round(a.temp), past24: round(a.past24), next24: round(a.next24),
     d2: window(2), d3: window(3), d7: window(7),
