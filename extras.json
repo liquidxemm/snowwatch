@@ -212,5 +212,19 @@
   "source": "panomax",
   "pm": 2880,
   "interval": 600
+ },
+ {
+  "id": "lech-kriegerhorn",
+  "name": "Lech Kriegerhorn",
+  "title": "Oberlech, Kriegerhornbahn below the Mohnenfluh, 360° panorama",
+  "country": "at",
+  "lat": 47.2153,
+  "lon": 10.1188,
+  "elev": 2060,
+  "img": "https://live-image.panomax.com/cams/982/recent_reduced.jpg",
+  "page": "https://kriegerhorn.skiarlberg.at",
+  "source": "panomax",
+  "pm": 982,
+  "interval": 600
  }
 ]

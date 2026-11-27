@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [scripts/visibility.mjs, scripts/stations.mjs, scripts/widget.mjs]
+    paths: [scripts/visibility.mjs, scripts/stations.mjs, scripts/widget.mjs, watchlist.json]
 
 permissions:
   contents: write

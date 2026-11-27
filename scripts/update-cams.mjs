@@ -21,7 +21,9 @@ function extractCamList(html) {
 const res = await fetch("https://www.foto-webcam.eu/", { headers: { "User-Agent": "snowwatch (github.com/liquidxemm/snowwatch)" } });
 if (!res.ok) throw new Error(`foto-webcam.eu answered ${res.status}`);
 const fw = extractCamList(await res.text())
-  .filter(c => !c.offline && !c.hidden && c.latitude && c.longitude && c.elevation > 0 && c.elevation < 5000)
+  // "hidden" cams are only left off foto-webcam's own overview; they work normally, so keep those with current images
+  .filter(c => !c.offline && (!c.hidden || Date.now() / 1000 - (c.modtime || 0) < 2 * 86400))
+  .filter(c => c.latitude && c.longitude && c.elevation > 0 && c.elevation < 5000)
   .map(c => ({
     id: c.id,
     name: c.name,

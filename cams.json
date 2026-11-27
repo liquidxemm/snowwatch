@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T14:51:22.652Z",
+ "updated": "2026-11-27T08:56:53.441Z",
  "cams": [
   {
    "id": "aiguille-du-midi",
@@ -101,6 +101,34 @@
    "region": "AT-07-23-02"
   },
   {
+   "id": "hintereisferner2",
+   "name": "Hintereisferner 2",
+   "title": "Hintereisferner - Blick Richtung Hintere Hintereisspitze",
+   "country": "at",
+   "lat": 46.7959,
+   "lon": 10.7828,
+   "elev": 3245,
+   "interval": 1800,
+   "img": "https://www.foto-webcam.eu/webcam/hintereisferner2/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/hintereisferner2/",
+   "source": "foto-webcam.eu",
+   "region": "AT-07-21"
+  },
+  {
+   "id": "hintereisferner1",
+   "name": "Hintereisferner 1",
+   "title": "Hintereisferner - Blick Richtung Weißkugel und Langtaufererspitze",
+   "country": "at",
+   "lat": 46.7959,
+   "lon": 10.7828,
+   "elev": 3245,
+   "interval": 1800,
+   "img": "https://www.foto-webcam.eu/webcam/hintereisferner1/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/hintereisferner1/",
+   "source": "foto-webcam.eu",
+   "region": "AT-07-21"
+  },
+  {
    "id": "tisenjoch",
    "name": "Tisenjoch",
    "title": "Tisenjoch - Blick nach Südwesten zur Ötzi Fundstelle",
@@ -143,20 +171,6 @@
    "region": "CH-4223"
   },
   {
-   "id": "becherhaus",
-   "name": "Becherhaus",
-   "title": "Übeltalferner | Ghiacciaio di Malavalle - Ridnaun, Südtirol | Val Ridanna, Alto Adige",
-   "country": "it",
-   "lat": 46.9608,
-   "lon": 11.1923,
-   "elev": 3195,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/becherhaus/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/becherhaus/",
-   "source": "foto-webcam.eu",
-   "region": "IT-32-BZ-04-01"
-  },
-  {
    "id": "ridnaun",
    "name": "Ridnaun",
    "title": "Becherhaus - Blick nach Südosten ins Ridnauntal",
@@ -167,6 +181,20 @@
    "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/ridnaun/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/ridnaun/",
+   "source": "foto-webcam.eu",
+   "region": "IT-32-BZ-04-01"
+  },
+  {
+   "id": "becherhaus",
+   "name": "Becherhaus",
+   "title": "Übeltalferner | Ghiacciaio di Malavalle - Ridnaun, Südtirol | Val Ridanna, Alto Adige",
+   "country": "it",
+   "lat": 46.9608,
+   "lon": 11.1923,
+   "elev": 3195,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/becherhaus/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/becherhaus/",
    "source": "foto-webcam.eu",
    "region": "IT-32-BZ-04-01"
   },
@@ -195,6 +223,20 @@
    "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/sonnblick/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/sonnblick/",
+   "source": "foto-webcam.eu",
+   "region": "AT-05-05"
+  },
+  {
+   "id": "sonnblick-ham",
+   "name": "Sonnblick HAM",
+   "title": "Sonnblick Observatorium - Blick zum Amateurfunk-Antennenmast OE2XSR",
+   "country": "at",
+   "lat": 47.054,
+   "lon": 12.9575,
+   "elev": 3106,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/sonnblick-ham/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/sonnblick-ham/",
    "source": "foto-webcam.eu",
    "region": "AT-05-05"
   },
@@ -353,18 +395,18 @@
    "region": "IT-32-BZ-12"
   },
   {
-   "id": "goldbergkees",
-   "name": "Goldbergkees",
-   "title": "Goldbergkees - Blick nach Südosten",
+   "id": "jamtalferner",
+   "name": "Jamtalferner",
+   "title": "Urezzasjoch - Blick nach Nordwesten zum Jamtalferner",
    "country": "at",
-   "lat": 47.0517,
-   "lon": 12.9644,
-   "elev": 2932,
-   "interval": 1800,
-   "img": "https://www.foto-webcam.eu/webcam/goldbergkees/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/goldbergkees/",
+   "lat": 46.8507,
+   "lon": 10.1679,
+   "elev": 2920,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/jamtalferner/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/jamtalferner/",
    "source": "foto-webcam.eu",
-   "region": "AT-05-05"
+   "region": "CH-7122"
   },
   {
    "id": "bockkogel",
@@ -379,20 +421,6 @@
    "page": "https://www.foto-webcam.eu/webcam/bockkogel/",
    "source": "foto-webcam.eu",
    "region": "AT-07-22"
-  },
-  {
-   "id": "jamtalferner",
-   "name": "Jamtalferner",
-   "title": "Urezzasjoch - Blick nach Nordwesten zum Jamtalferner",
-   "country": "at",
-   "lat": 46.8507,
-   "lon": 10.1679,
-   "elev": 2920,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/jamtalferner/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/jamtalferner/",
-   "source": "foto-webcam.eu",
-   "region": "CH-7122"
   },
   {
    "id": "konkordiahuette",
@@ -451,20 +479,6 @@
    "region": "AT-02-01-02-01"
   },
   {
-   "id": "ankogel-sued",
-   "name": "Ankogel Süd",
-   "title": "Ankogel Bergbahnen / Mittelstation - Blick nach Südwesten",
-   "country": "at",
-   "lat": 47.027,
-   "lon": 13.1906,
-   "elev": 2795,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/ankogel-sued/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/ankogel-sued/",
-   "source": "foto-webcam.eu",
-   "region": "AT-02-03-01-01"
-  },
-  {
    "id": "gletscher-nord",
    "name": "Gletscher - Panorama",
    "title": "Mölltaler Gletscher / Bergstation Panoramabahn Klühspies - Blick nach Nordosten",
@@ -479,18 +493,18 @@
    "region": "AT-02-01-02-01"
   },
   {
-   "id": "goldbergkees2",
-   "name": "Goldbergkees 2",
-   "title": "Goldbergkees 2 / Blick nach Nordwesten zum Hohen Sonnblick",
+   "id": "ankogel-sued",
+   "name": "Ankogel Süd",
+   "title": "Ankogel Bergbahnen / Mittelstation - Blick nach Südwesten",
    "country": "at",
-   "lat": 47.0387,
-   "lon": 12.9679,
-   "elev": 2765,
-   "interval": 1800,
-   "img": "https://www.foto-webcam.eu/webcam/goldbergkees2/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/goldbergkees2/",
+   "lat": 47.027,
+   "lon": 13.1906,
+   "elev": 2795,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/ankogel-sued/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/ankogel-sued/",
    "source": "foto-webcam.eu",
-   "region": "AT-02-01-02-01"
+   "region": "AT-02-03-01-01"
   },
   {
    "id": "chavalatsch",
@@ -563,6 +577,20 @@
    "region": "AT-02-02"
   },
   {
+   "id": "rauris",
+   "name": "Rauris",
+   "title": "Rauris / Gamskopf - Blick nach Norden",
+   "country": "at",
+   "lat": 47.1367,
+   "lon": 12.9406,
+   "elev": 2680,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/rauris/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/rauris/",
+   "source": "foto-webcam.eu",
+   "region": "AT-05-05"
+  },
+  {
    "id": "russkopf",
    "name": "Rußkopf",
    "title": "Rußkopf - Blick nach Südwesten zum Jamtalferner",
@@ -589,20 +617,6 @@
    "page": "https://www.foto-webcam.eu/webcam/sulzkogel/",
    "source": "foto-webcam.eu",
    "region": "AT-07-14-03"
-  },
-  {
-   "id": "rauris",
-   "name": "Rauris",
-   "title": "Rauris / Gamskopf - Blick nach Norden",
-   "country": "at",
-   "lat": 47.1367,
-   "lon": 12.9406,
-   "elev": 2680,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/rauris/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/rauris/",
-   "source": "foto-webcam.eu",
-   "region": "AT-05-05"
   },
   {
    "id": "gjaidstein",
@@ -673,34 +687,6 @@
    "page": "https://www.foto-webcam.eu/webcam/sonnalpin/",
    "source": "foto-webcam.eu",
    "region": "DE-BY-30"
-  },
-  {
-   "id": "kuersingerhuette",
-   "name": "Kürsingerhütte",
-   "title": "Kürsingerhütte - Blick nach Süden zum Großen Geiger",
-   "country": "at",
-   "lat": 47.1225,
-   "lon": 12.2998,
-   "elev": 2558,
-   "interval": 3600,
-   "img": "https://www.foto-webcam.eu/webcam/kuersingerhuette/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/kuersingerhuette/",
-   "source": "foto-webcam.eu",
-   "region": "AT-05-07"
-  },
-  {
-   "id": "grossvenediger",
-   "name": "Großvenediger",
-   "title": "Kürsingerhütte - Blick nach Osten zum Großvenediger",
-   "country": "at",
-   "lat": 47.1225,
-   "lon": 12.2998,
-   "elev": 2558,
-   "interval": 3600,
-   "img": "https://www.foto-webcam.eu/webcam/grossvenediger/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/grossvenediger/",
-   "source": "foto-webcam.eu",
-   "region": "AT-05-07"
   },
   {
    "id": "funtenseetauern",
@@ -850,25 +836,11 @@
    "lat": 46.6282,
    "lon": 12.9824,
    "elev": 2332,
-   "interval": 1800,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/polinik/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/polinik/",
    "source": "foto-webcam.eu",
    "region": "AT-02-15-01"
-  },
-  {
-   "id": "gargellen-west",
-   "name": "Gargellen West",
-   "title": "Gargellen West / Kristallbahn Berg - Blick Richtung Täli - St. Antönier Joch",
-   "country": "at",
-   "lat": 46.9613,
-   "lon": 9.8915,
-   "elev": 2320,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/gargellen-west/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/gargellen-west/",
-   "source": "foto-webcam.eu",
-   "region": "AT-08-05-01"
   },
   {
    "id": "gargellen-sued",
@@ -881,6 +853,20 @@
    "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/gargellen-sued/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/gargellen-sued/",
+   "source": "foto-webcam.eu",
+   "region": "AT-08-05-01"
+  },
+  {
+   "id": "gargellen-west",
+   "name": "Gargellen West",
+   "title": "Gargellen West / Kristallbahn Berg - Blick Richtung Täli - St. Antönier Joch",
+   "country": "at",
+   "lat": 46.9613,
+   "lon": 9.8915,
+   "elev": 2320,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/gargellen-west/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/gargellen-west/",
    "source": "foto-webcam.eu",
    "region": "AT-08-05-01"
   },
@@ -906,7 +892,7 @@
    "lat": 47.1352,
    "lon": 12.6275,
    "elev": 2315,
-   "interval": 1800,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/rudolfshuette/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/rudolfshuette/",
    "source": "foto-webcam.eu",
@@ -1133,25 +1119,25 @@
    "lat": 46.8543,
    "lon": 13.8234,
    "elev": 2145,
-   "interval": 600,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/falkert-nord/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/falkert-nord/",
    "source": "foto-webcam.eu",
    "region": "AT-02-04-01"
   },
   {
-   "id": "burgstalleralm",
-   "name": "Astental West",
-   "title": "Astental / Burgstalleralm - Blick nach Südwesten",
-   "country": "at",
-   "lat": 46.962,
-   "lon": 12.9823,
-   "elev": 2116,
+   "id": "pfaelzerhuette",
+   "name": "Pfälzerhütte",
+   "title": "Liechtensteiner Alpenverein - Pfälzerhütte",
+   "country": "li",
+   "lat": 47.0728,
+   "lon": 9.6026,
+   "elev": 2108,
    "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/burgstalleralm/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/burgstalleralm/",
+   "img": "https://www.foto-webcam.eu/webcam/pfaelzerhuette/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/pfaelzerhuette/",
    "source": "foto-webcam.eu",
-   "region": "AT-02-01-02-02"
+   "region": "CH-3311"
   },
   {
    "id": "cortina-faloria",
@@ -1169,20 +1155,6 @@
    "region": "IT-34-BL-02"
   },
   {
-   "id": "auernig",
-   "name": "Auernig",
-   "title": "Mallnitz / Auernig - Blick nach Nordwesten",
-   "country": "at",
-   "lat": 46.9942,
-   "lon": 13.1902,
-   "elev": 2100,
-   "interval": 1800,
-   "img": "https://www.foto-webcam.eu/webcam/auernig/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/auernig/",
-   "source": "foto-webcam.eu",
-   "region": "AT-02-03-01-01"
-  },
-  {
    "id": "feuersang",
    "name": "Feuersang",
    "title": "Feuersang - Blick nach Südwesten",
@@ -1195,6 +1167,20 @@
    "page": "https://www.foto-webcam.eu/webcam/feuersang/",
    "source": "foto-webcam.eu",
    "region": "AT-05-05"
+  },
+  {
+   "id": "auernig",
+   "name": "Auernig",
+   "title": "Mallnitz / Auernig - Blick nach Nordwesten",
+   "country": "at",
+   "lat": 46.9942,
+   "lon": 13.1902,
+   "elev": 2100,
+   "interval": 1800,
+   "img": "https://www.foto-webcam.eu/webcam/auernig/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/auernig/",
+   "source": "foto-webcam.eu",
+   "region": "AT-02-03-01-01"
   },
   {
    "id": "cortina-ducadaosta",
@@ -1247,7 +1233,7 @@
    "lat": 47.1589,
    "lon": 9.3379,
    "elev": 2076,
-   "interval": 1800,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/wildhaus/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/wildhaus/",
    "source": "foto-webcam.eu",
@@ -1261,11 +1247,40 @@
    "lat": 47.025,
    "lon": 11.8137,
    "elev": 2073,
-   "interval": 1800,
+   "interval": 3600,
    "img": "https://www.foto-webcam.eu/webcam/berlinerhuette/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/berlinerhuette/",
    "source": "foto-webcam.eu",
    "region": "AT-07-23-02"
+  },
+  {
+   "id": "diedamskopf",
+   "name": "Diedamskopf",
+   "title": "Schoppernau / Diedamskopf - Blick nach Westen",
+   "country": "at",
+   "lat": 47.3457,
+   "lon": 10.0256,
+   "elev": 2070,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/diedamskopf/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/diedamskopf/",
+   "source": "foto-webcam.eu",
+   "region": "AT-08-02"
+  },
+  {
+   "id": "lech-kriegerhorn",
+   "name": "Lech Kriegerhorn",
+   "title": "Oberlech, Kriegerhornbahn below the Mohnenfluh, 360° panorama",
+   "country": "at",
+   "lat": 47.2153,
+   "lon": 10.1188,
+   "elev": 2060,
+   "img": "https://live-image.panomax.com/cams/982/recent_reduced.jpg",
+   "page": "https://kriegerhorn.skiarlberg.at",
+   "source": "panomax",
+   "pm": 982,
+   "interval": 600,
+   "region": "AT-08-03-02"
   },
   {
    "id": "ederplan",
@@ -1436,6 +1451,20 @@
    "region": "AT-07-27"
   },
   {
+   "id": "grossglockner-zoom",
+   "name": "Großglockner Zoom",
+   "title": "Großglockner Zoomkamera - Blick zum Großglocknergipfel",
+   "country": "at",
+   "lat": 47.021,
+   "lon": 12.688,
+   "elev": 1920,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/grossglockner-zoom/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/grossglockner-zoom/",
+   "source": "foto-webcam.eu",
+   "region": "AT-07-26-01"
+  },
+  {
    "id": "glocknerwinkel",
    "name": "Glocknerwinkel",
    "title": "Glocknerwinkel / Blick nach Norden zum Großglockner",
@@ -1520,20 +1549,6 @@
    "region": "AT-02-04-01"
   },
   {
-   "id": "asitz",
-   "name": "Leogang - Asitz",
-   "title": "Großer Asitz Gipfelkreuz - Blick in die Leoganger Steinberge",
-   "country": "at",
-   "lat": 47.4025,
-   "lon": 12.7023,
-   "elev": 1900,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/asitz/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/asitz/",
-   "source": "foto-webcam.eu",
-   "region": "AT-05-14"
-  },
-  {
    "id": "turrach-ost",
    "name": "Turrach Ost",
    "title": "Turracher Höhe / Hirschkogel - Blick nach Osten",
@@ -1576,6 +1591,20 @@
    "region": "AT-08-01"
   },
   {
+   "id": "asitz",
+   "name": "Leogang - Asitz",
+   "title": "Großer Asitz Gipfelkreuz - Blick in die Leoganger Steinberge",
+   "country": "at",
+   "lat": 47.4025,
+   "lon": 12.7023,
+   "elev": 1900,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/asitz/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/asitz/",
+   "source": "foto-webcam.eu",
+   "region": "AT-05-14"
+  },
+  {
    "id": "stoehrhaus",
    "name": "Stöhrhaus",
    "title": "Stöhrhaus am Untersberg - Blick über Berchtesgaden nach Süden",
@@ -1588,34 +1617,6 @@
    "page": "https://www.foto-webcam.eu/webcam/stoehrhaus/",
    "source": "foto-webcam.eu",
    "region": "DE-BY-60"
-  },
-  {
-   "id": "heidi-hotel",
-   "name": "Heidi-Hotel",
-   "title": "Falkertsee - Blick nach Norden zum Heidi-Hotel",
-   "country": "at",
-   "lat": 46.8613,
-   "lon": 13.8297,
-   "elev": 1880,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/heidi-hotel/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/heidi-hotel/",
-   "source": "foto-webcam.eu",
-   "region": "AT-02-04-01"
-  },
-  {
-   "id": "wiesernock",
-   "name": "BKK - Wiesernock",
-   "title": "Bad Kleinkirchheim / Wiesernock - Blick zum Priedröf",
-   "country": "at",
-   "lat": 46.8295,
-   "lon": 13.745,
-   "elev": 1870,
-   "interval": 1800,
-   "img": "https://www.foto-webcam.eu/webcam/wiesernock/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/wiesernock/",
-   "source": "foto-webcam.eu",
-   "region": "AT-02-04-01"
   },
   {
    "id": "nockalm-berg",
@@ -1632,18 +1633,18 @@
    "region": "AT-02-04-01"
   },
   {
-   "id": "gantkofel",
-   "name": "Gantkofel",
-   "title": "Gantkofel / Mt. Macaion - Blick über Bozen in die Dolomiten",
-   "country": "it",
-   "lat": 46.4932,
-   "lon": 11.2106,
-   "elev": 1866,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/gantkofel/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/gantkofel/",
+   "id": "wiesernock",
+   "name": "BKK - Wiesernock",
+   "title": "Bad Kleinkirchheim / Wiesernock - Blick zum Priedröf",
+   "country": "at",
+   "lat": 46.8295,
+   "lon": 13.745,
+   "elev": 1870,
+   "interval": 1800,
+   "img": "https://www.foto-webcam.eu/webcam/wiesernock/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/wiesernock/",
    "source": "foto-webcam.eu",
-   "region": "IT-32-BZ-16"
+   "region": "AT-02-04-01"
   },
   {
    "id": "spitzeck-berg",
@@ -1772,20 +1773,6 @@
    "region": "CH-4223"
   },
   {
-   "id": "jenner-ost",
-   "name": "Jenner Ost",
-   "title": "Jennerbahn am Königssee - Blick nach Osten zum Hohen Brett",
-   "country": "de",
-   "lat": 47.5756,
-   "lon": 13.0247,
-   "elev": 1800,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/jenner-ost/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/jenner-ost/",
-   "source": "foto-webcam.eu",
-   "region": "DE-BY-60"
-  },
-  {
    "id": "jenner-sued",
    "name": "Jenner Süd",
    "title": "Jennerbahn am Königssee - Blick ins Hagengebirge und zum Steinernen Meer",
@@ -1796,6 +1783,20 @@
    "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/jenner-sued/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/jenner-sued/",
+   "source": "foto-webcam.eu",
+   "region": "DE-BY-60"
+  },
+  {
+   "id": "jenner-ost",
+   "name": "Jenner Ost",
+   "title": "Jennerbahn am Königssee - Blick nach Osten zum Hohen Brett",
+   "country": "de",
+   "lat": 47.5756,
+   "lon": 13.0247,
+   "elev": 1800,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/jenner-ost/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/jenner-ost/",
    "source": "foto-webcam.eu",
    "region": "DE-BY-60"
   },
@@ -1828,20 +1829,6 @@
    "region": "AT-05-04"
   },
   {
-   "id": "spitzeck",
-   "name": "BKK - Spitzeck",
-   "title": "Bad Kleinkirchheim / Spitzeckabfahrt",
-   "country": "at",
-   "lat": 46.8497,
-   "lon": 13.7494,
-   "elev": 1780,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/spitzeck/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/spitzeck/",
-   "source": "foto-webcam.eu",
-   "region": "AT-02-04-01"
-  },
-  {
    "id": "wank",
    "name": "Wankhaus",
    "title": "Wankhaus - Garmisch-Partenkirchen - Blick nach Südwesten zur Zugspitze",
@@ -1870,20 +1857,6 @@
    "region": "AT-08-03-02"
   },
   {
-   "id": "lienz",
-   "name": "Lienz Zettersfeld",
-   "title": "Lienz / Zettersfeld - Blick in die Lienzer Dolomiten",
-   "country": "at",
-   "lat": 46.8603,
-   "lon": 12.804,
-   "elev": 1750,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/lienz/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/lienz/",
-   "source": "foto-webcam.eu",
-   "region": "AT-07-28"
-  },
-  {
    "id": "hochstaufen",
    "name": "Bad Reichenhall",
    "title": "Reichenhaller Haus am Hochstaufen - Blick über Bad Reichenhall nach Süden",
@@ -1894,6 +1867,34 @@
    "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/hochstaufen/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hochstaufen/",
+   "source": "foto-webcam.eu",
+   "region": "DE-BY-52"
+  },
+  {
+   "id": "mohnenfluh",
+   "name": "Hotel Mohnenfluh",
+   "title": "Hotel Mohnenfluh Oberlech - Blick nach Nordwesten",
+   "country": "at",
+   "lat": 47.2213,
+   "lon": 10.1366,
+   "elev": 1750,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/mohnenfluh/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/mohnenfluh/",
+   "source": "foto-webcam.eu",
+   "region": "AT-08-03-02"
+  },
+  {
+   "id": "salzburg",
+   "name": "Hochstaufen Ost",
+   "title": "Reichenhaller Haus am Hochstaufen - Blick über Salzburg nach Osten",
+   "country": "de",
+   "lat": 47.755,
+   "lon": 12.8498,
+   "elev": 1750,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/salzburg/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/salzburg/",
    "source": "foto-webcam.eu",
    "region": "DE-BY-52"
   },
@@ -1912,20 +1913,6 @@
    "region": "AT-05-08"
   },
   {
-   "id": "salzburg",
-   "name": "Hochstaufen Ost",
-   "title": "Reichenhaller Haus am Hochstaufen - Blick über Salzburg nach Osten",
-   "country": "de",
-   "lat": 47.755,
-   "lon": 12.8498,
-   "elev": 1750,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/salzburg/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/salzburg/",
-   "source": "foto-webcam.eu",
-   "region": "DE-BY-52"
-  },
-  {
    "id": "faschingalm",
    "name": "Lienz Faschingalm",
    "title": "Lienz / Zettersfeld - Blick ins Skigebiet Faschingalm",
@@ -1938,6 +1925,34 @@
    "page": "https://www.foto-webcam.eu/webcam/faschingalm/",
    "source": "foto-webcam.eu",
    "region": "AT-07-28"
+  },
+  {
+   "id": "lienz",
+   "name": "Lienz Zettersfeld",
+   "title": "Lienz / Zettersfeld - Blick in die Lienzer Dolomiten",
+   "country": "at",
+   "lat": 46.8603,
+   "lon": 12.804,
+   "elev": 1750,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/lienz/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/lienz/",
+   "source": "foto-webcam.eu",
+   "region": "AT-07-28"
+  },
+  {
+   "id": "lindauerhuette",
+   "name": "Lindauer Hütte",
+   "title": "Lindauer Hütte - Blick nach Südwesten",
+   "country": "at",
+   "lat": 47.0344,
+   "lon": 9.8356,
+   "elev": 1744,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/lindauerhuette/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/lindauerhuette/",
+   "source": "foto-webcam.eu",
+   "region": "AT-08-05-01"
   },
   {
    "id": "maibrunn",
@@ -2108,20 +2123,6 @@
    "region": "DE-BY-60"
   },
   {
-   "id": "traunstein-sued",
-   "name": "Traunstein Süd",
-   "title": "Gmundner Hütte am Traunstein - Oberösterreich - Blick nach Süden",
-   "country": "at",
-   "lat": 47.8729,
-   "lon": 13.8337,
-   "elev": 1666,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/traunstein-sued/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/traunstein-sued/",
-   "source": "foto-webcam.eu",
-   "region": "AT-04-06"
-  },
-  {
    "id": "traunstein",
    "name": "Traunstein West",
    "title": "Gmundner Hütte am Traunstein - Oberösterreich - Blick nach Westen",
@@ -2136,18 +2137,32 @@
    "region": "AT-04-06"
   },
   {
-   "id": "rauschberg",
-   "name": "Rauschberg",
-   "title": "terra-hd.com: Rauschberg / Ruhpolding - Blick nach Nordwesten",
-   "country": "de",
-   "lat": 47.7327,
-   "lon": 12.6828,
-   "elev": 1650,
+   "id": "traunstein-sued",
+   "name": "Traunstein Süd",
+   "title": "Gmundner Hütte am Traunstein - Oberösterreich - Blick nach Süden",
+   "country": "at",
+   "lat": 47.8729,
+   "lon": 13.8337,
+   "elev": 1666,
    "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/rauschberg/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/rauschberg/",
+   "img": "https://www.foto-webcam.eu/webcam/traunstein-sued/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/traunstein-sued/",
    "source": "foto-webcam.eu",
-   "region": "DE-BY-52"
+   "region": "AT-04-06"
+  },
+  {
+   "id": "starthaus-hahnenkamm",
+   "name": "Starthaus HKR",
+   "title": "Kitzbühel / Starthaus Hahnenkamm - Blick nach Norden zum Kitzbüheler Horn",
+   "country": "at",
+   "lat": 47.4259,
+   "lon": 12.3709,
+   "elev": 1665,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/starthaus-hahnenkamm/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/starthaus-hahnenkamm/",
+   "source": "foto-webcam.eu",
+   "region": "AT-07-17-02"
   },
   {
    "id": "buchstein",
@@ -2162,6 +2177,20 @@
    "page": "https://www.foto-webcam.eu/webcam/buchstein/",
    "source": "foto-webcam.eu",
    "region": "DE-BY-42"
+  },
+  {
+   "id": "rauschberg",
+   "name": "Rauschberg",
+   "title": "terra-hd.com: Rauschberg / Ruhpolding - Blick nach Nordwesten",
+   "country": "de",
+   "lat": 47.7327,
+   "lon": 12.6828,
+   "elev": 1650,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/rauschberg/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/rauschberg/",
+   "source": "foto-webcam.eu",
+   "region": "DE-BY-52"
   },
   {
    "id": "funtensee",
@@ -2192,20 +2221,6 @@
    "region": "IT-32-BZ-13"
   },
   {
-   "id": "furkajoch",
-   "name": "Furkajoch",
-   "title": "Furkajoch - Blick nach Westen",
-   "country": "at",
-   "lat": 47.264,
-   "lon": 9.8277,
-   "elev": 1630,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/furkajoch/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/furkajoch/",
-   "source": "foto-webcam.eu",
-   "region": "AT-08-01"
-  },
-  {
    "id": "kreuzeck",
    "name": "Kreuzeck",
    "title": "Kreuzeck Bergstation - Garmisch-Classic - Blick zur Alpspitze und Zugspitze",
@@ -2218,6 +2233,20 @@
    "page": "https://www.foto-webcam.eu/webcam/kreuzeck/",
    "source": "foto-webcam.eu",
    "region": "DE-BY-30"
+  },
+  {
+   "id": "furkajoch",
+   "name": "Furkajoch",
+   "title": "Furkajoch - Blick nach Westen",
+   "country": "at",
+   "lat": 47.264,
+   "lon": 9.8277,
+   "elev": 1630,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/furkajoch/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/furkajoch/",
+   "source": "foto-webcam.eu",
+   "region": "AT-08-01"
   },
   {
    "id": "kochelsee",
@@ -2262,18 +2291,18 @@
    "region": "AT-05-05"
   },
   {
-   "id": "herzogstand",
-   "name": "Herzogstand Süd",
-   "title": "Herzogstand / Fahrenbergkopf - Blick über den Walchensee ins Karwendel",
-   "country": "de",
-   "lat": 47.6066,
-   "lon": 11.3161,
+   "id": "rein",
+   "name": "Rein in Taufers",
+   "title": "Hotel Berger - Rein in Taufers - Blick nach Südosten",
+   "country": "it",
+   "lat": 46.9485,
+   "lon": 12.0613,
    "elev": 1600,
    "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/herzogstand/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/herzogstand/",
+   "img": "https://www.foto-webcam.eu/webcam/rein/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/rein/",
    "source": "foto-webcam.eu",
-   "region": "DE-BY-41"
+   "region": "IT-32-BZ-11"
   },
   {
    "id": "andelsbuch",
@@ -2332,20 +2361,6 @@
    "region": "DE-BY-51"
   },
   {
-   "id": "hochries-sued",
-   "name": "Hochries Süd",
-   "title": "Hochrieshütte - DAV Sektion Rosenheim - Blick nach Süden",
-   "country": "de",
-   "lat": 47.7467,
-   "lon": 12.2492,
-   "elev": 1569,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/hochries-sued/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/hochries-sued/",
-   "source": "foto-webcam.eu",
-   "region": "DE-BY-51"
-  },
-  {
    "id": "hochries-nord",
    "name": "Hochries Nord",
    "title": "Hochrieshütte - DAV Sektion Rosenheim - Blick nach Norden",
@@ -2360,18 +2375,18 @@
    "region": "DE-BY-51"
   },
   {
-   "id": "pendling-ost",
-   "name": "Pendling Ost",
-   "title": "Pendlinghaus - Kufstein - Blick nach Osten ins Kaisergebirge",
-   "country": "at",
-   "lat": 47.5729,
-   "lon": 12.1122,
-   "elev": 1565,
+   "id": "hochries-sued",
+   "name": "Hochries Süd",
+   "title": "Hochrieshütte - DAV Sektion Rosenheim - Blick nach Süden",
+   "country": "de",
+   "lat": 47.7467,
+   "lon": 12.2492,
+   "elev": 1569,
    "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/pendling-ost/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/pendling-ost/",
+   "img": "https://www.foto-webcam.eu/webcam/hochries-sued/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/hochries-sued/",
    "source": "foto-webcam.eu",
-   "region": "AT-07-05"
+   "region": "DE-BY-51"
   },
   {
    "id": "pendling-west",
@@ -2384,6 +2399,20 @@
    "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/pendling-west/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/pendling-west/",
+   "source": "foto-webcam.eu",
+   "region": "AT-07-05"
+  },
+  {
+   "id": "pendling-ost",
+   "name": "Pendling Ost",
+   "title": "Pendlinghaus - Kufstein - Blick nach Osten ins Kaisergebirge",
+   "country": "at",
+   "lat": 47.5729,
+   "lon": 12.1122,
+   "elev": 1565,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/pendling-ost/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/pendling-ost/",
    "source": "foto-webcam.eu",
    "region": "AT-07-05"
   },
@@ -2430,20 +2459,6 @@
    "region": "AT-05-16"
   },
   {
-   "id": "hochries-ost",
-   "name": "Hochries Ost",
-   "title": "Hochries Bergstation - Blick nach Nordosten",
-   "country": "de",
-   "lat": 47.748,
-   "lon": 12.2503,
-   "elev": 1530,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/hochries-ost/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/hochries-ost/",
-   "source": "foto-webcam.eu",
-   "region": "DE-BY-51"
-  },
-  {
    "id": "st-kassian",
    "name": "San Cassiano",
    "title": "Alta Badia / San Cassiano - La Villa",
@@ -2456,6 +2471,20 @@
    "page": "https://www.foto-webcam.eu/webcam/st-kassian/",
    "source": "foto-webcam.eu",
    "region": "IT-32-BZ-19"
+  },
+  {
+   "id": "hochries-ost",
+   "name": "Hochries Ost",
+   "title": "Hochries Bergstation - Blick nach Nordosten",
+   "country": "de",
+   "lat": 47.748,
+   "lon": 12.2503,
+   "elev": 1530,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/hochries-ost/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/hochries-ost/",
+   "source": "foto-webcam.eu",
+   "region": "DE-BY-51"
   },
   {
    "id": "leutasch",
@@ -2479,7 +2508,7 @@
    "lat": 47.7548,
    "lon": 12.3567,
    "elev": 1520,
-   "interval": 1800,
+   "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/kampenwand/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/kampenwand/",
    "source": "foto-webcam.eu",
@@ -2507,7 +2536,7 @@
    "lat": 47.3291,
    "lon": 11.161,
    "elev": 1510,
-   "interval": 600,
+   "interval": 3600,
    "img": "https://www.foto-webcam.eu/webcam/seefeld/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/seefeld/",
    "source": "foto-webcam.eu",
@@ -2577,7 +2606,7 @@
    "lat": 47.088,
    "lon": 11.4205,
    "elev": 1485,
-   "interval": 600,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/trins/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/trins/",
    "source": "foto-webcam.eu",
@@ -2610,6 +2639,34 @@
    "page": "https://www.foto-webcam.eu/webcam/hackelhuette-nord/",
    "source": "foto-webcam.eu",
    "region": "AT-05-16"
+  },
+  {
+   "id": "strumerhof",
+   "name": "Matrei - Goldried",
+   "title": "Matrei in Osttirol / Strumerhof - Blick nach Südosten",
+   "country": "at",
+   "lat": 47.0103,
+   "lon": 12.5181,
+   "elev": 1451,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/strumerhof/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/strumerhof/",
+   "source": "foto-webcam.eu",
+   "region": "AT-07-24"
+  },
+  {
+   "id": "kristberg",
+   "name": "Kristberg",
+   "title": "Schnee Messtelle Kristberg",
+   "country": "at",
+   "lat": 47.1074,
+   "lon": 9.9875,
+   "elev": 1450,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/kristberg/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/kristberg/",
+   "source": "foto-webcam.eu",
+   "region": "AT-08-04"
   },
   {
    "id": "annamarialech",
@@ -2647,25 +2704,11 @@
    "lat": 47.6174,
    "lon": 14.717,
    "elev": 1440,
-   "interval": 1800,
+   "interval": 3600,
    "img": "https://www.foto-webcam.eu/webcam/hieflau/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/hieflau/",
    "source": "foto-webcam.eu",
    "region": "AT-06-03"
-  },
-  {
-   "id": "virgen-west",
-   "name": "Virgen Sonnberg",
-   "title": "Virgen / Sonnberg - Blick nach Westen",
-   "country": "at",
-   "lat": 47.0083,
-   "lon": 12.4708,
-   "elev": 1430,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/virgen-west/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/virgen-west/",
-   "source": "foto-webcam.eu",
-   "region": "AT-07-24"
   },
   {
    "id": "haldenhof",
@@ -2680,6 +2723,20 @@
    "page": "https://www.foto-webcam.eu/webcam/haldenhof/",
    "source": "foto-webcam.eu",
    "region": "AT-08-03-02"
+  },
+  {
+   "id": "virgen-west",
+   "name": "Virgen Sonnberg",
+   "title": "Virgen / Sonnberg - Blick nach Westen",
+   "country": "at",
+   "lat": 47.0083,
+   "lon": 12.4708,
+   "elev": 1430,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/virgen-west/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/virgen-west/",
+   "source": "foto-webcam.eu",
+   "region": "AT-07-24"
   },
   {
    "id": "ritten",
@@ -2710,48 +2767,6 @@
    "region": "IT-32-BZ-19"
   },
   {
-   "id": "lorenzalm",
-   "name": "Mörtschach",
-   "title": "Mörtschach im Mölltal / Lorenzalm - Blick nach Norden",
-   "country": "at",
-   "lat": 46.8965,
-   "lon": 12.9157,
-   "elev": 1400,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/lorenzalm/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/lorenzalm/",
-   "source": "foto-webcam.eu",
-   "region": "AT-02-01-02-02"
-  },
-  {
-   "id": "olang",
-   "name": "Olang Geiselsberg",
-   "title": "Berghotel Zirm - Olang / Geiselsberg",
-   "country": "it",
-   "lat": 46.7464,
-   "lon": 12.0012,
-   "elev": 1400,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/olang/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/olang/",
-   "source": "foto-webcam.eu",
-   "region": "IT-32-BZ-19"
-  },
-  {
-   "id": "kalsertal",
-   "name": "Kalsertal",
-   "title": "Kalsertal - Blick nach Norden zum Großglockner",
-   "country": "at",
-   "lat": 46.9132,
-   "lon": 12.5833,
-   "elev": 1400,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/kalsertal/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/kalsertal/",
-   "source": "foto-webcam.eu",
-   "region": "AT-07-27"
-  },
-  {
    "id": "kals",
    "name": "Kals",
    "title": "Kals am Großglockner - Blick nach Westen",
@@ -2764,6 +2779,20 @@
    "page": "https://www.foto-webcam.eu/webcam/kals/",
    "source": "foto-webcam.eu",
    "region": "AT-07-26-01"
+  },
+  {
+   "id": "schulterkogel",
+   "name": "Schulterkogel",
+   "title": "Prebl / Schulterkogelhütte - Blick nach Südosten",
+   "country": "at",
+   "lat": 46.9313,
+   "lon": 14.7626,
+   "elev": 1400,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/schulterkogel/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/schulterkogel/",
+   "source": "foto-webcam.eu",
+   "region": "AT-02-06-02"
   },
   {
    "id": "hotel-berghaus",
@@ -2794,18 +2823,46 @@
    "region": "AT-08-01"
   },
   {
-   "id": "schulterkogel",
-   "name": "Schulterkogel",
-   "title": "Prebl / Schulterkogelhütte - Blick nach Südosten",
-   "country": "at",
-   "lat": 46.9313,
-   "lon": 14.7626,
+   "id": "olang",
+   "name": "Olang Geiselsberg",
+   "title": "Berghotel Zirm - Olang / Geiselsberg",
+   "country": "it",
+   "lat": 46.7464,
+   "lon": 12.0012,
    "elev": 1400,
    "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/schulterkogel/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/schulterkogel/",
+   "img": "https://www.foto-webcam.eu/webcam/olang/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/olang/",
    "source": "foto-webcam.eu",
-   "region": "AT-02-06-02"
+   "region": "IT-32-BZ-19"
+  },
+  {
+   "id": "lorenzalm",
+   "name": "Mörtschach",
+   "title": "Mörtschach im Mölltal / Lorenzalm - Blick nach Norden",
+   "country": "at",
+   "lat": 46.8965,
+   "lon": 12.9157,
+   "elev": 1400,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/lorenzalm/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/lorenzalm/",
+   "source": "foto-webcam.eu",
+   "region": "AT-02-01-02-02"
+  },
+  {
+   "id": "kalsertal",
+   "name": "Kalsertal",
+   "title": "Kalsertal - Blick nach Norden zum Großglockner",
+   "country": "at",
+   "lat": 46.9132,
+   "lon": 12.5833,
+   "elev": 1400,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/kalsertal/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/kalsertal/",
+   "source": "foto-webcam.eu",
+   "region": "AT-07-27"
   },
   {
    "id": "balderschwang-kreuzle",
@@ -2906,20 +2963,6 @@
    "region": "AT-02-04-01"
   },
   {
-   "id": "sexten-sued",
-   "name": "Sexten Süd",
-   "title": "Sexten / Berghotel - Blick nach Süden zur Sextner Sonnenuhr",
-   "country": "it",
-   "lat": 46.6916,
-   "lon": 12.3676,
-   "elev": 1352,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/sexten-sued/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/sexten-sued/",
-   "source": "foto-webcam.eu",
-   "region": "IT-32-BZ-20"
-  },
-  {
    "id": "sexten-west",
    "name": "Sexten West",
    "title": "Sexten / Berghotel - Blick nach Westen",
@@ -2930,6 +2973,20 @@
    "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/sexten-west/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/sexten-west/",
+   "source": "foto-webcam.eu",
+   "region": "IT-32-BZ-20"
+  },
+  {
+   "id": "sexten-sued",
+   "name": "Sexten Süd",
+   "title": "Sexten / Berghotel - Blick nach Süden zur Sextner Sonnenuhr",
+   "country": "it",
+   "lat": 46.6916,
+   "lon": 12.3676,
+   "elev": 1352,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/sexten-sued/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/sexten-sued/",
    "source": "foto-webcam.eu",
    "region": "IT-32-BZ-20"
   },
@@ -2990,18 +3047,18 @@
    "region": "AT-06-04-02"
   },
   {
-   "id": "wilder-kaiser",
-   "name": "Wilder Kaiser",
-   "title": "St. Johann in Tirol - Blick zum Wilden Kaiser",
-   "country": "at",
-   "lat": 47.5261,
-   "lon": 12.4877,
+   "id": "gummer",
+   "name": "Gummer",
+   "title": "Gummer / Sternwarte Max Valier - Blick nach Südosten",
+   "country": "it",
+   "lat": 46.4531,
+   "lon": 11.4627,
    "elev": 1295,
    "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/wilder-kaiser/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/wilder-kaiser/",
+   "img": "https://www.foto-webcam.eu/webcam/gummer/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/gummer/",
    "source": "foto-webcam.eu",
-   "region": "AT-07-06"
+   "region": "IT-32-BZ-17"
   },
   {
    "id": "st-johann-in-tirol-west",
@@ -3018,18 +3075,18 @@
    "region": "AT-07-06"
   },
   {
-   "id": "gummer",
-   "name": "Gummer",
-   "title": "Gummer / Sternwarte Max Valier - Blick nach Südosten",
-   "country": "it",
-   "lat": 46.4531,
-   "lon": 11.4627,
+   "id": "wilder-kaiser",
+   "name": "Wilder Kaiser",
+   "title": "St. Johann in Tirol - Blick zum Wilden Kaiser",
+   "country": "at",
+   "lat": 47.5261,
+   "lon": 12.4877,
    "elev": 1295,
    "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/gummer/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/gummer/",
+   "img": "https://www.foto-webcam.eu/webcam/wilder-kaiser/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/wilder-kaiser/",
    "source": "foto-webcam.eu",
-   "region": "IT-32-BZ-17"
+   "region": "AT-07-06"
   },
   {
    "id": "schroecken",
@@ -3172,6 +3229,20 @@
    "region": "AT-06-01"
   },
   {
+   "id": "thermenschuss",
+   "name": "BKK - Römerbad",
+   "title": "Bad Kleinkirchheim / Thermal Römerbad",
+   "country": "at",
+   "lat": 46.8084,
+   "lon": 13.7991,
+   "elev": 1180,
+   "interval": 300,
+   "img": "https://www.foto-webcam.eu/webcam/thermenschuss/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/thermenschuss/",
+   "source": "foto-webcam.eu",
+   "region": "AT-02-04-02"
+  },
+  {
    "id": "hochblauen",
    "name": "Hochblauen",
    "title": "Hochblauen / Schwarzwald - Blick ins Rheintal",
@@ -3196,20 +3267,6 @@
    "img": "https://www.foto-webcam.eu/webcam/berghaus-sonnenfels/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/berghaus-sonnenfels/",
    "source": "foto-webcam.eu"
-  },
-  {
-   "id": "sonthofen",
-   "name": "Sonthofen",
-   "title": "Sonthofen / Oberallgäu – Blick vom Sonthofer Hof nach Nordwesten",
-   "country": "de",
-   "lat": 47.4847,
-   "lon": 10.3275,
-   "elev": 1147,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/sonthofen/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/sonthofen/",
-   "source": "foto-webcam.eu",
-   "region": "DE-BY-12"
   },
   {
    "id": "passthurn",
@@ -3294,6 +3351,20 @@
    "page": "https://www.foto-webcam.eu/webcam/obergarten/",
    "source": "foto-webcam.eu",
    "region": "AT-07-02-02"
+  },
+  {
+   "id": "steigerhof",
+   "name": "Matrei Hintereggkogel",
+   "title": "Matrei in Osttirol / Steigerhof - Blick nach Westen",
+   "country": "at",
+   "lat": 46.9946,
+   "lon": 12.5479,
+   "elev": 1100,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/steigerhof/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/steigerhof/",
+   "source": "foto-webcam.eu",
+   "region": "AT-07-26-02"
   },
   {
    "id": "tannheimertal",
@@ -3476,6 +3547,20 @@
    "source": "foto-webcam.eu"
   },
   {
+   "id": "bethuberhof",
+   "name": "Matrei - Bretterwand",
+   "title": "Matrei in Osttirol / Bethuberhof - Blick nach Norden",
+   "country": "at",
+   "lat": 46.9861,
+   "lon": 12.5305,
+   "elev": 1010,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/bethuberhof/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/bethuberhof/",
+   "source": "foto-webcam.eu",
+   "region": "AT-07-25"
+  },
+  {
    "id": "zellamsee",
    "name": "Zell am See",
    "title": "Zell am See-Kaprun - Blick zum Kitzsteinhorn und zur Schmittenhöhe",
@@ -3645,7 +3730,7 @@
    "lat": 48.4773,
    "lon": 8.2366,
    "elev": 950,
-   "interval": 600,
+   "interval": 1800,
    "img": "https://www.foto-webcam.eu/webcam/buchkopfturm/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/buchkopfturm/",
    "source": "foto-webcam.eu"
@@ -3760,20 +3845,6 @@
    "source": "foto-webcam.eu"
   },
   {
-   "id": "attersee",
-   "name": "Attersee-Salzkammergut",
-   "title": "terra-hd.com: Attersee-Salzkammergut",
-   "country": "at",
-   "lat": 47.9136,
-   "lon": 13.5955,
-   "elev": 865,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/attersee/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/attersee/",
-   "source": "foto-webcam.eu",
-   "region": "AT-04-05"
-  },
-  {
    "id": "attersee2",
    "name": "Attersee-Höllengebirge",
    "title": "terra-hd.com: Attersee-Höllengebirge",
@@ -3788,6 +3859,20 @@
    "region": "AT-04-05"
   },
   {
+   "id": "attersee",
+   "name": "Attersee-Salzkammergut",
+   "title": "terra-hd.com: Attersee-Salzkammergut",
+   "country": "at",
+   "lat": 47.9136,
+   "lon": 13.5955,
+   "elev": 865,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/attersee/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/attersee/",
+   "source": "foto-webcam.eu",
+   "region": "AT-04-05"
+  },
+  {
    "id": "waldwipfelweg",
    "name": "Waldwipfelweg",
    "title": "Waldwipfelweg.de - Maibrunn / Bayerischer Wald - Blick nach Süden",
@@ -3798,19 +3883,6 @@
    "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/waldwipfelweg/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/waldwipfelweg/",
-   "source": "foto-webcam.eu"
-  },
-  {
-   "id": "wp-munderfing",
-   "name": "WP Munderfing",
-   "title": "Windpark Munderfing - MUF01",
-   "country": "at",
-   "lat": 48.06,
-   "lon": 13.2414,
-   "elev": 844,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/wp-munderfing/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/wp-munderfing/",
    "source": "foto-webcam.eu"
   },
   {
@@ -3869,20 +3941,6 @@
    "region": "DE-BY-12"
   },
   {
-   "id": "grimming",
-   "name": "Grimming",
-   "title": "Irdning - Blick nach Nordwesten zum Grimming",
-   "country": "at",
-   "lat": 47.4961,
-   "lon": 14.0656,
-   "elev": 805,
-   "interval": 1800,
-   "img": "https://www.foto-webcam.eu/webcam/grimming/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/grimming/",
-   "source": "foto-webcam.eu",
-   "region": "AT-06-05"
-  },
-  {
    "id": "zielhaus-hahnenkamm",
    "name": "Zielhaus HKR",
    "title": "Kitzbühel / Zielhaus Hahnenkamm - Blick nach Osten in die Südberge",
@@ -3895,6 +3953,20 @@
    "page": "https://www.foto-webcam.eu/webcam/zielhaus-hahnenkamm/",
    "source": "foto-webcam.eu",
    "region": "AT-07-17-02"
+  },
+  {
+   "id": "grimming",
+   "name": "Grimming",
+   "title": "Irdning - Blick nach Nordwesten zum Grimming",
+   "country": "at",
+   "lat": 47.4961,
+   "lon": 14.0656,
+   "elev": 805,
+   "interval": 1800,
+   "img": "https://www.foto-webcam.eu/webcam/grimming/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/grimming/",
+   "source": "foto-webcam.eu",
+   "region": "AT-06-05"
   },
   {
    "id": "burg-altpernstein",
@@ -3911,20 +3983,6 @@
    "region": "AT-04-08"
   },
   {
-   "id": "dellach",
-   "name": "Dellach im Drautal",
-   "title": "Dellach im Drautal - Blick nach Norden",
-   "country": "at",
-   "lat": 46.7308,
-   "lon": 13.0884,
-   "elev": 800,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/dellach/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/dellach/",
-   "source": "foto-webcam.eu",
-   "region": "AT-02-11"
-  },
-  {
    "id": "gsteig",
    "name": "Gsteig",
    "title": "Gsteig - Blick zur Zugspitze",
@@ -3937,6 +3995,20 @@
    "page": "https://www.foto-webcam.eu/webcam/gsteig/",
    "source": "foto-webcam.eu",
    "region": "DE-BY-41"
+  },
+  {
+   "id": "dellach",
+   "name": "Dellach im Drautal",
+   "title": "Dellach im Drautal - Blick nach Norden",
+   "country": "at",
+   "lat": 46.7308,
+   "lon": 13.0884,
+   "elev": 800,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/dellach/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/dellach/",
+   "source": "foto-webcam.eu",
+   "region": "AT-02-11"
   },
   {
    "id": "hintersee",
@@ -3965,20 +4037,6 @@
    "page": "https://www.foto-webcam.eu/webcam/saalfelden/",
    "source": "foto-webcam.eu",
    "region": "AT-05-13"
-  },
-  {
-   "id": "meran",
-   "name": "Meran",
-   "title": "Marlinger Berg - Meran - Blick nach Nordosten",
-   "country": "it",
-   "lat": 46.6623,
-   "lon": 11.1279,
-   "elev": 780,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/meran/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/meran/",
-   "source": "foto-webcam.eu",
-   "region": "IT-32-BZ-15"
   },
   {
    "id": "sachrang",
@@ -4021,19 +4079,6 @@
    "page": "https://www.foto-webcam.eu/webcam/schlosskammer/",
    "source": "foto-webcam.eu",
    "region": "AT-05-13"
-  },
-  {
-   "id": "altastenberg",
-   "name": "Altastenberg",
-   "title": "sauerland.camera: Altastenberg",
-   "country": "de",
-   "lat": 51.1854,
-   "lon": 8.4618,
-   "elev": 776,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/altastenberg/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/altastenberg/",
-   "source": "foto-webcam.eu"
   },
   {
    "id": "winterberg-bobhaus",
@@ -4184,6 +4229,19 @@
    "source": "foto-webcam.eu"
   },
   {
+   "id": "graf-stolberg-huette",
+   "name": "Graf Stolberg Hütte",
+   "title": "Graf Stolberg Hütte / Willingen - Blick nach Süden",
+   "country": "de",
+   "lat": 51.2633,
+   "lon": 8.6504,
+   "elev": 700,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/graf-stolberg-huette/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/graf-stolberg-huette/",
+   "source": "foto-webcam.eu"
+  },
+  {
    "id": "tum-olympiapark",
    "name": "TUM Olympiapark",
    "title": "Olympiaturm München - Baustelle TUM Campus im Olympiapark",
@@ -4277,6 +4335,19 @@
    "source": "foto-webcam.eu"
   },
   {
+   "id": "frauenau",
+   "name": "Frauenau",
+   "title": "Frauenau - Blick nach Nordosten",
+   "country": "de",
+   "lat": 48.9856,
+   "lon": 13.2936,
+   "elev": 625,
+   "interval": 3600,
+   "img": "https://www.foto-webcam.eu/webcam/frauenau/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/frauenau/",
+   "source": "foto-webcam.eu"
+  },
+  {
    "id": "lofer",
    "name": "Lofer",
    "title": "Saalach - Teufelssteg | lofer.com",
@@ -4360,6 +4431,19 @@
    "source": "foto-webcam.eu"
   },
   {
+   "id": "deutschesmuseum",
+   "name": "Deutsches Museum NO",
+   "title": "terra-hd.com: Deutsches Museum München NO",
+   "country": "de",
+   "lat": 48.1298,
+   "lon": 11.582,
+   "elev": 600,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/deutschesmuseum/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/deutschesmuseum/",
+   "source": "foto-webcam.eu"
+  },
+  {
    "id": "bernau1",
    "name": "Bernau-Bergham",
    "title": "terra-hd.com: Bernau-Bergham",
@@ -4372,19 +4456,6 @@
    "page": "https://www.foto-webcam.eu/webcam/bernau1/",
    "source": "foto-webcam.eu",
    "region": "DE-BY-51"
-  },
-  {
-   "id": "deutschesmuseum",
-   "name": "Deutsches Museum NO",
-   "title": "terra-hd.com: Deutsches Museum München NO",
-   "country": "de",
-   "lat": 48.1298,
-   "lon": 11.582,
-   "elev": 600,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/deutschesmuseum/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/deutschesmuseum/",
-   "source": "foto-webcam.eu"
   },
   {
    "id": "stadt-traunstein",
@@ -4558,19 +4629,6 @@
    "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/fuerstenfeld/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/fuerstenfeld/",
-   "source": "foto-webcam.eu"
-  },
-  {
-   "id": "tiroler-achen",
-   "name": "Tiroler Achen",
-   "title": "terra-hd.com: Tiroler Achen",
-   "country": "de",
-   "lat": 47.8119,
-   "lon": 12.4988,
-   "elev": 530,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/tiroler-achen/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/tiroler-achen/",
    "source": "foto-webcam.eu"
   },
   {
@@ -4761,20 +4819,6 @@
    "region": "CH-2133"
   },
   {
-   "id": "roethis-west",
-   "name": "Röthis West",
-   "title": "Röthis - METZLER GmbH & Co KG - Blick nach Westen",
-   "country": "at",
-   "lat": 47.3066,
-   "lon": 9.6182,
-   "elev": 436,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/roethis-west/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/roethis-west/",
-   "source": "foto-webcam.eu",
-   "region": "AT-08-01"
-  },
-  {
    "id": "roethis-ost",
    "name": "Röthis Ost",
    "title": "Röthis - METZLER GmbH & Co KG - Blick nach Osten",
@@ -4785,6 +4829,20 @@
    "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/roethis-ost/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/roethis-ost/",
+   "source": "foto-webcam.eu",
+   "region": "AT-08-01"
+  },
+  {
+   "id": "roethis-west",
+   "name": "Röthis West",
+   "title": "Röthis - METZLER GmbH & Co KG - Blick nach Westen",
+   "country": "at",
+   "lat": 47.3066,
+   "lon": 9.6182,
+   "elev": 436,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/roethis-west/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/roethis-west/",
    "source": "foto-webcam.eu",
    "region": "AT-08-01"
   },
@@ -4815,19 +4873,6 @@
    "source": "foto-webcam.eu"
   },
   {
-   "id": "yc-hard-nord",
-   "name": "YC Hard Nord",
-   "title": "Yachtclub Hard - Blick nach Norden",
-   "country": "at",
-   "lat": 47.499,
-   "lon": 9.6862,
-   "elev": 396,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/yc-hard-nord/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/yc-hard-nord/",
-   "source": "foto-webcam.eu"
-  },
-  {
    "id": "yc-hard-sued",
    "name": "YC Hard Süd",
    "title": "Yachtclub Hard - Blick nach Süden",
@@ -4838,6 +4883,19 @@
    "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/yc-hard-sued/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/yc-hard-sued/",
+   "source": "foto-webcam.eu"
+  },
+  {
+   "id": "yc-hard-nord",
+   "name": "YC Hard Nord",
+   "title": "Yachtclub Hard - Blick nach Norden",
+   "country": "at",
+   "lat": 47.499,
+   "lon": 9.6862,
+   "elev": 396,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/yc-hard-nord/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/yc-hard-nord/",
    "source": "foto-webcam.eu"
   },
   {
@@ -4919,19 +4977,6 @@
    "source": "foto-webcam.eu"
   },
   {
-   "id": "darmstadt-west",
-   "name": "Darmstadt West",
-   "title": "Darmstadt / Blick nach Westen",
-   "country": "de",
-   "lat": 49.8759,
-   "lon": 8.6626,
-   "elev": 165,
-   "interval": 600,
-   "img": "https://www.foto-webcam.eu/webcam/darmstadt-west/current/816.jpg",
-   "page": "https://www.foto-webcam.eu/webcam/darmstadt-west/",
-   "source": "foto-webcam.eu"
-  },
-  {
    "id": "darmstadt-ost",
    "name": "Darmstadt Ost",
    "title": "Darmstadt - Blick nach Osten zum Hochzeitsturm",
@@ -4942,6 +4987,19 @@
    "interval": 600,
    "img": "https://www.foto-webcam.eu/webcam/darmstadt-ost/current/816.jpg",
    "page": "https://www.foto-webcam.eu/webcam/darmstadt-ost/",
+   "source": "foto-webcam.eu"
+  },
+  {
+   "id": "darmstadt-west",
+   "name": "Darmstadt West",
+   "title": "Darmstadt / Blick nach Westen",
+   "country": "de",
+   "lat": 49.8759,
+   "lon": 8.6626,
+   "elev": 165,
+   "interval": 600,
+   "img": "https://www.foto-webcam.eu/webcam/darmstadt-west/current/816.jpg",
+   "page": "https://www.foto-webcam.eu/webcam/darmstadt-west/",
    "source": "foto-webcam.eu"
   },
   {
