@@ -30,7 +30,7 @@
   "soonAt": 1794798575707
  },
  "hintereisferner1": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1795392000000,
   "soonAt": 0
  },
@@ -40,7 +40,7 @@
   "soonAt": 1792948116369
  },
  "adlersruhe": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1795744800000,
   "soonAt": 1792948116369
  },
@@ -70,7 +70,7 @@
   "soonAt": 0
  },
  "kitzsteinhorn": {
-  "status": "snow",
+  "status": "dry",
   "lastSnowAt": 1795744800000,
   "soonAt": 1792948116369
  },
@@ -102,6 +102,16 @@
  "cortina-ducadaosta": {
   "status": "dry",
   "lastSnowAt": 1795683600000,
+  "soonAt": 0
+ },
+ "mohnenfluh": {
+  "status": "dry",
+  "lastSnowAt": 0,
+  "soonAt": 0
+ },
+ "lech-kriegerhorn": {
+  "status": "dry",
+  "lastSnowAt": 0,
   "soonAt": 0
  }
 }

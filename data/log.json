@@ -1,32 +1,5 @@
 [
  {
-  "t": 1792752873633,
-  "id": "zugspitze",
-  "name": "Zugspitze Gipfel",
-  "type": "start",
-  "msg": "2962 m, -4.4 °C. 0.6 cm forecast for the next 24 h.",
-  "past24": 0,
-  "temp": -4.4
- },
- {
-  "t": 1792752873633,
-  "id": "stubai-gletscher",
-  "name": "Stubai Glacier",
-  "type": "start",
-  "msg": "3210 m, -5.4 °C. 2.0 cm forecast for the next 24 h.",
-  "past24": 0,
-  "temp": -5.4
- },
- {
-  "t": 1792752873633,
-  "id": "pitztal-gletscher",
-  "name": "Pitztal Glacier",
-  "type": "start",
-  "msg": "3440 m, -7.0 °C. 2.1 cm forecast for the next 24 h.",
-  "past24": 0,
-  "temp": -7
- },
- {
   "t": 1792769833665,
   "id": "becherhaus",
   "name": "Becherhaus",
@@ -4498,5 +4471,32 @@
   "msg": "12.0 cm in the last 24 h.",
   "past24": 12,
   "temp": -13.7
+ },
+ {
+  "t": 1795769907336,
+  "id": "hintereisferner1",
+  "name": "Hintereisferner 1",
+  "type": "stop",
+  "msg": "6.9 cm in the last 24 h.",
+  "past24": 6.9,
+  "temp": -12.3
+ },
+ {
+  "t": 1795769907336,
+  "id": "adlersruhe",
+  "name": "Adlersruhe",
+  "type": "stop",
+  "msg": "2.3 cm in the last 24 h.",
+  "past24": 2.3,
+  "temp": -13.4
+ },
+ {
+  "t": 1795769907336,
+  "id": "kitzsteinhorn",
+  "name": "Kitzsteinhorn",
+  "type": "stop",
+  "msg": "2.6 cm in the last 24 h.",
+  "past24": 2.6,
+  "temp": -12.9
  }
 ]
